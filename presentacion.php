@@ -50,7 +50,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="calendario.php">
+                        
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
                             Calendario<br />de actividades
                     </th>
