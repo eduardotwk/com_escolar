@@ -113,9 +113,9 @@
             </hr>
             <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
             <ul class=cuadro1>
-                <li> 2° Reunión del Consejo Escolar para coordinar una estrategia de promoción del compromiso escolar entre los y las estudiantes, junto con el sentido de la medición del compromiso escolar.</li><br />
-                <li>Medición del compromiso escolar.</li><br>
-                <li> Revisión del porcentaje de instrumentos respondidos</li><br>
+                <li> 2° Reunión del Consejo Escolar para coordinar una estrategia de promoción del compromiso escolar entre los y las estudiantes, junto con el sentido de la medición del compromiso escolar.</li>
+                <li>Medición del compromiso escolar.</li>
+                <li> Revisión del porcentaje de instrumentos respondidos</li><
                 <li> 3° Reunión del Consejo Escolar para coordinar una estrategia adicional y asignar responsabilidades para velar que aquellos(as) estudiantes que no hayan respondido el instrumento lo puedan hacer.</li>
                 <li>Revisión del porcentaje de respuestas finales</li>
             </ul>
