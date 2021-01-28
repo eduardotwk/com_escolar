@@ -359,7 +359,7 @@
         text-align: justify;
         text-align-last: left;
         position: relative;
-        top: -565px;
+        top: -570px;
         left: 60%;
     }
 
