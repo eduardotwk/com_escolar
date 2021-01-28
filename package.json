@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-select": "^1.13.18",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "popper": "^1.0.1",
+    "select2": "^4.0.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
