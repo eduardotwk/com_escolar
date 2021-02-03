@@ -32,8 +32,6 @@
                     <li><a href="paso2.php">Paso 2</a></li>
                     <li><a href="paso3.php">Paso 3</a></li>
                     <li><a href="paso4.php">Paso 4</a></li>
-                    <li><a href="paso5.php">Paso 5</a></li>
-                    <li><a href="paso6.php">Paso 6</a></li>
                 </ul>
             </li>
             <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
@@ -111,7 +109,7 @@
             <h3>Compromiso conductual</h3>
             <div>
                 <p class="acordion">
-                    El compromiso conductual se basa en la idea de participación en el ámbito académico y actividades sociales o extracurriculares. El componente conductual del compromiso escolar incluye las interacciones y respuestas del estudiante, dentro de la sala de clases, del colegio y en ambientes extracurriculares. Este aspecto del compromiso escolar va desde un continuo, es decir, desde un involucramiento esperado de manera universal (asistencia diaria) a un involucramiento más intenso (Ej. Participación en el centro de alumnos
+                    El compromiso conductual se basa en la idea de participación en el ámbito académico y actividades sociales o extracurriculares. El componente conductual del compromiso escolar incluye las interacciones y respuestas del estudiante, dentro de la sala de clases, del colegio y en ambientes extracurriculares. Este aspecto del compromiso escolar va desde un continuo, es decir, desde un involucramiento esperado de manera universal (asistencia diaria) a un involucramiento más intenso (Ej. Participación en el centro de alumnos).
                 </p>
             </div>
             <h3>Compromiso cognitivo</h3>
@@ -408,7 +406,7 @@
         margin-left: -30%;
         width: 83.5%;
         position: relative;
-        top: -600px;
+        top: -180px;
         left: 54.5%;
     }
 
@@ -437,10 +435,10 @@
         margin-bottom: 20px;
         text-align: justify;
         text-align-last: left;
-        position: relative;
-        right: 30%;
-        top: -200px;
-        width: 52%;
+        position: absolute;
+        right: 68%;
+        top: 50px;
+        width: 30%;
     }
 
     table {
@@ -520,7 +518,7 @@
         margin-left: -30%;
         width: 83.5%;
         position: relative;
-        top: -1050px;
+        top: 300px;
         left: 54.5%;
     }
 

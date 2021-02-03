@@ -3,6 +3,14 @@
 
 <head>
     <script src="https://kit.fontawesome.com/1652fc71a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+    </script>
 </head>
 
 <body>
@@ -11,22 +19,24 @@
         <img class="lapiz" src="img/Header/compromiso.png">
 
         <ul id="menu" style="font-weight: normal;">
-    <li>
-        <a href="#">Pasos</a>
-        <ul id="submenu"  class= "menu" style="font-weight: normal;">
-            <li><a href="paso1.php">Paso 1</a></li>
-            <li><a href="paso2.php">Paso 2</a></li>
+            <li>
+                <a href="#">Pasos</a>
+                <ul id="submenu" class="menu" style="font-weight: normal;">
+                    <li><a href="paso1.php">Paso 1</a></li>
+                    <li><a href="paso2.php">Paso 2</a></li>
+                    <li><a href="paso3.php">Paso 3</a></li>
+                    <li><a href="paso4.php">Paso 4</a></li>
+                </ul>
+            </li>
+            <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
+            <li><a href="presentacion.php">Presentación</a></li>
+            <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
         </ul>
-    </li>
-    <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
-    <li><a href="presentacion.php">Presentación</a></li>
-    <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
-</ul>
 
     </header><!-- / #main-header -->
 
     <div class="container">
-        <h1>Paso 2: <h1 class="color">Medición del Consejo Escolar</h1>
+        <h1>Paso 2: <h1 class="color">Medición del Compromiso Escolar</h1>
         </h1>
         <hr>
         </hr>
@@ -36,7 +46,7 @@
                 <tr>
                     <th>
                         <a href="https://www.e-mineduc.cl/login/index.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
                     </th>
                 </tr>
                 <tr>
@@ -61,8 +71,8 @@
                 <tr>
                     <th>
                         <a href="busca_estrategia.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
-                            Buscador de<br />estrategias
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
+                                Buscador de<br />estrategias
                     </th>
                 </tr>
                 <tr>
@@ -74,37 +84,34 @@
             </table>
         </div>
 
-        <button class="accordion2 active2">Descripción</button>
-        <div class="panel2" style="max-height: 604px;">
-            <p class="acordion2">
-                El compromiso escolar es un indicador básico para hacer un seguimiento a las trayectorias educativas de las y los estudiantes; asimismo, cada escuela puede identificar otros indicadores que pueden ser relevantes para su contexto, y que pueden entregar información relevante para la toma de decisiones oportunas.<br /><br />
-                Se espera que en este paso se organice una estrategia para comunicar sobre el objetivo del SIESE al resto de la comunidad escolar. Se trata de crear una cultura del compromiso escolar a nivel de la escuela, para lo cual se pueden desarrollar distintas estrategias promocionales, las que van a depender de si estamos en un contexto presencial o no. <br /><br />
-                Posteriormente, la idea es que las y los estudiantes puedan responder el instrumento de compromiso escolar y factores contextuales. El coordinador o la coordinadora del Consejo Escolar tiene que activar el código para que los y las estudiantes puedan responder el instrumento siguiendo las indicaciones del Manual de Usuario. <br /><br />
-                Se busca que, en un contexto presencial, los y las estudiantes puedan disponer de un momento de la clase para responder en conjunto las preguntas de esta plataforma. Para ello se requiere que cada estudiante tenga acceso a un computador de manera individual y privada, por lo que la sala de computación puede ser un buen lugar. Dado que las preguntas pueden ser respondidas desde cualquier dispositivo, en un contexto no presencial se propone coordinar con los y las estudiantes que en una clase de zoom puedan responder los instrumentos en el mismo momento de manera sincrónica. En el caso que esta opción no sea posible, se pueden buscar otras alternativas que se ajusten a la realidad de cada establecimiento y de los y las estudiantes. Lo importante es que, si se realiza en un contexto no presencial, se pueda ir monitoreando el porcentaje de respuesta de manera tal que nadie quede sin responder. <br /><br />
-                Se sugiere que se puedan levantar todas las respuestas en un plazo de una semana como máximo, y luego de eso que el coordinador o la coordinadora del Consejo Escolar pueda revisar el porcentaje de respuesta y/o determinar alguna estrategia adicional para motivar que todos y todas las estudiantes que no hayan respondido los instrumentos lo puedan hacer.
-
-
-
-            </p>
-        </div>
-
-        <button class="accordion2">Preguntas guías para el Consejo Escolar</button>
-        <div class="panel2">
-            <ul>
-                <li>¿Cómo sensibilizamos a toda la comunidad educativa sobre la importancia del compromiso escolar?</li> <br />
-                <li>¿Cómo se hará la promoción de la aplicación del instrumento de compromiso escolar y factores contextuales entre los y las estudiantes, considerando si se está en un contexto presencial o no presencial?</li><br />
-                <li>¿Quién será el responsable de la promoción?</li><br />
-                <li>¿Quién explicará a los y las estudiantes cómo responder el instrumento de compromiso escolar y factores contextuales en esta plataforma?</li><br />
-                <li>¿Dónde se hará la aplicación?</li><br />
-                <li>¿Qué estrategias se implementarán para velar que quienes no hayan respondido el instrumento de compromiso escolar y factores contextuales lo puedan hacer?</li><br />
-            </ul>
-        </div>
-
-        <button class="accordion2">Posibles dificultades y sugerencias para enfrentarlas</button>
-        <div class="panel2">
-            <p class="acordion2">
-                En un contexto no presencial puede ser difícil que todos los y las estudiantes respondan el instrumento de compromiso escolar y factores contextuales en el plazo acordado. Por lo mismo, se sugiere incorporar a las y los apoderados en el proceso de manera tal que puedan favorecer que sus hijos e hijas respondan los instrumentos; así como también, se propone involucrar al representante estudiantil, para que motive a sus compañeros y compañeras a responder las preguntas.
-            </p>
+        <div id="accordion">
+            <h4>Descripción</h4>
+            <div>
+                <p class="acordion2">
+                    El compromiso escolar es un indicador básico para hacer un seguimiento a las trayectorias educativas de las y los estudiantes; asimismo, cada escuela puede identificar otros indicadores que pueden ser relevantes para su contexto, y que pueden entregar información relevante para la toma de decisiones oportunas.<br /><br />
+                    Se espera que en este paso se organice una estrategia para comunicar sobre el objetivo del SIESE al resto de la comunidad escolar. Se trata de crear una cultura del compromiso escolar a nivel de la escuela, para lo cual se pueden desarrollar distintas estrategias promocionales, las que van a depender de si estamos en un contexto presencial o no. <br /><br />
+                    Posteriormente, la idea es que las y los estudiantes puedan responder el instrumento de compromiso escolar y factores contextuales. El coordinador o la coordinadora del Consejo Escolar tiene que activar el código para que los y las estudiantes puedan responder el instrumento siguiendo las indicaciones del Manual de Usuario. <br /><br />
+                    Se busca que, en un contexto presencial, los y las estudiantes puedan disponer de un momento de la clase para responder en conjunto las preguntas de esta plataforma. Para ello se requiere que cada estudiante tenga acceso a un computador de manera individual y privada, por lo que la sala de computación puede ser un buen lugar. Dado que las preguntas pueden ser respondidas desde cualquier dispositivo, en un contexto no presencial se propone coordinar con los y las estudiantes que en una clase de zoom puedan responder los instrumentos en el mismo momento de manera sincrónica. En el caso que esta opción no sea posible, se pueden buscar otras alternativas que se ajusten a la realidad de cada establecimiento y de los y las estudiantes. Lo importante es que, si se realiza en un contexto no presencial, se pueda ir monitoreando el porcentaje de respuesta de manera tal que nadie quede sin responder. <br /><br />
+                    Se sugiere que se puedan levantar todas las respuestas en un plazo de una semana como máximo, y luego de eso que el coordinador o la coordinadora del Consejo Escolar pueda revisar el porcentaje de respuesta y/o determinar alguna estrategia adicional para motivar que todos y todas las estudiantes que no hayan respondido los instrumentos lo puedan hacer.
+                </p>
+            </div>
+            <h4>Preguntas guías para el Consejo Escolar</h4>
+            <div>
+                <ul>
+                    <li>¿Cómo sensibilizamos a toda la comunidad educativa sobre la importancia del compromiso escolar?</li> <br />
+                    <li>¿Cómo se hará la promoción de la aplicación del instrumento de compromiso escolar y factores contextuales entre los y las estudiantes, considerando si se está en un contexto presencial o no presencial?</li><br />
+                    <li>¿Quién será el responsable de la promoción?</li><br />
+                    <li>¿Quién explicará a los y las estudiantes cómo responder el instrumento de compromiso escolar y factores contextuales en esta plataforma?</li><br />
+                    <li>¿Dónde se hará la aplicación?</li><br />
+                    <li>¿Qué estrategias se implementarán para velar que quienes no hayan respondido el instrumento de compromiso escolar y factores contextuales lo puedan hacer?</li><br />
+                </ul>
+            </div>
+            <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
+            <div>
+                <p class="acordion2">
+                    En un contexto no presencial puede ser difícil que todos los y las estudiantes respondan el instrumento de compromiso escolar y factores contextuales en el plazo acordado. Por lo mismo, se sugiere incorporar a las y los apoderados en el proceso de manera tal que puedan favorecer que sus hijos e hijas respondan los instrumentos; así como también, se propone involucrar al representante estudiantil, para que motive a sus compañeros y compañeras a responder las preguntas.
+                </p>
+            </div>
         </div>
         <div class="cuadro1">
             <h3>Productos esperados</h3>
@@ -124,7 +131,9 @@
             <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
             <hr class=cuadro2>
             </hr>
-            <a href="https://www.compromisoescolar.com/inicia_encuesta.php"><image src="img/menu_flotante/3.-Instrumentos.png"style="width:40px;height: 40px;position:absolute;top:65px;left:5%"></a>
+            <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
+                <image src="img/menu_flotante/3.-Instrumentos.png" style="width:40px;height: 40px;position:absolute;top:65px;left:5%">
+            </a>
             <ul class="cuadro2">
                 <li>Manual de Usuario de la Plataforma de Compromiso Escolar</li>
                 <li>Instrumentos de medición del compromiso escolar</li>
@@ -180,182 +189,221 @@
 </body>
 
 </html>
-<script>
-    var acc = document.getElementsByClassName("accordion2");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active2");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
 <style>
-     #submenu ul li a{
-        color:white;
+    /*acordeón1*/
+
+    .ui-accordion {
+        width: 62%;
+        position: absolute;
+        top: 72px;
+        right: 36%;
     }
-    #menu{
-    width: 100%;
-    margin: 0;
-    padding: 10px 0 0 0;
-    list-style: none;  
-    background: transparent;
-    background:  transparent;
-    background:  transparent;    
-    background:  transparent;    
-    background:  transparent;
-    background:  transparent;
-    background:  transparent;
-    position: absolute;
-    top:35px;
-}
 
-#menu li{
-    float: right;
-    padding: 0 0 10px 0;
-    position: relative;
-    right:10%;
-}
+    .ui-accordion-header {
+        border-top-color: #999999;
+        background-color: #666666;
+        font-weight: bolder;
+        color: #999999;
+    }
 
-#menu a{
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    float: left;
-    height: 25px;
-    padding: 0 25px;
-    text-decoration: none;
-   
-}
+    .ui-accordion-header-active {
+        border-top-color: #da9600;
+        background-color: #f27611;
+        font-size: bolder;
+        color: white;
+    }
 
-#menu li:hover > a{
-    color: #22a2b0;
-}
+    .ui-icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -.25em;
+        position: relative;
+        text-indent: -99999px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        left: 95%;
+    }
 
-*html #menu li a:hover{ /* IE6 */
-    color: black;
+    .ui-accordion-content-active {
+        border-style: 1px solid;
+        border-color: #da9600;
+        background-color: transparent;
+        color: white;
 
-}
+    }
 
-#menu li:hover > ul{
-    display: block;
-}
+    #submenu ul li a {
+        color: white;
+    }
 
-/* Sub-menu */
+    #menu {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        position: absolute;
+        top: 35px;
+    }
 
-#menu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;    
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    z-index: 99999;    
-    background: #22a2b0;
-    border-radius: 2px;
-}
+    #menu li {
+        float: right;
+        padding: 0 0 10px 0;
+        position: relative;
+        right: 10%;
+    }
 
-#menu ul li{
-    float: none;
-    margin: 0;
-    padding: 0;
-    display: block;  
-    background-color: #22a2b0;
-}
+    #menu a {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        float: left;
+        height: 25px;
+        padding: 0 25px;
+        text-decoration: none;
 
-#menu ul li:last-child{   
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;    
-}
+    }
 
-#menu ul a{    
-    padding: 10px;
-    height: auto;
-    line-height: 1;
-    display: block;
-    white-space: nowrap;
-    float: none;
-    text-transform: none;
-}
+    #menu li:hover>a {
+        color: #22a2b0;
+    }
 
-*html #menu ul a{ /* IE6 */   
-    height: 10px;
-    width: 150px;
-}
+    *html #menu li a:hover {
+        /* IE6 */
+        color: black;
 
-*:first-child+html #menu ul a{ /* IE7 */    
-    height: 10px;
-    width: 150px;
-}
+    }
 
-#menu ul a:hover{
-    background: white;
-    color:black;
-}
+    #menu li:hover>ul {
+        display: block;
+    }
 
-#menu ul li:first-child a{
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-}
+    /* Sub-menu */
 
-#menu ul li:first-child a:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #444;
-}
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        z-index: 99999;
+        background: #22a2b0;
+        border-radius: 2px;
+    }
 
-#menu ul li:first-child a:hover:after{
-    border-bottom-color: white; 
-}
+    #menu ul li {
+        float: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        background-color: #22a2b0;
+    }
 
-#menu ul li:last-child a{
-    -moz-border-radius: 0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-}
+    #menu ul li:last-child {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 
-/* Clear floated elements */
-#menu:after{
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
+    #menu ul a {
+        padding: 10px;
+        height: auto;
+        line-height: 1;
+        display: block;
+        white-space: nowrap;
+        float: none;
+        text-transform: none;
+    }
 
-* html #menu             { zoom: 1; } /* IE6 */
-*:first-child+html #menu { zoom: 1; } /* IE7 */
+    *html #menu ul a {
+        /* IE6 */
+        height: 10px;
+        width: 150px;
+    }
 
-#menu ul li:first-child a:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #444;
-}
+    *:first-child+html #menu ul a {
+        /* IE7 */
+        height: 10px;
+        width: 150px;
+    }
 
-#menu ul li:first-child a:hover:after{
-    border-bottom-color: #04acec; 
-}
+    #menu ul a:hover {
+        background: white;
+        color: black;
+    }
+
+    #menu ul li:first-child a {
+        -moz-border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+    }
+
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
+
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: white;
+    }
+
+    #menu ul li:last-child a {
+        -moz-border-radius: 0 0 5px 5px;
+        -webkit-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    /* Clear floated elements */
+    #menu:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    * html #menu {
+        zoom: 1;
+    }
+
+    /* IE6 */
+    *:first-child+html #menu {
+        zoom: 1;
+    }
+
+    /* IE7 */
+
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
+
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: #04acec;
+    }
+
     ul.cuadro2 {
         position: absolute;
         top: 45px;
@@ -527,7 +575,7 @@
         font-size: 14px;
         margin-bottom: 20px;
         text-align-last: left;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     p.acordion2 {
@@ -538,51 +586,8 @@
         margin-bottom: 20px;
         text-align: justify;
         text-align-last: left;
-        font-weight: bold;
+        font-weight: normal;
     }
-
-    .accordion2 {
-        position: relative;
-        top: -190px;
-        right: 30%;
-        border-top-color: #999999;
-        background-color: #666666;
-        cursor: pointer;
-        padding: 18px;
-        width: 90%;
-        height: 0%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-        color: #bbbbbb;
-        font-weight: bolder;
-    }
-
-    .active2,
-    .accordion2:hover {
-        border-top-color: #da9600;
-        background-color: #f27611;
-        color: white;
-    }
-
-    .panel2 {
-        position: relative;
-        top: -190px;
-        right: 30%;
-        border-color: #da9600;
-        border-width: 1px;
-        border-style: solid;
-        background-color: transparent;
-        border-radius: 0px 5px 5px 5px;
-        width: 85%;
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    }
-
     img.navegador {
         position: absolute;
         top: 8px;
@@ -621,7 +626,7 @@
     h1.color {
         position: absolute;
         top: 1px;
-        right: 57%;
+        right: 52%;
         -epub-hyphens: none;
         font-style: normal;
         font-variant: normal;
@@ -714,7 +719,7 @@
     /*
  * Navegación
  */
-   
+
 
     #main-content {
         background: white;

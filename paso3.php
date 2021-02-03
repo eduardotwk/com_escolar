@@ -3,6 +3,14 @@
 
 <head>
     <script src="https://kit.fontawesome.com/1652fc71a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+    </script>
 </head>
 
 <body>
@@ -11,21 +19,19 @@
         <img class="lapiz" src="img/Header/compromiso.png">
 
         <ul id="menu" style="font-weight: normal;">
-    <li>
-        <a href="#">Pasos</a>
-        <ul id="submenu"  class=menu style="font-weight: normal;">
-            <li><a href="paso1.php">Paso 1</a></li>
-            <li><a href="paso2.php">Paso 2</a></li>
-            <li><a href="paso3.php">Paso 3</a></li>
-            <li><a href="paso4.php">Paso 4</a></li>
-            <li><a href="paso5.php">Paso 5</a></li>
-            <li><a href="paso6.php">Paso 6</a></li>
+            <li>
+                <a href="#">Pasos</a>
+                <ul id="submenu" class=menu style="font-weight: normal;">
+                    <li><a href="paso1.php">Paso 1</a></li>
+                    <li><a href="paso2.php">Paso 2</a></li>
+                    <li><a href="paso3.php">Paso 3</a></li>
+                    <li><a href="paso4.php">Paso 4</a></li>
+                </ul>
+            </li>
+            <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
+            <li><a href="presentacion.php">Presentación</a></li>
+            <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
         </ul>
-    </li>
-    <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
-    <li><a href="presentacion.php">Presentación</a></li>
-    <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
-</ul>
 
     </header><!-- / #main-header -->
 
@@ -75,34 +81,34 @@
                 </tr>
             </table>
         </div>
-
-        <button class="accordion2 active2">Descripción</button>
-        <div class="panel2" style="max-height: 414px;">
-            <p class="acordion2">
-                Esta paso implica la descarga y revisión de los reportes de resultados que arroja esta plataforma. El coordinador o la coordinadora tiene el acceso a la plataforma para descargar los reportes. Para poder comprender los resultados con mayor facilidad se sugiere leer el Manual de Usuario de la Plataforma de Compromiso Escolar y revisar el módulo de capacitación. <br /><br />
-                Luego se espera que todos los miembros del Consejo Escolar puedan participar activamente en el análisis e interpretación de los datos, complementando la información cuantitativa que arroja esta plataforma con antecedentes entregados por apoderados y apoderadas, estudiantes y profesorado, que permitan comprender de mejor manera los resultados. Este diagnóstico es de vital importancia como línea base inicial para la toma de decisiones respecto a la selección de las estrategias que se aplicarán. <br /><br />
-                El objetivo es que el Consejo Escolar pueda revisar la información por curso que arroja esta plataforma, identificando necesidades comunes entre las y los estudiantes. En cambio, la información individualizada que arroja por estudiante se espera que sea revisada en otras instancias especializadas que la escuela estime pertinente, mediante la ficha individual. Así se evitan estigmatizaciones involuntarias hacia las y los estudiantes. <br><br />
-                También se sugiere compartir los reportes entregados con otros profesores y profesoras del nivel y/o con apoderados/as o estudiantes de manera de transparentar la información obtenida.
-            </p>
+        <div id="accordion">
+            <h4>Descripción</h4>
+            <div>
+                <p class="acordion2">
+                    Esta paso implica la descarga y revisión de los reportes de resultados que arroja esta plataforma. El coordinador o la coordinadora tiene el acceso a la plataforma para descargar los reportes. Para poder comprender los resultados con mayor facilidad se sugiere leer el Manual de Usuario de la Plataforma de Compromiso Escolar y revisar el módulo de capacitación. <br /><br />
+                    Luego se espera que todos los miembros del Consejo Escolar puedan participar activamente en el análisis e interpretación de los datos, complementando la información cuantitativa que arroja esta plataforma con antecedentes entregados por apoderados y apoderadas, estudiantes y profesorado, que permitan comprender de mejor manera los resultados. Este diagnóstico es de vital importancia como línea base inicial para la toma de decisiones respecto a la selección de las estrategias que se aplicarán. <br /><br />
+                    El objetivo es que el Consejo Escolar pueda revisar la información por curso que arroja esta plataforma, identificando necesidades comunes entre las y los estudiantes. En cambio, la información individualizada que arroja por estudiante se espera que sea revisada en otras instancias especializadas que la escuela estime pertinente, mediante la ficha individual. Así se evitan estigmatizaciones involuntarias hacia las y los estudiantes. <br><br />
+                    También se sugiere compartir los reportes entregados con otros profesores y profesoras del nivel y/o con apoderados/as o estudiantes de manera de transparentar la información obtenida.
+                </p>
+            </div>
+            <h4>Preguntas guías para el Consejo Escolar</h4>
+            <div>
+                <ul>
+                    <li>¿Quién descargará los reportes de la plataforma al Consejo Escolar?</li> <br />
+                    <li>¿Qué otros indicadores se pueden analizar para complementar la información (por ejemplo, rendimiento, comportamiento, asistencia)?</li><br />
+                    <li>¿Qué información entrega la plataforma de compromiso escolar?</li><br />
+                    <li>¿Qué necesidades se desprenden del análisis de los resultados?</li><br />
+                    <li>¿Qué prácticas del colegio o de la sala de clases se pueden vincular a los resultados mostrados en la plataforma de compromiso escolar? </li><br />
+                </ul>
+            </div>
+            <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
+            <div>
+                <p class="acordion2">
+                    En este paso pueden surgir ciertas dificultades para interpretar los datos o analizar los reportes. Por eso es importante llegar a esta fase, habiendo revisado los videos de la capacitación online y sus recursos, de manera tal de poder hacer un mejor uso de los datos.
+                </p>
+            </div>
         </div>
 
-        <button class="accordion2">Preguntas guías para el Consejo Escolar</button>
-        <div class="panel2">
-            <ul>
-                <li>¿Quién descargará los reportes de la plataforma al Consejo Escolar?</li> <br />
-                <li>¿Qué otros indicadores se pueden analizar para complementar la información (por ejemplo, rendimiento, comportamiento, asistencia)?</li><br />
-                <li>¿Qué información entrega la plataforma de compromiso escolar?</li><br />
-                <li>¿Qué necesidades se desprenden del análisis de los resultados?</li><br />
-                <li>¿Qué prácticas del colegio o de la sala de clases se pueden vincular a los resultados mostrados en la plataforma de compromiso escolar? </li><br />
-            </ul>
-        </div>
-
-        <button class="accordion2">Posibles dificultades y sugerencias para enfrentarlas</button>
-        <div class="panel2">
-            <p class="acordion2">
-                En este paso pueden surgir ciertas dificultades para interpretar los datos o analizar los reportes. Por eso es importante llegar a esta fase, habiendo revisado los videos de la capacitación online y sus recursos, de manera tal de poder hacer un mejor uso de los datos.
-            </p>
-        </div>
         <div class="cuadro1">
             <h3>Productos esperados</h3>
             <hr class=cuadro1>
@@ -173,182 +179,221 @@
 </body>
 
 </html>
-<script>
-    var acc = document.getElementsByClassName("accordion2");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active2");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
 <style>
-     #submenu ul li a{
-        color:white;
+    /*acordeón1*/
+
+    .ui-accordion {
+        width: 62%;
+        position: absolute;
+        top: 72px;
+        right: 36%;
     }
-    #menu{
-    width: 100%;
-    margin: 0;
-    padding: 10px 0 0 0;
-    list-style: none;  
-    background: transparent;
-    background:  transparent;
-    background:  transparent;    
-    background:  transparent;    
-    background:  transparent;
-    background:  transparent;
-    background:  transparent;
-    position: absolute;
-    top:35px;
-}
 
-#menu li{
-    float: right;
-    padding: 0 0 10px 0;
-    position: relative;
-    right:10%;
-}
+    .ui-accordion-header {
+        border-top-color: #999999;
+        background-color: #666666;
+        font-weight: bolder;
+        color: #999999;
+    }
 
-#menu a{
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    float: left;
-    height: 25px;
-    padding: 0 25px;
-    text-decoration: none;
-   
-}
+    .ui-accordion-header-active {
+        border-top-color: #da9600;
+        background-color: #f27611;
+        font-size: bolder;
+        color: white;
+    }
 
-#menu li:hover > a{
-    color: #22a2b0;
-}
+    .ui-icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -.25em;
+        position: relative;
+        text-indent: -99999px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        left: 95%;
+    }
 
-*html #menu li a:hover{ /* IE6 */
-    color: black;
+    .ui-accordion-content-active {
+        border-style: 1px solid;
+        border-color: #da9600;
+        background-color: transparent;
+        color: white;
 
-}
+    }
 
-#menu li:hover > ul{
-    display: block;
-}
+    #submenu ul li a {
+        color: white;
+    }
 
-/* Sub-menu */
+    #menu {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        position: absolute;
+        top: 35px;
+    }
 
-#menu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;    
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    z-index: 99999;    
-    background: #22a2b0;
-    border-radius: 2px;
-}
+    #menu li {
+        float: right;
+        padding: 0 0 10px 0;
+        position: relative;
+        right: 10%;
+    }
 
-#menu ul li{
-    float: none;
-    margin: 0;
-    padding: 0;
-    display: block;  
-    background-color: #22a2b0;
-}
+    #menu a {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        float: left;
+        height: 25px;
+        padding: 0 25px;
+        text-decoration: none;
 
-#menu ul li:last-child{   
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;    
-}
+    }
 
-#menu ul a{    
-    padding: 10px;
-    height: auto;
-    line-height: 1;
-    display: block;
-    white-space: nowrap;
-    float: none;
-    text-transform: none;
-}
+    #menu li:hover>a {
+        color: #22a2b0;
+    }
 
-*html #menu ul a{ /* IE6 */   
-    height: 10px;
-    width: 150px;
-}
+    *html #menu li a:hover {
+        /* IE6 */
+        color: black;
 
-*:first-child+html #menu ul a{ /* IE7 */    
-    height: 10px;
-    width: 150px;
-}
+    }
 
-#menu ul a:hover{
-    background: white;
-    color:black;
-}
+    #menu li:hover>ul {
+        display: block;
+    }
 
-#menu ul li:first-child a{
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-}
+    /* Sub-menu */
 
-#menu ul li:first-child a:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #444;
-}
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        z-index: 99999;
+        background: #22a2b0;
+        border-radius: 2px;
+    }
 
-#menu ul li:first-child a:hover:after{
-    border-bottom-color: white; 
-}
+    #menu ul li {
+        float: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        background-color: #22a2b0;
+    }
 
-#menu ul li:last-child a{
-    -moz-border-radius: 0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-}
+    #menu ul li:last-child {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 
-/* Clear floated elements */
-#menu:after{
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
+    #menu ul a {
+        padding: 10px;
+        height: auto;
+        line-height: 1;
+        display: block;
+        white-space: nowrap;
+        float: none;
+        text-transform: none;
+    }
 
-* html #menu             { zoom: 1; } /* IE6 */
-*:first-child+html #menu { zoom: 1; } /* IE7 */
+    *html #menu ul a {
+        /* IE6 */
+        height: 10px;
+        width: 150px;
+    }
 
-#menu ul li:first-child a:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #444;
-}
+    *:first-child+html #menu ul a {
+        /* IE7 */
+        height: 10px;
+        width: 150px;
+    }
 
-#menu ul li:first-child a:hover:after{
-    border-bottom-color: #04acec; 
-}
+    #menu ul a:hover {
+        background: white;
+        color: black;
+    }
+
+    #menu ul li:first-child a {
+        -moz-border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+    }
+
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
+
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: white;
+    }
+
+    #menu ul li:last-child a {
+        -moz-border-radius: 0 0 5px 5px;
+        -webkit-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    /* Clear floated elements */
+    #menu:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    * html #menu {
+        zoom: 1;
+    }
+
+    /* IE6 */
+    *:first-child+html #menu {
+        zoom: 1;
+    }
+
+    /* IE7 */
+
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
+
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: #04acec;
+    }
+
     ul.cuadro2 {
         position: absolute;
         top: 45px;
@@ -520,7 +565,7 @@
         font-size: 14px;
         margin-bottom: 20px;
         text-align-last: left;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     p.acordion2 {
@@ -531,51 +576,8 @@
         margin-bottom: 20px;
         text-align: justify;
         text-align-last: left;
-        font-weight: bold;
+        font-weight: normal;
     }
-
-    .accordion2 {
-        position: relative;
-        top: -190px;
-        right: 30%;
-        border-top-color: #999999;
-        background-color: #666666;
-        cursor: pointer;
-        padding: 18px;
-        width: 90%;
-        height: 0%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-        color: #bbbbbb;
-        font-weight: bolder;
-    }
-
-    .active2,
-    .accordion2:hover {
-        border-top-color: #da9600;
-        background-color: #f27611;
-        color: white;
-    }
-
-    .panel2 {
-        position: relative;
-        top: -190px;
-        right: 30%;
-        border-color: #da9600;
-        border-width: 1px;
-        border-style: solid;
-        background-color: transparent;
-        border-radius: 0px 5px 5px 5px;
-        width: 85%;
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    }
-
     img.navegador {
         position: absolute;
         top: 8px;

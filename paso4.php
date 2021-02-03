@@ -3,6 +3,14 @@
 
 <head>
     <script src="https://kit.fontawesome.com/1652fc71a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+    </script>
 </head>
 
 <body>
@@ -10,23 +18,21 @@
         <img class="logo" src="img/Header/Logo plataforma menor.png">
         <img class="lapiz" src="img/Header/compromiso.png">
 
-      
+
         <ul id="menu" style="font-weight: normal;">
-    <li>
-        <a href="#">Pasos</a>
-        <ul id="submenu"  class=menu style="font-weight: normal;"> 
-            <li><a href="paso1.php">Paso 1</a></li>
-            <li><a href="paso2.php">Paso 2</a></li>
-            <li><a href="paso3.php">Paso 3</a></li>
-            <li><a href="paso4.php">Paso 4</a></li>
-            <li><a href="paso5.php">Paso 5</a></li>
-            <li><a href="paso6.php">Paso 6</a></li>
+            <li>
+                <a href="#">Pasos</a>
+                <ul id="submenu" class=menu style="font-weight: normal;">
+                    <li><a href="paso1.php">Paso 1</a></li>
+                    <li><a href="paso2.php">Paso 2</a></li>
+                    <li><a href="paso3.php">Paso 3</a></li>
+                    <li><a href="paso4.php">Paso 4</a></li>
+                </ul>
+            </li>
+            <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
+            <li><a href="presentacion.php">Presentación</a></li>
+            <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
         </ul>
-    </li>
-    <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
-    <li><a href="presentacion.php">Presentación</a></li>
-    <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
-</ul>
 
     </header><!-- / #main-header -->
 
@@ -46,8 +52,8 @@
                 <tr>
                     <th>
                         <a href="calendario.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
-                            Calendario<br />de actividades
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
+                                Calendario<br />de actividades
                     </th>
                 </tr>
                 <tr>
@@ -77,40 +83,40 @@
                 </tr>
             </table>
         </div>
-
-        <button class="accordion2 active2">Descripción</button>
-        <div class="panel2" style="max-height: 661px;">
-            <p class="acordion2">
-                En reunión que corresponda según calendarización del establecimiento, y sobre la base de la información arrojada por la medición del compromiso escolar, en este paso el Consejo Escolar procede a identificar las estrategias de intervención más pertinentes al curso y la escuela. Este análisis quedará registrado en la primera ficha del curso, que es la Ficha de Plan de Acción. <br /><br />
-                Para ello se puede ingresar al buscador de estrategias del SIESE donde encontrarán un conjunto de fichas con orientaciones de promoción de compromiso escolar y factores contextuales. Todas las estrategias están basadas en la evidencia internacional, revisadas por docentes y equipos de convivencia escolar en Chile y adaptadas para el contexto nacional. <br /><br />
-                En cada estrategia se indica la subdimensión del compromiso escolar y/o el factor contextual que busca potenciar. También para cada ficha se señala si es aplicable o no en un contexto no presencial, y si su implementación es de tipo personalizada (con un/a estudiante), focalizada ( con un grupo de estudiantes) o universal (con todo el curso o la escuela). <br><br />
-                El Consejo Escolar tendrá que seleccionar aquellas estrategias que sean más pertinentes para promover los distintos tipos de compromiso escolar (afectivo, cognitivo o conductual) y factores contextuales (familia, profesorado o pares), considerando las áreas que mostraron alertas.<br><br />
-                También pueden potenciar otras intervenciones ya identificadas, pues en general en las escuelas ya hay un conjunto de estrategias que se implementan pero que no necesariamente se aplican a un determinado curso. Se puede crear, en conjunto con otros profesores y profesoras de la comunidad escolar, un inventario de buenas prácticas que ya existen en la escuela.<br /><br />
-                El objetivo es responder a las necesidades de los y las estudiantes a intervenciones específicas después de haber reunido información sobre las potenciales causas vinculadas a las alertas que indica el sistema; se debe analizar además cómo seguir potenciando los recursos y las intervenciones que puedan ser efectivamente implementadas en la escuela.<br /><br />
-                Una vez identificadas las intervenciones, se debe abordar cómo se implementarán y qué otros actores deben ser incorporados en su aplicación (por ejemplo, otros profesores/as).
-            </p>
+        <div id="accordion">
+            <h4>Descripción</h4>
+            <div>
+                <p class="acordion2">
+                    En reunión que corresponda según calendarización del establecimiento, y sobre la base de la información arrojada por la medición del compromiso escolar, en este paso el Consejo Escolar procede a identificar las estrategias de intervención más pertinentes al curso y la escuela. Este análisis quedará registrado en la primera ficha del curso, que es la Ficha de Plan de Acción. <br /><br>
+                    Para ello se puede ingresar al buscador de estrategias del SIESE donde encontrarán un conjunto de fichas con orientaciones de promoción de compromiso escolar y factores contextuales. Todas las estrategias están basadas en la evidencia internacional, revisadas por docentes y equipos de convivencia escolar en Chile y adaptadas para el contexto nacional. <br /><br>
+                    En cada estrategia se indica la subdimensión del compromiso escolar y/o el factor contextual que busca potenciar. También para cada ficha se señala si es aplicable o no en un contexto no presencial, y si su implementación es de tipo personalizada (con un/a estudiante), focalizada ( con un grupo de estudiantes) o universal (con todo el curso o la escuela). <br><br>
+                    El Consejo Escolar tendrá que seleccionar aquellas estrategias que sean más pertinentes para promover los distintos tipos de compromiso escolar (afectivo, cognitivo o conductual) y factores contextuales (familia, profesorado o pares), considerando las áreas que mostraron alertas.<br><br>
+                    También pueden potenciar otras intervenciones ya identificadas, pues en general en las escuelas ya hay un conjunto de estrategias que se implementan pero que no necesariamente se aplican a un determinado curso. Se puede crear, en conjunto con otros profesores y profesoras de la comunidad escolar, un inventario de buenas prácticas que ya existen en la escuela.<br /><br>
+                    El objetivo es responder a las necesidades de los y las estudiantes a intervenciones específicas después de haber reunido información sobre las potenciales causas vinculadas a las alertas que indica el sistema; se debe analizar además cómo seguir potenciando los recursos y las intervenciones que puedan ser efectivamente implementadas en la escuela.<br /><br>
+                    Una vez identificadas las intervenciones, se debe abordar cómo se implementarán y qué otros actores deben ser incorporados en su aplicación (por ejemplo, otros profesores/as).
+                </p>
+            </div>
+            <h4>Preguntas guías para el Consejo Escolar</h4>
+            <div>
+                <ul>
+                    <li>¿Qué estrategias existentes en nuestra escuela son pertinentes para fomentar el compromiso escolar y qué podría potenciarse para atender las necesidades reportadas por esta plataforma?</li> <br />
+                    <li>¿Qué estrategias descritas en esta plataforma podrían ser implementadas en nuestra escuela?</li><br />
+                    <li>¿Qué pasos tenemos que seguir para gestionar la implementación de la estrategia?</li><br />
+                    <li>¿Qué actores adicionales al Consejo Escolar se tienen que involucrar en la ejecución de las estrategias?</li><br />
+                    <li>¿Cómo comprometer su participación? </li><br />
+                </ul>
+            </div>
+            <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
+            <div>
+                <p class="acordion2">
+                    Implementar cualquier cambio es un desafío, y si bien, en un inicio puede implicar una mayor carga laboral, se espera que las estrategias implementadas puedan a mediano plazo tener un impacto que beneficie a toda la comunidad escolar.<br><br>
+                    Por eso se sugiere que las responsabilidades sobre la gestión e implementación estén repartidas entre varias personas del equipo del Consejo Escolar y en el resto de la comunidad educativa, para ello se debería tener una reunión especial con aquellos y aquellas profesoras y/o otros actores que estén involucrados en la implementación de las estrategias de manera tal de promover el sentido del trabajo y la colaboración.<br><br>
+                    Adicionalmente, al completar la ficha del plan de acción, es importante que el coordinador o la coordinadora del Consejo Escolar procure que las gestiones que se realizarán para implementar las estrategias sean divididas entre los distintos integrantes del Consejo, para evitar que recaiga sobre él o ella toda la responsabilidad de su implementación.<br><br>
+                    En este paso es importante que los equipos directivos, tomen un rol activo para la instalación de las estrategias de compromiso escolar, debido a su mayor incidencia en la toma de decisiones.
+                </p>
+            </div>
         </div>
 
-        <button class="accordion2">Preguntas guías para el Consejo Escolar</button>
-        <div class="panel2">
-            <ul>
-                <li>¿Qué estrategias existentes en nuestra escuela son pertinentes para fomentar el compromiso escolar y qué podría potenciarse para atender las necesidades reportadas por esta plataforma?</li> <br />
-                <li>¿Qué estrategias descritas en esta plataforma podrían ser implementadas en nuestra escuela?</li><br />
-                <li>¿Qué pasos tenemos que seguir para gestionar la implementación de la estrategia?</li><br />
-                <li>¿Qué actores adicionales al Consejo Escolar se tienen que involucrar en la ejecución de las estrategias?</li><br />
-                <li>¿Cómo comprometer su participación? </li><br />
-            </ul>
-        </div>
-
-        <button class="accordion2">Posibles dificultades y sugerencias para enfrentarlas</button>
-        <div class="panel2">
-            <p class="acordion2">
-                Implementar cualquier cambio es un desafío, y si bien, en un inicio puede implicar una mayor carga laboral, se espera que las estrategias implementadas puedan a mediano plazo tener un impacto que beneficie a toda la comunidad escolar.<br><br>
-                Por eso se sugiere que las responsabilidades sobre la gestión e implementación estén repartidas entre varias personas del equipo del Consejo Escolar y en el resto de la comunidad educativa, para ello se debería tener una reunión especial con aquellos y aquellas profesoras y/o otros actores que estén involucrados en la implementación de las estrategias de manera tal de promover el sentido del trabajo y la colaboración.<br><br>
-                Adicionalmente, al completar la ficha del plan de acción, es importante que el coordinador o la coordinadora del Consejo Escolar procure que las gestiones que se realizarán para implementar las estrategias sean divididas entre los distintos integrantes del Consejo, para evitar que recaiga sobre él o ella toda la responsabilidad de su implementación.<br><br>
-                En este paso es importante que los equipos directivos, tomen un rol activo para la instalación de las estrategias de compromiso escolar, debido a su mayor incidencia en la toma de decisiones.
-            </p>
-        </div>
         <div class="cuadro1">
             <h3>Productos esperados</h3>
             <hr class=cuadro1>
@@ -183,182 +189,221 @@
 </body>
 
 </html>
-<script>
-    var acc = document.getElementsByClassName("accordion2");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active2");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
 <style>
-     #submenu ul li a{
-        color:white;
+    /*acordeón1*/
+
+    .ui-accordion {
+        width: 62%;
+        position: absolute;
+        top: 95px;
+        right: 36%;
     }
-    #menu{
-    width: 100%;
-    margin: 0;
-    padding: 10px 0 0 0;
-    list-style: none;  
-    background: transparent;
-    background:  transparent;
-    background:  transparent;    
-    background:  transparent;    
-    background:  transparent;
-    background:  transparent;
-    background:  transparent;
-    position: absolute;
-    top:35px;
-}
 
-#menu li{
-    float: right;
-    padding: 0 0 10px 0;
-    position: relative;
-    right:10%;
-}
+    .ui-accordion-header {
+        border-top-color: #999999;
+        background-color: #666666;
+        font-weight: bolder;
+        color: #999999;
+    }
 
-#menu a{
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    float: left;
-    height: 25px;
-    padding: 0 25px;
-    text-decoration: none;
-   
-}
+    .ui-accordion-header-active {
+        border-top-color: #da9600;
+        background-color: #f27611;
+        font-size: bolder;
+        color: white;
+    }
 
-#menu li:hover > a{
-    color: #22a2b0;
-}
+    .ui-icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -.25em;
+        position: relative;
+        text-indent: -99999px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        left: 95%;
+    }
 
-*html #menu li a:hover{ /* IE6 */
-    color: black;
+    .ui-accordion-content-active {
+        border-style: 1px solid;
+        border-color: #da9600;
+        background-color: transparent;
+        color: white;
 
-}
+    }
 
-#menu li:hover > ul{
-    display: block;
-}
+    #submenu ul li a {
+        color: white;
+    }
 
-/* Sub-menu */
+    #menu {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        position: absolute;
+        top: 35px;
+    }
 
-#menu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;    
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    z-index: 99999;    
-    background: #22a2b0;
-    border-radius: 2px;
-}
+    #menu li {
+        float: right;
+        padding: 0 0 10px 0;
+        position: relative;
+        right: 10%;
+    }
 
-#menu ul li{
-    float: none;
-    margin: 0;
-    padding: 0;
-    display: block;  
-    background-color: #22a2b0;
-}
+    #menu a {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        float: left;
+        height: 25px;
+        padding: 0 25px;
+        text-decoration: none;
 
-#menu ul li:last-child{   
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;    
-}
+    }
 
-#menu ul a{    
-    padding: 10px;
-    height: auto;
-    line-height: 1;
-    display: block;
-    white-space: nowrap;
-    float: none;
-    text-transform: none;
-}
+    #menu li:hover>a {
+        color: #22a2b0;
+    }
 
-*html #menu ul a{ /* IE6 */   
-    height: 10px;
-    width: 150px;
-}
+    *html #menu li a:hover {
+        /* IE6 */
+        color: black;
 
-*:first-child+html #menu ul a{ /* IE7 */    
-    height: 10px;
-    width: 150px;
-}
+    }
 
-#menu ul a:hover{
-    background: white;
-    color:black;
-}
+    #menu li:hover>ul {
+        display: block;
+    }
 
-#menu ul li:first-child a{
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-}
+    /* Sub-menu */
 
-#menu ul li:first-child a:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #444;
-}
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        z-index: 99999;
+        background: #22a2b0;
+        border-radius: 2px;
+    }
 
-#menu ul li:first-child a:hover:after{
-    border-bottom-color: white; 
-}
+    #menu ul li {
+        float: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        background-color: #22a2b0;
+    }
 
-#menu ul li:last-child a{
-    -moz-border-radius: 0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-}
+    #menu ul li:last-child {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 
-/* Clear floated elements */
-#menu:after{
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
+    #menu ul a {
+        padding: 10px;
+        height: auto;
+        line-height: 1;
+        display: block;
+        white-space: nowrap;
+        float: none;
+        text-transform: none;
+    }
 
-* html #menu             { zoom: 1; } /* IE6 */
-*:first-child+html #menu { zoom: 1; } /* IE7 */
+    *html #menu ul a {
+        /* IE6 */
+        height: 10px;
+        width: 150px;
+    }
 
-#menu ul li:first-child a:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #444;
-}
+    *:first-child+html #menu ul a {
+        /* IE7 */
+        height: 10px;
+        width: 150px;
+    }
 
-#menu ul li:first-child a:hover:after{
-    border-bottom-color: #04acec; 
-}
+    #menu ul a:hover {
+        background: white;
+        color: black;
+    }
+
+    #menu ul li:first-child a {
+        -moz-border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+    }
+
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
+
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: white;
+    }
+
+    #menu ul li:last-child a {
+        -moz-border-radius: 0 0 5px 5px;
+        -webkit-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    /* Clear floated elements */
+    #menu:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    * html #menu {
+        zoom: 1;
+    }
+
+    /* IE6 */
+    *:first-child+html #menu {
+        zoom: 1;
+    }
+
+    /* IE7 */
+
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
+
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: #04acec;
+    }
+
     ul.cuadro2 {
         position: absolute;
         top: 45px;
@@ -530,7 +575,7 @@
         font-size: 14px;
         margin-bottom: 20px;
         text-align-last: left;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     p.acordion2 {
@@ -541,51 +586,8 @@
         margin-bottom: 20px;
         text-align: justify;
         text-align-last: left;
-        font-weight: bold;
+        font-weight: normal;
     }
-
-    .accordion2 {
-        position: relative;
-        top: -150px;
-        right: 30%;
-        border-top-color: #999999;
-        background-color: #666666;
-        cursor: pointer;
-        padding: 18px;
-        width: 90%;
-        height: 0%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-        color: #bbbbbb;
-        font-weight: bolder;
-    }
-
-    .active2,
-    .accordion2:hover {
-        border-top-color: #da9600;
-        background-color: #f27611;
-        color: white;
-    }
-
-    .panel2 {
-        position: relative;
-        top: -150px;
-        right: 30%;
-        border-color: #da9600;
-        border-width: 1px;
-        border-style: solid;
-        background-color: transparent;
-        border-radius: 0px 5px 5px 5px;
-        width: 85%;
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    }
-
     img.navegador {
         position: absolute;
         top: 8px;

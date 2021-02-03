@@ -15,6 +15,8 @@
         <ul id="submenu">
             <li><a href="paso1.php">Paso 1</a></li>
             <li><a href="paso2.php">Paso 2</a></li>
+            <li><a href="paso3.php">Paso 3</a></li>
+            <li><a href="paso4.php">Paso 4</a></li>
         </ul>
     </li>
     <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
@@ -334,6 +336,7 @@
         right: 18%;
         top: 120px;
         width: 48%;
+
     }
 
     p.p2 {
@@ -344,10 +347,11 @@
         margin-bottom: 20px;
         text-align: justify;
         text-align-last: left;
-        position: relative;
+        position: absolute;
         left: 60%;
-        top: -600px;
-        width: 48%;
+        top: 70px;
+		margin-left:-70px;
+        width: 30%;
     }
 
     p.p3 {
@@ -359,7 +363,9 @@
         text-align: justify;
         text-align-last: left;
         position: relative;
-        top: -570px;
+        top: 70px;
+		margin-left:-20px;
+		width:60%;
         left: 60%;
     }
 
