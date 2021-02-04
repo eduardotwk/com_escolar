@@ -137,8 +137,6 @@
             <ul class=cuadro1>
                 <li> 1° Reunión del Consejo Escolar para seleccionar un coordinador(a) del Consejo Escolar y planificar las reuniones del año.</li>
                 <li>Capacitación del Consejo Escolar en compromiso escolar a través de la plataforma online.</li>
-                <li>Contacto del coordinador(a) con equipo de investigación para resolver dudas
-                    y analizar facilitadores / obstaculizadores del proceso</li>
             </ul>
         </div>
         <div class="cuadro2">
