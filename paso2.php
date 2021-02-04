@@ -70,13 +70,14 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="busca_estrategia.php">
+                      
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
                                 Buscador de<br />estrategias
                     </th>
                 </tr>
                 <tr>
                     <th>
+                        <a href="https://www.compromisoescolar.com/inicia_reportes.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
                             Resultados de<br />medición
                     </th>
@@ -132,7 +133,10 @@
             <hr class=cuadro2>
             </hr>
             <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
-                <image src="img/menu_flotante/3.-Instrumentos.png" style="width:40px;height: 40px;position:absolute;top:65px;left:5%">
+                <image src="img/menu_flotante/3.-Instrumentos.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
+            </a>
+            <a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+                <image src="img/Botones/Manual_plataforma.png" style="width:60px;height: 35px;position:absolute;top:55px;left:1%">
             </a>
             <ul class="cuadro2">
                 <li>Manual de Usuario de la Plataforma de Compromiso Escolar</li>
@@ -506,6 +510,7 @@
         margin-bottom: 20px;
         text-align-last: left;
         color: white;
+        text-align: justify;
     }
 
     hr.cuadro1 {

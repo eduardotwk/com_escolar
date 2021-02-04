@@ -75,6 +75,7 @@
                 </tr>
                 <tr>
                     <th>
+                        <a href="https://www.compromisoescolar.com/inicia_reportes.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
                             Resultados de<br />medición
                     </th>
@@ -124,6 +125,12 @@
             <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
             <hr class=cuadro2>
             </hr>
+            <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
+                <image src="img/menu_flotante/3.-Instrumentos.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
+            </a>
+            <a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+                <image src="img/Botones/Manual_plataforma.png" style="width:60px;height: 35px;position:absolute;top:55px;left:1%">
+            </a>
             <ul class="cuadro2">
                 <li>Manual de Usuario de la Plataforma de Compromiso Escolar</li>
                 <li>Resultados de la medición del compromiso escolar</li>
@@ -397,7 +404,7 @@
     ul.cuadro2 {
         position: absolute;
         top: 45px;
-        right: 12%;
+        right: -6%;
         width: 80%;
         font-family: "Open Sans", sans-serif;
         font-weight: lighter;
@@ -496,6 +503,7 @@
         margin-bottom: 20px;
         text-align-last: left;
         color: white;
+        text-align: justify;
     }
 
     hr.cuadro1 {

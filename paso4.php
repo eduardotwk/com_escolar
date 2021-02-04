@@ -51,7 +51,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="calendario.php">
+                        
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
                                 Calendario<br />de actividades
                     </th>
@@ -77,6 +77,7 @@
                 </tr>
                 <tr>
                     <th>
+                        <a href="https://www.compromisoescolar.com/inicia_reportes.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
                             Resultados de<br />medición
                     </th>
@@ -123,8 +124,8 @@
             </hr>
             <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
             <ul class=cuadro1>
-                <li> Revisar las estrategias de intervención disponibles en la plataforma y seleccionar la o las más pertinentes al contexto escolar.</li><br />
-                <li>4° reunión del Consejo Escolar para completar la Ficha del Plan de Acción.</li><br>
+                <li> Revisar las estrategias de intervención disponibles en la plataforma y seleccionar la o las más pertinentes al contexto escolar.</li>
+                <li>4° reunión del Consejo Escolar para completar la Ficha del Plan de Acción.</li>
                 <li>Planificar la gestión de la(s) estrategia(s).</li>
             </ul>
         </div>
@@ -133,6 +134,12 @@
             <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
             <hr class=cuadro2>
             </hr>
+            <a href="#">
+                <image src="img/menu_flotante/4.-Fichas proceso.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
+            </a>
+            <a href="#">
+                <image src="img/menu_flotante/5.-Buscador de estrategias.png" style="width:30px;height: 30px;position:absolute;top:55px;left:5%">
+            </a>
             <ul class="cuadro2">
                 <li>Buscador de estrategias</li>
                 <li>Fichas SIESE (Plan de Acción del Curso)</li>
@@ -407,7 +414,7 @@
     ul.cuadro2 {
         position: absolute;
         top: 45px;
-        right: 12%;
+        right: -6%;
         width: 80%;
         font-family: "Open Sans", sans-serif;
         font-weight: lighter;
@@ -506,6 +513,7 @@
         margin-bottom: 20px;
         text-align-last: left;
         color: white;
+        text-align: justify;
     }
 
     hr.cuadro1 {

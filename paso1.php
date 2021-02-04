@@ -72,15 +72,16 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="busca_estrategia.php">
+                       
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
                                 Buscador de<br />estrategias
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
-                            Resultados de<br />medición
+                        <a href="https://www.compromisoescolar.com/inicia_reportes.php">
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
+                                Resultados de<br />medición
                     </th>
                 </tr>
             </table>
@@ -134,8 +135,8 @@
             </hr>
             <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
             <ul class=cuadro1>
-                <li> 1° Reunión del Consejo Escolar para seleccionar un coordinador(a) del Consejo Escolar y planificar las reuniones del año.</li><br />
-                <li>Capacitación del Consejo Escolar en compromiso escolar a través de la plataforma online.</li><br>
+                <li> 1° Reunión del Consejo Escolar para seleccionar un coordinador(a) del Consejo Escolar y planificar las reuniones del año.</li>
+                <li>Capacitación del Consejo Escolar en compromiso escolar a través de la plataforma online.</li>
                 <li>Contacto del coordinador(a) con equipo de investigación para resolver dudas
                     y analizar facilitadores / obstaculizadores del proceso</li>
             </ul>
@@ -145,11 +146,21 @@
             <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
             <hr class=cuadro2>
             </hr>
-
             <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
-                <image src="img/menu_flotante/1.-Capacitacion.png" style="width:40px;height: 40px;position:absolute;top:65px;left:5%">
-            </a>
-            <p class="cuadro2" style="font-family:Open Sans,sans-serif ;font-size:18px;font-weight: lighter;color:white;">Módulo de Capacitación</p>
+                        <image src="img/menu_flotante/1.-Capacitacion.png" style="width:30px;height: 30px;position:absolute;top:50px;left:5%">
+                    </a>
+                    <a href="#">
+                        <image src="img/menu_flotante/2.-Calendario.png" style="width:30px;height: 30px;position:absolute;top:83px;left:5%">
+                    </a>
+            <ul class="cuadro2" style="position: absolute;top:20px;">
+                <li> 
+                    <p class="cuadro2" style="font-family:Open Sans,sans-serif ;font-size:14px;font-weight: lighter;color:white;">Módulo de Capacitación</p>
+                </li>
+                <li>
+                    <p class="cuadro2" style="font-family:Open Sans,sans-serif ;font-size:14px;font-weight: lighter;color:white;">Calendario de actividades</p>
+                </li>
+            </ul>
+
         </div>
     </div>
 
@@ -432,7 +443,7 @@
         right: 83%;
     }
 
-    p.cuadro2 {
+    ul.cuadro2 {
         position: absolute;
         top: 63px;
         left: 21%;
@@ -506,6 +517,7 @@
         margin-bottom: 20px;
         text-align-last: left;
         color: white;
+        text-align: justify;
     }
 
     hr.cuadro1 {

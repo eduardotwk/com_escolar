@@ -44,13 +44,14 @@
         </tr>
         <tr>
           <th>
-            <a href="busca_estrategia.php">
+           
             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
               Buscador de<br />estrategias
           </th>
         </tr>
         <tr>
           <th>
+            <a href="https://www.compromisoescolar.com/inicia_reportes.php">
             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
               Resultados de<br />medición
           </th>
