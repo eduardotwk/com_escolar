@@ -136,7 +136,7 @@
                 <image src="img/menu_flotante/3.-Instrumentos.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
             </a>
             <a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
-                <image src="img/Botones/Manual_plataforma.png" style="width:60px;height: 35px;position:absolute;top:55px;left:1%">
+                <image src="img/Botones/Manual_plataforma.png" style="width:55px;height: 30px;position:absolute;top:55px;left:1%">
             </a>
             <ul class="cuadro2">
                 <li>Manual de Usuario de la Plataforma de Compromiso Escolar</li>
@@ -411,7 +411,7 @@
     ul.cuadro2 {
         position: absolute;
         top: 45px;
-        right: -6%;
+        right: -4%;
         width: 80%;
         font-family: "Open Sans", sans-serif;
         font-weight: lighter;
