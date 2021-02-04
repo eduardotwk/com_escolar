@@ -45,6 +45,7 @@
             <table>
                 <tr>
                     <th>
+                        <a href="https://www.e-mineduc.cl/login/index.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
                     </th>
                 </tr>
@@ -125,7 +126,7 @@
             <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
             <hr class=cuadro2>
             </hr>
-            <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
+            <a href="https://www.compromisoescolar.com/inicia_reportes.php">
                 <image src="img/menu_flotante/6.-Resultados.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
             </a>
             <a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">

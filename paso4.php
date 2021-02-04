@@ -46,6 +46,7 @@
             <table>
                 <tr>
                     <th>
+                      <a href="https://www.e-mineduc.cl/login/index.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
                     </th>
                 </tr>
