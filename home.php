@@ -12,7 +12,9 @@
     <h1>Sistema Integrado de <br />Evaluación, Seguimiento y <br />Estrategias de Promoción de <br />
       Compromiso Estudiantil y<br />Factores Contextuales<h2>(SIESE)</h2>
     </h1>
-     <a href="paso1.php"><image class="rueda" src="img/Rueda_pasos_Hover_P1.png"></image></a>
+    <a href="paso1.php">
+      <image class="rueda" src="img/Rueda_pasos_Hover_P1.png"></image>
+    </a>
     <p>El compromiso escolar facilita una activa participación <br />del estudiante con su escuela y su proceso de <br />aprendizaje. Con el objetivo de promover la retención <br />escolar y trayectorias educativas positivas de todas y<br /> todos los estudiantes en los establecimientos escolares,<br /> les invitamos a conocer e implementar los seis <br /> pasos del SIESE.</p>
 
     <div id="table">
@@ -20,20 +22,21 @@
         <tr>
           <th>
             <a href="https://www.e-mineduc.cl/login/index.php">
-            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
+              <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
           </th>
         </tr>
         <tr>
           <th>
-         
+
             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
               Calendario<br />de actividades
           </th>
         </tr>
         <tr>
           <th>
-          <a href="https://www.compromisoescolar.com/inicia_encuesta.php"><image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
-              Instrumentos<br />de medición
+            <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
+              <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
+                Instrumentos<br />de medición
           </th>
         </tr>
         <tr>
@@ -44,7 +47,7 @@
         </tr>
         <tr>
           <th>
-           
+
             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
               Buscador de<br />estrategias
           </th>
@@ -52,8 +55,8 @@
         <tr>
           <th>
             <a href="https://www.compromisoescolar.com/inicia_reportes.php">
-            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
-              Resultados de<br />medición
+              <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
+                Resultados de<br />medición
           </th>
         </tr>
       </table>
@@ -109,18 +112,19 @@
 
 </html>
 <style>
-   a{
-        color: #000000;
-        font-family: "Open Sans", sans-serif;
-        font-size: 10px;
-        text-decoration: none;
-    }
+  a {
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+  }
+
   img.alineadoTextoImagenAbajo {
     vertical-align: text-bottom;
   }
 
   #main-header {
-    background: #183e7c;
+    background: white;
     color: white;
     height: 100px;
   }

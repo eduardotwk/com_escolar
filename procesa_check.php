@@ -1,6 +1,8 @@
 <?php
 include 'databaseconnect.php';
-$consulta = "select * from ficha";
+$result = $connexion->query('SELECT nombre_fichas FROM ficha');
+$row = $result->fetch_assoc();
+$criterios = $row['nombre_fichas'];
 $flag=false;
 $where=" where ";
 

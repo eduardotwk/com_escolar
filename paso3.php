@@ -126,7 +126,7 @@
             <hr class=cuadro2>
             </hr>
             <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
-                <image src="img/menu_flotante/3.-Instrumentos.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
+                <image src="img/menu_flotante/6.-Resultados.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
             </a>
             <a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
                 <image src="img/Botones/Manual_plataforma.png" style="width:60px;height: 35px;position:absolute;top:55px;left:1%">
@@ -474,7 +474,7 @@
 
     div.cuadro2 {
         position: absolute;
-        background-color: #da9600;
+        background-color: #f27611;
         border-radius: 5px;
         left: 63%;
         top: 650px;

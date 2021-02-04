@@ -488,7 +488,7 @@
 
     div.cuadro2 {
         position: absolute;
-        background-color: #da9600;
+        background-color: #f27611;
         border-radius: 5px;
         left: 63%;
         top: 650px;
