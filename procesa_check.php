@@ -77,7 +77,6 @@ if (isset($_POST['enviar'])) {
 		echo "  <tbody><tr><td><li class = contenido>".utf8_encode($row["nombre_ficha"])."</li></td></tr> </tbody>";
 		}
 	echo	"</table>";
-
 	} else {
 		echo "<p class=criterios><b>Por favor seleccione al menos un criterio</b></p>";
 	}

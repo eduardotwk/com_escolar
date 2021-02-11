@@ -114,7 +114,7 @@
             <h4>Preguntas guías para el Consejo Escolar</h4>
             <div>
                 <ul>
-                    <li>¿Quiénes van a forman parte del Consejo?</li> <br />
+                    <li>¿Quiénes van a formar parte del Consejo?</li> <br />
                     <li>¿Cuenta el Consejo con la participación de estudiantes y apoderados?</li><br />
                     <li>¿Qué otros actores que apoyan a las y los estudiantes dentro de la escuela se podrían sumar?</li><br />
                     <li>¿Quién será el coordinador/a responsable de convocar a las reuniones y completar las fichas?</li><br />
@@ -154,7 +154,7 @@
                     </a>
             <ul class="cuadro2" style="position: absolute;top:20px;">
                 <li> 
-                    <p class="cuadro2" style="font-family:Open Sans,sans-serif ;font-size:14px;font-weight: lighter;color:white;">Módulo de Capacitación</p>
+                    <p class="cuadro2" style="font-family:Open Sans,sans-serif ;font-size:14px;font-weight: lighter;color:white;">Capacitación</p>
                 </li>
                 <li>
                     <p class="cuadro2" style="font-family:Open Sans,sans-serif ;font-size:14px;font-weight: lighter;color:white;">Calendario de actividades</p>

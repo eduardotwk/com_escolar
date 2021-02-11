@@ -3,9 +3,9 @@
 
 <head>
     <script src="https://kit.fontawesome.com/1652fc71a3.js" crossorigin="anonymous"></script>
-   
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>
         $(document).ready(function() {
             $("#test").CreateMultiCheckBox({
@@ -114,11 +114,15 @@
                 this.val(arr);
             },
         });
+        
+         
     </script>
+
 </head>
 
 <body>
     <style>
+      
         th.tittable {
             color: #22a2b0;
             font-family: "Open Sans", sans-serif;
@@ -148,7 +152,7 @@
             border-radius: 4px;
             width: 220%;
             background-color: white;
-            border-color:#da9600
+            border-color: #da9600
         }
 
         p.criterios {
@@ -582,7 +586,7 @@
             font-size: 18px;
         }
 
-                     /*
+        /*
                       * Navegación
                       */
         nav {
@@ -842,6 +846,4 @@
         </div>
     </footer> <!-- / #main-footer -->
 </body>
-
-
 </html>
