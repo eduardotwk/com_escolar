@@ -10,12 +10,8 @@
         $(document).ready(function() {
             $("#test").CreateMultiCheckBox({
                 width: '370px',
-                defaultText: 'Select Below',
-                height: '250px'
-            });
-        });
-
-        $(document).ready(function() {
+                height: '250px',
+            });   
             $(document).on("click", ".MultiCheckBox", function() {
                 var detail = $(this).next();
                 detail.show();
@@ -114,15 +110,15 @@
                 this.val(arr);
             },
         });
-        
-         
+        function borra(){
+            alert('hola');
+        }
     </script>
 
 </head>
 
 <body>
     <style>
-      
         th.tittable {
             color: #22a2b0;
             font-family: "Open Sans", sans-serif;
@@ -475,6 +471,7 @@
             white-space: nowrap;
             float: none;
             text-transform: none;
+            color:white;
         }
 
         *html #menu ul a {
@@ -730,10 +727,10 @@
 
         <!-- Contenido -->
 
-        <form action="buscar.php" method="post">
+        <form action="buscar.php" method="post" id="buscar">
             <div style="width: 254px;">
 
-                <select id="test">
+                <select id="test" onfocus ="borra();">
                     <option name="check_lista[]" value="co_co">Compromiso Cognitivo</option>
                     <option name="check_lista[]" value="co_af">Compromiso Afectivo</option>
                     <option name="check_lista[]" value="co_con">Compromiso Conductual</option>
