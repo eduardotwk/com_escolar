@@ -10,6 +10,7 @@ if (isset($_POST['enviar'])) {
 		$checked_contador = count($_POST['check_lista']);
 
 		/* Recorres el arreglo con las opciones seleccionadas y vas completando el where*/
+		echo "<div id='respContent'>";
 		echo "<p class=tit>Criterios Seleccionados:</p>";
 		echo "<hr class=subtitulo>";
 		foreach ($_POST['check_lista'] as $seleccion) {
@@ -69,6 +70,7 @@ if (isset($_POST['enviar'])) {
 		$consulta .= $where;
 		//echo "<br/><br/><br/><br/><br/><br//><br/><br/><br/><br/><br/><br/><b>Nota :</b> <span>La query que salio " . $consulta . "</span>";
 		//echo "<br/><b>Nota :</b> <span>Ahora ya tienes el acceso a la query.</span>";
+		echo "</div>";
 		$result = $conn->query($consulta);
 		echo	"<table id=fichas class=fichas>";
 		echo " <thead><tr><th class= tittable>Estrategias obtenidas para los criterios seleccionados: </th></tr></thead>";
@@ -78,6 +80,6 @@ if (isset($_POST['enviar'])) {
 		}
 	echo	"</table>";
 	} else {
-		echo "<p class=criterios><b>Por favor seleccione al menos un criterio</b></p>";
+		echo "<div id='respContent'><p class=criterios><b>Por favor seleccione al menos un criterio</b></p></div>";
 	}
 }

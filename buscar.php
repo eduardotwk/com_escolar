@@ -15,8 +15,9 @@
             $(document).on("click", ".MultiCheckBox", function() {
                 var detail = $(this).next();
                 detail.show();
+                clearResp();
             });
-
+            
             $(document).on("click", ".MultiCheckBoxDetailHeader input", function(e) {
                 e.stopPropagation();
                 var hc = $(this).prop("checked");
@@ -110,8 +111,8 @@
                 this.val(arr);
             },
         });
-        function borra(){
-            alert('hola');
+        function clearResp(){
+            document.getElementById("respContent").innerHTML = "";
         }
     </script>
 
