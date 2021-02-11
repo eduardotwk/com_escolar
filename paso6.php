@@ -3,6 +3,14 @@
 
 <head>
     <script src="https://kit.fontawesome.com/1652fc71a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+    </script>
 </head>
 
 <body>
@@ -10,23 +18,23 @@
         <img class="logo" src="img/Header/Logo plataforma menor.png">
         <img class="lapiz" src="img/Header/compromiso.png">
 
-        
+
         <ul id="menu" style="font-weight: normal;">
-    <li>
-        <a href="#">Pasos</a>
-        <ul id="submenu"  class=menu style="font-weight: normal;">
-            <li><a href="paso1.php">Paso 1</a></li>
-            <li><a href="paso2.php">Paso 2</a></li>
-            <li><a href="paso3.php">Paso 3</a></li>
-            <li><a href="paso4.php">Paso 4</a></li>
-            <li><a href="paso5.php">Paso 5</a></li>
-            <li><a href="paso6.php">Paso 6</a></li>
+            <li>
+                <a href="#">Pasos</a>
+                <ul id="submenu" class=menu style="font-weight: normal;">
+                    <li><a href="paso1.php">Paso 1</a></li>
+                    <li><a href="paso2.php">Paso 2</a></li>
+                    <li><a href="paso3.php">Paso 3</a></li>
+                    <li><a href="paso4.php">Paso 4</a></li>
+                    <li><a href="paso5.php">Paso 5</a></li>
+                    <li><a href="paso6.php">Paso 6</a></li>
+                </ul>
+            </li>
+            <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
+            <li><a href="presentacion.php">Presentación</a></li>
+            <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
         </ul>
-    </li>
-    <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
-    <li><a href="presentacion.php">Presentación</a></li>
-    <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
-</ul>
     </header><!-- / #main-header -->
 
     <div class="container">
@@ -39,14 +47,14 @@
             <table>
                 <tr>
                     <th>
+                    <a href="https://www.e-mineduc.cl/login/index.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <a href="calendario.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
-                            Calendario<br />de actividades
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
+                                Calendario<br />de actividades
                     </th>
                 </tr>
                 <tr>
@@ -70,56 +78,62 @@
                 </tr>
                 <tr>
                     <th>
+                    <a href="https://www.compromisoescolar.com/inicia_reportes.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
                             Resultados de<br />medición
                     </th>
                 </tr>
             </table>
         </div>
-
-        <button class="accordion2 active2">Descripción</button>
-        <div class="panel2" style="max-height: 243px;">
-            <p class="acordion2">
-            Al final del año escolar se sugiere hacer un análisis del proceso, esto es, reflexionar sobre los aprendizajes, las dificultades y los obstaculizadores, para luego completar la ficha de cierre. Toda esta información será de relevancia para realizar los ajustes a la implementación del SIESE en el año subsiguiente, una vez que se hayan aplicado nuevamente los instrumentos de compromiso escolar.  <br /><br />
-            Para dicho objetivo, esta plataforma entregará un reporte del nivel de compromiso escolar de esta nueva medición, pero también un reporte de seguimiento para evaluar los cambios  entre un año y otro en los niveles de compromiso escolar y/o factores contextuales por cada curso. Así, se espera que el Consejo Escolar pueda tomar decisiones de manera informada para seguir fortaleciendo el compromiso escolar en sus estudiantes.  
-            </p>
-        </div>
-
-        <button class="accordion2">Preguntas guías para el Consejo Escolar</button>
-        <div class="panel2">
-            <ul>
+        <div id="accordion">
+            <h4>Descripción</h4>
+            <div>
+                <p class="acordion2">
+                    Al final del año escolar se sugiere hacer un análisis del proceso, esto es, reflexionar sobre los aprendizajes, las dificultades y los obstaculizadores, para luego completar la ficha de cierre. Toda esta información será de relevancia para realizar los ajustes a la implementación del SIESE en el año subsiguiente, una vez que se hayan aplicado nuevamente los instrumentos de compromiso escolar. <br /><br />
+                    Para dicho objetivo, esta plataforma entregará un reporte del nivel de compromiso escolar de esta nueva medición, pero también un reporte de seguimiento para evaluar los cambios entre un año y otro en los niveles de compromiso escolar y/o factores contextuales por cada curso. Así, se espera que el Consejo Escolar pueda tomar decisiones de manera informada para seguir fortaleciendo el compromiso escolar en sus estudiantes.
+                </p>
+            </div>
+       
+                <h4>Preguntas guías para el Consejo Escolar</h4>
+             <div>
+                <ul>
                 <li>¿Cuáles fueron los principales resultados de las estrategias implementadas?</li> <br />
                 <li>¿Cómo fue el proceso de implementación del SIESE?</li><br />
                 <li>¿Cuáles fueron los principales facilitadores y/o obstaculizadores?</li><br />
                 <li>¿Qué mejoras se pueden implementar en la implementación del SIESE para el próximo año?</li><br />
-            </ul>
-        </div>
-
-        <button class="accordion2">Posibles dificultades y sugerencias para enfrentarlas</button>
-        <div class="panel2">
+                </ul>
+             </div>
+                 <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
+             <div>
             <p class="acordion2">
-            Algunos cambios en el compromiso escolar se pueden visualizar a corto plazo, mientras que otros a mediano y largo plazo, esto es parte del proceso, por lo que no hay que decepcionarse si no se ven cambios tan significativos en esta primera evaluación del SIESE. En la medida que la o las estrategias que acá se pusieron a prueba (a nivel de curso) se vean complementadas con cambios a nivel de escuela y estrategias de tipo personalizada, es probable que se perciban más cambios entre una aplicación y otra.
+                Algunos cambios en el compromiso escolar se pueden visualizar a corto plazo, mientras que otros a mediano y largo plazo, esto es parte del proceso, por lo que no hay que decepcionarse si no se ven cambios tan significativos en esta primera evaluación del SIESE. En la medida que la o las estrategias que acá se pusieron a prueba (a nivel de curso) se vean complementadas con cambios a nivel de escuela y estrategias de tipo personalizada, es probable que se perciban más cambios entre una aplicación y otra.
             </p>
-        </div>
-        <div class="cuadro1">
-            <h3>Productos esperados</h3>
-            <hr class=cuadro1>
-            </hr>
-            <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
-            <ul class=cuadro1>
-                <li>10° Reunión del Consejo Escolar para  analizar el proceso.</li><br />
-                <li>Completar Ficha de Cierre</li><br>
-            </ul>
-        </div>
-        <div class="cuadro2">
-            <h3>Recursos específicos</h3>
-            <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
-            <hr class=cuadro2>
-            </hr>
-            <ul class="cuadro2">
-                <li>Fichas SIESE (Ficha de Cierre)</li>
-            </ul>
-        </div>
+             </div>
+    </div>
+    </div>
+
+    <div class="cuadro1">
+        <h3>Productos esperados</h3>
+        <hr class=cuadro1>
+        </hr>
+        <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
+        <ul class=cuadro1>
+            <li>10° Reunión del Consejo Escolar para analizar el proceso.</li>
+            <li>Completar Ficha de Cierre</li>
+        </ul>
+    </div>
+    <div class="cuadro2">
+        <h3>Recursos específicos</h3>
+        <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
+        <hr class=cuadro2>
+        </hr>
+        <a href="#">
+                <image src="img/menu_flotante/4.-Fichas proceso.png" style="width:30px;height: 30px;position:absolute;top:72px;left:5%">
+            </a>
+        <ul class="cuadro2">
+            <li>Fichas SIESE (Ficha de Cierre)</li>
+        </ul>
+    </div>
     </div>
 
     <footer id="main-footer">
@@ -170,186 +184,226 @@
 </body>
 
 </html>
-<script>
-    var acc = document.getElementsByClassName("accordion2");
-    var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active2");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
 <style>
-     #submenu ul li a{
-        color:white;
+    /*acordeón1*/
+
+    .ui-accordion {
+        width: 62%;
+        position: absolute;
+        top: 95px;
+        right: 36%;
     }
-    #menu{
-    width: 100%;
-    margin: 0;
-    padding: 10px 0 0 0;
-    list-style: none;  
-    background: transparent;
-    background:  transparent;
-    background:  transparent;    
-    background:  transparent;    
-    background:  transparent;
-    background:  transparent;
-    background:  transparent;
-    position: absolute;
-    top:35px;
-}
 
-#menu li{
-    float: right;
-    padding: 0 0 10px 0;
-    position: relative;
-    right:10%;
-}
+    .ui-accordion-header {
+        border-top-color: #999999;
+        background-color: #666666;
+        font-weight: bolder;
+        color: #999999;
+    }
 
-#menu a{
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    float: left;
-    height: 25px;
-    padding: 0 25px;
-    text-decoration: none;
-   
-}
+    .ui-accordion-header-active {
+        border-top-color: #da9600;
+        background-color: #f27611;
+        font-size: bolder;
+        color: white;
+    }
 
-#menu li:hover > a{
-    color: #22a2b0;
-}
+    .ui-icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -.25em;
+        position: relative;
+        text-indent: -99999px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        left: 95%;
+    }
 
-*html #menu li a:hover{ /* IE6 */
-    color: black;
+    .ui-accordion-content-active {
+        border-style: 1px solid;
+        border-color: #da9600;
+        background-color: transparent;
+        color: white;
 
-}
+    }
 
-#menu li:hover > ul{
-    display: block;
-}
+    #submenu ul li a {
+        color: white;
+    }
 
-/* Sub-menu */
+    #menu {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        position: absolute;
+        top: 35px;
+    }
 
-#menu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;    
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    z-index: 99999;    
-    background: #22a2b0;
-    border-radius: 2px;
-}
+    #menu li {
+        float: right;
+        padding: 0 0 10px 0;
+        position: relative;
+        right: 10%;
+    }
 
-#menu ul li{
-    float: none;
-    margin: 0;
-    padding: 0;
-    display: block;  
-    background-color: #22a2b0;
-}
+    #menu a {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        float: left;
+        height: 25px;
+        padding: 0 25px;
+        text-decoration: none;
 
-#menu ul li:last-child{   
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;    
-}
+    }
 
-#menu ul a{    
-    padding: 10px;
-    height: auto;
-    line-height: 1;
-    display: block;
-    white-space: nowrap;
-    float: none;
-    text-transform: none;
-}
+    #menu li:hover>a {
+        color: #22a2b0;
+    }
 
-*html #menu ul a{ /* IE6 */   
-    height: 10px;
-    width: 150px;
-}
+    *html #menu li a:hover {
+        /* IE6 */
+        color: black;
 
-*:first-child+html #menu ul a{ /* IE7 */    
-    height: 10px;
-    width: 150px;
-}
+    }
 
-#menu ul a:hover{
-    background: white;
-    color:black;
-}
+    #menu li:hover>ul {
+        display: block;
+    }
 
-#menu ul li:first-child a{
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-}
+    /* Sub-menu */
 
-#menu ul li:first-child a:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #444;
-}
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        z-index: 99999;
+        background: #22a2b0;
+        border-radius: 2px;
+    }
 
-#menu ul li:first-child a:hover:after{
-    border-bottom-color: white; 
-}
+    #menu ul li {
+        float: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        background-color: #22a2b0;
+    }
 
-#menu ul li:last-child a{
-    -moz-border-radius: 0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-}
+    #menu ul li:last-child {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 
-/* Clear floated elements */
-#menu:after{
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
+    #menu ul a {
+        padding: 10px;
+        height: auto;
+        line-height: 1;
+        display: block;
+        white-space: nowrap;
+        float: none;
+        text-transform: none;
+    }
 
-* html #menu             { zoom: 1; } /* IE6 */
-*:first-child+html #menu { zoom: 1; } /* IE7 */
+    *html #menu ul a {
+        /* IE6 */
+        height: 10px;
+        width: 150px;
+    }
 
-#menu ul li:first-child a:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #444;
-}
+    *:first-child+html #menu ul a {
+        /* IE7 */
+        height: 10px;
+        width: 150px;
+    }
 
-#menu ul li:first-child a:hover:after{
-    border-bottom-color: #04acec; 
-}
+    #menu ul a:hover {
+        background: white;
+        color: black;
+    }
+
+    #menu ul li:first-child a {
+        -moz-border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+    }
+
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
+
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: white;
+    }
+
+    #menu ul li:last-child a {
+        -moz-border-radius: 0 0 5px 5px;
+        -webkit-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    /* Clear floated elements */
+    #menu:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    * html #menu {
+        zoom: 1;
+    }
+
+    /* IE6 */
+    *:first-child+html #menu {
+        zoom: 1;
+    }
+
+    /* IE7 */
+
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
+
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: #04acec;
+    }
+
     ul.cuadro2 {
         position: absolute;
-        top: 45px;
-        right: 12%;
+        top: 65px;
+        right: -5%;
         width: 80%;
         font-family: "Open Sans", sans-serif;
         font-weight: lighter;
@@ -419,7 +473,7 @@
 
     div.cuadro2 {
         position: absolute;
-        background-color: #da9600;
+        background-color: #f27611;
         border-radius: 5px;
         left: 63%;
         top: 650px;
@@ -517,7 +571,7 @@
         font-size: 14px;
         margin-bottom: 20px;
         text-align-last: left;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     p.acordion2 {
@@ -528,49 +582,7 @@
         margin-bottom: 20px;
         text-align: justify;
         text-align-last: left;
-        font-weight: bold;
-    }
-
-    .accordion2 {
-        position: relative;
-        top: -150px;
-        right: 30%;
-        border-top-color: #999999;
-        background-color: #666666;
-        cursor: pointer;
-        padding: 18px;
-        width: 90%;
-        height: 0%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-        color: #bbbbbb;
-        font-weight: bolder;
-    }
-
-    .active2,
-    .accordion2:hover {
-        border-top-color: #da9600;
-        background-color: #f27611;
-        color: white;
-    }
-
-    .panel2 {
-        position: relative;
-        top: -150px;
-        right: 30%;
-        border-color: #da9600;
-        border-width: 1px;
-        border-style: solid;
-        background-color: transparent;
-        border-radius: 0px 5px 5px 5px;
-        width: 85%;
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
+        font-weight: normal;
     }
 
     img.navegador {
@@ -587,7 +599,7 @@
         margin-left: -30%;
         width: 128%;
         position: relative;
-        top: -180px;
+        top: -210px;
 
     }
 

@@ -17,6 +17,8 @@
             <li><a href="paso2.php">Paso 2</a></li>
             <li><a href="paso3.php">Paso 3</a></li>
             <li><a href="paso4.php">Paso 4</a></li>
+            <li><a href="paso5.php">Paso 5</a></li>
+            <li><a href="paso6.php">Paso 6</a></li>
         </ul>
     </li>
     <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
