@@ -1,6 +1,6 @@
 <?php
 include 'databaseconnect.php';
-$consulta = "select * from ficha";
+$consulta = "select * from ce_ficha";
 $flag = false;
 $where = " where ";
 

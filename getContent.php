@@ -82,10 +82,10 @@
 <?php
 if (!empty($_GET['id_ficha'])) {
     //DB details
-    $dbHost = 'localhost';
+    $dbHost = '167.71.191.60';
     $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'compromisoescolar';
+    $dbPassword = '92mbx6#p^wq@hac^';
+    $dbName = 'compromiso_escolar_corfo';
 
     //Create connection and select DB
     $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
@@ -95,7 +95,7 @@ if (!empty($_GET['id_ficha'])) {
     }
 
     //get content from database
-    $query = $db->query("SELECT * FROM documentos INNER JOIN ficha ON documentos.id_ficha
+    $query = $db->query("SELECT * FROM ce_documentos INNER JOIN ficha ON documentos.id_ficha
  = ficha.id_ficha where documentos.id_ficha = {$_GET['id_ficha']}");
 
     if ($query->num_rows > 0) {

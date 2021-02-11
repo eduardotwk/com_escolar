@@ -73,7 +73,7 @@
                 </tr>
                 <tr>
                     <th>
-                        
+                        <a href="buscar.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
                             Buscador de<br />estrategias
                     </th>
