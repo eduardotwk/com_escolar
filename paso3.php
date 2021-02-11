@@ -321,6 +321,7 @@
         white-space: nowrap;
         float: none;
         text-transform: none;
+        color:white;
     }
 
     *html #menu ul a {
