@@ -126,7 +126,7 @@
     <style>
         th.tittable {
             color: #22a2b0;
-            font-family: "Open Sans", sans-serif;
+            font-family: "Fira Sans Condensed", sans-serif;
             font-size: 14px;
             line-height: 1.4;
             margin-bottom: 20px;
@@ -138,7 +138,7 @@
 
         li.contenido {
             color: #fc455c;
-            font-family: "Open Sans", sans-serif;
+            font-family: "Fira Sans Condensed", sans-serif;
             font-size: 14px;
             position: relative;
             left: 5%;
@@ -191,7 +191,7 @@
         li.criterios {
             color: #666666;
             font-weight: normal;
-            font-family: "Open Sans", sans-serif;
+            font-family: "Fira Sans Condensed", sans-serif;
             font-size: 18px;
             position: relative;
             top: 150px;
@@ -212,7 +212,7 @@
 
         p.tit {
             color: #22a2b0;
-            font-family: "Fira Sans ExtraBold", sans-serif;
+            font-family: "Fira Sans Condensed", sans-serif;
             font-size: 18px;
             font-weight: 800;
             line-height: 1.2;

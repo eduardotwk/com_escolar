@@ -907,12 +907,13 @@
             <table>
                 <tr>
                     <th>
+                    <a href="https://www.e-mineduc.cl/login/index.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <a href="calendario.php">
+                        <a href="#">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
                                 Calendario<br />de actividades
                     </th>
@@ -932,12 +933,14 @@
                 </tr>
                 <tr>
                     <th>
+                    <a href="buscar.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
                             Buscador de<br />estrategias
                     </th>
                 </tr>
                 <tr>
                     <th>
+                    <a href="https://www.compromisoescolar.com/inicia_reportes.php">
                         <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
                             Resultados de<br />medición
                     </th>
