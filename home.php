@@ -2,25 +2,50 @@
 <html>
 
 <head>
-<link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script>
     function torta(rueda, trozo) {
       var pie;
       pie = document.getElementById('trozo');
       if (trozo == 'p1') {
         pie.className = 'p1';
+        $("#p1").click(function() {
+          window.location.href = "paso1.php";
+          return false; //Just in case if it is a link prevent default behavior
+        });
       } else if (trozo == 'p2') {
         pie.className = 'p2';
+        $("#p2").click(function() {
+          window.location.href = "paso2.php";
+          return false; //Just in case if it is a link prevent default behavior
+        });
       } else if (trozo == 'p3') {
         pie.className = 'p3';
+        $("#p3").click(function() {
+          window.location.href = "paso3.php";
+          return false; //Just in case if it is a link prevent default behavior
+        });
       } else if (trozo == 'p4') {
         pie.className = 'p4';
+        $("#p4").click(function() {
+          window.location.href = "paso4.php";
+          return false; //Just in case if it is a link prevent default behavior
+        });
       } else if (trozo == 'p5') {
         pie.className = 'p5';
+        $("#p5").click(function() {
+          window.location.href = "paso5.php";
+          return false; //Just in case if it is a link prevent default behavior
+        });
       } else if (trozo == 'p6') {
         pie.className = 'p6';
+        $("#p6").click(function() {
+          window.location.href = "paso6.php";
+          return false; //Just in case if it is a link prevent default behavior
+        });
       }
     }
 
@@ -47,6 +72,10 @@
     .chart-skills.grande {
       width: 400px;
       height: 400px;
+      z-index: 40;
+      position: absolute;
+      top: 60px;
+      left: 50%;
     }
 
     div.chart-skills [id^="p"] {
@@ -67,7 +96,6 @@
       top: 0%;
       left: calc(50% - 50px) !important;
       z-index: -5;
-
     }
 
     #fondo img {
@@ -166,9 +194,10 @@
     }
 
     #main-header {
-      background: white;
+      background: #fc455c;
       color: white;
-      height: 100px;
+      width: 100%;
+      height: 10px;
     }
 
     #main-content header,
@@ -314,14 +343,14 @@
     <img class="logo" src="img/logo home.png">
   </header><!-- / #main-header -->
   <div class="container">
-   
+
     <h1>Sistema Integrado de <br />Evaluación, Seguimiento y <br />Estrategias de Promoción de <br />
       Compromiso Estudiantil y<br />Factores Contextuales<h2>(SIESE)</h2>
     </h1>
     <p>El compromiso escolar facilita una activa participación <br />del estudiante con su escuela y su proceso de <br />aprendizaje. Con el objetivo de promover la retención <br />escolar y trayectorias educativas positivas de todas y<br /> todos los estudiantes en los establecimientos escolares,<br /> les invitamos a conocer e implementar los seis <br /> pasos del SIESE.</p>
-    
+
     <div class="chart-skills grande">
-    <div id="fondo" class="grande"><img src="img/rueda-pasos.png"></div>
+      <div id="fondo" class="grande"><img src="img/rueda-pasos.png"></div>
       <div id="trozo" class=""></div>
       <div id="p1" onmouseover="torta('chica', 'p1');" onmouseout="limpiartorta('trozo');"></div>
       <div id="p2" onmouseover="torta('chica', 'p2');" onmouseout="limpiartorta('trozo');"></div>
@@ -340,9 +369,9 @@
         </tr>
         <tr>
           <th>
-          <a href="calendario.php">
-            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
-              Calendario<br />de actividades
+            <a href="calendario.php">
+              <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
+                Calendario<br />de actividades
           </th>
         </tr>
         <tr>

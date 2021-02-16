@@ -546,7 +546,7 @@
     }
 
     #main-header {
-        background: #25496b;
+        background:#25496b;
         color: white;
         height: 100px;
     }
@@ -700,7 +700,7 @@
     table.table2 {
         position: absolute;
         left: 77%;
-        top: 1130px;
+        top: 1110px;
         font-size: 11px;
         color: #fc455c;
         font-family: "Fira Sans Condensed", sans-serif;
@@ -715,7 +715,7 @@
     table.table3 {
         position: absolute;
         left: 88%;
-        top: 1120px;
+        top: 1105px;
         border-spacing: 2px;
     }
 

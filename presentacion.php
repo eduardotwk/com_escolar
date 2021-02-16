@@ -378,7 +378,7 @@
 
     img.presentacion {
         width: 360px;
-        height: 275px;
+        height: 300px;
         position: absolute;
         top: 60px;
         right: 62%;
