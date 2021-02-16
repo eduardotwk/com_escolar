@@ -13,195 +13,181 @@
         $(function() {
             $("#accordion").accordion();
         });
+        
+        function torta(rueda, trozo) {
+            var pie;
+            pie = document.getElementById('trozo');
+            if (trozo == 'p1') {
+                pie.className = 'p1';
+                $("#p1").click(function() {
+                    window.location.href = "paso1.php";
+                    return false; //Just in case if it is a link prevent default behavior
+                });
+            } else if (trozo == 'p2') {
+                pie.className = 'p2';
+                $("#p2").click(function() {
+                    window.location.href = "paso2.php";
+                    return false; //Just in case if it is a link prevent default behavior
+                });
+            } else if (trozo == 'p3') {
+                pie.className = 'p3';
+                $("#p3").click(function() {
+                    window.location.href = "paso3.php";
+                    return false; //Just in case if it is a link prevent default behavior
+                });
+            } else if (trozo == 'p4') {
+                pie.className = 'p4';
+                $("#p4").click(function() {
+                    window.location.href = "paso4.php";
+                    return false; //Just in case if it is a link prevent default behavior
+                });
+            } else if (trozo == 'p5') {
+                pie.className = 'p5';
+                $("#p5").click(function() {
+                    window.location.href = "paso5.php";
+                    return false; //Just in case if it is a link prevent default behavior
+                });
+            } else if (trozo == 'p6') {
+                pie.className = 'p6';
+                $("#p6").click(function() {
+                    window.location.href = "paso6.php";
+                    return false; //Just in case if it is a link prevent default behavior
+                });
+            }
+        }
+
+        function limpiartorta(trozo) {
+            var pie = document.getElementById(trozo);
+
+            pie.classList.remove('p1', 'p2', 'p3', 'p4', 'p5', 'p6');
+        }
     </script>
 </head>
 
 <body>
-    <header id="main-header">
-        <img class="logo" src="img/Header/Logo plataforma menor.png">
-        <img class="lapiz" src="img/Header/compromiso.png">
-
-        <ul id="menu" style="font-weight: normal;">
-            <li>
-                <a href="#">Pasos</a>
-                <ul id="submenu" class="menu" style="font-weight: normal;">
-                    <li><a href="paso1.php">Paso 1</a></li>
-                    <li><a href="paso2.php">Paso 2</a></li>
-                    <li><a href="paso3.php">Paso 3</a></li>
-                    <li><a href="paso4.php">Paso 4</a></li>
-                    <li><a href="paso5.php">Paso 5</a></li>
-                    <li><a href="paso6.php">Paso 6</a></li>
-                </ul>
-            </li>
-            <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
-            <li><a href="presentacion.php">Presentación</a></li>
-            <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
-        </ul>
-
-    </header><!-- / #main-header -->
-
-    <div class="container">
-        <h1>Paso 2: <h1 class="color">Medición del Compromiso Escolar</h1>
-        </h1>
-        <hr>
-        </hr>
-        <img class="navegador" src="img/Pasos/Navegador-P2.png">
-        <div id="table">
-            <table>
-                <tr>
-                    <th>
-                        <a href="https://www.e-mineduc.cl/login/index.php">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                    <a href="calendario.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
-                            Calendario<br />de actividades
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
-                                Instrumentos<br />de medición
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/4.-Fichas proceso.png" style="width: 40px;" style="height: 40px;">
-                            Fichas<br />SIESE
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                            <a href="buscar.php">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
-                                Buscador de<br />estrategias
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <a href="https://www.compromisoescolar.com/inicia_reportes.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
-                            Resultados de<br />medición
-                    </th>
-                </tr>
-            </table>
-        </div>
-
-        <div id="accordion">
-            <h4>Descripción</h4>
-            <div>
-                <p class="acordion2">
-                    El compromiso escolar es un indicador básico para hacer un seguimiento a las trayectorias educativas de las y los estudiantes; asimismo, cada escuela puede identificar otros indicadores que pueden ser relevantes para su contexto, y que pueden entregar información relevante para la toma de decisiones oportunas.<br /><br />
-                    Se espera que en este paso se organice una estrategia para comunicar sobre el objetivo del SIESE al resto de la comunidad escolar. Se trata de crear una cultura del compromiso escolar a nivel de la escuela, para lo cual se pueden desarrollar distintas estrategias promocionales, las que van a depender de si estamos en un contexto presencial o no. <br /><br />
-                    Posteriormente, la idea es que las y los estudiantes puedan responder el instrumento de compromiso escolar y factores contextuales. El coordinador o la coordinadora del Consejo Escolar tiene que activar el código para que los y las estudiantes puedan responder el instrumento siguiendo las indicaciones del Manual de Usuario. <br /><br />
-                    Se busca que, en un contexto presencial, los y las estudiantes puedan disponer de un momento de la clase para responder en conjunto las preguntas de esta plataforma. Para ello se requiere que cada estudiante tenga acceso a un computador de manera individual y privada, por lo que la sala de computación puede ser un buen lugar. Dado que las preguntas pueden ser respondidas desde cualquier dispositivo, en un contexto no presencial se propone coordinar con los y las estudiantes que en una clase de zoom puedan responder los instrumentos en el mismo momento de manera sincrónica. En el caso que esta opción no sea posible, se pueden buscar otras alternativas que se ajusten a la realidad de cada establecimiento y de los y las estudiantes. Lo importante es que, si se realiza en un contexto no presencial, se pueda ir monitoreando el porcentaje de respuesta de manera tal que nadie quede sin responder. <br /><br />
-                    Se sugiere que se puedan levantar todas las respuestas en un plazo de una semana como máximo, y luego de eso que el coordinador o la coordinadora del Consejo Escolar pueda revisar el porcentaje de respuesta y/o determinar alguna estrategia adicional para motivar que todos y todas las estudiantes que no hayan respondido los instrumentos lo puedan hacer.
-                </p>
-            </div>
-            <h4>Preguntas guías para el Consejo Escolar</h4>
-            <div>
-                <ul>
-                    <li>¿Cómo sensibilizamos a toda la comunidad educativa sobre la importancia del compromiso escolar?</li> <br />
-                    <li>¿Cómo se hará la promoción de la aplicación del instrumento de compromiso escolar y factores contextuales entre los y las estudiantes, considerando si se está en un contexto presencial o no presencial?</li><br />
-                    <li>¿Quién será el responsable de la promoción?</li><br />
-                    <li>¿Quién explicará a los y las estudiantes cómo responder el instrumento de compromiso escolar y factores contextuales en esta plataforma?</li><br />
-                    <li>¿Dónde se hará la aplicación?</li><br />
-                    <li>¿Qué estrategias se implementarán para velar que quienes no hayan respondido el instrumento de compromiso escolar y factores contextuales lo puedan hacer?</li><br />
-                </ul>
-            </div>
-            <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
-            <div>
-                <p class="acordion2">
-                    En un contexto no presencial puede ser difícil que todos los y las estudiantes respondan el instrumento de compromiso escolar y factores contextuales en el plazo acordado. Por lo mismo, se sugiere incorporar a las y los apoderados en el proceso de manera tal que puedan favorecer que sus hijos e hijas respondan los instrumentos; así como también, se propone involucrar al representante estudiantil, para que motive a sus compañeros y compañeras a responder las preguntas.
-                </p>
-            </div>
-        </div>
-        <div class="cuadro1">
-            <h3>Productos esperados</h3>
-            <hr class=cuadro1>
-            </hr>
-            <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
-            <ul class=cuadro1>
-                <li> 2° Reunión del Consejo Escolar para coordinar una estrategia de promoción del compromiso escolar entre los y las estudiantes, junto con el sentido de la medición del compromiso escolar.</li>
-                <li>Medición del compromiso escolar.</li>
-                <li> Revisión del porcentaje de instrumentos respondidos</li>
-                <li> 3° Reunión del Consejo Escolar para coordinar una estrategia adicional y asignar responsabilidades para velar que aquellos(as) estudiantes que no hayan respondido el instrumento lo puedan hacer.</li>
-                <li>Revisión del porcentaje de respuestas finales</li>
-            </ul>
-        </div>
-        <div class="cuadro2">
-            <h3>Recursos específicos</h3>
-            <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
-            <hr class=cuadro2>
-            </hr>
-            <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
-                <image src="img/menu_flotante/3.-Instrumentos.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
-            </a>
-            <a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
-                <image src="img/Botones/Manual_plataforma.png" style="width:55px;height: 30px;position:absolute;top:55px;left:1%">
-            </a>
-            <ul class="cuadro2">
-                <li>Manual de Usuario de la Plataforma de Compromiso Escolar</li>
-                <li>Instrumentos de medición del compromiso escolar</li>
-            </ul>
-        </div>
-    </div>
-
-    <footer id="main-footer">
-        <div class="row">
-            <div class="imagen" style="margin: 10px;">
-                <img src="img/Logos/png/Logo UValpo.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/Logo Ufro.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/U-autonoma.png" alt="" class="imh-responsive" style="width: 100px;" style="height: 100px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/fundacion-telefonica.png" alt="" class="imh-responsive" style="width: 140px;" style="height: 140px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/Logo Mineduc.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/fondef.png" alt="" class="imh-responsive" style="width: 180px;" style="height: 180px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
-            </div>
-
-            <table class="table2">
-                <tr>
-                    <th>Capacitación</th>
-                </tr>
-                <tr>
-                    <th>Calendario de actividades</th>
-                </tr>
-                <tr>
-                    <th>Instrumentos de medición</th>
-                </tr>
-                <tr>
-                    <th>Fichas SIESE</th>
-                </tr>
-                <tr>
-                    <th>Buscador de estrategias</th>
-                </tr>
-            </table>
-            <table class="table3">
-                <tr>
-                    <th><img src="img/Botones/Manual_plataforma.png" style="width: 100px;" style="height: 100px;"></th>
-                </tr>
-                <tr>
-                    <th><img src="img/Botones/Admin_usuarios.png" style="width: 100px;" style="height: 100px;"></th>
-                </tr>
-            </table>
-        </div>
-    </footer> <!-- / #main-footer -->
-</body>
-
-</html>
 <style>
-    /*acordeón1*/
+       .chart-skills {
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            z-index: 40;
+            top: -265px;
+            left: 55%;
+        }
 
+        .chart-skills.grande {
+            width: 400px;
+            height: 400px;
+        }
+
+        div.chart-skills [id^="p"] {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .chart-skills [class^="p"] {
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+        }
+
+        #fondo {
+            position: absolute;
+            top: 0%;
+            left: calc(50% - 50px) !important;
+            z-index: -5;
+        }
+
+        #fondo img {
+            max-width: 100%;
+        }
+
+        #fondo.grande {
+            position: absolute;
+            top: 0%;
+            left: calc(50% - 200px) !important;
+            z-index: -5;
+        }
+
+        #p1 {
+            top: 0%;
+            left: 50%;
+            width: 50%;
+            height: 50%;
+            clip-path: polygon(100% 50%, 0% 100%, 0% 0%, 70% 0%);
+        }
+
+        #p2 {
+            top: 25%;
+            left: 50%;
+            width: 50%;
+            height: 50%;
+            clip-path: polygon(80% 100%, 0% 50%, 80% 0%, 100% 50%);
+        }
+
+        #p3 {
+            top: 50%;
+            left: 50%;
+            width: 52%;
+            height: 50%;
+            clip-path: polygon(0% 100%, 0% 0%, 83% 50%, 60% 100%);
+        }
+
+        #p4 {
+            top: 50%;
+            left: 0%;
+            width: 50%;
+            height: 50%;
+            clip-path: polygon(41% 100%, 13% 50%, 100% 0%, 100% 100%);
+        }
+
+        #p5 {
+            top: 25%;
+            left: -4.65%;
+            width: 56%;
+            height: 50%;
+            clip-path: polygon(20% 100%, 0% 50%, 20% 0%, 100% 50%);
+        }
+
+        #p6 {
+            top: 0%;
+            left: 6.4%;
+            width: 45%;
+            height: 50%;
+            clip-path: polygon(100% 100%, 0% 50%, 33% 0%, 100% 0%);
+        }
+
+        .p1 {
+            background-image: conic-gradient(#b2222263 16.7%, transparent 16.7% 100%);
+        }
+
+        .p2 {
+            background-image: conic-gradient(transparent 16.7%, #b2222263 16.7% 33.4%, transparent 33.4% 100%);
+        }
+
+        .p3 {
+            background-image: conic-gradient(transparent 33.4%, #b2222263 33.4% 50%, transparent 50% 100%);
+
+        }
+
+        .p4 {
+            background-image: conic-gradient(transparent 50%, #b2222263 50% 66.7%, transparent 66.7% 100%);
+        }
+
+        .p5 {
+            background-image: conic-gradient(transparent 66.7%, #b2222263 66.7% 83.4%, transparent 83.4% 100%);
+        }
+
+        .p6 {
+            background-image: conic-gradient(transparent 83.4%, #b2222263 83.4%);
+        }
+
+    /*acordeón1*/
     .ui-accordion {
         width: 62%;
         position: absolute;
@@ -761,3 +747,194 @@
         padding: 40px;
     }
 </style>
+    <header id="main-header">
+        <img class="logo" src="img/Header/Logo plataforma menor.png">
+        <img class="lapiz" src="img/Header/compromiso.png">
+
+        <ul id="menu" style="font-weight: normal;">
+            <li>
+                <a href="#">Pasos</a>
+                <ul id="submenu" class="menu" style="font-weight: normal;">
+                    <li><a href="paso1.php">Paso 1</a></li>
+                    <li><a href="paso2.php">Paso 2</a></li>
+                    <li><a href="paso3.php">Paso 3</a></li>
+                    <li><a href="paso4.php">Paso 4</a></li>
+                    <li><a href="paso5.php">Paso 5</a></li>
+                    <li><a href="paso6.php">Paso 6</a></li>
+                </ul>
+            </li>
+            <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
+            <li><a href="presentacion.php">Presentación</a></li>
+            <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
+        </ul>
+
+    </header><!-- / #main-header -->
+
+    <div class="container">
+        <h1>Paso 2: <h1 class="color">Medición del Compromiso Escolar</h1>
+        </h1>
+        <hr>
+        </hr>
+        <div id="table">
+            <table>
+                <tr>
+                    <th>
+                        <a href="https://www.e-mineduc.cl/login/index.php">
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <a href="calendario.php">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
+                            Calendario<br />de actividades
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
+                                Instrumentos<br />de medición
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/4.-Fichas proceso.png" style="width: 40px;" style="height: 40px;">
+                            Fichas<br />SIESE
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                            <a href="buscar.php">
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
+                                Buscador de<br />estrategias
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="https://www.compromisoescolar.com/inicia_reportes.php">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
+                            Resultados de<br />medición
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="accordion">
+            <h4>Descripción</h4>
+            <div>
+                <p class="acordion2">
+                    El compromiso escolar es un indicador básico para hacer un seguimiento a las trayectorias educativas de las y los estudiantes; asimismo, cada escuela puede identificar otros indicadores que pueden ser relevantes para su contexto, y que pueden entregar información relevante para la toma de decisiones oportunas.<br /><br />
+                    Se espera que en este paso se organice una estrategia para comunicar sobre el objetivo del SIESE al resto de la comunidad escolar. Se trata de crear una cultura del compromiso escolar a nivel de la escuela, para lo cual se pueden desarrollar distintas estrategias promocionales, las que van a depender de si estamos en un contexto presencial o no. <br /><br />
+                    Posteriormente, la idea es que las y los estudiantes puedan responder el instrumento de compromiso escolar y factores contextuales. El coordinador o la coordinadora del Consejo Escolar tiene que activar el código para que los y las estudiantes puedan responder el instrumento siguiendo las indicaciones del Manual de Usuario. <br /><br />
+                    Se busca que, en un contexto presencial, los y las estudiantes puedan disponer de un momento de la clase para responder en conjunto las preguntas de esta plataforma. Para ello se requiere que cada estudiante tenga acceso a un computador de manera individual y privada, por lo que la sala de computación puede ser un buen lugar. Dado que las preguntas pueden ser respondidas desde cualquier dispositivo, en un contexto no presencial se propone coordinar con los y las estudiantes que en una clase de zoom puedan responder los instrumentos en el mismo momento de manera sincrónica. En el caso que esta opción no sea posible, se pueden buscar otras alternativas que se ajusten a la realidad de cada establecimiento y de los y las estudiantes. Lo importante es que, si se realiza en un contexto no presencial, se pueda ir monitoreando el porcentaje de respuesta de manera tal que nadie quede sin responder. <br /><br />
+                    Se sugiere que se puedan levantar todas las respuestas en un plazo de una semana como máximo, y luego de eso que el coordinador o la coordinadora del Consejo Escolar pueda revisar el porcentaje de respuesta y/o determinar alguna estrategia adicional para motivar que todos y todas las estudiantes que no hayan respondido los instrumentos lo puedan hacer.
+                </p>
+            </div>
+            <h4>Preguntas guías para el Consejo Escolar</h4>
+            <div>
+                <ul>
+                    <li>¿Cómo sensibilizamos a toda la comunidad educativa sobre la importancia del compromiso escolar?</li> <br />
+                    <li>¿Cómo se hará la promoción de la aplicación del instrumento de compromiso escolar y factores contextuales entre los y las estudiantes, considerando si se está en un contexto presencial o no presencial?</li><br />
+                    <li>¿Quién será el responsable de la promoción?</li><br />
+                    <li>¿Quién explicará a los y las estudiantes cómo responder el instrumento de compromiso escolar y factores contextuales en esta plataforma?</li><br />
+                    <li>¿Dónde se hará la aplicación?</li><br />
+                    <li>¿Qué estrategias se implementarán para velar que quienes no hayan respondido el instrumento de compromiso escolar y factores contextuales lo puedan hacer?</li><br />
+                </ul>
+            </div>
+            <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
+            <div>
+                <p class="acordion2">
+                    En un contexto no presencial puede ser difícil que todos los y las estudiantes respondan el instrumento de compromiso escolar y factores contextuales en el plazo acordado. Por lo mismo, se sugiere incorporar a las y los apoderados en el proceso de manera tal que puedan favorecer que sus hijos e hijas respondan los instrumentos; así como también, se propone involucrar al representante estudiantil, para que motive a sus compañeros y compañeras a responder las preguntas.
+                </p>
+            </div>
+        </div>
+        <div class="cuadro1">
+            <h3>Productos esperados</h3>
+            <hr class=cuadro1>
+            </hr>
+            <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
+            <ul class=cuadro1>
+                <li> 2° Reunión del Consejo Escolar para coordinar una estrategia de promoción del compromiso escolar entre los y las estudiantes, junto con el sentido de la medición del compromiso escolar.</li>
+                <li>Medición del compromiso escolar.</li>
+                <li> Revisión del porcentaje de instrumentos respondidos</li>
+                <li> 3° Reunión del Consejo Escolar para coordinar una estrategia adicional y asignar responsabilidades para velar que aquellos(as) estudiantes que no hayan respondido el instrumento lo puedan hacer.</li>
+                <li>Revisión del porcentaje de respuestas finales</li>
+            </ul>
+        </div>
+        <div class="cuadro2">
+            <h3>Recursos específicos</h3>
+            <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
+            <hr class=cuadro2>
+            </hr>
+            <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
+                <image src="img/menu_flotante/3.-Instrumentos.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
+            </a>
+            <a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+                <image src="img/Botones/Manual_plataforma.png" style="width:55px;height: 30px;position:absolute;top:55px;left:1%">
+            </a>
+            <ul class="cuadro2">
+                <li>Manual de Usuario de la Plataforma de Compromiso Escolar</li>
+                <li>Instrumentos de medición del compromiso escolar</li>
+            </ul>
+        </div>
+        <div class="chart-skills">
+            <div id="fondo"><img src="img/Navegador-P02.png"></div>
+            <div id="trozo" class=""></div>
+            <div id="p1" onmouseover="torta('chica', 'p1');" onmouseout="limpiartorta('trozo');"></div>
+            <div id="p2" onmouseover="torta('chica', 'p2');" onmouseout="limpiartorta('trozo');"></div>
+            <div id="p3" onmouseover="torta('chica', 'p3');" onmouseout="limpiartorta('trozo');"></div>
+            <div id="p4" onmouseover="torta('chica', 'p4');" onmouseout="limpiartorta('trozo');"></div>
+            <div id="p5" onmouseover="torta('chica', 'p5');" onmouseout="limpiartorta('trozo');"></div>
+            <div id="p6" onmouseover="torta('chica', 'p6');" onmouseout="limpiartorta('trozo');"></div>
+        </div>
+    </div>
+
+    <footer id="main-footer">
+        <div class="row">
+            <div class="imagen" style="margin: 10px;">
+                <img src="img/Logos/png/Logo UValpo.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
+                &nbsp; &nbsp;
+                <img src="img/Logos/png/Logo Ufro.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
+                &nbsp; &nbsp;
+                <img src="img/Logos/png/U-autonoma.png" alt="" class="imh-responsive" style="width: 100px;" style="height: 100px;">
+                &nbsp; &nbsp;
+                <img src="img/Logos/png/fundacion-telefonica.png" alt="" class="imh-responsive" style="width: 140px;" style="height: 140px;">
+                &nbsp; &nbsp;
+                <img src="img/Logos/png/Logo Mineduc.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
+                &nbsp; &nbsp;
+                <img src="img/Logos/png/fondef.png" alt="" class="imh-responsive" style="width: 180px;" style="height: 180px;">
+                &nbsp; &nbsp;
+                <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
+            </div>
+
+            <table class="table2">
+                <tr>
+                    <th>Capacitación</th>
+                </tr>
+                <tr>
+                    <th>Calendario de actividades</th>
+                </tr>
+                <tr>
+                    <th>Instrumentos de medición</th>
+                </tr>
+                <tr>
+                    <th>Fichas SIESE</th>
+                </tr>
+                <tr>
+                    <th>Buscador de estrategias</th>
+                </tr>
+            </table>
+            <table class="table3">
+                <tr>
+                    <th><img src="img/Botones/Manual_plataforma.png" style="width: 100px;" style="height: 100px;"></th>
+                </tr>
+                <tr>
+                    <th><img src="img/Botones/Admin_usuarios.png" style="width: 100px;" style="height: 100px;"></th>
+                </tr>
+            </table>
+        </div>
+    </footer> <!-- / #main-footer -->
+</body>
+
+</html>
