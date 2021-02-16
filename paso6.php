@@ -56,6 +56,7 @@
                 </tr>
                 <tr>
                     <th>
+                    <a href="calendario.php">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
                                 Calendario<br />de actividades
                     </th>
@@ -412,7 +413,7 @@
         top: 65px;
         right: -5%;
         width: 80%;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Fira Sans Condensed", sans-serif;
         font-weight: lighter;
         font-size: 14px;
         margin-bottom: 20px;
@@ -461,7 +462,7 @@
         top: -2px;
         left: 3%;
         color: white;
-        font-family: "Fira Sans ExtraBold", sans-serif;
+        font-family: "Fira Sans Condensed", sans-serif;
         font-size: 20px;
         font-weight: 800;
         line-height: 1.2;
@@ -503,7 +504,7 @@
         top: 45px;
         right: 12%;
         width: 80%;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Fira Sans Condensed", sans-serif;
         font-weight: lighter;
         font-size: 14px;
         margin-bottom: 20px;

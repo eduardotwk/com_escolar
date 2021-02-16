@@ -2,6 +2,9 @@
 <html>
 
 <head>
+<link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
   <script>
     function torta(rueda, trozo) {
       var pie;
@@ -337,7 +340,7 @@
         </tr>
         <tr>
           <th>
-
+          <a href="calendario.php">
             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
               Calendario<br />de actividades
           </th>
