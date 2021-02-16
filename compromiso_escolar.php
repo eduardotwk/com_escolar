@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <script>
         $(function() {
             $("#accordion").accordion();
@@ -78,7 +81,7 @@
                 </tr>
                 <tr>
                     <th>
-                             <a href="buscar.php">
+                        <a href="buscar.php">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
                                 Buscador de<br />estrategias
                     </th>
@@ -86,8 +89,8 @@
                 <tr>
                     <th>
                         <a href="https://www.compromisoescolar.com/inicia_reportes.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
-                            Resultados de<br />medición
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
+                                Resultados de<br />medición
                     </th>
                 </tr>
             </table>
@@ -123,21 +126,21 @@
             </div>
         </div>
 
-        <h1 class="acordion2" style="top:535px;">Factores contextuales</h1>
+        <h1 class="acordion2" style="top:525px;">Factores contextuales</h1>
         <hr class="subtitulo2">
         </hr>
-        <div id="accordion2" style="top: 580px;">
+        <div id="accordion2" style="top: 567px;">
             <h3>Apoyo de la familia</h3>
-            <div>
+            <div id="" style="height: 180px;">
                 <p class="acordion">Se refiere a que los/las estudiantes perciben ser apoyados por sus familias. La familia del/la estudiante suele apoyar a su hijo/a en el proceso de aprendizaje y cuando tiene problemas, ayudándolo con las tareas, conversando lo que sucede en la escuela, animándolo y motivándolo a trabajar bien.
                 </p>
             </div>
             <h3>Apoyo del profesorado</h3>
-            <div>
+            <div style="height: 200px;">
                 <p class="acordion">Se refiere a que los y las estudiantes perciben ser apoyados por sus profesores y profesoras. Se siente motivado/a por sus docentes para aprender, pues le ayudan cuando tiene algún problema. El o la estudiante mantiene en general buenas relaciones con ellos/as. Existe la impresión de que el profesorado mantiene un interés por el/la estudiante como persona y como estudiante, ayudándolo/la en caso de dificultades. El o la estudiante considera que sus docentes lo tratan con respeto y lo alientan a realizar nuevamente una tarea si se ha equivocado, junto con sentir que en el colegio se valora la participación de todos y todas.</p>
             </div>
             <h3>Apoyo de pares</h3>
-            <div>
+            <div style="height: 200px;">
                 <p class="acordion">Se define como la percepción que tienen los y las estudiantes acerca de las relaciones interpersonales entre compañeros/as, la preocupación, la confianza y el apoyo que se da entre pares, siendo importantes para la integración escolar, frente a los desafíos escolares y/o cuando tiene una dificultad académica.</p>
             </div>
         </div>
@@ -277,7 +280,7 @@
         white-space: nowrap;
         float: none;
         text-transform: none;
-        color:white;
+        color: white;
     }
 
     *html #menu ul a {
@@ -315,10 +318,7 @@
         border-bottom: 8px solid #444;
     }
 
-    #menu ul li:first-child a:hover:after {
-        border-bottom-color: white;
-    }
-
+  
     #menu ul li:last-child a {
         -moz-border-radius: 0 0 5px 5px;
         -webkit-border-radius: 0 0 5px 5px;
@@ -375,22 +375,20 @@
 
 
     p.acordion {
-        color: #000000;
-        font-family: "Open Sans", sans-serif;
-        font-size: 14px;
-        line-height: 1.4;
-        margin-bottom: 20px;
+        color: #666666;
+        font-family: "Fira Sans Condensed", sans-serif;
+        font-size: 18px;
+        line-height: 1.152;
+        margin-bottom: 16px;
         text-align: justify;
-        text-align-last: left;
-        font-weight: normal;
+        margin-block-end: 0;
     }
 
     .accordion {
         position: relative;
-        top: -1035px;
+        top: -900;
         right: -25%;
         border-top-color: #999999;
-        background-color: #666666;
         cursor: pointer;
         padding: 18px;
         width: 83%;
@@ -400,8 +398,9 @@
         outline: none;
         font-size: 15px;
         transition: 0.4s;
-        color: #bbbbbb;
-        font-weight: bolder;
+        font-family: "Fira Sans Condensed", sans-serif;
+        background-color: rgba(255,255,255,0.5);
+        font-weight: bold;
     }
 
     hr.subtitulo2 {
@@ -410,7 +409,7 @@
         margin-left: -30%;
         width: 83.5%;
         position: relative;
-        top: -180px;
+        top: -190px;
         left: 54.5%;
     }
 
@@ -491,13 +490,13 @@
 
     h1.acordion {
         position: absolute;
-        top: 70px;
+        top: 60px;
         right: 39%;
         -epub-hyphens: none;
         font-style: normal;
         font-variant: normal;
         color: #22a2b0;
-        font-family: "Fira Sans", sans-serif;
+        font-family: "Fira Sans ExtraBold", sans-serif;
         font-size: 16px;
         font-weight: 800;
         line-height: 1.2;
@@ -522,7 +521,7 @@
         margin-left: -30%;
         width: 83.5%;
         position: relative;
-        top: 300px;
+        top: 284px;
         left: 54.5%;
     }
 
@@ -564,16 +563,17 @@
 
     }
 
+    
     #main-header {
-        background: #183e7c;
+        background:#25496b;
         color: white;
         height: 100px;
     }
 
     #main-header a {
         color: #868686;
-        font-family: "Open Sans", sans-serif;
-        font-size: 18px;
+        font-family: "Fira Sans";
+        font-size: 16px;
     }
 
     /*
@@ -633,19 +633,20 @@
     }
 
     div.container {
-        background-color: #CCCCCC;
         width: 750px;
         height: 450px;
         margin: 10px 50px;
         padding: 250px;
-        border-radius: 10px;
-        border: 1px solid #9E9E9E;
         position: relative;
         top: 20px;
         background-image: url("img/presentacion.png");
         background-size: 400px;
         background-repeat: no-repeat;
         background-position: center;
+        background-color: #cccccc;
+        border-radius: 12px;
+        border: 1px solid #f27611;
+
     }
 
     /*acordeón1*/
@@ -653,22 +654,24 @@
     .ui-accordion {
         width: 50.3%;
         position: absolute;
-        top: 120px;
+        top: 108px;
+        height:24px;
         left: 34.7%;
     }
 
+   
     .ui-accordion-header {
         border-top-color: #999999;
-        background-color: #666666;
+        background-color: rgba(80,80,80,0.9);
         font-weight: bolder;
-        color: #999999;
+        color: #cccccc;
     }
 
     .ui-accordion-header-active {
         border-top-color: #da9600;
-        background-color: #f27611;
+        background-color: rgba(220,104,9,0.90);
         font-size: bolder;
-        color: white;
+        color: #cccccc;
     }
 
     .ui-icon {
@@ -685,7 +688,7 @@
     .ui-accordion-content-active {
         border-style: 1px solid;
         border-color: #da9600;
-        background-color: transparent;
+        background-color:rgba(255,255,255,0.5);
         color: white;
 
     }
@@ -695,7 +698,7 @@
     .ui-accordion2 {
         width: 50.3%;
         position: absolute;
-        top: 400px;
+        top: 390px;
         left: 34.7%
     }
 
@@ -715,7 +718,8 @@
         border-style: 1px solid;
         border-color: #da9600;
         background-color: transparent;
-        color: white;
+        color: #cccccc;
+        
 
     }
 </style>

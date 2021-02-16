@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <script>
         $(function() {
             $("#accordion").accordion();
@@ -197,18 +200,19 @@
         right: 36%;
     }
 
+ 
     .ui-accordion-header {
         border-top-color: #999999;
-        background-color: #666666;
+        background-color: rgba(80,80,80,0.9);
         font-weight: bolder;
-        color: #999999;
+        color: #cccccc;
     }
 
     .ui-accordion-header-active {
         border-top-color: #da9600;
-        background-color: #f27611;
+        background-color: rgba(220,104,9,0.90);
         font-size: bolder;
-        color: white;
+        color: #cccccc;
     }
 
     .ui-icon {
@@ -222,14 +226,14 @@
         left: 95%;
     }
 
+   
     .ui-accordion-content-active {
         border-style: 1px solid;
         border-color: #da9600;
-        background-color: transparent;
+        background-color:rgba(255,255,255,0.5);
         color: white;
 
     }
-
     #submenu ul li a {
         color: white;
     }
@@ -569,25 +573,23 @@
     }
 
     ul {
-        color: #000000;
-        font-family: "Open Sans", sans-serif;
-        font-size: 14px;
+        color: black;
+        font-family: "Fira Sans Condensed", sans-serif;
+        font-size: 16px;
         margin-bottom: 20px;
         text-align-last: left;
         font-weight: normal;
     }
 
     p.acordion2 {
-        color: #000000;
-        font-family: "Open Sans", sans-serif;
-        font-size: 14px;
-        line-height: 1.4;
-        margin-bottom: 20px;
+        color: black;
+        font-family: "Fira Sans Condensed", sans-serif;
+        font-size: 16px;
+        line-height: 1.152;
+        margin-bottom: 16px;
         text-align: justify;
-        text-align-last: left;
-        font-weight: normal;
+        margin-block-end: 0;
     }
-
     img.navegador {
         position: absolute;
         top: 8px;
@@ -651,13 +653,13 @@
     }
 
     div.container {
-        background-color: #CCCCCC;
+        background-color: #cccccc;
+        border-radius: 12px;
+        border: 1px solid #f27611;
         width: 750px;
         height: 450px;
         margin: 10px 50px;
         padding: 250px;
-        border-radius: 10px;
-        border: 1px solid #9E9E9E;
         position: relative;
         top: 20px;
         background-image: url("img/presentacion.png");
@@ -705,16 +707,17 @@
     }
 
     #main-header {
-        background: #183e7c;
+        background:#25496b;
         color: white;
         height: 100px;
     }
 
     #main-header a {
         color: #868686;
-        font-family: "Open Sans", sans-serif;
-        font-size: 18px;
+        font-family: "Fira Sans";
+        font-size: 16px;
     }
+
 
     /*
  * Navegación

@@ -6,18 +6,21 @@
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <script>
         $(document).ready(function() {
             $("#test").CreateMultiCheckBox({
                 width: '370px',
                 height: '250px',
-            });   
+            });
             $(document).on("click", ".MultiCheckBox", function() {
                 var detail = $(this).next();
                 detail.show();
                 clearResp();
             });
-            
+
             $(document).on("click", ".MultiCheckBoxDetailHeader input", function(e) {
                 e.stopPropagation();
                 var hc = $(this).prop("checked");
@@ -111,7 +114,8 @@
                 this.val(arr);
             },
         });
-        function clearResp(){
+
+        function clearResp() {
             document.getElementById("respContent").innerHTML = "";
         }
     </script>
@@ -472,7 +476,7 @@
             white-space: nowrap;
             float: none;
             text-transform: none;
-            color:white;
+            color: white;
         }
 
         *html #menu ul a {
@@ -572,16 +576,17 @@
 
         }
 
+
         #main-header {
-            background: #183e7c;
+            background: #25496b;
             color: white;
             height: 100px;
         }
 
         #main-header a {
             color: #868686;
-            font-family: "Open Sans", sans-serif;
-            font-size: 18px;
+            font-family: "Fira Sans";
+            font-size: 16px;
         }
 
         /*
@@ -641,13 +646,13 @@
         }
 
         div.container {
-            background-color: #CCCCCC;
+            background-color: #cccccc;
+            border-radius: 12px;
+            border: 1px solid #f27611;
             width: 750px;
             height: 250px;
             margin: 10px 50px;
             padding: 250px;
-            border-radius: 10px;
-            border: 1px solid #9E9E9E;
             position: relative;
             top: 20px;
             background-image: url("img/Buscador.png");
@@ -731,7 +736,7 @@
         <form action="buscar.php" method="post" id="buscar">
             <div style="width: 254px;">
 
-                <select id="test" onfocus ="borra();">
+                <select id="test" onfocus="borra();">
                     <option name="check_lista[]" value="co_co">Compromiso Cognitivo</option>
                     <option name="check_lista[]" value="co_af">Compromiso Afectivo</option>
                     <option name="check_lista[]" value="co_con">Compromiso Conductual</option>
@@ -844,4 +849,5 @@
         </div>
     </footer> <!-- / #main-footer -->
 </body>
+
 </html>

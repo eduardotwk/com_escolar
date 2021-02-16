@@ -3,6 +3,9 @@
 
 <head>
     <script src="https://kit.fontawesome.com/1652fc71a3.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
 </head>
 
 <body>
@@ -488,13 +491,13 @@
     }
 
     div.container {
-        background-color: #CCCCCC;
+        background-color: #cccccc;
+        border-radius: 12px;
+        border: 1px solid #f27611;
         width: 750px;
         height: 300px;
         margin: 10px 50px;
         padding: 250px;
-        border-radius: 10px;
-        border: 1px solid #9E9E9E;
         position: relative;
         top: 20px;
         background-image: url("img/presentacion.png");
@@ -504,15 +507,15 @@
     }
 
     #main-header {
-        background: #183e7c;
+        background:#25496b;
         color: white;
         height: 100px;
     }
 
     #main-header a {
         color: #868686;
-        font-family: "Open Sans", sans-serif;
-        font-size: 18px;
+        font-family: "Fira Sans";
+        font-size: 16px;
     }
 
     /*
