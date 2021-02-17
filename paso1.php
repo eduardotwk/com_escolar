@@ -231,6 +231,7 @@
 
         #submenu ul li a {
             color: white;
+            background:#07ACAA;
         }
 
         #menu {
@@ -254,6 +255,7 @@
             padding: 0 0 10px 0;
             position: relative;
             right: 10%;
+            
         }
 
         #menu a {
@@ -263,11 +265,12 @@
             height: 25px;
             padding: 0 25px;
             text-decoration: none;
-
-        }
+            
+                }
 
         #menu li:hover>a {
-            color: #22a2b0;
+            border-bottom: 14px solid #07ACAA;
+           
         }
 
         *html #menu li a:hover {
@@ -288,11 +291,12 @@
             padding: 0;
             display: none;
             position: absolute;
-            top: 35px;
-            left: 0;
+            top: 42px;
+            left: 26%;
             z-index: 99999;
-            background: #22a2b0;
+            background: #07ACAA;
             border-radius: 2px;
+            text-transform: none;
         }
 
         #menu ul li {
@@ -318,6 +322,7 @@
             float: none;
             text-transform: none;
             color: white;
+            background:#07ACAA;
         }
 
         *html #menu ul a {
@@ -335,6 +340,7 @@
         #menu ul a:hover {
             background: white;
             color: black;
+            text-transform: none;
         }
 
         #menu ul li:first-child a {

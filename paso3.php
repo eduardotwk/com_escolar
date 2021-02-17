@@ -266,8 +266,9 @@
     }
 
     #menu li:hover>a {
-        color: #22a2b0;
-    }
+            border-bottom: 14px solid #07ACAA;
+           
+        }
 
     *html #menu li a:hover {
         /* IE6 */
@@ -281,18 +282,20 @@
 
     /* Sub-menu */
 
+       
     #menu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: none;
-        position: absolute;
-        top: 35px;
-        left: 0;
-        z-index: 99999;
-        background: #22a2b0;
-        border-radius: 2px;
-    }
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none;
+            position: absolute;
+            top: 42px;
+            left: 26%;
+            z-index: 99999;
+            background: #07ACAA;
+            border-radius: 2px;
+            text-transform: none;
+        }
 
     #menu ul li {
         float: none;
@@ -309,15 +312,16 @@
     }
 
     #menu ul a {
-        padding: 10px;
-        height: auto;
-        line-height: 1;
-        display: block;
-        white-space: nowrap;
-        float: none;
-        text-transform: none;
-        color: white;
-    }
+            padding: 10px;
+            height: auto;
+            line-height: 1;
+            display: block;
+            white-space: nowrap;
+            float: none;
+            text-transform: none;
+            color: white;
+            background:#07ACAA;
+        }
 
     *html #menu ul a {
         /* IE6 */
