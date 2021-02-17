@@ -2,11 +2,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function() {
-            $("#accordion").accordion();
-        });
-    </script>
+   
 
 <style>
     .ui-accordion {
@@ -101,18 +97,18 @@ if (!empty($_GET['id_ficha'])) {
     if ($query->num_rows > 0) {
         $cmsData = $query->fetch_assoc();
         echo '<div = id="accordion">';
-        echo ' <h3>Parrafo 1</h3>';
-        echo '<div>';
-        echo '<p class=acordion>' . utf8_encode($cmsData['parrafo1']) . '</p>';
-        echo '</div>';
-        echo ' <h3>Parrafo 2</h3>';
-        echo '<div>';
-        echo '<p class=acordion>' . utf8_encode($cmsData['parrafo2']) . '</p>';
-        echo '</div>';
-        echo ' <h3>Parrafo 3</h3>';
-        echo '<div>';
-        echo '<p class=acordion display:none>' . utf8_encode($cmsData['parrafo3']) . '</p>';
-        echo '</div>';
+            echo ' <h3>Parrafo 1</h3>';
+            echo '<div>';
+                echo '<p class=acordion>' . utf8_encode($cmsData['parrafo1']) . '</p>';
+            echo '</div>';
+            echo ' <h3>Parrafo 2</h3>';
+            echo '<div>';
+                 echo '<p class=acordion>' . utf8_encode($cmsData['parrafo2']) . '</p>';
+            echo '</div>';
+            echo ' <h3>Parrafo 3</h3>';
+            echo '<div>';
+                echo '<p class=acordion >' . utf8_encode($cmsData['parrafo3']) . '</p>';
+            echo '</div>';
 
         echo '</div>';
     } else {

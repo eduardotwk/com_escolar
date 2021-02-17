@@ -194,7 +194,6 @@
     }
 
     #main-header {
-      background: #fc455c;
       color: white;
       width: 100%;
       height: 10px;

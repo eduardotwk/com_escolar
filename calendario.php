@@ -700,7 +700,7 @@
     table.table2 {
         position: absolute;
         left: 77%;
-        top: 1110px;
+        top: 1125px;
         font-size: 11px;
         color: #fc455c;
         font-family: "Fira Sans Condensed", sans-serif;
@@ -715,7 +715,7 @@
     table.table3 {
         position: absolute;
         left: 88%;
-        top: 1105px;
+        top: 1123px;
         border-spacing: 2px;
     }
 
