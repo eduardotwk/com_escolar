@@ -593,7 +593,7 @@
         }
 
         #main-header a {
-            color: #868686;
+            color: #999;
             font-family: "Fira Sans";
             font-size: 16px;
         }
@@ -708,7 +708,7 @@
         }
     </style>
     <header id="main-header">
-        <img class="logo" src="img/Header/Logo plataforma menor.png">
+    <img class="logo" src="img/logo home.png">
         <img class="lapiz" src="img/Header/compromiso.png">
 
         <ul id="menu">

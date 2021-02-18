@@ -751,7 +751,7 @@
     }
 </style>
     <header id="main-header">
-        <img class="logo" src="img/Header/Logo plataforma menor.png">
+    <img class="logo" src="img/logo home.png">
         <img class="lapiz" src="img/Header/compromiso.png">
 
         <ul id="menu" style="font-weight: normal;">
