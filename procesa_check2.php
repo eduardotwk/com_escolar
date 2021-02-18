@@ -71,15 +71,17 @@ if (isset($_POST['enviar'])) {
 		//echo "<br/><br/><br/><br/><br/><br//><br/><br/><br/><br/><br/><br/><b>Nota :</b> <span>La query que salio " . $consulta . "</span>";
 		//echo "<br/><b>Nota :</b> <span>Ahora ya tienes el acceso a la query.</span>";
 		echo "</div>";
+		
 		$result = $conn->query($consulta);
 		echo	"<table id=fichas class=fichas>";
 		echo " <thead><tr><th class= tittable>Estrategias obtenidas para los criterios seleccionados: </th></tr></thead>";
 		while($row =  $result->fetch_array()) {
-		
-		echo "  <tbody><tr><td><li class = contenido><a class= contenido2 href='modal.php?id_ficha=".utf8_encode($row["id_ficha"])."'>".utf8_encode($row["nombre_ficha"])."</a></li></td></tr> </tbody>";
+		echo "  <tbody><tr><td><a href='#miModal?id_ficha=".utf8_encode($row["id_ficha"])."'><li class = contenido>".utf8_encode($row["nombre_ficha"])."</li></a></td></tr> </tbody>";
 		}
 	echo	"</table>";
+	
 	} else {
 		echo "<div id='respContent'><p class=criterios><b>Por favor seleccione al menos un criterio</b></p></div>";
 	}
+	
 }

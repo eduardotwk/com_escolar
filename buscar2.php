@@ -6,19 +6,17 @@
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <script>
         $(document).ready(function() {
             $("#test").CreateMultiCheckBox({
                 width: '370px',
                 height: '250px',
-            });
+            }); 
+  
             $(document).on("click", ".MultiCheckBox", function() {
                 var detail = $(this).next();
                 detail.show();
-                clearResp();
+				clearResp();
             });
 
             $(document).on("click", ".MultiCheckBoxDetailHeader input", function(e) {
@@ -114,10 +112,14 @@
                 this.val(arr);
             },
         });
-
-        function clearResp() {
+        function clearResp(){
             document.getElementById("respContent").innerHTML = "";
         }
+        
+    $(document).ready(function(){
+        $('.openBtn').click();
+    });
+
     </script>
 
 </head>
@@ -126,7 +128,7 @@
     <style>
         th.tittable {
             color: #22a2b0;
-            font-family: "Fira Sans Condensed", sans-serif;
+            font-family: "Open Sans", sans-serif;
             font-size: 14px;
             line-height: 1.4;
             margin-bottom: 20px;
@@ -138,17 +140,12 @@
 
         li.contenido {
             color: #fc455c;
-            font-family: "Fira Sans Condensed", sans-serif;
+            font-family: "Open Sans", sans-serif;
             font-size: 14px;
             position: relative;
             left: 5%;
             text-decoration: underline;
             font-weight: bolder;
-        }
-        a.contenido2{
-             color: #fc455c;
-            font-family: "Fira Sans Condensed", sans-serif;
-            font-size: 14px;
         }
 
         table.fichas {
@@ -196,7 +193,7 @@
         li.criterios {
             color: #666666;
             font-weight: normal;
-            font-family: "Fira Sans Condensed", sans-serif;
+            font-family: "Open Sans", sans-serif;
             font-size: 18px;
             position: relative;
             top: 150px;
@@ -217,7 +214,7 @@
 
         p.tit {
             color: #22a2b0;
-            font-family: "Fira Sans Condensed", sans-serif;
+            font-family: "Fira Sans ExtraBold", sans-serif;
             font-size: 18px;
             font-weight: 800;
             line-height: 1.2;
@@ -431,8 +428,7 @@
         }
 
         #menu li:hover>a {
-            border-bottom: 14px solid #07ACAA;
-           
+            color: #22a2b0;
         }
 
         *html #menu li a:hover {
@@ -453,14 +449,12 @@
             padding: 0;
             display: none;
             position: absolute;
-            top: 42px;
-            left: 26%;
+            top: 35px;
+            left: 0;
             z-index: 99999;
-            background: #07ACAA;
+            background: #22a2b0;
             border-radius: 2px;
-            text-transform: none;
-        }   
-
+        }
 
         #menu ul li {
             float: none;
@@ -484,8 +478,7 @@
             white-space: nowrap;
             float: none;
             text-transform: none;
-            color: white;
-            background:#07ACAA;
+            color:white;
         }
 
         *html #menu ul a {
@@ -585,17 +578,16 @@
 
         }
 
-
         #main-header {
-            background: #25496b;
+            background: #183e7c;
             color: white;
             height: 100px;
         }
 
         #main-header a {
             color: #868686;
-            font-family: "Fira Sans";
-            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
         }
 
         /*
@@ -655,13 +647,13 @@
         }
 
         div.container {
-            background-color: #cccccc;
-            border-radius: 12px;
-            border: 1px solid #f27611;
+            background-color: #CCCCCC;
             width: 750px;
             height: 250px;
             margin: 10px 50px;
             padding: 250px;
+            border-radius: 10px;
+            border: 1px solid #9E9E9E;
             position: relative;
             top: 20px;
             background-image: url("img/Buscador.png");
@@ -706,6 +698,52 @@
             top: -210px;
 
         }
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		.recuadro-modal {
+			border-color: #da9600;
+			border-width: 1px;
+			border-style: solid;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 3px 3px 3px 3px;
+			padding: 20px;
+		    position:fixed;
+		    top:0;
+		    right:0;
+		    bottom:0;
+		    left:0;
+		    opacity:0;
+		    pointer-events:none;
+			 transition: all 1s;
+		}
+		
+		
+		
+		
+#miModal:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+
+.modal-contenido{
+ background-color: rgba(255,255,255,0.5);
+  width:300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+
+
+
+
     </style>
     <header id="main-header">
         <img class="logo" src="img/Header/Logo plataforma menor.png">
@@ -720,7 +758,6 @@
                     <li><a href="paso3.php">Paso 3</a></li>
                     <li><a href="paso4.php">Paso 4</a></li>
                     <li><a href="paso5.php">Paso 5</a></li>
-                    <li><a href="paso6.php">Paso 6</a></li>
                 </ul>
             </li>
             <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
@@ -743,10 +780,10 @@
 
         <!-- Contenido -->
 
-        <form action="buscar.php" method="post" id="buscar">
+        <form action="buscar2.php" method="post" id="buscar">
             <div style="width: 254px;">
 
-                <select id="test" onfocus="borra();">
+                <select id="test" onfocus ="borra();">
                     <option name="check_lista[]" value="co_co">Compromiso Cognitivo</option>
                     <option name="check_lista[]" value="co_af">Compromiso Afectivo</option>
                     <option name="check_lista[]" value="co_con">Compromiso Conductual</option>
@@ -758,7 +795,7 @@
                 <button type="submit" class="btn" name="enviar"><i class="fas fa-search"></i>&nbsp;Buscar...</button>
                 <!----- Including PHP Script ----->
                 <?php include 'databaseconnect.php'; ?>
-                <?php include 'procesa_check.php'; ?>
+                <?php include 'procesa_check2.php'; ?>
             </div>
         </form>
         <!-- Fin Contenido -->
@@ -795,7 +832,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="#">
+                        <a href="busca_estrategia.php">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
                                 Buscador de<br />estrategias
                     </th>
@@ -812,7 +849,18 @@
 
 
     </div>
+	
+	
 
+<div id="miModal" class="recuadro-modal">
+
+
+ <div class="modal-contenido">
+    <a href="#">X</a>
+    <button class="openBtn"></button>
+  </div>  	
+</div>
+	
     <footer id="main-footer">
         <div class="row">
             <div class="imagen" style="margin: 10px;">
@@ -859,5 +907,12 @@
         </div>
     </footer> <!-- / #main-footer -->
 </body>
-
+<script>
+$('.openBtn').on('click', function() {
+        $('.modal-contenido').load('cargaDetalle.php?id_ficha=2', function() {
+            $('#miModal').modal({
+                show: true});
+        });
+    })
+</script>
 </html>
