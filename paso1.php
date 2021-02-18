@@ -918,7 +918,7 @@
             <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
                 <image src="img/menu_flotante/1.-Capacitacion.png" style="width:30px;height: 30px;position:absolute;top:50px;left:5%">
             </a>
-            <a href="#">
+            <a href="calendario.php">
                 <image src="img/menu_flotante/2.-Calendario.png" style="width:30px;height: 30px;position:absolute;top:83px;left:5%">
             </a>
             <ul class="cuadro2" style="position: absolute;top:20px;">

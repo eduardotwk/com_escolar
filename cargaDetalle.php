@@ -33,6 +33,10 @@ if (!empty($_GET['id_ficha'])) {
         echo "<div>";
         echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo4']) . '</p>';
         echo "</div>";
+        echo "<br>";
+        echo "<div>";
+        echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo5']) . '</p>';
+        echo "</div>";
     } else {
         echo 'Content not found....';
     }
