@@ -267,7 +267,7 @@
         }
 
         #menu li:hover>a {
-            border-bottom: 14px solid #07ACAA;
+            border-bottom: 9px solid #07ACAA;
            
         }
 
