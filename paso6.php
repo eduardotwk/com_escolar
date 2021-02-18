@@ -798,7 +798,7 @@
     </header><!-- / #main-header -->
 
     <div class="container">
-        <h1>Paso 6: <h1 class="color">Evaluación y ajuste de la implementación del SIESE</h1>
+        <h1>Paso 6:<h1 class="color">Evaluación y ajuste de la implementación del SIESE</h1>
         </h1>
         <hr>
         </hr>

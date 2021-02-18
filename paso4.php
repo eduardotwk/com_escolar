@@ -799,7 +799,7 @@
     </header><!-- / #main-header -->
 
     <div class="container">
-        <h1>Paso 4: <h1 class="color">Selección e implementación de las estrategias de<br /> promoción de compromiso escolar</h1>
+        <h1>Paso 4:<h1 class="color">Selección e implementación de las estrategias de<br /> promoción de compromiso escolar</h1>
         </h1>
         <hr>
         </hr>

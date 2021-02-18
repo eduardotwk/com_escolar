@@ -628,7 +628,7 @@
     h1.color {
         position: absolute;
         top: 1px;
-        right: 49%;
+        right: 50%;
         -epub-hyphens: none;
         font-style: normal;
         font-variant: normal;
@@ -799,7 +799,7 @@
     </header><!-- / #main-header -->
 
     <div class="container">
-        <h1>Paso 3: <h1 class="color">Revisión y análisis de la información</h1>
+        <h1>Paso 3:<h1 class="color">Revisión y análisis de la información</h1>
         </h1>
         <hr>
         </hr>

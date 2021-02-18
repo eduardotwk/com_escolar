@@ -658,7 +658,7 @@
         h1.color {
             position: absolute;
             top: 1px;
-            right: 52%;
+            right: 52.4%;
             -epub-hyphens: none;
             font-style: normal;
             font-variant: normal;

@@ -611,7 +611,7 @@
         h1.color {
             position: absolute;
             top: 1px;
-            right: 33%;
+            right: 33.8%;
             -epub-hyphens: none;
             font-style: normal;
             font-variant: normal;
@@ -801,7 +801,7 @@
     </header><!-- / #main-header -->
 
     <div class="container">
-        <h1>Paso 5: <h1 class="color">Seguimiento de estudiantes y de las estrategias de<br /> promoción de compromiso escolar</h1>
+        <h1>Paso 5:<h1 class="color">Seguimiento de estudiantes y de las estrategias de<br /> promoción de compromiso escolar</h1>
         </h1>
         <hr>
         </hr>
