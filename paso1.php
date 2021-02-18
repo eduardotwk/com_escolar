@@ -744,7 +744,7 @@
         }
 
         #main-header a {
-            color: #868686;
+            color: #999;
             font-family: "Fira Sans";
             font-size: 16px;
         }
