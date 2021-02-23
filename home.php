@@ -74,7 +74,7 @@
       height: 400px;
       z-index: 40;
       position: absolute;
-      top: 60px;
+      top: 100px;
       left: 50%;
     }
 
@@ -194,9 +194,12 @@
     }
 
     #main-header {
-      color: white;
+      background-color:#fc455c;
       width: 100%;
-      height: 10px;
+      height: 20px;
+      flex: 0 0 auto;
+      margin-bottom: 50px;
+      overflow: hidden;
     }
 
     #main-content header,
@@ -204,26 +207,30 @@
       padding: 40px;
     }
 
+
     #main-footer {
       background: #CCCCCC;
       color: white;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
-      border: 1px solid #9E9E9E;
-
+      flex: 0 0 auto;
+      height: 150px;
+      overflow: hidden;
+      margin-bottom: 0px;
     }
 
     div.imagen {
       position: relative;
       right: 12%;
+      top: 25px;
     }
 
     table.table2 {
       position: absolute;
-      left: 77%;
-      top: 690px;
-      font-size: 11px;
+      left: 88%;
+      top: -10px;
+      font-size: 12px;
       color: #fc455c;
       font-family: "Fira Sans Condensed", sans-serif;
       font-style: normal;
@@ -236,10 +243,12 @@
 
     table.table3 {
       position: absolute;
-      left: 88%;
-      top: 680px;
+      left: 99%;
+      top: -40px;
       border-spacing: 2px;
     }
+
+
 
 
     table {
@@ -271,13 +280,13 @@
       text-align: justify;
       text-align-last: left;
       position: relative;
-      right: 29%;
-      top: 8px;
+      left: 2.5%;
+      top: 280px;
     }
 
     h1 {
       position: absolute;
-      top: 50px;
+      top: 100px;
       right: 65%;
       -epub-hyphens: none;
       font-style: normal;
@@ -293,7 +302,7 @@
 
     h2 {
       position: absolute;
-      top: 165px;
+      top: 215px;
       right: 63%;
       -epub-hyphens: none;
       font-style: normal;
@@ -317,25 +326,29 @@
 
     img.logo {
       position: absolute;
-      top: 10px;
-      width: 180px;
-      height: 50px;
-      left: 5%;
+      top: 45px;
+      max-width: 255px;
+      max-height: 72.11px;
+      left: 3%;
     }
 
     div.container {
       background-color: #cccccc;
       border-radius: 12px;
       border: 1px solid #f27611;
-      width: 730px;
-      height: 100px;
-      margin: 10px 50px;
-      padding: 250px;
+      width: 100%;
+      height: 620px;
+      margin: 0 auto;
+      max-width: 1240px;
+      margin-bottom: 50px;
+      padding: 20px;
       position: relative;
       top: 45px;
-      background-size: contain;
+      background-position: center center;
+      background-size: 40%;
       background-repeat: no-repeat;
-      background-position: center;
+      overflow: hidden;
+      flex: 1 0 auto;
     }
   </style>
   <header id="main-header">
@@ -419,33 +432,32 @@
         <img src="img/Logos/png/fondef.png" alt="" class="imh-responsive" style="width: 180px;" style="height: 180px;">
         &nbsp; &nbsp;
         <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
+        <table class="table2">
+          <tr>
+            <th>Capacitación</th>
+          </tr>
+          <tr>
+            <th>Calendario de actividades</th>
+          </tr>
+          <tr>
+            <th>Instrumentos de medición</th>
+          </tr>
+          <tr>
+            <th>Fichas SIESE</th>
+          </tr>
+          <tr>
+            <th>Buscador de estrategias</th>
+          </tr>
+        </table>
+        <table class="table3">
+          <tr>
+            <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+          </tr>
+          <tr>
+            <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+          </tr>
+        </table>
       </div>
-
-      <table class="table2">
-        <tr>
-          <th>Capacitación</th>
-        </tr>
-        <tr>
-          <th>Calendario de actividades</th>
-        </tr>
-        <tr>
-          <th>Instrumentos de medición</th>
-        </tr>
-        <tr>
-          <th>Fichas SIESE</th>
-        </tr>
-        <tr>
-          <th>Buscador de estrategias</th>
-        </tr>
-      </table>
-      <table class="table3">
-        <tr>
-          <th><img src="img/Botones/Manual_plataforma.png" style="width: 100px;" style="height: 100px;"></th>
-        </tr>
-        <tr>
-          <th><img src="img/Botones/Admin_usuarios.png" style="width: 100px;" style="height: 100px;"></th>
-        </tr>
-      </table>
     </div>
   </footer> <!-- / #main-footer -->
   </div>

@@ -154,7 +154,7 @@
         table.fichas {
             position: absolute;
             top: -140px;
-            left: 115%;
+            left: 220%;
             border-radius: 4px;
             width: 220%;
             background-color: white;
@@ -168,7 +168,7 @@
             font-size: 18px;
             position: relative;
             top: 80px;
-            right: 86%;
+            right: -4%;
             width: 380px;
         }
 
@@ -189,7 +189,7 @@
             margin-left: -30%;
             position: absolute;
             top: 112px;
-            right: -9%;
+            right: -98.4%;
             width: 490px;
         }
 
@@ -200,7 +200,7 @@
             font-size: 18px;
             position: relative;
             top: 150px;
-            right: 65%;
+            right: -8%;
 
         }
 
@@ -225,7 +225,7 @@
             text-align: left;
             position: absolute;
             top: 80px;
-            right: 87%;
+            right: -3%;
             width: 250px;
         }
 
@@ -237,7 +237,7 @@
             border-radius: 5px 5px 5px 5px;
             padding: 6px 17px;
             position: absolute;
-            right: -10% !important;
+            right: -100% !important;
             color: #666666;
             top: 50px !important;
         }
@@ -249,7 +249,7 @@
             border-radius: 4px;
             cursor: pointer;
             position: absolute;
-            right: 36.5% !important;
+            right: -55% !important;
             border-color: #da9600;
             border-width: 1px;
             border-style: solid;
@@ -273,7 +273,7 @@
             position: absolute;
             overflow-y: hidden;
             position: absolute;
-            right: 36.5% !important;
+            right: -55% !important;
             border-color: #da9600;
             border-width: 1px;
             border-radius: 4px;
@@ -366,7 +366,7 @@
         h1 {
             position: absolute;
             top: 1px;
-            right: 87.5%;
+            right: 87.8%;
             -epub-hyphens: none;
             font-style: normal;
             font-variant: normal;
@@ -383,7 +383,7 @@
         h1.color {
             position: absolute;
             top: 1px;
-            right: 71%;
+            right: 71.5%;
             -epub-hyphens: none;
             font-style: normal;
             font-variant: normal;
@@ -459,7 +459,7 @@
             background: #07ACAA;
             border-radius: 2px;
             text-transform: none;
-        }   
+        }
 
 
         #menu ul li {
@@ -580,16 +580,19 @@
             text-align: center;
             padding: 20px;
             margin-top: 40px;
-            border: 1px solid #9E9E9E;
-
-
+            flex: 0 0 auto;
+            height: 150px;
+            overflow: hidden;
+            margin-bottom: 0px;
         }
-
-
         #main-header {
             background: #25496b;
             color: white;
-            height: 100px;
+            width: 100%;
+            height: 80px;
+            flex: 0 0 auto;
+            margin-bottom: 50px;
+            overflow: hidden;
         }
 
         #main-header a {
@@ -633,48 +636,48 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, .1);
         }
 
+            
         img.logo {
             position: absolute;
-            top: 40px;
-            width: 150px;
-            height: 50px;
+            top: 30px;
+            max-width: 145px;
+            max-height: 42.11px;
             left: 5%;
         }
 
         img.lapiz {
             position: absolute;
             top: 8px;
-            width: 230px;
-            height: 100px;
+            width: 199.05px;
+            max-height: 80px;
             left: 20%;
         }
-
-        #main-content header,
-        #main-content .content {
-            padding: 40px;
-        }
-
+     
         div.container {
             background-color: #cccccc;
             border-radius: 12px;
             border: 1px solid #f27611;
-            width: 750px;
-            height: 250px;
-            margin: 10px 50px;
-            padding: 250px;
+            width: 100%;
+            height: 700px;
+            margin: 0 auto;
+            max-width: 1240px;
+            margin-bottom: 50px;
+            padding: 20px;
             position: relative;
             top: 20px;
             background-image: url("img/Buscador.png");
-            background-size: 400px;
+            background-position: center center;
+            background-size: 40%;
             background-repeat: no-repeat;
-            background-position: center;
+            overflow: hidden;
+            flex: 1 0 auto;
         }
 
         table.table2 {
             position: absolute;
-            left: 77%;
-            top: 920px;
-            font-size: 11px;
+            left: 88%;
+            top: -10px;
+            font-size: 12px;
             color: #fc455c;
             font-family: "Fira Sans Condensed", sans-serif;
             font-style: normal;
@@ -687,25 +690,27 @@
 
         table.table3 {
             position: absolute;
-            left: 88%;
-            top: 915px;
+            left: 99%;
+            top: -40px;
             border-spacing: 2px;
         }
 
         div.imagen {
             position: relative;
             right: 12%;
+            top: 25px;
         }
 
         hr {
             height: 2px;
             background-color: #fc455c;
-            margin-left: -30%;
-            width: 143%;
+            margin-left: 0.5%;
+            width: 89.5%;
             position: relative;
-            top: -210px;
+            top: 18px;
 
         }
+        
     </style>
     <header id="main-header">
     <img class="logo" src="img/logo home.png">
@@ -829,9 +834,7 @@
                 <img src="img/Logos/png/fondef.png" alt="" class="imh-responsive" style="width: 180px;" style="height: 180px;">
                 &nbsp; &nbsp;
                 <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
-            </div>
-
-            <table class="table2">
+                <table class="table2">
                 <tr>
                     <th>Capacitación</th>
                 </tr>
@@ -850,12 +853,13 @@
             </table>
             <table class="table3">
                 <tr>
-                    <th><img src="img/Botones/Manual_plataforma.png" style="width: 100px;" style="height: 100px;"></th>
+                    <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
                 </tr>
                 <tr>
-                    <th><img src="img/Botones/Admin_usuarios.png" style="width: 100px;" style="height: 100px;"></th>
+                    <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
                 </tr>
             </table>
+            </div>
         </div>
     </footer> <!-- / #main-footer -->
 </body>

@@ -73,8 +73,8 @@
             height: 100px;
             border-radius: 100%;
             z-index: 40;
-            top: -265px;
-            left: 55%;
+            top: -33px;
+            left: 30%;
         }
 
         .chart-skills.grande {
@@ -447,13 +447,12 @@
     }
 
     hr.cuadro2 {
-        height: 1px;
-        background-color: white;
-        width: 110%;
-        top: 10px;
-        left: 23.5%;
-    }
-
+            height: 1px;
+            background-color: white;
+            width: 110%;
+            top: 10px;
+            left: -7%;
+        }
     h3 {
         position: absolute;
         top: -2px;
@@ -511,12 +510,12 @@
     }
 
     hr.cuadro1 {
-        height: 1px;
-        background-color: white;
-        width: 110%;
-        top: 10px;
-        left: 23.5%;
-    }
+            height: 1px;
+            background-color: white;
+            width: 110%;
+            top: 10px;
+            left: -7%;
+        }
 
     h3 {
         position: absolute;
@@ -599,14 +598,14 @@
     }
 
     hr {
-        height: 2px;
-        background-color: #fc455c;
-        margin-left: -30%;
-        width: 138%;
-        position: relative;
-        top: -210px;
+            height: 2px;
+            background-color: #fc455c;
+            margin-left: 0.5%;
+            width: 80%;
+            position: relative;
+            top: 18px;
 
-    }
+        }
 
     h1 {
         position: absolute;
@@ -628,7 +627,7 @@
     h1.color {
         position: absolute;
         top: 1px;
-        right: 50%;
+        right: 50.8%;
         -epub-hyphens: none;
         font-style: normal;
         font-variant: normal;
@@ -653,64 +652,75 @@
     }
 
     div.container {
-        background-color: #cccccc;
-        border-radius: 12px;
-        border: 1px solid #f27611;
-        width: 750px;
-        height: 450px;
-        margin: 10px 50px;
-        padding: 250px;
-        position: relative;
-        top: 20px;
-        background-image: url("img/presentacion.png");
-        background-size: 400px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+            background-color: #cccccc;
+            border-radius: 12px;
+            border: 1px solid #f27611;
+            width: 100%;
+            height: 870px;
+            margin: 0 auto;
+            max-width: 1240px;
+            margin-bottom: 50px;
+            padding: 20px;
+            position: relative;
+            top: 20px;
+            background-image: url("img/presentacion.png");
+            background-position: center center;
+            background-size: 40%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            flex: 1 0 auto;
+        }
 
-    table.table2 {
-        position: absolute;
-        left: 77%;
-        top: 1130px;
-        font-size: 11px;
-        color: #fc455c;
-        font-family: "Fira Sans Condensed", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        text-decoration: underline;
-        text-align: left;
-        background-color: #CCCCCC;
-        border-spacing: 2px;
-    }
+       
+        table.table2 {
+            position: absolute;
+            left: 88%;
+            top: -10px;
+            font-size: 12px;
+            color: #fc455c;
+            font-family: "Fira Sans Condensed", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: left;
+            background-color: #CCCCCC;
+            border-spacing: 2px;
+        }
 
-    table.table3 {
-        position: absolute;
-        left: 88%;
-        top: 1120px;
-        border-spacing: 2px;
-    }
+        table.table3 {
+            position: absolute;
+            left: 99%;
+            top: -40px;
+            border-spacing: 2px;
+        }
 
-    div.imagen {
-        position: relative;
-        right: 12%;
-    }
+        div.imagen {
+            position: relative;
+            right: 12%;
+            top: 25px;
+        }
 
-    #main-footer {
-        background: #CCCCCC;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-        border: 1px solid #9E9E9E;
-
-
-    }
-
-    #main-header {
-        background: #25496b;
-        color: white;
-        height: 100px;
-    }
+        #main-footer {
+            background: #CCCCCC;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            flex: 0 0 auto;
+            height: 150px;
+            overflow: hidden;
+            margin-bottom: 0px;
+        }
+        #main-header {
+            background: #25496b;
+            color: white;
+            width: 100%;
+            height: 80px;
+            flex: 0 0 auto;
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+        
 
     #main-header a {
         color: #999;
@@ -755,25 +765,22 @@
     }
 
     img.logo {
-        position: absolute;
-        top: 40px;
-        width: 150px;
-        height: 50px;
-        left: 5%;
-    }
+            position: absolute;
+            top: 30px;
+            max-width: 145px;
+            max-height: 42.11px;
+            left: 5%;
+        }
 
-    img.lapiz {
-        position: absolute;
-        top: 8px;
-        width: 230px;
-        height: 100px;
-        left: 20%;
-    }
+        img.lapiz {
+            position: absolute;
+            top: 8px;
+            width: 199.05px;
+            max-height: 80px;
+            left: 20%;
+        }
 
-    #main-content header,
-    #main-content .content {
-        padding: 40px;
-    }
+   
 </style>
     <header id="main-header">
     <img class="logo" src="img/logo home.png">
@@ -903,7 +910,7 @@
                 <image src="img/menu_flotante/6.-Resultados.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
             </a>
             <a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
-                <image src="img/Botones/Manual_plataforma.png" style="width:60px;height: 35px;position:absolute;top:55px;left:1%">
+            <image src="img/menu_flotante/manualUsuario.png" style="width:30px;height: 30px;position:absolute;top:55px;left:5%">
             </a>
             <ul class="cuadro2">
                 <li>Manual de Usuario de la Plataforma de Compromiso Escolar</li>
@@ -928,9 +935,7 @@
                 <img src="img/Logos/png/fondef.png" alt="" class="imh-responsive" style="width: 180px;" style="height: 180px;">
                 &nbsp; &nbsp;
                 <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
-            </div>
-
-            <table class="table2">
+                <table class="table2">
                 <tr>
                     <th>Capacitación</th>
                 </tr>
@@ -949,12 +954,13 @@
             </table>
             <table class="table3">
                 <tr>
-                    <th><img src="img/Botones/Manual_plataforma.png" style="width: 100px;" style="height: 100px;"></th>
+                    <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
                 </tr>
                 <tr>
-                    <th><img src="img/Botones/Admin_usuarios.png" style="width: 100px;" style="height: 100px;"></th>
+                    <th><img src="img/Botones/Admin_usuarios.png"style="max-width: 140px; margin-top: 10px; float:right;"></th>
                 </tr>
             </table>
+            </div>
         </div>
     </footer> <!-- / #main-footer -->
 </body>

@@ -108,9 +108,7 @@
                 <img src="img/Logos/png/fondef.png" alt="" class="imh-responsive" style="width: 180px;" style="height: 180px;">
                 &nbsp; &nbsp;
                 <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
-            </div>
-
-            <table class="table2">
+                <table class="table2">
                 <tr>
                     <th>Capacitación</th>
                 </tr>
@@ -129,12 +127,13 @@
             </table>
             <table class="table3">
                 <tr>
-                    <th><img src="img/Botones/Manual_plataforma.png" style="width: 100px;" style="height: 100px;"></th>
+                    <th><img src="img/Botones/Manual_plataforma.png"  style="max-width: 140px; margin-top: 10px; float:right;"></th>
                 </tr>
                 <tr>
-                    <th><img src="img/Botones/Admin_usuarios.png" style="width: 100px;" style="height: 100px;"></th>
+                    <th><img src="img/Botones/Admin_usuarios.png"  style="max-width: 140px; margin-top: 10px; float:right;"></th>
                 </tr>
             </table>
+            </div>
         </div>
     </footer> <!-- / #main-footer -->
 </body>
@@ -205,7 +204,7 @@
             background: #07ACAA;
             border-radius: 2px;
             text-transform: none;
-        } 
+        }
 
 #menu ul li{
     float: none;
@@ -314,25 +313,27 @@
         text-decoration: none;
     }
     div.imagen {
-        position: relative;
-        right: 12%;
-    }
+            position: relative;
+            right: 12%;
+            top: 25px;
+        }
 
-    img.logo {
-        position: absolute;
-        top: 40px;
-        width: 150px;
-        height: 50px;
-        left: 5%;
-    }
+        img.logo {
+            position: absolute;
+            top: 30px;
+            max-width: 145px;
+            max-height: 42.11px;
+            left: 5%;
+        }
 
-    img.lapiz {
-        position: absolute;
-        top: 8px;
-        width: 230px;
-        height: 100px;
-        left: 20%;
-    }
+        img.lapiz {
+            position: absolute;
+            top: 8px;
+            width: 199.05px;
+            max-height: 80px;
+            left: 20%;
+        }
+
 
     p.p1 {
         color: #000000;
@@ -343,10 +344,9 @@
         text-align: justify;
         text-align-last: left;
         position: relative;
-        right: 18%;
-        top: 120px;
-        width: 48%;
-
+        right: -8.5%;
+        top: 340px;
+        width: 30%;
     }
 
     p.p2 {
@@ -373,10 +373,10 @@
         text-align: justify;
         text-align-last: left;
         position: relative;
-        top: 70px;
-		margin-left:-20px;
+        top: 445px;
+		margin-left:10px;
 		width:60%;
-        left: 60%;
+        left: 54.2%;
     }
 
     img.presentacion {
@@ -412,7 +412,7 @@
         text-align: left;
         position: absolute;
         top: 350px;
-        right: 67%;
+        right: 68%;
     }
 
     table {
@@ -428,25 +428,26 @@
     hr.linea2 {
         height: 2px;
         background-color: #fc455c;
-        margin-left: -18%;
+        margin-left: 8.4%;
         position: relative;
-        top: 125px;
-        width: 47%;
+        top: 353px;
+        width: 29.8%;
     }
 
     hr {
-        height: 2px;
-        background-color: #fc455c;
-        margin-left: -30%;
-        width: 138%;
-        position: relative;
-        top: -210px;
-    }
+            height: 2px;
+            background-color: #fc455c;
+            margin-left: 0.5%;
+            width: 85%;
+            position: relative;
+            top: 18px;
+
+        }
 
     h1 {
         position: absolute;
         top: 1px;
-        right: 83%;
+        right: 83.8%;
         -epub-hyphens: none;
         font-style: normal;
         font-variant: normal;
@@ -462,59 +463,68 @@
 
 
     #main-footer {
-        background: #CCCCCC;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-        border: 1px solid #9E9E9E;
-
-    }
-
+            background: #CCCCCC;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            flex: 0 0 auto;
+            height: 150px;
+            overflow: hidden;
+            margin-bottom: 0px;
+        }
+  
     table.table2 {
-        position: absolute;
-        left: 77%;
-        top: 980px;
-        font-size: 11px;
-        color: #fc455c;
-        font-family: "Fira Sans Condensed", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        text-decoration: underline;
-        text-align: left;
-        background-color: #CCCCCC;
-        border-spacing: 2px;
-    }
+            position: absolute;
+            left: 88%;
+            top: -10px;
+            font-size: 12px;
+            color: #fc455c;
+            font-family: "Fira Sans Condensed", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: left;
+            background-color: #CCCCCC;
+            border-spacing: 2px;
+        }
 
-    table.table3 {
-        position: absolute;
-        left: 88%;
-        top: 970px;
-        border-spacing: 2px;
-    }
+        table.table3 {
+            position: absolute;
+            left: 99%;
+            top: -40px;
+            border-spacing: 2px;
+        }
 
     div.container {
-        background-color: #cccccc;
-        border-radius: 12px;
-        border: 1px solid #f27611;
-        width: 750px;
-        height: 300px;
-        margin: 10px 50px;
-        padding: 250px;
-        position: relative;
-        top: 20px;
-        background-image: url("img/presentacion.png");
-        background-size: 400px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+            background-color: #cccccc;
+            border-radius: 12px;
+            border: 1px solid #f27611;
+            width: 100%;
+            height: 870px;
+            margin: 0 auto;
+            max-width: 1240px;
+            margin-bottom: 50px;
+            padding: 20px;
+            position: relative;
+            top: 20px;
+            background-image: url("img/presentacion.png");
+            background-position: center center;
+            background-size: 40%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            flex: 1 0 auto;
+        }
 
-    #main-header {
-        background:#25496b;
-        color: white;
-        height: 100px;
-    }
-
+        #main-header {
+            background: #25496b;
+            color: white;
+            width: 100%;
+            height: 80px;
+            flex: 0 0 auto;
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
     #main-header a {
         color: #999;
         font-family: "Fira Sans";
