@@ -553,20 +553,6 @@
             left: -7%;
         }
 
-        h3 {
-            position: absolute;
-            top: -2px;
-            left: 3%;
-            color: white;
-            font-family: "Fira Sans Condensed", sans-serif;
-            font-size: 20px;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 30px;
-            margin-top: 20px;
-            text-align: left;
-        }
-
         img.cuadro1 {
             position: absolute;
             width: 30px;
@@ -908,34 +894,32 @@
             <div id="p5" onmouseover="torta('chica', 'p5');" onmouseout="limpiartorta('trozo');"></div>
             <div id="p6" onmouseover="torta('chica', 'p6');" onmouseout="limpiartorta('trozo');"></div>
         </div>
-    </div>
-
-    <div class="cuadro1">
-        <h3>Productos esperados</h3>
-        <hr class=cuadro1>
-        </hr>
-        <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
-        <ul class=cuadro1>
-            <li> 5°, 6°, 7°, 8° y 9° Reunión del Consejo Escolar para revisar el avance en la implementación de la estrategia seleccionada y/o revisar otras alternativas de acción</li>
-            <li>Completar Ficha de Seguimiento y Monitoreo</li>
-        </ul>
-    </div>
-    <div class="cuadro2">
-        <h3>Recursos específicos</h3>
-        <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
-        <hr class=cuadro2>
-        </hr>
-        <a href="#">
-            <image src="img/menu_flotante/4.-Fichas proceso.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
-        </a>
-        <a href="buscar.php">
-            <image src="img/menu_flotante/5.-Buscador de estrategias.png" style="width:30px;height: 30px;position:absolute;top:55px;left:5%">
-        </a>
-        <ul class="cuadro2">
-            <li>Buscador de estrategias</li><br>
-            <li>Fichas SIESE (Ficha de Seguimiento y Monitoreo)</li>
-        </ul>
-    </div>
+        <div class="cuadro1">
+            <h3>Productos esperados</h3>
+            <hr class=cuadro1>
+            </hr>
+            <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
+            <ul class=cuadro1>
+                <li> 5°, 6°, 7°, 8° y 9° Reunión del Consejo Escolar para revisar el avance en la implementación de la estrategia seleccionada y/o revisar otras alternativas de acción</li>
+                <li>Completar Ficha de Seguimiento y Monitoreo</li>
+            </ul>
+        </div>
+        <div class="cuadro2">
+            <h3>Recursos específicos</h3>
+            <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
+            <hr class=cuadro2>
+            </hr>
+            <a href="#">
+                <image src="img/menu_flotante/4.-Fichas proceso.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
+            </a>
+            <a href="buscar.php">
+                <image src="img/menu_flotante/5.-Buscador de estrategias.png" style="width:30px;height: 30px;position:absolute;top:55px;left:5%">
+            </a>
+            <ul class="cuadro2">
+                <li>Buscador de estrategias</li><br>
+                <li>Fichas SIESE (Ficha de Seguimiento y Monitoreo)</li>
+            </ul>
+        </div>
     </div>
 
     <footer id="main-footer">

@@ -443,8 +443,8 @@
 
         ul.cuadro2 {
             position: absolute;
-            top: 65px;
-            right: -5%;
+            top: 45px;
+            right: -2%;
             width: 80%;
             font-family: "Fira Sans Condensed", sans-serif;
             font-weight: lighter;
@@ -924,30 +924,28 @@
             <div id="p5" onmouseover="torta('chica', 'p5');" onmouseout="limpiartorta('trozo');"></div>
             <div id="p6" onmouseover="torta('chica', 'p6');" onmouseout="limpiartorta('trozo');"></div>
         </div>
-    </div>
-
-    <div class="cuadro1">
-        <h3>Productos esperados</h3>
-        <hr class=cuadro1>
-        </hr>
-        <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
-        <ul class=cuadro1>
-            <li>10° Reunión del Consejo Escolar para analizar el proceso.</li>
-            <li>Completar Ficha de Cierre</li>
-        </ul>
-    </div>
-    <div class="cuadro2">
-        <h3>Recursos específicos</h3>
-        <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
-        <hr class=cuadro2>
-        </hr>
-        <a href="#">
-            <image src="img/menu_flotante/4.-Fichas proceso.png" style="width:30px;height: 30px;position:absolute;top:72px;left:5%">
-        </a>
-        <ul class="cuadro2">
-            <li>Fichas SIESE (Ficha de Cierre)</li>
-        </ul>
-    </div>
+        <div class="cuadro1">
+            <h3>Productos esperados</h3>
+            <hr class=cuadro1>
+            </hr>
+            <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
+            <ul class=cuadro1>
+                <li>10° Reunión del Consejo Escolar para analizar el proceso.</li>
+                <li>Completar Ficha de Cierre</li>
+            </ul>
+        </div>
+        <div class="cuadro2">
+            <h3>Recursos específicos</h3>
+            <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
+            <hr class=cuadro2>
+            </hr>
+            <a href="#">
+                <image src="img/menu_flotante/4.-Fichas proceso.png" style="width:30px;height: 30px;position:absolute;top:52px;left:5%">
+            </a>
+            <ul class="cuadro2">
+                <li>Fichas SIESE (Ficha de Cierre)</li>
+            </ul>
+        </div>
     </div>
 
     <footer id="main-footer">
