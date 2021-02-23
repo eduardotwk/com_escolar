@@ -48,7 +48,7 @@
         }
 
         #menu li:hover>a {
-            border-bottom: 14px solid #07ACAA;
+            border-bottom: 9px solid #07ACAA;
 
         }
 
@@ -978,30 +978,30 @@
                 &nbsp; &nbsp;
                 <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
                 <table class="table2">
-                <tr>
-                    <th>Capacitación</th>
-                </tr>
-                <tr>
-                    <th>Calendario de actividades</th>
-                </tr>
-                <tr>
-                    <th>Instrumentos de medición</th>
-                </tr>
-                <tr>
-                    <th>Fichas SIESE</th>
-                </tr>
-                <tr>
-                    <th>Buscador de estrategias</th>
-                </tr>
-            </table>
-            <table class="table3">
-                <tr>
-                    <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
-                </tr>
-                <tr>
-                    <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
-                </tr>
-            </table>
+                    <tr>
+                        <th>Capacitación</th>
+                    </tr>
+                    <tr>
+                        <th>Calendario de actividades</th>
+                    </tr>
+                    <tr>
+                        <th>Instrumentos de medición</th>
+                    </tr>
+                    <tr>
+                        <th>Fichas SIESE</th>
+                    </tr>
+                    <tr>
+                        <th>Buscador de estrategias</th>
+                    </tr>
+                </table>
+                <table class="table3">
+                    <tr>
+                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                    <tr>
+                        <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                </table>
             </div>
         </div>
     </footer> <!-- / #main-footer -->
