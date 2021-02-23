@@ -769,7 +769,7 @@
             <hr class="subt">
             <ul>
                 <li>Conformación del Consejo Escolar</li><br>
-                <li>Selección del coordinador del Consejo Escolar</li><br>
+                <li>Selección del coordinador(a) del Consejo Escolar</li><br>
                 <li>Capacitación del Consejo Escolar en compromiso escolar</li><br>
             </ul>
         </div>
