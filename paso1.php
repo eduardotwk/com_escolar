@@ -66,6 +66,42 @@
 
 <body>
     <style>
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default,
+        .ui-button,
+        html .ui-button.ui-state-disabled:hover,
+        html .ui-button.ui-state-disabled:active {
+            border: none;
+            background: rgba(220, 104, 9, 0.90);
+            font-weight: normal;
+
+        }
+
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default,
+        .ui-button,
+        html .ui-button.ui-state-disabled:hover,
+        html .ui-button.ui-state-disabled:active {
+            border: none;
+            background: rgba(220, 104, 9, 0.90);
+            font-weight: normal;
+
+        }
+
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default,
+        .ui-button,
+        html .ui-button.ui-state-disabled:hover,
+        html .ui-button.ui-state-disabled:active {
+            border: none;
+            background: rgba(220, 104, 9, 0.90);
+            font-weight: normal;
+        }
+
+
         .chart-skills {
             margin: 0 auto;
             padding: 0;
@@ -977,7 +1013,7 @@
                         <th>Buscador de estrategias</th>
                     </tr>
                 </table>
-              
+
                 <table class="table3">
                     <tr>
                         <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>

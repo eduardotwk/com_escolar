@@ -24,7 +24,7 @@
 <body>
 
     <header id="main-header">
-    <img class="logo" src="img/logo home.png">
+        <img class="logo" src="img/logo home.png">
         <img class="lapiz" src="img/Header/compromiso.png">
 
         <ul id="menu">
@@ -163,30 +163,30 @@
                 &nbsp; &nbsp;
                 <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
                 <table class="table2">
-                <tr>
-                    <th>Capacitación</th>
-                </tr>
-                <tr>
-                    <th>Calendario de actividades</th>
-                </tr>
-                <tr>
-                    <th>Instrumentos de medición</th>
-                </tr>
-                <tr>
-                    <th>Fichas SIESE</th>
-                </tr>
-                <tr>
-                    <th>Buscador de estrategias</th>
-                </tr>
-            </table>
-            <table class="table3">
-                <tr>
-                    <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
-                </tr>
-                <tr>
-                    <th><img src="img/Botones/Admin_usuarios.png"style="max-width: 140px; margin-top: 10px; float:right;"></th>
-                </tr>
-            </table>
+                    <tr>
+                        <th>Capacitación</th>
+                    </tr>
+                    <tr>
+                        <th>Calendario de actividades</th>
+                    </tr>
+                    <tr>
+                        <th>Instrumentos de medición</th>
+                    </tr>
+                    <tr>
+                        <th>Fichas SIESE</th>
+                    </tr>
+                    <tr>
+                        <th>Buscador de estrategias</th>
+                    </tr>
+                </table>
+                <table class="table3">
+                    <tr>
+                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                    <tr>
+                        <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                </table>
             </div>
         </div>
     </footer> <!-- / #main-footer -->
@@ -195,6 +195,41 @@
 
 </html>
 <style>
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+        border: none;
+        background: rgba(220, 104, 9, 0.90);
+        font-weight: normal;
+
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+        border: none;
+        background: rgba(220, 104, 9, 0.90);
+        font-weight: normal;
+
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+        border: none;
+        background: rgba(220, 104, 9, 0.90);
+        font-weight: normal;
+    }
+
     #menu {
         width: 100%;
         margin: 0;
@@ -230,8 +265,8 @@
 
     #menu li:hover>a {
         border-bottom: 9px solid #07ACAA;
-           
-        }
+
+    }
 
     *html #menu li a:hover {
         /* IE6 */
@@ -246,18 +281,18 @@
     /* Sub-menu */
 
     #menu ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: none;
-            position: absolute;
-            top: 42px;
-            left: 26%;
-            z-index: 99999;
-            background: #07ACAA;
-            border-radius: 2px;
-            text-transform: none;
-        }  
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+        position: absolute;
+        top: 42px;
+        left: 26%;
+        z-index: 99999;
+        background: #07ACAA;
+        border-radius: 2px;
+        text-transform: none;
+    }
 
     #menu ul li {
         float: none;
@@ -274,16 +309,16 @@
     }
 
     #menu ul a {
-            padding: 10px;
-            height: auto;
-            line-height: 1;
-            display: block;
-            white-space: nowrap;
-            float: none;
-            text-transform: none;
-            color: white;
-            background:#07ACAA;
-        }
+        padding: 10px;
+        height: auto;
+        line-height: 1;
+        display: block;
+        white-space: nowrap;
+        float: none;
+        text-transform: none;
+        color: white;
+        background: #07ACAA;
+    }
 
     *html #menu ul a {
         /* IE6 */
@@ -320,7 +355,7 @@
         border-bottom: 8px solid #444;
     }
 
-  
+
     #menu ul li:last-child a {
         -moz-border-radius: 0 0 5px 5px;
         -webkit-border-radius: 0 0 5px 5px;
@@ -401,7 +436,7 @@
         font-size: 15px;
         transition: 0.4s;
         font-family: "Fira Sans Condensed", sans-serif;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255, 255, 255, 0.5);
         font-weight: bold;
     }
 
@@ -508,14 +543,14 @@
     }
 
     hr {
-            height: 2px;
-            background-color: #fc455c;
-            margin-left: 0.5%;
-            width: 85.2%;
-            position: relative;
-            top: 18px;
+        height: 2px;
+        background-color: #fc455c;
+        margin-left: 0.5%;
+        width: 85.2%;
+        position: relative;
+        top: 18px;
 
-        }
+    }
 
     hr.subtitulo {
         height: 2px;
@@ -528,54 +563,55 @@
     }
 
     div.imagen {
-            position: relative;
-            right: 12%;
-            top: 25px;
-        }
+        position: relative;
+        right: 12%;
+        top: 25px;
+    }
 
 
     table.table2 {
-            position: absolute;
-            left: 88%;
-            top: -10px;
-            font-size: 12px;
-            color: #fc455c;
-            font-family: "Fira Sans Condensed", sans-serif;
-            font-style: normal;
-            font-weight: bold;
-            text-decoration: underline;
-            text-align: left;
-            background-color: #CCCCCC;
-            border-spacing: 2px;
-        }
+        position: absolute;
+        left: 88%;
+        top: -10px;
+        font-size: 12px;
+        color: #fc455c;
+        font-family: "Fira Sans Condensed", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: left;
+        background-color: #CCCCCC;
+        border-spacing: 2px;
+    }
 
-        table.table3 {
-            position: absolute;
-            left: 99%;
-            top: -40px;
-            border-spacing: 2px;
-        }
+    table.table3 {
+        position: absolute;
+        left: 99%;
+        top: -40px;
+        border-spacing: 2px;
+    }
 
-        #main-footer {
-            background: #CCCCCC;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            flex: 0 0 auto;
-            height: 150px;
-            overflow: hidden;
-            margin-bottom: 0px;
-        }
-        #main-header {
-            background: #25496b;
-            color: white;
-            width: 100%;
-            height: 80px;
-            flex: 0 0 auto;
-            margin-bottom: 50px;
-            overflow: hidden;
-        }
+    #main-footer {
+        background: #CCCCCC;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        flex: 0 0 auto;
+        height: 150px;
+        overflow: hidden;
+        margin-bottom: 0px;
+    }
+
+    #main-header {
+        background: #25496b;
+        color: white;
+        width: 100%;
+        height: 80px;
+        flex: 0 0 auto;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
 
     #main-header a {
         color: #999;
@@ -619,44 +655,45 @@
     }
 
     img.logo {
-            position: absolute;
-            top: 30px;
-            max-width: 145px;
-            max-height: 42.11px;
-            left: 5%;
-        }
+        position: absolute;
+        top: 30px;
+        max-width: 145px;
+        max-height: 42.11px;
+        left: 5%;
+    }
 
-        img.lapiz {
-            position: absolute;
-            top: 8px;
-            width: 199.05px;
-            max-height: 80px;
-            left: 20%;
-        }
+    img.lapiz {
+        position: absolute;
+        top: 8px;
+        width: 199.05px;
+        max-height: 80px;
+        left: 20%;
+    }
+
     #main-content header,
     #main-content .content {
         padding: 40px;
     }
 
     div.container {
-            background-color: #cccccc;
-            border-radius: 12px;
-            border: 1px solid #f27611;
-            width: 100%;
-            height: 905px;
-            margin: 0 auto;
-            max-width: 1240px;
-            margin-bottom: 50px;
-            padding: 20px;
-            position: relative;
-            top: 20px;
-            background-image: url("img/presentacion.png");
-            background-position: center center;
-            background-size: 40%;
-            background-repeat: no-repeat;
-            overflow: hidden;
-            flex: 1 0 auto;
-        }
+        background-color: #cccccc;
+        border-radius: 12px;
+        border: 1px solid #f27611;
+        width: 100%;
+        height: 905px;
+        margin: 0 auto;
+        max-width: 1240px;
+        margin-bottom: 50px;
+        padding: 20px;
+        position: relative;
+        top: 20px;
+        background-image: url("img/presentacion.png");
+        background-position: center center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        flex: 1 0 auto;
+    }
 
     /*acordeón1*/
 
@@ -664,21 +701,21 @@
         width: 50.3%;
         position: absolute;
         top: 108px;
-        height:24px;
+        height: 24px;
         left: 34.7%;
     }
 
-   
+
     .ui-accordion-header {
         border-top-color: #999999;
-        background-color: rgba(80,80,80,0.9);
+        background-color: rgba(80, 80, 80, 0.9);
         font-weight: bolder;
         color: #cccccc;
     }
 
     .ui-accordion-header-active {
         border-top-color: #da9600;
-        background-color: rgba(220,104,9,0.90);
+        background-color: rgba(220, 104, 9, 0.90);
         font-size: bolder;
         color: #cccccc;
     }
@@ -697,7 +734,7 @@
     .ui-accordion-content-active {
         border-style: 1px solid;
         border-color: #da9600;
-        background-color:rgba(255,255,255,0.5);
+        background-color: rgba(255, 255, 255, 0.5);
         color: white;
 
     }
@@ -728,7 +765,7 @@
         border-color: #da9600;
         background-color: transparent;
         color: #cccccc;
-        
+
 
     }
 </style>
