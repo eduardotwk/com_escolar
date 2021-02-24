@@ -916,9 +916,9 @@
             <h1 class="mes" style="right: 42%;">Diciembre</h1>
             <hr class="mes">
         </div>
-        <img class="descarga" src="img/Fichas/Descargar.png">
-        <img class="imprimir" src="img/Fichas/imprimir.png">
-        <div id="table">
+        <a href="descargaCalendario.php"><img class="descarga" src="img/Fichas/Descargar.png"></a>
+        <a href="printCalendario.php"><img class="imprimir" src="img/Fichas/imprimir.png">
+        <div id="table"></a>
             <table>
                 <tr>
                     <th>

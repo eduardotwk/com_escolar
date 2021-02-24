@@ -23,10 +23,12 @@
         .accordionMenu {
             width: 500px;
             margin: 0 auto;
+           
         }
 
         .accordionMenu input[type=radio] {
             display: none;
+            
         }
 
         .accordionMenu label {
@@ -40,8 +42,8 @@
             position: relative;
             cursor: pointer;
             border-bottom: 1px solid #e6e6e6;
-            border-top-color: #da9600;
-            background-color: rgba(220, 104, 9, 0.90);
+            border-top-color: #999999;
+            background-color: rgba(80,80,80,0.9);   
             height: 34px;
             left: 0px;
             padding: 7px 20px 0px;
@@ -88,8 +90,8 @@
 
         .accordionMenu input[type=radio]:checked+label:after {
             transform: rotate(90deg);
+           
         }
-
         .accordionMenu input[type=radio]:checked+label+.content {
             max-height: 250px;
             overflow-y:scroll ;

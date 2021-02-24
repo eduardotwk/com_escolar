@@ -33,7 +33,7 @@ if (!empty($_GET['id_ficha'])) {
 
         if($cmsData["parrafo2"]!=""){
             echo"<input type=radio name=trg1 id=acc2 checked=checked>";
-            echo"<label for=acc2>Contenido 2</label>";
+            echo"<label  for=acc2>Contenido 2</label>";
             echo "<div class=content>";
                echo" <div class=inner>";
                echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo2']) . '</p>';
