@@ -124,6 +124,12 @@
 
 <body>
     <style>
+        a.table2 {
+            font-size: 12px;
+            color: #fc455c;
+            font-family: "Fira Sans Condensed", sans-serif;
+        }
+
         th.tittable {
             color: #22a2b0;
             font-family: "Fira Sans Condensed", sans-serif;
@@ -145,8 +151,9 @@
             text-decoration: underline;
             font-weight: bolder;
         }
-        a.contenido2{
-             color: #fc455c;
+
+        a.contenido2 {
+            color: #fc455c;
             font-family: "Fira Sans Condensed", sans-serif;
             font-size: 14px;
         }
@@ -432,7 +439,7 @@
 
         #menu li:hover>a {
             border-bottom: 9px solid #07ACAA;
-           
+
         }
 
         *html #menu li a:hover {
@@ -485,7 +492,7 @@
             float: none;
             text-transform: none;
             color: white;
-            background:#07ACAA;
+            background: #07ACAA;
         }
 
         *html #menu ul a {
@@ -585,6 +592,7 @@
             overflow: hidden;
             margin-bottom: 0px;
         }
+
         #main-header {
             background: #25496b;
             color: white;
@@ -636,7 +644,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, .1);
         }
 
-            
+
         img.logo {
             position: absolute;
             top: 30px;
@@ -652,7 +660,7 @@
             max-height: 80px;
             left: 20%;
         }
-     
+
         div.container {
             background-color: #cccccc;
             border-radius: 12px;
@@ -710,10 +718,9 @@
             top: 18px;
 
         }
-        
     </style>
     <header id="main-header">
-    <img class="logo" src="img/logo home.png">
+        <img class="logo" src="img/logo home.png">
         <img class="lapiz" src="img/Header/compromiso.png">
 
         <ul id="menu">
@@ -835,30 +842,39 @@
                 &nbsp; &nbsp;
                 <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
                 <table class="table2">
-                <tr>
-                    <th>Capacitación</th>
-                </tr>
-                <tr>
-                    <th>Calendario de actividades</th>
-                </tr>
-                <tr>
-                    <th>Instrumentos de medición</th>
-                </tr>
-                <tr>
-                    <th>Fichas SIESE</th>
-                </tr>
-                <tr>
-                    <th>Buscador de estrategias</th>
-                </tr>
-            </table>
-            <table class="table3">
-                <tr>
-                    <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
-                </tr>
-                <tr>
-                    <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
-                </tr>
-            </table>
+                    <tr>
+
+                        <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php">Capacitación</th>
+                    </tr>
+                    <tr>
+                        <th><a class="table2" href="calendario.php">Calendario de actividades</th>
+                    </tr>
+                    <tr>
+                        <th><a class="table2" href="https://www.compromisoescolar.com/inicia_encuesta.php">Instrumentos de medición</th>
+                    </tr>
+                    <tr>
+                        <th><a class="table2" href="#">Fichas SIESE</th>
+                    </tr>
+                    <tr>
+                        <th><a class="table2" href="buscar.php">Buscador de estrategias</th>
+                    </tr>
+                </table>
+                <table class="table3">
+                    <tr>
+                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                    <tr>
+                        <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                </table>
+                <table class="table3">
+                    <tr>
+                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                    <tr>
+                        <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                </table>
             </div>
         </div>
     </footer> <!-- / #main-footer -->

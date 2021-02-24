@@ -194,7 +194,7 @@
     }
 
     #main-header {
-      background-color:#fc455c;
+      background-color: #fc455c;
       width: 100%;
       height: 20px;
       flex: 0 0 auto;
@@ -240,6 +240,13 @@
       background-color: #CCCCCC;
       border-spacing: 2px;
     }
+
+    a.table2 {
+      font-size: 12px;
+      color: #fc455c;
+      font-family: "Fira Sans Condensed", sans-serif;
+    }
+
 
     table.table3 {
       position: absolute;
@@ -434,19 +441,20 @@
         <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
         <table class="table2">
           <tr>
-            <th>Capacitación</th>
+
+            <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php">Capacitación</th>
           </tr>
           <tr>
-            <th>Calendario de actividades</th>
+            <th><a class="table2" href="calendario.php">Calendario de actividades</th>
           </tr>
           <tr>
-            <th>Instrumentos de medición</th>
+            <th><a class="table2" href="https://www.compromisoescolar.com/inicia_encuesta.php">Instrumentos de medición</th>
           </tr>
           <tr>
-            <th>Fichas SIESE</th>
+            <th><a class="table2" href="#">Fichas SIESE</th>
           </tr>
           <tr>
-            <th>Buscador de estrategias</th>
+            <th><a class="table2" href="buscar.php">Buscador de estrategias</th>
           </tr>
         </table>
         <table class="table3">

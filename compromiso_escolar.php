@@ -164,19 +164,28 @@
                 <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
                 <table class="table2">
                     <tr>
-                        <th>Capacitación</th>
+
+                        <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php">Capacitación</th>
                     </tr>
                     <tr>
-                        <th>Calendario de actividades</th>
+                        <th><a class="table2" href="calendario.php">Calendario de actividades</th>
                     </tr>
                     <tr>
-                        <th>Instrumentos de medición</th>
+                        <th><a class="table2" href="https://www.compromisoescolar.com/inicia_encuesta.php">Instrumentos de medición</th>
                     </tr>
                     <tr>
-                        <th>Fichas SIESE</th>
+                        <th><a class="table2" href="#">Fichas SIESE</th>
                     </tr>
                     <tr>
-                        <th>Buscador de estrategias</th>
+                        <th><a class="table2" href="buscar.php">Buscador de estrategias</th>
+                    </tr>
+                </table>
+                <table class="table3">
+                    <tr>
+                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                    <tr>
+                        <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
                     </tr>
                 </table>
                 <table class="table3">
@@ -729,6 +738,7 @@
         overflow: hidden;
         background-repeat: no-repeat;
         left: 95%;
+        color: #999999;
     }
 
     .ui-accordion-content-active {
@@ -750,22 +760,28 @@
 
     .ui-accordion2-header {
         border-top-color: #999999;
-        background-color: #666666;
-
+        background-color: rgba(80, 80, 80, 0.9);
+        font-weight: bolder;
+        color: #cccccc;
     }
 
     .ui-accordion2-header-active {
-        border-top-color: #da9600;
-        background-color: #f27611;
-
+        border-style: 1px solid;
+        border-color: #da9600;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: white;
     }
 
     .ui-accordion2-content-active {
         border-style: 1px solid;
         border-color: #da9600;
-        background-color: transparent;
-        color: #cccccc;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: white;
 
-
+    }
+    a.table2 {
+      font-size: 12px;
+      color: #fc455c;
+      font-family: "Fira Sans Condensed", sans-serif;
     }
 </style>

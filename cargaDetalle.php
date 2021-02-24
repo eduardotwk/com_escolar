@@ -18,29 +18,68 @@ if (!empty($_GET['id_ficha'])) {
 
     if ($query->num_rows > 0) {
         $cmsData = $query->fetch_assoc();
-        echo "<div>";
-        echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo1']) . '</p>';
-        echo "</div>";
-        echo "<br>";
-        echo "<div>";
-        echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo2']) . '</p>';
-        echo "</div>";
-        echo "<br>";
-        echo "<div>";
-        echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo3']) . '</p>';
-        echo "</div>";
-        echo "<br>";
-        echo "<div>";
-        echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo4']) . '</p>';
-        echo "</div>";
-        echo "<br>";
-        echo "<div>";
-        echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo5']) . '</p>';
-        echo "</div>";
+        
+        if($cmsData["parrafo1"]!=""){
+            echo "<div class= accordionMenu>";
+            echo"<input type=radio name=trg1 id=acc1 checked=checked>";
+            echo"<label for=acc1>Contenido 1</label>";
+            echo "<div class=content>";
+               echo" <div class=inner>";
+               echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo1']) . '</p>';
+                echo "</div>";
+            echo "</div> ";
+        }
+      
+
+        if($cmsData["parrafo2"]!=""){
+            echo"<input type=radio name=trg1 id=acc2 checked=checked>";
+            echo"<label for=acc2>Contenido 2</label>";
+            echo "<div class=content>";
+               echo" <div class=inner>";
+               echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo2']) . '</p>';
+                echo "</div>";
+            echo "</div> ";
+        }
+       
+
+        if($cmsData["parrafo3"]!=""){
+            echo"<input type=radio name=trg1 id=acc3 checked=checked>";
+        echo"<label for=acc3>Contenido 3</label>";
+        echo "<div class=content>";
+           echo" <div class=inner>";
+           echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo3']) . '</p>';
+            echo "</div>";
+        echo "</div> ";
+        }
+        
+
+        if($cmsData["parrafo4"]!=""){
+            
+        echo"<input type=radio name=trg1 id=acc4 checked=checked>";
+        echo"<label for=acc4>Contenido 4</label>";
+        echo "<div class=content>";
+           echo" <div class=inner>";
+           echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo4']) . '</p>';
+            echo "</div>";
+        echo "</div> ";
+        }
+        if($cmsData["parrafo5"]!=""){
+            echo"<input type=radio name=trg1 id=acc5 checked=checked>";
+            echo"<label for=acc5>Contenido 5</label>";
+            echo "<div class=content>";
+               echo" <div class=inner>";
+               echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo5']) . '</p>';
+                echo "</div>";
+            echo "</div> ";
+    
+            echo "</div>";
+    
+        }
+        
+        
     } else {
         echo 'Content not found....';
     }
 } else {
     echo 'Content not found....';
 }
-?>
