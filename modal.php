@@ -21,7 +21,7 @@
 <body>
     <style>
         .accordionMenu {
-            width: 500px;
+            width: 610px;
             margin: 0 auto;
            
         }
@@ -137,7 +137,7 @@
 	                    border-style:solid;
 	                    background-color:#fffefd;
 	                    border-radius:3px 3px 3px 3px;
-                        width: 600px;">
+                        width: 675px;">
                 <div class="modal-header" style="background-color: #22a2b0;height:30px;">
                     <button style="position: relative;top:-7px;" type="button" class="close" data-dismiss="modal" onclick="location.href='buscar.php'">×</button>
                     <h4 class="modal-tittle"><?php echo $_GET['nombre_ficha']; ?></h4>
