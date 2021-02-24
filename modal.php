@@ -54,6 +54,11 @@
             border-bottom-right-radius: 0;
         }
 
+        .accordionMenu input[type=radio]:checked + label {
+            border-top-color: #da9600;
+            background-color: rgba(220,104,9,0.90);
+        }
+        
         .accordionMenu label::after {
             display: block;
             content: "";
@@ -108,6 +113,16 @@
             text-align: justify;
             margin-block-end: 0;
         }
+        h4{
+            font-family: "Fira Sans Condensed Bold", sans-serif;
+            color: whitesmoke;
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 1em;
+            text-align: left;
+            position: absolute;
+            top:0px;
+        }
     </style>
 
     <!-- Trigger the modal with a button -->
@@ -121,10 +136,11 @@
 	                    border-width:1px;
 	                    border-style:solid;
 	                    background-color:#fffefd;
-	                    border-radius:3px 3px 3px 3px;">
+	                    border-radius:3px 3px 3px 3px;
+                        width: 600px;">
                 <div class="modal-header" style="background-color: #22a2b0;height:30px;">
                     <button style="position: relative;top:-7px;" type="button" class="close" data-dismiss="modal" onclick="location.href='buscar.php'">×</button>
-                    <h4 class="modal-tittle"></h4>
+                    <h4 class="modal-tittle"><?php echo $_GET['nombre_ficha']; ?></h4>
                 </div>
                 <div class="modal-body" style="height: 530px;">
                 </div>
@@ -139,12 +155,16 @@
 </body>
 <script type="text/javascript">
     $('.openBtn').on('click', function() {
+        //document.getElementById("titMod").innerHTML = tit_ficha;
         $('.modal-body').load('cargaDetalle.php?id_ficha=<?php echo $_GET['id_ficha']; ?>', function() {
             $('#myModal').modal({
                 show: true
             });
         });
     })
+
+   
+
 </script>
 
 </html>

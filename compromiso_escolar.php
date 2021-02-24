@@ -11,6 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/base.css">
     <script>
         $(function() {
             $("#accordion").accordion();
@@ -26,7 +27,7 @@
     <header id="main-header">
         <img class="logo" src="img/logo home.png">
         <img class="lapiz" src="img/Header/compromiso.png">
-
+        <img class="btnSalir" src="img/Btn-salir-inactivo.png">
         <ul id="menu">
             <li>
                 <a href="#">Pasos</a>
@@ -204,6 +205,15 @@
 
 </html>
 <style>
+    #menu > li::after {
+            content: "";
+            width: 1px;
+            height: 20px;
+            border-right: 2px solid #666;
+            float: right;
+            margin-left: 0px;
+        }
+
     .ui-state-default,
     .ui-widget-content .ui-state-default,
     .ui-widget-header .ui-state-default,
@@ -240,21 +250,28 @@
     }
 
     #menu {
-        width: 100%;
-        margin: 0;
-        padding: 10px 0 0 0;
-        list-style: none;
-        background: transparent;
-        background: transparent;
-        background: transparent;
-        background: transparent;
-        background: transparent;
-        background: transparent;
-        background: transparent;
-        position: absolute;
-        top: 35px;
-    }
-
+            width: 100%;
+            margin: 0;
+            padding: 10px 0 0 0;
+            list-style: none;
+            background: transparent;
+            background: transparent;
+            background: transparent;
+            background: transparent;
+            background: transparent;
+            background: transparent;
+            background: transparent;
+            position: absolute;
+            top: 20px;
+            left:-5%;
+        }
+        img.btnSalir{
+            position: absolute;
+            top: 23px;
+            max-width: 145px;
+            max-height: 42.11px;
+            left: 88%;
+        }
     #menu li {
         float: right;
         padding: 0 0 10px 0;
@@ -664,20 +681,20 @@
     }
 
     img.logo {
-        position: absolute;
-        top: 30px;
-        max-width: 145px;
-        max-height: 42.11px;
-        left: 5%;
-    }
+            position: absolute;
+            top: 23px;
+            max-width: 145px;
+            max-height: 42.11px;
+            left: 5%;
+        }
 
-    img.lapiz {
-        position: absolute;
-        top: 8px;
-        width: 199.05px;
-        max-height: 80px;
-        left: 20%;
-    }
+        img.lapiz {
+            position: absolute;
+            top: 0px;
+            width: 199.05px;
+            max-height: 80px;
+            left: 20%;
+        }
 
     #main-content header,
     #main-content .content {
@@ -779,9 +796,10 @@
         color: white;
 
     }
+
     a.table2 {
-      font-size: 12px;
-      color: #fc455c;
-      font-family: "Fira Sans Condensed", sans-serif;
+        font-size: 12px;
+        color: #fc455c;
+        font-family: "Fira Sans Condensed", sans-serif;
     }
 </style>

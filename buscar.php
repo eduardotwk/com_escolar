@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/base.css">
     <script>
         $(document).ready(function() {
             $("#test").CreateMultiCheckBox({
@@ -417,7 +418,8 @@
             background: transparent;
             background: transparent;
             position: absolute;
-            top: 35px;
+            top: 20px;
+            left: -5%;
         }
 
         #menu li {
@@ -647,7 +649,7 @@
 
         img.logo {
             position: absolute;
-            top: 30px;
+            top: 23px;
             max-width: 145px;
             max-height: 42.11px;
             left: 5%;
@@ -655,10 +657,18 @@
 
         img.lapiz {
             position: absolute;
-            top: 8px;
+            top: 0px;
             width: 199.05px;
             max-height: 80px;
             left: 20%;
+        }
+
+        img.btnSalir {
+            position: absolute;
+            top: 23px;
+            max-width: 145px;
+            max-height: 42.11px;
+            left: 88%;
         }
 
         div.container {
@@ -718,11 +728,20 @@
             top: 18px;
 
         }
+
+        #menu>li::after {
+            content: "";
+            width: 1px;
+            height: 20px;
+            border-right: 2px solid #666;
+            float: right;
+            margin-left: 0px;
+        }
     </style>
     <header id="main-header">
         <img class="logo" src="img/logo home.png">
         <img class="lapiz" src="img/Header/compromiso.png">
-
+        <img class="btnSalir" src="img/Btn-salir-inactivo.png">
         <ul id="menu">
             <li>
                 <a href="#">Pasos</a>

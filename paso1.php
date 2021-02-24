@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/base.css">
     <script>
         $(function() {
             $("#accordion").accordion();
@@ -66,6 +67,15 @@
 
 <body>
     <style>
+        #menu>li::after {
+            content: "";
+            width: 1px;
+            height: 20px;
+            border-right: 2px solid #666;
+            float: right;
+            margin-left: 0px;
+        }
+
         a.table2 {
             font-size: 12px;
             color: #fc455c;
@@ -289,7 +299,8 @@
             background: transparent;
             background: transparent;
             position: absolute;
-            top: 35px;
+            top: 20px;
+            left: -5%;
         }
 
         #menu li {
@@ -811,7 +822,7 @@
 
         img.logo {
             position: absolute;
-            top: 30px;
+            top: 23px;
             max-width: 145px;
             max-height: 42.11px;
             left: 5%;
@@ -819,15 +830,24 @@
 
         img.lapiz {
             position: absolute;
-            top: 8px;
+            top: 0px;
             width: 199.05px;
             max-height: 80px;
             left: 20%;
+        }
+
+        img.btnSalir {
+            position: absolute;
+            top: 23px;
+            max-width: 145px;
+            max-height: 42.11px;
+            left: 88%;
         }
     </style>
     <header id="main-header">
         <img class="logo" src="img/logo home.png">
         <img class="lapiz" src="img/Header/compromiso.png">
+        <img class="btnSalir" src="img/Btn-salir-inactivo.png">
 
 
         <ul id="menu" style="font-weight: normal;">
@@ -973,7 +993,7 @@
 
         </div>
         <div class="chart-skills">
-            <div id="fondo"><img src="img/Navegador-P02.png"></div>
+            <div id="fondo"><img src="img/Pasos/Navegador-P1.png" style="width: 100px;height:100px;"></div>
             <div id="trozo" class=""></div>
             <div id="p1" onmouseover="torta('chica', 'p1');" onmouseout="limpiartorta('trozo');"></div>
             <div id="p2" onmouseover="torta('chica', 'p2');" onmouseout="limpiartorta('trozo');"></div>

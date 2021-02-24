@@ -5,6 +5,7 @@
   <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/base.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script>
     function torta(rueda, trozo) {
@@ -333,7 +334,7 @@
 
     img.logo {
       position: absolute;
-      top: 45px;
+      top: 35px;
       max-width: 255px;
       max-height: 72.11px;
       left: 3%;

@@ -25,7 +25,7 @@ if(!empty($_GET['id_ficha'])){
         //echo '<h4>'.utf8_encode($cmsData['parrafo1']).'</h4>';
        // echo '<p>'.utf8_encode($cmsData['parrafo2']).'</p>';
 		//header('Content-type: application/pdf');
-		header("Content-Disposition: attachment; filename='".$cmsData['nombre'].".pdf'"); // con esto lo descargas.
+		header("Content-Disposition: attachment; filename=".$cmsData['nombre'].".pdf"); // con esto lo descargas.
 		echo $cmsData['contenido']; // con eso lo muestras en pantalla
 		
 

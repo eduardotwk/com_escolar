@@ -6,15 +6,25 @@
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/base.css">
 </head>
 
 <body>
     <style>
-     a.table2 {
-      font-size: 12px;
-      color: #fc455c;
-      font-family: "Fira Sans Condensed", sans-serif;
-    }
+        img.btnSalir {
+            position: absolute;
+            top: 23px;
+            max-width: 145px;
+            max-height: 42.11px;
+            left: 88%;
+        }
+
+        a.table2 {
+            font-size: 12px;
+            color: #fc455c;
+            font-family: "Fira Sans Condensed", sans-serif;
+        }
+
         #submenu ul li a {
             color: white;
         }
@@ -32,7 +42,8 @@
             background: transparent;
             background: transparent;
             position: absolute;
-            top: 35px;
+            top: 20px;
+            left: -15%;
         }
 
         #menu li {
@@ -614,7 +625,7 @@
 
         img.logo {
             position: absolute;
-            top: 30px;
+            top: 23px;
             max-width: 145px;
             max-height: 42.11px;
             left: 5%;
@@ -622,11 +633,12 @@
 
         img.lapiz {
             position: absolute;
-            top: 8px;
+            top: 0px;
             width: 199.05px;
             max-height: 80px;
             left: 20%;
         }
+
 
 
 
@@ -738,10 +750,20 @@
             right: 12%;
             top: 25px;
         }
+
+        #menu>li::after {
+            content: "";
+            width: 1px;
+            height: 20px;
+            border-right: 2px solid #666;
+            float: right;
+            margin-left: 0px;
+        }
     </style>
     <header id="main-header">
         <img class="logo" src="img/logo home.png">
         <img class="lapiz" src="img/Header/compromiso.png">
+        <img class="btnSalir" src="img/Btn-salir-inactivo.png">
         <ul id="menu">
             <li>
                 <a href="#">Pasos</a>
@@ -918,50 +940,51 @@
         </div>
         <a href="descargaCalendario.php"><img class="descarga" src="img/Fichas/Descargar.png"></a>
         <a href="printCalendario.php"><img class="imprimir" src="img/Fichas/imprimir.png">
-        <div id="table"></a>
-            <table>
-                <tr>
-                    <th>
-                        <a href="https://www.e-mineduc.cl/login/index.php">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <a href="#">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
-                                Calendario<br />de actividades
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
-                                Instrumentos<br />de medición
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/4.-Fichas proceso.png" style="width: 40px;" style="height: 40px;">
-                            Fichas<br />SIESE
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <a href="buscar.php">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
-                                Buscador de<br />estrategias
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <a href="https://www.compromisoescolar.com/inicia_reportes.php">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
-                                Resultados de<br />medición
-                    </th>
-                </tr>
-            </table>
-        </div>
+            <div id="table">
+        </a>
+        <table>
+            <tr>
+                <th>
+                    <a href="https://www.e-mineduc.cl/login/index.php">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="#">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
+                            Calendario<br />de actividades
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
+                            Instrumentos<br />de medición
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/4.-Fichas proceso.png" style="width: 40px;" style="height: 40px;">
+                        Fichas<br />SIESE
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="buscar.php">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
+                            Buscador de<br />estrategias
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="https://www.compromisoescolar.com/inicia_reportes.php">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
+                            Resultados de<br />medición
+                </th>
+            </tr>
+        </table>
+    </div>
 
 
     </div>

@@ -22,7 +22,7 @@ if (!empty($_GET['id_ficha'])) {
         if($cmsData["parrafo1"]!=""){
             echo "<div class= accordionMenu>";
             echo"<input type=radio name=trg1 id=acc1 checked=checked>";
-            echo"<label for=acc1>Contenido 1</label>";
+            echo"<label for=acc1 >Contenido 1</label>";
             echo "<div class=content>";
                echo" <div class=inner>";
                echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo1']) . '</p>';

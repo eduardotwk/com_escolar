@@ -6,28 +6,30 @@
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/base.css">
 </head>
 
 <body>
     <header id="main-header">
-    <img class="logo" src="img/logo home.png">
+        <img class="logo" src="img/logo home.png">
         <img class="lapiz" src="img/Header/compromiso.png">
+        <img class="btnSalir" src="img/Btn-salir-inactivo.png">
         <ul id="menu">
-    <li>
-        <a href="#">Pasos</a>
-        <ul id="submenu">
-            <li><a href="paso1.php">Paso 1</a></li>
-            <li><a href="paso2.php">Paso 2</a></li>
-            <li><a href="paso3.php">Paso 3</a></li>
-            <li><a href="paso4.php">Paso 4</a></li>
-            <li><a href="paso5.php">Paso 5</a></li>
-            <li><a href="paso6.php">Paso 6</a></li>
+            <li>
+                <a href="#">Pasos</a>
+                <ul id="submenu">
+                    <li><a href="paso1.php">Paso 1</a></li>
+                    <li><a href="paso2.php">Paso 2</a></li>
+                    <li><a href="paso3.php">Paso 3</a></li>
+                    <li><a href="paso4.php">Paso 4</a></li>
+                    <li><a href="paso5.php">Paso 5</a></li>
+                    <li><a href="paso6.php">Paso 6</a></li>
+                </ul>
+            </li>
+            <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
+            <li><a href="presentacion.php">Presentación</a></li>
+            <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
         </ul>
-    </li>
-    <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
-    <li><a href="presentacion.php">Presentación</a></li>
-    <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
-</ul>
 
     </header><!-- / #main-header -->
 
@@ -52,20 +54,21 @@
                 <tr>
                     <th>
                         <a href="https://www.e-mineduc.cl/login/index.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
                     </th>
                 </tr>
                 <tr>
                     <th>
-                    <a href="calendario.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
-                            Calendario<br />de actividades
+                        <a href="calendario.php">
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
+                                Calendario<br />de actividades
                     </th>
                 </tr>
                 <tr>
                     <th>
-                    <a href="https://www.compromisoescolar.com/inicia_encuesta.php"><image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
-                            Instrumentos<br />de medición
+                        <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
+                                Instrumentos<br />de medición
                     </th>
                 </tr>
                 <tr>
@@ -77,15 +80,15 @@
                 <tr>
                     <th>
                         <a href="buscar.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
-                            Buscador de<br />estrategias
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
+                                Buscador de<br />estrategias
                     </th>
                 </tr>
                 <tr>
                     <th>
                         <a href="https://www.compromisoescolar.com/inicia_reportes.php">
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
-                            Resultados de<br />medición
+                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
+                                Resultados de<br />medición
                     </th>
                 </tr>
             </table>
@@ -109,39 +112,39 @@
                 &nbsp; &nbsp;
                 <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
                 <table class="table2">
-                <tr>
+                    <tr>
 
-            <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php">Capacitación</th>
-          </tr>
-          <tr>
-            <th><a class="table2" href="calendario.php">Calendario de actividades</th>
-          </tr>
-          <tr>
-            <th><a class="table2" href="https://www.compromisoescolar.com/inicia_encuesta.php">Instrumentos de medición</th>
-          </tr>
-          <tr>
-            <th><a class="table2" href="#">Fichas SIESE</th>
-          </tr>
-          <tr>
-            <th><a class="table2" href="buscar.php">Buscador de estrategias</th>
-          </tr>
-        </table>
-        <table class="table3">
-          <tr>
-            <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
-          </tr>
-          <tr>
-            <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
-          </tr>
-            </table>
-            <table class="table3">
-                <tr>
-                    <th><img src="img/Botones/Manual_plataforma.png"  style="max-width: 140px; margin-top: 10px; float:right;"></th>
-                </tr>
-                <tr>
-                    <th><img src="img/Botones/Admin_usuarios.png"  style="max-width: 140px; margin-top: 10px; float:right;"></th>
-                </tr>
-            </table>
+                        <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php">Capacitación</th>
+                    </tr>
+                    <tr>
+                        <th><a class="table2" href="calendario.php">Calendario de actividades</th>
+                    </tr>
+                    <tr>
+                        <th><a class="table2" href="https://www.compromisoescolar.com/inicia_encuesta.php">Instrumentos de medición</th>
+                    </tr>
+                    <tr>
+                        <th><a class="table2" href="#">Fichas SIESE</th>
+                    </tr>
+                    <tr>
+                        <th><a class="table2" href="buscar.php">Buscador de estrategias</th>
+                    </tr>
+                </table>
+                <table class="table3">
+                    <tr>
+                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                    <tr>
+                        <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                </table>
+                <table class="table3">
+                    <tr>
+                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                    <tr>
+                        <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                    </tr>
+                </table>
             </div>
         </div>
     </footer> <!-- / #main-footer -->
@@ -149,205 +152,238 @@
 
 </html>
 <style>
-a.table2 {
-      font-size: 12px;
-      color: #fc455c;
-      font-family: "Fira Sans Condensed", sans-serif;
+    a.table2 {
+        font-size: 12px;
+        color: #fc455c;
+        font-family: "Fira Sans Condensed", sans-serif;
     }
-     #submenu ul li a{
-        color:white;
+
+    #submenu ul li a {
+        color: white;
     }
-    #menu{
-    width: 100%;
-    margin: 0;
-    padding: 10px 0 0 0;
-    list-style: none;  
-    background: transparent;
-    background:  transparent;
-    background:  transparent;    
-    background:  transparent;    
-    background:  transparent;
-    background:  transparent;
-    background:  transparent;
-    position: absolute;
-    top:35px;
-}
 
-#menu li{
-    float: right;
-    padding: 0 0 10px 0;
-    position: relative;
-    right:10%;
-}
+    #menu {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        position: absolute;
+        top: 20px;
+        left: -5%;
+    }
 
-#menu a{
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    float: left;
-    height: 25px;
-    padding: 0 25px;
-    text-decoration: none;
-   
-}
+    #menu li {
+        float: right;
+        padding: 0 0 10px 0;
+        position: relative;
+        right: 10%;
+    }
 
-#menu li:hover>a {
-    border-bottom: 9px solid #07ACAA;
-           
-        }
+    #menu>li::after {
+        content: "";
+        width: 1px;
+        height: 20px;
+        border-right: 2px solid #666;
+        float: right;
+        margin-left: 0px;
+    }
 
-*html #menu li a:hover{ /* IE6 */
-    color: black;
+    #menu a {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        float: left;
+        height: 25px;
+        padding: 0 25px;
+        text-decoration: none;
 
-}
+    }
 
-#menu li:hover > ul{
-    display: block;
-}
+    #menu li:hover>a {
+        border-bottom: 9px solid #07ACAA;
 
-/* Sub-menu */
+    }
 
-#menu ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: none;
-            position: absolute;
-            top: 42px;
-            left: 26%;
-            z-index: 99999;
-            background: #07ACAA;
-            border-radius: 2px;
-            text-transform: none;
-        }
+    *html #menu li a:hover {
+        /* IE6 */
+        color: black;
 
-#menu ul li{
-    float: none;
-    margin: 0;
-    padding: 0;
-    display: block;  
-    background-color: #22a2b0;
-}
+    }
 
-#menu ul li:last-child{   
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;    
-}
+    #menu li:hover>ul {
+        display: block;
+    }
 
-#menu ul a {
-            padding: 10px;
-            height: auto;
-            line-height: 1;
-            display: block;
-            white-space: nowrap;
-            float: none;
-            text-transform: none;
-            color: white;
-            background:#07ACAA;
-        }
+    /* Sub-menu */
 
-*html #menu ul a{ /* IE6 */   
-    height: 10px;
-    width: 150px;
-}
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+        position: absolute;
+        top: 42px;
+        left: 26%;
+        z-index: 99999;
+        background: #07ACAA;
+        border-radius: 2px;
+        text-transform: none;
+    }
 
-*:first-child+html #menu ul a{ /* IE7 */    
-    height: 10px;
-    width: 150px;
-}
+    #menu ul li {
+        float: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        background-color: #22a2b0;
+    }
 
-#menu ul a:hover{
-    background: white;
-    color:black;
-}
+    #menu ul li:last-child {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 
-#menu ul li:first-child a{
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-}
+    #menu ul a {
+        padding: 10px;
+        height: auto;
+        line-height: 1;
+        display: block;
+        white-space: nowrap;
+        float: none;
+        text-transform: none;
+        color: white;
+        background: #07ACAA;
+    }
 
-#menu ul li:first-child a:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #444;
-}
+    *html #menu ul a {
+        /* IE6 */
+        height: 10px;
+        width: 150px;
+    }
 
-#menu ul li:first-child a:hover:after{
-    border-bottom-color: white; 
-}
+    *:first-child+html #menu ul a {
+        /* IE7 */
+        height: 10px;
+        width: 150px;
+    }
 
-#menu ul li:last-child a{
-    -moz-border-radius: 0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-}
+    #menu ul a:hover {
+        background: white;
+        color: black;
+    }
 
-/* Clear floated elements */
-#menu:after{
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
+    #menu ul li:first-child a {
+        -moz-border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+    }
 
-* html #menu             { zoom: 1; } /* IE6 */
-*:first-child+html #menu { zoom: 1; } /* IE7 */
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
 
-#menu ul li:first-child a:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #444;
-}
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: white;
+    }
 
-#menu ul li:first-child a:hover:after{
-    border-bottom-color: #04acec; 
-}
-     nav ul li a:hover {
+    #menu ul li:last-child a {
+        -moz-border-radius: 0 0 5px 5px;
+        -webkit-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    /* Clear floated elements */
+    #menu:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    * html #menu {
+        zoom: 1;
+    }
+
+    /* IE6 */
+    *:first-child+html #menu {
+        zoom: 1;
+    }
+
+    /* IE7 */
+
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
+
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: #04acec;
+    }
+
+    nav ul li a:hover {
         background: #22a2b0;
     }
-    a{
+
+    a {
         color: #000000;
         font-family: "Open Sans", sans-serif;
         font-size: 10px;
         text-decoration: none;
     }
+
     div.imagen {
-            position: relative;
-            right: 12%;
-            top: 25px;
-        }
+        position: relative;
+        right: 12%;
+        top: 25px;
+    }
 
-        img.logo {
-            position: absolute;
-            top: 30px;
-            max-width: 145px;
-            max-height: 42.11px;
-            left: 5%;
-        }
+    img.logo {
+        position: absolute;
+        top: 23px;
+        max-width: 145px;
+        max-height: 42.11px;
+        left: 5%;
+    }
 
-        img.lapiz {
-            position: absolute;
-            top: 8px;
-            width: 199.05px;
-            max-height: 80px;
-            left: 20%;
-        }
+    img.lapiz {
+        position: absolute;
+        top: 0px;
+        width: 199.05px;
+        max-height: 80px;
+        left: 20%;
+    }
 
+    img.btnSalir {
+        position: absolute;
+        top: 23px;
+        max-width: 145px;
+        max-height: 42.11px;
+        left: 88%;
+    }
 
     p.p1 {
         color: #000000;
@@ -374,7 +410,7 @@ a.table2 {
         position: absolute;
         left: 60%;
         top: 70px;
-		margin-left:-70px;
+        margin-left: -70px;
         width: 30%;
     }
 
@@ -388,8 +424,8 @@ a.table2 {
         text-align-last: left;
         position: relative;
         top: 445px;
-		margin-left:10px;
-		width:60%;
+        margin-left: 10px;
+        width: 60%;
         left: 54.2%;
     }
 
@@ -449,14 +485,14 @@ a.table2 {
     }
 
     hr {
-            height: 2px;
-            background-color: #fc455c;
-            margin-left: 0.5%;
-            width: 85%;
-            position: relative;
-            top: 18px;
+        height: 2px;
+        background-color: #fc455c;
+        margin-left: 0.5%;
+        width: 85%;
+        position: relative;
+        top: 18px;
 
-        }
+    }
 
     h1 {
         position: absolute;
@@ -477,68 +513,69 @@ a.table2 {
 
 
     #main-footer {
-            background: #CCCCCC;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            flex: 0 0 auto;
-            height: 150px;
-            overflow: hidden;
-            margin-bottom: 0px;
-        }
-  
-    table.table2 {
-            position: absolute;
-            left: 88%;
-            top: -10px;
-            font-size: 12px;
-            color: #fc455c;
-            font-family: "Fira Sans Condensed", sans-serif;
-            font-style: normal;
-            font-weight: bold;
-            text-decoration: underline;
-            text-align: left;
-            background-color: #CCCCCC;
-            border-spacing: 2px;
-        }
+        background: #CCCCCC;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        flex: 0 0 auto;
+        height: 150px;
+        overflow: hidden;
+        margin-bottom: 0px;
+    }
 
-        table.table3 {
-            position: absolute;
-            left: 99%;
-            top: -40px;
-            border-spacing: 2px;
-        }
+    table.table2 {
+        position: absolute;
+        left: 88%;
+        top: -10px;
+        font-size: 12px;
+        color: #fc455c;
+        font-family: "Fira Sans Condensed", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: left;
+        background-color: #CCCCCC;
+        border-spacing: 2px;
+    }
+
+    table.table3 {
+        position: absolute;
+        left: 99%;
+        top: -40px;
+        border-spacing: 2px;
+    }
 
     div.container {
-            background-color: #cccccc;
-            border-radius: 12px;
-            border: 1px solid #f27611;
-            width: 100%;
-            height: 870px;
-            margin: 0 auto;
-            max-width: 1240px;
-            margin-bottom: 50px;
-            padding: 20px;
-            position: relative;
-            top: 20px;
-            background-image: url("img/presentacion.png");
-            background-position: center center;
-            background-size: 40%;
-            background-repeat: no-repeat;
-            overflow: hidden;
-            flex: 1 0 auto;
-        }
+        background-color: #cccccc;
+        border-radius: 12px;
+        border: 1px solid #f27611;
+        width: 100%;
+        height: 870px;
+        margin: 0 auto;
+        max-width: 1240px;
+        margin-bottom: 50px;
+        padding: 20px;
+        position: relative;
+        top: 20px;
+        background-image: url("img/presentacion.png");
+        background-position: center center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        flex: 1 0 auto;
+    }
 
-        #main-header {
-            background: #25496b;
-            color: white;
-            width: 100%;
-            height: 80px;
-            flex: 0 0 auto;
-            margin-bottom: 50px;
-            overflow: hidden;
-        }
+    #main-header {
+        background: #25496b;
+        color: white;
+        width: 100%;
+        height: 80px;
+        flex: 0 0 auto;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+
     #main-header a {
         color: #999;
         font-family: "Fira Sans";
@@ -571,7 +608,7 @@ a.table2 {
         padding: 0 10px;
         text-decoration: none;
     }
-    
+
     #main-content {
         background: white;
         width: 90%;
