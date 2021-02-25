@@ -45,7 +45,7 @@ if (!empty($_GET['id_ficha'])) {
 
         if ($cmsData["parrafo3"] != "") {
             echo "<input type=radio name=trg1 id=acc3 checked=checked>";
-            echo "<label for=acc3>Cuarta Sección</label>";
+            echo "<label for=acc3>Tercera Sección</label>";
             echo "<div class=content>";
             echo " <div class=inner>";
             echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo3']) . '</p>';
@@ -57,7 +57,7 @@ if (!empty($_GET['id_ficha'])) {
         if ($cmsData["parrafo4"] != "") {
 
             echo "<input type=radio name=trg1 id=acc4 checked=checked>";
-            echo "<label for=acc4>Quinta Sección</label>";
+            echo "<label for=acc4>Cuarta Sección</label>";
             echo "<div class=content>";
             echo " <div class=inner>";
             echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo4']) . '</p>';
@@ -66,7 +66,7 @@ if (!empty($_GET['id_ficha'])) {
         }
         if ($cmsData["parrafo5"] != "") {
             echo "<input type=radio name=trg1 id=acc5 checked=checked>";
-            echo "<label for=acc5>Contenido 5</label>";
+            echo "<label for=acc5>Quinta Sección</label>";
             echo "<div class=content>";
             echo " <div class=inner>";
             echo '<p class= acordion2>' . utf8_encode($cmsData['parrafo5']) . '</p>';
