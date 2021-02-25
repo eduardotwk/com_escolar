@@ -67,12 +67,13 @@
 
 <body>
     <style>
-          .ui-accordion .ui-accordion-content{
+        .ui-accordion .ui-accordion-content {
             padding: 1em 2.2em;
             border-top: 0;
             overflow: auto;
             height: 574px;
         }
+
         .ui-state-default,
         .ui-widget-content .ui-state-default,
         .ui-widget-header .ui-state-default,
@@ -1012,7 +1013,9 @@
                 </table>
                 <table class="table3">
                     <tr>
-                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                        <th><a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+                                <image src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;">
+                            </a></th>
                     </tr>
                     <tr>
                         <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>

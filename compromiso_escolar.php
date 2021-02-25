@@ -183,7 +183,9 @@
                 </table>
                 <table class="table3">
                     <tr>
-                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                        <th><a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+                                <image src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;">
+                            </a>
                     </tr>
                     <tr>
                         <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
@@ -205,14 +207,14 @@
 
 </html>
 <style>
-    #menu > li::after {
-            content: "";
-            width: 1px;
-            height: 20px;
-            border-right: 2px solid #666;
-            float: right;
-            margin-left: 0px;
-        }
+    #menu>li::after {
+        content: "";
+        width: 1px;
+        height: 20px;
+        border-right: 2px solid #666;
+        float: right;
+        margin-left: 0px;
+    }
 
     .ui-state-default,
     .ui-widget-content .ui-state-default,
@@ -250,28 +252,30 @@
     }
 
     #menu {
-            width: 100%;
-            margin: 0;
-            padding: 10px 0 0 0;
-            list-style: none;
-            background: transparent;
-            background: transparent;
-            background: transparent;
-            background: transparent;
-            background: transparent;
-            background: transparent;
-            background: transparent;
-            position: absolute;
-            top: 20px;
-            left:-5%;
-        }
-        img.btnSalir{
-            position: absolute;
-            top: 23px;
-            max-width: 145px;
-            max-height: 42.11px;
-            left: 88%;
-        }
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        background: transparent;
+        position: absolute;
+        top: 20px;
+        left: -5%;
+    }
+
+    img.btnSalir {
+        position: absolute;
+        top: 23px;
+        max-width: 145px;
+        max-height: 42.11px;
+        left: 88%;
+    }
+
     #menu li {
         float: right;
         padding: 0 0 10px 0;
@@ -681,20 +685,20 @@
     }
 
     img.logo {
-            position: absolute;
-            top: 23px;
-            max-width: 145px;
-            max-height: 42.11px;
-            left: 5%;
-        }
+        position: absolute;
+        top: 23px;
+        max-width: 145px;
+        max-height: 42.11px;
+        left: 5%;
+    }
 
-        img.lapiz {
-            position: absolute;
-            top: 0px;
-            width: 199.05px;
-            max-height: 80px;
-            left: 20%;
-        }
+    img.lapiz {
+        position: absolute;
+        top: 0px;
+        width: 199.05px;
+        max-height: 80px;
+        left: 20%;
+    }
 
     #main-content header,
     #main-content .content {
@@ -755,14 +759,14 @@
         overflow: hidden;
         background-repeat: no-repeat;
         left: 95%;
-        color:#cccccc;
+        color: #cccccc;
     }
 
     .ui-accordion-content-active {
         border-style: 1px solid;
         border-color: #da9600;
         background-color: rgba(255, 255, 255, 0.5);
-        color:#cccccc;
+        color: #cccccc;
 
     }
 

@@ -808,7 +808,8 @@
             color: #fc455c;
             font-family: "Fira Sans Condensed", sans-serif;
         }
-        .ui-accordion .ui-accordion-content{
+
+        .ui-accordion .ui-accordion-content {
             padding: 1em 2.2em;
             border-top: 0;
             overflow: auto;
@@ -910,7 +911,7 @@
                 </ul>
             </div>
             <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
-            <div style="height: 574px;"> 
+            <div style="height: 574px;">
                 <p class="acordion2">
                     Que la estrategia seleccionada no se esté implementando: es necesario revisar las causas de lo anterior, y realizar los ajustes necesarios; puede que la estrategia seleccionada no sea la más pertinente para la realidad del establecimiento y se deba modificar la planificación inicial ajustándola a las necesidades y posibilidades reales de la escuela.
                 </p>
@@ -999,7 +1000,9 @@
                 </table>
                 <table class="table3">
                     <tr>
-                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                        <th><a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+                                <image src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;">
+                            </a></th>
                     </tr>
                     <tr>
                         <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>

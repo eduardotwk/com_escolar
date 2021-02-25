@@ -776,7 +776,8 @@
             float: right;
             margin-left: 0px;
         }
-        .ui-accordion .ui-accordion-content{
+
+        .ui-accordion .ui-accordion-content {
             padding: 1em 2.2em;
             border-top: 0;
             overflow: auto;
@@ -924,7 +925,7 @@
         </div>
         <div id="accordion">
             <h4>Descripción</h4>
-            <div style="height: 574px;"> 
+            <div style="height: 574px;">
                 <p class="acordion2">
                     Esta paso implica la descarga y revisión de los reportes de resultados que arroja esta plataforma. El coordinador o la coordinadora tiene el acceso a la plataforma para descargar los reportes. Para poder comprender los resultados con mayor facilidad se sugiere leer el Manual de Usuario de la Plataforma de Compromiso Escolar y revisar el módulo de capacitación. <br /><br />
                     Luego se espera que todos los miembros del Consejo Escolar puedan participar activamente en el análisis e interpretación de los datos, complementando la información cuantitativa que arroja esta plataforma con antecedentes entregados por apoderados y apoderadas, estudiantes y profesorado, que permitan comprender de mejor manera los resultados. Este diagnóstico es de vital importancia como línea base inicial para la toma de decisiones respecto a la selección de las estrategias que se aplicarán. <br /><br />
@@ -1031,7 +1032,9 @@
                 </table>
                 <table class="table3">
                     <tr>
-                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                        <th><a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+                                <image src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;">
+                            </a></th>
                     </tr>
                     <tr>
                         <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>

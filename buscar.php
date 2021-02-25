@@ -277,7 +277,9 @@
                 </table>
                 <table class="table3">
                     <tr>
-                        <th><img src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
+                        <th><a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+                                <image src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;">
+                            </a></th>
                     </tr>
                     <tr>
                         <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
@@ -311,8 +313,8 @@
                 </div>
                 <div class="modal-body" style="height: 530px;">
                 </div>
-               
-                <a  onclick="descargar();"><img src="img/Fichas/Descargar.png" style="height: 40px;width: 40px;position:absolute;left:90%; top:auto;bottom: 10px;"></a>
+
+                <a onclick="descargar();"><img src="img/Fichas/Descargar.png" style="height: 40px;width: 40px;position:absolute;left:90%; top:auto;bottom: 10px;"></a>
             </div>
         </div>
     </div>
@@ -320,36 +322,32 @@
 </body>
 
 <script type="text/javascript">
-function descargar(){
-    
-    var idFicDescarga = document.getElementById("idFicha").innerHTML;
-    window.location="descarga.php?id_ficha="+idFicDescarga;
-} 
+    function descargar() {
+
+        var idFicDescarga = document.getElementById("idFicha").innerHTML;
+        window.location = "descarga.php?id_ficha=" + idFicDescarga;
+    }
 
 
-function levantaMod(id){
-    
+    function levantaMod(id) {
 
-    var identificador="fic"+id;
-    var nombre = document.getElementById(identificador).innerHTML;
-    document.getElementById("titMod").innerHTML = nombre;
-    document.getElementById("idFicha").innerHTML = id;
-    document.getElementById("btnModal").click();
 
-}
+        var identificador = "fic" + id;
+        var nombre = document.getElementById(identificador).innerHTML;
+        document.getElementById("titMod").innerHTML = nombre;
+        document.getElementById("idFicha").innerHTML = id;
+        document.getElementById("btnModal").click();
+
+    }
 
     $('#btnModal').on('click', function() {
         var idFic = document.getElementById("idFicha").innerHTML;
-        $('.modal-body').load('cargaDetalle.php?id_ficha='+idFic, function(response) {
+        $('.modal-body').load('cargaDetalle.php?id_ficha=' + idFic, function(response) {
             $('#myModal').modal({
                 show: true
             });
         });
     })
-
-
-
-    
 </script>
 
 
