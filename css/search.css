@@ -25,6 +25,7 @@ li.contenido {
     text-decoration: underline;
     font-weight: bolder;
     padding-bottom: .2em;
+    width: 75.4%;
 }
 
 table.fichas tbody:last-child li.contenido {
@@ -705,7 +706,7 @@ hr {
     border-radius: 3px 3px 3px 3px;
     padding: 20px;
     border-color: #da9600;
-    height:350px;
+    height:800px;
 }
 
 .accordionMenu input[type=radio]:checked+label:after {
@@ -713,9 +714,9 @@ hr {
    
 }
 .accordionMenu input[type=radio]:checked+label+.content {
-    max-height: 250px;
+    max-height: 330px;
     overflow-y:scroll ;
-    height: auto;
+    
 }
 
 
