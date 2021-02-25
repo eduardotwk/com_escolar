@@ -94,7 +94,7 @@
                     "width": localOption.width
                 });
 
-                var detail = $("<div class='MultiCheckBoxDetail'><div class='MultiCheckBoxDetailHeader'><div>Seleccionar Todo</div></div><div class='MultiCheckBoxDetailBody'></div></div>").insertAfter(divSel);
+                var detail = $("<div class='MultiCheckBoxDetail'><div class='MultiCheckBoxDetailHeader'><div></div></div><div class='MultiCheckBoxDetailBody'></div></div>").insertAfter(divSel);
                 detail.css({
                     "width": parseInt(options.width) + 10,
                     "max-height": localOption.height
