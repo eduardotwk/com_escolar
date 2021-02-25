@@ -4,6 +4,9 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/search.css">
@@ -178,6 +181,7 @@
                 </select>
 
                 <button type="submit" class="btn" name="enviar"><i class="fas fa-search"></i>&nbsp;Buscar...</button>
+                <label id="idFicha" style="display: none;"></label>
                 <!----- Including PHP Script ----->
                 <?php include 'databaseconnect.php'; ?>
                 <?php include 'procesa_check.php'; ?>
@@ -291,7 +295,7 @@
         </div>
     </footer> <!-- / #main-footer -->
 
-
+    <button id="btnModal" style="display: none;" type='button' class='btn btn-primary btn-lg' data-toggle='modal' data-target='#myModal'>Abrir modal</button>
     <div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -302,17 +306,51 @@
 	                    border-radius:3px 3px 3px 3px;
                         width: 675px;">
                 <div class="modal-header" style="background-color: #22a2b0;height:30px;">
-                    <button style="position: relative;top:-7px;" type="button" class="close" data-dismiss="modal" onclick="location.href='buscar.php'">×</button>
-                    <h4 class="modal-tittle"><?php echo $_GET['nombre_ficha']; ?></h4>
+                    <button style="position: relative;top:-7px;" type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-tittle" id="titMod"></h4>
                 </div>
                 <div class="modal-body" style="height: 530px;">
                 </div>
-                <a href="imprimir.php?id_ficha=<?php echo $_GET['id_ficha']; ?>"><img src="img/Fichas/imprimir.png" style="height: 40px;width: 40px;position:absolute;left:82%;top:auto;bottom: 10px;"></a>
-                <a href="descarga.php?id_ficha=<?php echo $_GET['id_ficha']; ?>"><img src="img/Fichas/Descargar.png" style="height: 40px;width: 40px;position:absolute;left:90%; top:auto;bottom: 10px;"></a>
+               
+                <a  onclick="descargar();"><img src="img/Fichas/Descargar.png" style="height: 40px;width: 40px;position:absolute;left:90%; top:auto;bottom: 10px;"></a>
             </div>
         </div>
     </div>
 
 </body>
+
+<script type="text/javascript">
+function descargar(){
+    
+    var idFicDescarga = document.getElementById("idFicha").innerHTML;
+    window.location="descarga.php?id_ficha="+idFicDescarga;
+} 
+
+
+function levantaMod(id){
+    
+
+    var identificador="fic"+id;
+    var nombre = document.getElementById(identificador).innerHTML;
+    document.getElementById("titMod").innerHTML = nombre;
+    document.getElementById("idFicha").innerHTML = id;
+    document.getElementById("btnModal").click();
+
+}
+
+    $('#btnModal').on('click', function() {
+        var idFic = document.getElementById("idFicha").innerHTML;
+        $('.modal-body').load('cargaDetalle.php?id_ficha='+idFic, function(response) {
+            $('#myModal').modal({
+                show: true
+            });
+        });
+    })
+
+
+
+    
+</script>
+
 
 </html>

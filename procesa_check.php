@@ -76,7 +76,7 @@ if (isset($_POST['enviar'])) {
 		echo " <thead><tr><th class= tittable>Estrategias obtenidas para los criterios seleccionados: </th></tr></thead>";
 		while($row =  $result->fetch_array()) {
 		
-		echo "  <tbody><tr><td><li class = contenido><a class='contenido2'  data-toggle='modal' data-target='#myModal'>".utf8_encode($row["nombre_ficha"])."</a></li></td></tr> </tbody>";
+		echo "  <tbody><tr><td><li class = contenido id='fic".utf8_encode($row["id_ficha"])."' onclick=levantaMod(".utf8_encode($row["id_ficha"]).");>".utf8_encode($row["nombre_ficha"])."</li></td></tr> </tbody>";
 		}
 	echo	"</table>";
 	} else {
