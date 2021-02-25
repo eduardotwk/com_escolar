@@ -129,7 +129,7 @@
     <button type="button" class="btn btn-success openBtn" style="display: none;"></button>
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content" style="border-color:#da9600;
@@ -156,15 +156,12 @@
 <script type="text/javascript">
     $('.openBtn').on('click', function() {
         //document.getElementById("titMod").innerHTML = tit_ficha;
-        $('.modal-body').load('cargaDetalle.php?id_ficha=<?php echo $_GET['id_ficha']; ?>', function() {
+        $('.modal-body').load('cargaDetalle.php?id_ficha=<?php echo $_GET['id_ficha']; ?>', function(response) {
             $('#myModal').modal({
                 show: true
             });
         });
     })
-
-   
-
 </script>
 
 </html>

@@ -12,7 +12,7 @@ if (isset($_POST['enviar'])) {
 		/* Recorres el arreglo con las opciones seleccionadas y vas completando el where*/
 		echo "<div id='respContent'>";
 		echo "<p class=tit>Criterios Seleccionados:</p>";
-		echo "<hr class=subtitulo>";
+
 		foreach ($_POST['check_lista'] as $seleccion) {
 			switch ($seleccion) {
 				case "co_co":
@@ -76,7 +76,7 @@ if (isset($_POST['enviar'])) {
 		echo " <thead><tr><th class= tittable>Estrategias obtenidas para los criterios seleccionados: </th></tr></thead>";
 		while($row =  $result->fetch_array()) {
 		
-		echo "  <tbody><tr><td><li class = contenido><a class= contenido2 href='modal.php?id_ficha=".utf8_encode($row["id_ficha"])."&nombre_ficha=".utf8_encode($row["nombre_ficha"])."'>".utf8_encode($row["nombre_ficha"])."</a></li></td></tr> </tbody>";
+		echo "  <tbody><tr><td><li class = contenido><a class='contenido2'  data-toggle='modal' data-target='#myModal'>".utf8_encode($row["nombre_ficha"])."</a></li></td></tr> </tbody>";
 		}
 	echo	"</table>";
 	} else {

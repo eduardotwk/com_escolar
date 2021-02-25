@@ -755,14 +755,14 @@
         overflow: hidden;
         background-repeat: no-repeat;
         left: 95%;
-        color: #999999;
+        color:#cccccc;
     }
 
     .ui-accordion-content-active {
         border-style: 1px solid;
         border-color: #da9600;
         background-color: rgba(255, 255, 255, 0.5);
-        color: white;
+        color:#cccccc;
 
     }
 
