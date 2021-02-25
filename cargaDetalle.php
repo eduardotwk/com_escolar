@@ -21,6 +21,10 @@ if (!empty($_GET['id_ficha'])) {
         $cmsData = $query->fetch_assoc();
 
         if ($cmsData["parrafo1"] != "") {
+            echo "<div style='border-radius: 3px 3px 3px 3px;
+            border-color: #da9600;
+            border-style: solid;
+            border-width: 1px;'>";
             echo "<div class= accordionMenu>";
             echo "<input type=radio name=trg1 id=acc1 checked=checked>";
             echo "<label for=acc1>Primera Sección</label>";
@@ -73,6 +77,7 @@ if (!empty($_GET['id_ficha'])) {
             echo "</div>";
             echo "</div> ";
 
+            echo "</div>";
             echo "</div>";
         }
     } else {
