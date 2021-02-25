@@ -774,6 +774,12 @@
             font-family: "Fira Sans";
             font-size: 16px;
         }
+        .ui-accordion .ui-accordion-content{
+            padding: 1em 2.2em;
+            border-top: 0;
+            overflow: auto;
+            height: 574px;
+        }
 
         /*
  * Navegación
@@ -916,7 +922,7 @@
         </div>
         <div id="accordion">
             <h4>Descripción</h4>
-            <div>
+            <div style="height: 574px;">
                 <p class="acordion2">
                     En reunión que corresponda según calendarización del establecimiento, y sobre la base de la información arrojada por la medición del compromiso escolar, en este paso el Consejo Escolar procede a identificar las estrategias de intervención más pertinentes al curso y la escuela. Este análisis quedará registrado en la primera ficha del curso, que es la Ficha de Plan de Acción. <br /><br>
                     Para ello se puede ingresar al buscador de estrategias del SIESE donde encontrarán un conjunto de fichas con orientaciones de promoción de compromiso escolar y factores contextuales. Todas las estrategias están basadas en la evidencia internacional, revisadas por docentes y equipos de convivencia escolar en Chile y adaptadas para el contexto nacional. <br /><br>
@@ -928,7 +934,7 @@
                 </p>
             </div>
             <h4>Preguntas guías para el Consejo Escolar</h4>
-            <div>
+            <div style="height: 574px;">
                 <ul>
                     <li>¿Qué estrategias existentes en nuestra escuela son pertinentes para fomentar el compromiso escolar y qué podría potenciarse para atender las necesidades reportadas por esta plataforma?</li> <br />
                     <li>¿Qué estrategias descritas en esta plataforma podrían ser implementadas en nuestra escuela?</li><br />
@@ -938,7 +944,7 @@
                 </ul>
             </div>
             <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
-            <div>
+            <div style="height: 574px;">
                 <p class="acordion2">
                     Implementar cualquier cambio es un desafío, y si bien, en un inicio puede implicar una mayor carga laboral, se espera que las estrategias implementadas puedan a mediano plazo tener un impacto que beneficie a toda la comunidad escolar.<br><br>
                     Por eso se sugiere que las responsabilidades sobre la gestión e implementación estén repartidas entre varias personas del equipo del Consejo Escolar y en el resto de la comunidad educativa, para ello se debería tener una reunión especial con aquellos y aquellas profesoras y/o otros actores que estén involucrados en la implementación de las estrategias de manera tal de promover el sentido del trabajo y la colaboración.<br><br>

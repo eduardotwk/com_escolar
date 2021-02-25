@@ -776,6 +776,12 @@
             float: right;
             margin-left: 0px;
         }
+        .ui-accordion .ui-accordion-content{
+            padding: 1em 2.2em;
+            border-top: 0;
+            overflow: auto;
+            height: 574px;
+        }
 
 
         /*
@@ -918,7 +924,7 @@
         </div>
         <div id="accordion">
             <h4>Descripción</h4>
-            <div>
+            <div style="height: 574px;"> 
                 <p class="acordion2">
                     Esta paso implica la descarga y revisión de los reportes de resultados que arroja esta plataforma. El coordinador o la coordinadora tiene el acceso a la plataforma para descargar los reportes. Para poder comprender los resultados con mayor facilidad se sugiere leer el Manual de Usuario de la Plataforma de Compromiso Escolar y revisar el módulo de capacitación. <br /><br />
                     Luego se espera que todos los miembros del Consejo Escolar puedan participar activamente en el análisis e interpretación de los datos, complementando la información cuantitativa que arroja esta plataforma con antecedentes entregados por apoderados y apoderadas, estudiantes y profesorado, que permitan comprender de mejor manera los resultados. Este diagnóstico es de vital importancia como línea base inicial para la toma de decisiones respecto a la selección de las estrategias que se aplicarán. <br /><br />
@@ -927,7 +933,7 @@
                 </p>
             </div>
             <h4>Preguntas guías para el Consejo Escolar</h4>
-            <div>
+            <div style="height: 574px;">
                 <ul>
                     <li>¿Quién descargará los reportes de la plataforma al Consejo Escolar?</li> <br />
                     <li>¿Qué otros indicadores se pueden analizar para complementar la información (por ejemplo, rendimiento, comportamiento, asistencia)?</li><br />
@@ -937,7 +943,7 @@
                 </ul>
             </div>
             <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
-            <div>
+            <div style="height: 574px;">
                 <p class="acordion2">
                     En este paso pueden surgir ciertas dificultades para interpretar los datos o analizar los reportes. Por eso es importante llegar a esta fase, habiendo revisado los videos de la capacitación online y sus recursos, de manera tal de poder hacer un mejor uso de los datos.
                 </p>

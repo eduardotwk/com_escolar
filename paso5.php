@@ -808,6 +808,12 @@
             color: #fc455c;
             font-family: "Fira Sans Condensed", sans-serif;
         }
+        .ui-accordion .ui-accordion-content{
+            padding: 1em 2.2em;
+            border-top: 0;
+            overflow: auto;
+            height: 574px;
+        }
     </style>
     <header id="main-header">
         <img class="logo" src="img/logo home.png">
@@ -885,7 +891,7 @@
         </div>
         <div id="accordion">
             <h4>Descripción</h4>
-            <div>
+            <div style="height: 574px;">
                 <p class="acordion2">
                     En este paso el foco es que el Consejo Escolar haga un seguimiento recurrente de las estrategias ejecutadas, revisando la necesidad de realizar ajustes. Para ello puede complementar el análisis que hagan con las opiniones de otros actores que estén ejecutando la estrategia y mediante una revisión de otros indicadores, tales como rendimiento y asistencia. <br /><br />
                     De forma paralela, en cada reunión se sugiere completar la Ficha de Seguimiento y Monitoreo, herramienta utilizada para evaluar la necesidad de hacer algún ajuste y registrar qué cambios se observan en el aula, incluyendo cambios en rendimiento, asistencia o comportamiento. <br /><br />
@@ -895,7 +901,7 @@
             </div>
 
             <h4>Preguntas guías para el Consejo Escolar</h4>
-            <div>
+            <div style="height: 574px;">
                 <ul>
                     <li>¿Cómo se está implementando la o las estrategias?</li> <br />
                     <li>¿Qué ajustes son necesarios?</li><br />
@@ -904,7 +910,7 @@
                 </ul>
             </div>
             <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
-            <div>
+            <div style="height: 574px;"> 
                 <p class="acordion2">
                     Que la estrategia seleccionada no se esté implementando: es necesario revisar las causas de lo anterior, y realizar los ajustes necesarios; puede que la estrategia seleccionada no sea la más pertinente para la realidad del establecimiento y se deba modificar la planificación inicial ajustándola a las necesidades y posibilidades reales de la escuela.
                 </p>

@@ -280,6 +280,12 @@
             background-color: rgba(255, 255, 255, 0.5);
             color: white;
         }
+        .ui-accordion .ui-accordion-content{
+            padding: 1em 2.2em;
+            border-top: 0;
+            overflow: auto;
+            height: 574px;
+        }
 
         #submenu ul li a {
             color: white;
@@ -920,7 +926,7 @@
         </div>
         <div id="accordion">
             <h4>Descripción</h4>
-            <div>
+            <div style="height: 574px;">
                 <p class="acordion2">El primer paso se basa en la constitución participativa de un espacio de decisiones al interior de la escuela para llevar a cabo la implementación de las estrategias de promoción de compromiso escolar y factores contextuales. Este espacio lo denominaremos Consejo Escolar.<br /><br />
                     El Consejo puede ser por curso, nivel educativo o escuela, de manera tal de poder tomar decisiones más precisas de acuerdo con la realidad de cada curso. Para ello se puede identificar las instancias de coordinación del apoyo a los y las estudiantes que ya existen en la escuela con la finalidad de potenciarlas y evitar duplicar las tareas, es decir, si existe un Consejo Escolar o un comité de convivencia escolar se sugiere reforzar dichas instancias.<br /><br />
                     Es relevante que esté compuesto por representantes de toda la comunidad escolar que tengan el poder o la autorización para implementar decisiones dirigidas a fortalecer el compromiso escolar. Se sugiere que al menos participen representantes de: <br />
@@ -942,7 +948,7 @@
                 </p>
             </div>
             <h4>Preguntas guías para el Consejo Escolar</h4>
-            <div>
+            <div style="height: 574px;">
                 <ul>
                     <li>¿Quiénes van a formar parte del Consejo?</li> <br />
                     <li>¿Cuenta el Consejo con la participación de estudiantes y apoderados?</li><br />
@@ -953,7 +959,7 @@
                 </ul>
             </div>
             <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
-            <div>
+            <div style="height: 574px;">
                 <ul>
                     <li>Encontrar tiempo para reunirse entre las distintas tareas: Se les sugiere calendarizar las reuniones para todo el año de manera tal que todos y todas puedan tener reservado el espacio con antelación. También se recomienda organizar con antelación la agenda de la reunión subsiguiente. </li><br />
                     <li>¿Cómo decidir quiénes serán miembros del Consejo Escolar?: Se sugiere inicialmente contar con los profesores y profesoras jefes de los niveles, un o una representante de las directivas de los(as) estudiantes y de los apoderados(as), un miembro del equipo psicosocial del establecimiento y un miembro de los equipos directivos.</li>

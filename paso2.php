@@ -67,6 +67,12 @@
 
 <body>
     <style>
+          .ui-accordion .ui-accordion-content{
+            padding: 1em 2.2em;
+            border-top: 0;
+            overflow: auto;
+            height: 574px;
+        }
         .ui-state-default,
         .ui-widget-content .ui-state-default,
         .ui-widget-header .ui-state-default,
@@ -893,7 +899,7 @@
 
         <div id="accordion">
             <h4>Descripción</h4>
-            <div>
+            <div style="height: 574px;">
                 <p class="acordion2">
                     El compromiso escolar es un indicador básico para hacer un seguimiento a las trayectorias educativas de las y los estudiantes; asimismo, cada escuela puede identificar otros indicadores que pueden ser relevantes para su contexto, y que pueden entregar información relevante para la toma de decisiones oportunas.<br /><br />
                     Se espera que en este paso se organice una estrategia para comunicar sobre el objetivo del SIESE al resto de la comunidad escolar. Se trata de crear una cultura del compromiso escolar a nivel de la escuela, para lo cual se pueden desarrollar distintas estrategias promocionales, las que van a depender de si estamos en un contexto presencial o no. <br /><br />
@@ -903,7 +909,7 @@
                 </p>
             </div>
             <h4>Preguntas guías para el Consejo Escolar</h4>
-            <div>
+            <div style="height: 574px;">
                 <ul>
                     <li>¿Cómo sensibilizamos a toda la comunidad educativa sobre la importancia del compromiso escolar?</li> <br />
                     <li>¿Cómo se hará la promoción de la aplicación del instrumento de compromiso escolar y factores contextuales entre los y las estudiantes, considerando si se está en un contexto presencial o no presencial?</li><br />
@@ -914,7 +920,7 @@
                 </ul>
             </div>
             <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
-            <div>
+            <div style="height: 574px;">
                 <p class="acordion2">
                     En un contexto no presencial puede ser difícil que todos los y las estudiantes respondan el instrumento de compromiso escolar y factores contextuales en el plazo acordado. Por lo mismo, se sugiere incorporar a las y los apoderados en el proceso de manera tal que puedan favorecer que sus hijos e hijas respondan los instrumentos; así como también, se propone involucrar al representante estudiantil, para que motive a sus compañeros y compañeras a responder las preguntas.
                 </p>
