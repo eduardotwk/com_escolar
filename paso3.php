@@ -883,7 +883,7 @@
             <table>
                 <tr>
                     <th>
-                        <a href="https://www.e-mineduc.cl/login/index.php">
+                        <a href="https://www.e-mineduc.cl/login/index.php" target="_blank">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
                     </th>
                 </tr>
@@ -978,7 +978,7 @@
             <a href="https://www.compromisoescolar.com/inicia_reportes.php">
                 <image src="img/menu_flotante/6.-Resultados.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
             </a>
-            <a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+            <a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
                 <image src="img/menu_flotante/manualUsuario.png" style="width:30px;height: 30px;position:absolute;top:55px;left:5%">
             </a>
             <ul class="cuadro2">
@@ -1007,7 +1007,7 @@
                 <table class="table2">
                     <tr>
 
-                        <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php">Capacitación</th>
+                        <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php" target="_blank">Capacitación</th>
                     </tr>
                     <tr>
                         <th><a class="table2" href="calendario.php">Calendario de actividades</th>
@@ -1024,7 +1024,7 @@
                 </table>
                 <table class="table3">
                     <tr>
-                        <th><a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+                        <th><a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
                                 <image src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;">
                             </a></th>
                     </tr>

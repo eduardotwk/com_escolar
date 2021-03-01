@@ -850,7 +850,7 @@
             <table>
                 <tr>
                     <th>
-                        <a href="https://www.e-mineduc.cl/login/index.php">
+                        <a href="https://www.e-mineduc.cl/login/index.php" target="_blank">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
                     </th>
                 </tr>
@@ -992,7 +992,7 @@
                 </table>
                 <table class="table3">
                     <tr>
-                        <th><a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf">
+                        <th><a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
                                 <image src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;">
                             </a></th>
                     </tr>
