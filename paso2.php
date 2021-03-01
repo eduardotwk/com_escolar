@@ -902,9 +902,9 @@
             <h4>Descripción</h4>
             <div style="height: 574px;">
                 <p class="acordion2">
-                    El compromiso escolar es un indicador básico para hacer un seguimiento a las trayectorias educativas de las y los estudiantes; asimismo, cada escuela puede identificar otros indicadores que pueden ser relevantes para su contexto, y que pueden entregar información relevante para la toma de decisiones oportunas.<br /><br />
-                    Se espera que en este paso se organice una estrategia para comunicar sobre el objetivo del SIESE al resto de la comunidad escolar. Se trata de crear una cultura del compromiso escolar a nivel de la escuela, para lo cual se pueden desarrollar distintas estrategias promocionales, las que van a depender de si estamos en un contexto presencial o no. <br /><br />
-                    Posteriormente, la idea es que las y los estudiantes puedan responder el instrumento de compromiso escolar y factores contextuales. El coordinador o la coordinadora del Consejo Escolar tiene que activar el código para que los y las estudiantes puedan responder el instrumento siguiendo las indicaciones del Manual de Usuario. <br /><br />
+                    El Compromiso Escolar es un indicador básico para hacer un seguimiento a las trayectorias educativas de las y los estudiantes; asimismo, cada escuela puede identificar otros indicadores que pueden ser relevantes para su contexto, y que pueden entregar información relevante para la toma de decisiones oportunas.<br /><br />
+                    Se espera que en este paso se organice una estrategia para comunicar sobre el objetivo del SIESE al resto de la comunidad escolar. Se trata de crear una cultura del Compromiso Escolar a nivel de la escuela, para lo cual se pueden desarrollar distintas estrategias promocionales, las que van a depender de si estamos en un contexto presencial o no. <br /><br />
+                    Posteriormente, la idea es que las y los estudiantes puedan responder el instrumento de Compromiso Escolar y factores contextuales. El coordinador o la coordinadora del Consejo Escolar tiene que activar el código para que los y las estudiantes puedan responder el instrumento siguiendo las indicaciones del Manual de Usuario. <br /><br />
                     Se busca que, en un contexto presencial, los y las estudiantes puedan disponer de un momento de la clase para responder en conjunto las preguntas de esta plataforma. Para ello se requiere que cada estudiante tenga acceso a un computador de manera individual y privada, por lo que la sala de computación puede ser un buen lugar. Dado que las preguntas pueden ser respondidas desde cualquier dispositivo, en un contexto no presencial se propone coordinar con los y las estudiantes que en una clase de zoom puedan responder los instrumentos en el mismo momento de manera sincrónica. En el caso que esta opción no sea posible, se pueden buscar otras alternativas que se ajusten a la realidad de cada establecimiento y de los y las estudiantes. Lo importante es que, si se realiza en un contexto no presencial, se pueda ir monitoreando el porcentaje de respuesta de manera tal que nadie quede sin responder. <br /><br />
                     Se sugiere que se puedan levantar todas las respuestas en un plazo de una semana como máximo, y luego de eso que el coordinador o la coordinadora del Consejo Escolar pueda revisar el porcentaje de respuesta y/o determinar alguna estrategia adicional para motivar que todos y todas las estudiantes que no hayan respondido los instrumentos lo puedan hacer.
                 </p>
@@ -912,18 +912,18 @@
             <h4>Preguntas guías para el Consejo Escolar</h4>
             <div style="height: 574px;">
                 <ul>
-                    <li>¿Cómo sensibilizamos a toda la comunidad educativa sobre la importancia del compromiso escolar?</li> <br />
-                    <li>¿Cómo se hará la promoción de la aplicación del instrumento de compromiso escolar y factores contextuales entre los y las estudiantes, considerando si se está en un contexto presencial o no presencial?</li><br />
+                    <li>¿Cómo sensibilizamos a toda la comunidad educativa sobre la importancia del Compromiso Escolar?</li> <br />
+                    <li>¿Cómo se hará la promoción de la aplicación del instrumento de Compromiso Escolar y factores contextuales entre los y las estudiantes, considerando si se está en un contexto presencial o no presencial?</li><br />
                     <li>¿Quién será el responsable de la promoción?</li><br />
-                    <li>¿Quién explicará a los y las estudiantes cómo responder el instrumento de compromiso escolar y factores contextuales en esta plataforma?</li><br />
+                    <li>¿Quién explicará a los y las estudiantes cómo responder el instrumento de Compromiso Escolar y factores contextuales en esta plataforma?</li><br />
                     <li>¿Dónde se hará la aplicación?</li><br />
-                    <li>¿Qué estrategias se implementarán para velar que quienes no hayan respondido el instrumento de compromiso escolar y factores contextuales lo puedan hacer?</li><br />
+                    <li>¿Qué estrategias se implementarán para velar que quienes no hayan respondido el instrumento de Compromiso Escolar y factores contextuales lo puedan hacer?</li><br />
                 </ul>
             </div>
             <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
             <div style="height: 574px;">
                 <p class="acordion2">
-                    En un contexto no presencial puede ser difícil que todos los y las estudiantes respondan el instrumento de compromiso escolar y factores contextuales en el plazo acordado. Por lo mismo, se sugiere incorporar a las y los apoderados en el proceso de manera tal que puedan favorecer que sus hijos e hijas respondan los instrumentos; así como también, se propone involucrar al representante estudiantil, para que motive a sus compañeros y compañeras a responder las preguntas.
+                    En un contexto no presencial puede ser difícil que todos los y las estudiantes respondan el instrumento de Compromiso Escolar y factores contextuales en el plazo acordado. Por lo mismo, se sugiere incorporar a las y los apoderados en el proceso de manera tal que puedan favorecer que sus hijos e hijas respondan los instrumentos; así como también, se propone involucrar al representante estudiantil, para que motive a sus compañeros y compañeras a responder las preguntas.
                 </p>
             </div>
         </div>
@@ -933,8 +933,8 @@
             </hr>
             <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
             <ul class=cuadro1>
-                <li> 2° Reunión del Consejo Escolar para coordinar una estrategia de promoción del compromiso escolar entre los y las estudiantes, junto con el sentido de la medición del compromiso escolar.</li>
-                <li>Medición del compromiso escolar.</li>
+                <li> 2° Reunión del Consejo Escolar para coordinar una estrategia de promoción del Compromiso Escolar entre los y las estudiantes, junto con el sentido de la medición del Compromiso Escolar.</li>
+                <li>Medición del Compromiso Escolar.</li>
                 <li> Revisión del porcentaje de instrumentos respondidos</li>
                 <li> 3° Reunión del Consejo Escolar para coordinar una estrategia adicional y asignar responsabilidades para velar que aquellos(as) estudiantes que no hayan respondido el instrumento lo puedan hacer.</li>
                 <li>Revisión del porcentaje de respuestas finales</li>
@@ -953,7 +953,7 @@
             </a>
             <ul class="cuadro2">
                 <li>Manual de Usuario de la Plataforma de Compromiso Escolar</li>
-                <li>Instrumentos de medición del compromiso escolar</li>
+                <li>Instrumentos de medición del Compromiso Escolar</li>
             </ul>
         </div>
         <div class="chart-skills">

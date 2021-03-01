@@ -938,9 +938,9 @@
                 <ul>
                     <li>¿Quién descargará los reportes de la plataforma al Consejo Escolar?</li> <br />
                     <li>¿Qué otros indicadores se pueden analizar para complementar la información (por ejemplo, rendimiento, comportamiento, asistencia)?</li><br />
-                    <li>¿Qué información entrega la plataforma de compromiso escolar?</li><br />
+                    <li>¿Qué información entrega la plataforma de Compromiso Escolar?</li><br />
                     <li>¿Qué necesidades se desprenden del análisis de los resultados?</li><br />
-                    <li>¿Qué prácticas del colegio o de la sala de clases se pueden vincular a los resultados mostrados en la plataforma de compromiso escolar? </li><br />
+                    <li>¿Qué prácticas del colegio o de la sala de clases se pueden vincular a los resultados mostrados en la plataforma de Compromiso Escolar? </li><br />
                 </ul>
             </div>
             <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
@@ -983,7 +983,7 @@
             </a>
             <ul class="cuadro2">
                 <li>Manual de Usuario de la Plataforma de Compromiso Escolar</li>
-                <li>Resultados de la medición del compromiso escolar</li>
+                <li>Resultados de la medición del Compromiso Escolar</li>
             </ul>
         </div>
     </div>

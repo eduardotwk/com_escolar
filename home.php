@@ -367,7 +367,7 @@
     <h1>Sistema Integrado de <br />Evaluación, Seguimiento y <br />Estrategias de Promoción de <br />
       Compromiso Estudiantil y<br />Factores Contextuales<h2>(SIESE)</h2>
     </h1>
-    <p>El compromiso escolar facilita una activa participación <br />del estudiante con su escuela y su proceso de <br />aprendizaje. Con el objetivo de promover la retención <br />escolar y trayectorias educativas positivas de todas y<br /> todos los estudiantes en los establecimientos escolares,<br /> les invitamos a conocer e implementar los seis <br /> pasos del SIESE.</p>
+    <p>El Compromiso Escolar facilita una activa participación <br />del estudiante con su escuela y su proceso de <br />aprendizaje. Con el objetivo de promover la retención <br />escolar y trayectorias educativas positivas de todas y<br /> todos los estudiantes en los establecimientos escolares,<br /> les invitamos a conocer e implementar los seis <br /> pasos del SIESE.</p>
 
     <div class="chart-skills grande">
       <div id="fondo" class="grande"><img src="img/rueda-pasos.png"></div>

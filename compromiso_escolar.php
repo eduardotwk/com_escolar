@@ -98,12 +98,12 @@
         </div>
         <p class="p1">
             Uno de los elementos centrales del SIESE es la medición del <strong style="font-style: oblique;">Compromiso Escolar</strong>, variable clave para prevenir la desescolarización, debido a que la decisión de abandonar la escuela es la etapa final de un proceso de pérdida paulatina del interés por los estudios.
-            El compromiso escolar es conceptualizado como la participación activa de la o el estudiante en las actividades académicas, curriculares o extracurriculares. A modo general, se entiende que las y los estudiantes comprometidos creen que el aprendizaje es significativo, y están motivados y empeñados en este proceso y en el futuro. El <strong>compromiso escolar</strong> impulsa al estudiante hacia el aprendizaje, pudiendo ser alcanzado por todas y todos.
-            Su importancia radica en que es un <strong>predictor temprano</strong> de las variables que intervienen en el éxito o fracaso de trayectorias educativas, en particular el rendimiento académico y la asistencia. Se comprende además que el compromiso escolar es una variable altamente influenciada por factores contextuales y relacionales, como son la familia, el profesorado y el grupo de pares.
-            Es por esto que se desarrolló un instrumento de evaluación del compromiso escolar en sus <strong>tres subtipos (cognitivo, conductual y afectivo) y los tres factores relacionados (apoyo familiar, apoyo de pares, apoyo de profesorado)</strong> que esperamos sea una herramienta para ayudar a las escuelas a buscar alternativas y promover mejores trayectorias educativas para todos y todas las estudiantes.
+            El Compromiso Escolar es conceptualizado como la participación activa de la o el estudiante en las actividades académicas, curriculares o extracurriculares. A modo general, se entiende que las y los estudiantes comprometidos creen que el aprendizaje es significativo, y están motivados y empeñados en este proceso y en el futuro. El <strong>Compromiso Escolar</strong> impulsa al estudiante hacia el aprendizaje, pudiendo ser alcanzado por todas y todos.
+            Su importancia radica en que es un <strong>predictor temprano</strong> de las variables que intervienen en el éxito o fracaso de trayectorias educativas, en particular el rendimiento académico y la asistencia. Se comprende además que el Compromiso Escolar es una variable altamente influenciada por factores contextuales y relacionales, como son la familia, el profesorado y el grupo de pares.
+            Es por esto que se desarrolló un instrumento de evaluación del Compromiso Escolar en sus <strong>tres subtipos (cognitivo, conductual y afectivo) y los tres factores relacionados (apoyo familiar, apoyo de pares, apoyo de profesorado)</strong> que esperamos sea una herramienta para ayudar a las escuelas a buscar alternativas y promover mejores trayectorias educativas para todos y todas las estudiantes.
 
         </p>
-        <h1 class="acordion">Dimensiones del compromiso escolar</h1>
+        <h1 class="acordion">Dimensiones del Compromiso Escolar</h1>
         <hr class="subtitulo">
         </hr>
         <div id="accordion">
@@ -116,7 +116,7 @@
             <h3>Compromiso conductual</h3>
             <div>
                 <p class="acordion">
-                    El compromiso conductual se basa en la idea de participación en el ámbito académico y actividades sociales o extracurriculares. El componente conductual del compromiso escolar incluye las interacciones y respuestas del estudiante, dentro de la sala de clases, del colegio y en ambientes extracurriculares. Este aspecto del compromiso escolar va desde un continuo, es decir, desde un involucramiento esperado de manera universal (asistencia diaria) a un involucramiento más intenso (Ej. Participación en el centro de alumnos).
+                    El compromiso conductual se basa en la idea de participación en el ámbito académico y actividades sociales o extracurriculares. El componente conductual del Compromiso Escolar incluye las interacciones y respuestas del estudiante, dentro de la sala de clases, del colegio y en ambientes extracurriculares. Este aspecto del Compromiso Escolar va desde un continuo, es decir, desde un involucramiento esperado de manera universal (asistencia diaria) a un involucramiento más intenso (Ej. Participación en el centro de alumnos).
                 </p>
             </div>
             <h3>Compromiso cognitivo</h3>

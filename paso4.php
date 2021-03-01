@@ -873,7 +873,7 @@
     </header><!-- / #main-header -->
 
     <div class="container">
-        <h1>Paso 4:<h1 class="color">Selección e implementación de las estrategias de<br /> promoción de compromiso escolar</h1>
+        <h1>Paso 4:<h1 class="color">Selección e implementación de las estrategias de<br /> promoción de Compromiso Escolar</h1>
         </h1>
         <hr>
         </hr>
@@ -925,10 +925,10 @@
             <h4>Descripción</h4>
             <div style="height: 574px;">
                 <p class="acordion2">
-                    En reunión que corresponda según calendarización del establecimiento, y sobre la base de la información arrojada por la medición del compromiso escolar, en este paso el Consejo Escolar procede a identificar las estrategias de intervención más pertinentes al curso y la escuela. Este análisis quedará registrado en la primera ficha del curso, que es la Ficha de Plan de Acción. <br /><br>
-                    Para ello se puede ingresar al buscador de estrategias del SIESE donde encontrarán un conjunto de fichas con orientaciones de promoción de compromiso escolar y factores contextuales. Todas las estrategias están basadas en la evidencia internacional, revisadas por docentes y equipos de convivencia escolar en Chile y adaptadas para el contexto nacional. <br /><br>
-                    En cada estrategia se indica la subdimensión del compromiso escolar y/o el factor contextual que busca potenciar. También para cada ficha se señala si es aplicable o no en un contexto no presencial, y si su implementación es de tipo personalizada (con un/a estudiante), focalizada ( con un grupo de estudiantes) o universal (con todo el curso o la escuela). <br><br>
-                    El Consejo Escolar tendrá que seleccionar aquellas estrategias que sean más pertinentes para promover los distintos tipos de compromiso escolar (afectivo, cognitivo o conductual) y factores contextuales (familia, profesorado o pares), considerando las áreas que mostraron alertas.<br><br>
+                    En reunión que corresponda según calendarización del establecimiento, y sobre la base de la información arrojada por la medición del Compromiso Escolar, en este paso el Consejo Escolar procede a identificar las estrategias de intervención más pertinentes al curso y la escuela. Este análisis quedará registrado en la primera ficha del curso, que es la Ficha de Plan de Acción. <br /><br>
+                    Para ello se puede ingresar al buscador de estrategias del SIESE donde encontrarán un conjunto de fichas con orientaciones de promoción de Compromiso Escolar y factores contextuales. Todas las estrategias están basadas en la evidencia internacional, revisadas por docentes y equipos de convivencia escolar en Chile y adaptadas para el contexto nacional. <br /><br>
+                    En cada estrategia se indica la subdimensión del Compromiso Escolar y/o el factor contextual que busca potenciar. También para cada ficha se señala si es aplicable o no en un contexto no presencial, y si su implementación es de tipo personalizada (con un/a estudiante), focalizada ( con un grupo de estudiantes) o universal (con todo el curso o la escuela). <br><br>
+                    El Consejo Escolar tendrá que seleccionar aquellas estrategias que sean más pertinentes para promover los distintos tipos de Compromiso Escolar (afectivo, cognitivo o conductual) y factores contextuales (familia, profesorado o pares), considerando las áreas que mostraron alertas.<br><br>
                     También pueden potenciar otras intervenciones ya identificadas, pues en general en las escuelas ya hay un conjunto de estrategias que se implementan pero que no necesariamente se aplican a un determinado curso. Se puede crear, en conjunto con otros profesores y profesoras de la comunidad escolar, un inventario de buenas prácticas que ya existen en la escuela.<br /><br>
                     El objetivo es responder a las necesidades de los y las estudiantes a intervenciones específicas después de haber reunido información sobre las potenciales causas vinculadas a las alertas que indica el sistema; se debe analizar además cómo seguir potenciando los recursos y las intervenciones que puedan ser efectivamente implementadas en la escuela.<br /><br>
                     Una vez identificadas las intervenciones, se debe abordar cómo se implementarán y qué otros actores deben ser incorporados en su aplicación (por ejemplo, otros profesores/as).
@@ -937,7 +937,7 @@
             <h4>Preguntas guías para el Consejo Escolar</h4>
             <div style="height: 574px;">
                 <ul>
-                    <li>¿Qué estrategias existentes en nuestra escuela son pertinentes para fomentar el compromiso escolar y qué podría potenciarse para atender las necesidades reportadas por esta plataforma?</li> <br />
+                    <li>¿Qué estrategias existentes en nuestra escuela son pertinentes para fomentar el Compromiso Escolar y qué podría potenciarse para atender las necesidades reportadas por esta plataforma?</li> <br />
                     <li>¿Qué estrategias descritas en esta plataforma podrían ser implementadas en nuestra escuela?</li><br />
                     <li>¿Qué pasos tenemos que seguir para gestionar la implementación de la estrategia?</li><br />
                     <li>¿Qué actores adicionales al Consejo Escolar se tienen que involucrar en la ejecución de las estrategias?</li><br />
@@ -950,7 +950,7 @@
                     Implementar cualquier cambio es un desafío, y si bien, en un inicio puede implicar una mayor carga laboral, se espera que las estrategias implementadas puedan a mediano plazo tener un impacto que beneficie a toda la comunidad escolar.<br><br>
                     Por eso se sugiere que las responsabilidades sobre la gestión e implementación estén repartidas entre varias personas del equipo del Consejo Escolar y en el resto de la comunidad educativa, para ello se debería tener una reunión especial con aquellos y aquellas profesoras y/o otros actores que estén involucrados en la implementación de las estrategias de manera tal de promover el sentido del trabajo y la colaboración.<br><br>
                     Adicionalmente, al completar la ficha del plan de acción, es importante que el coordinador o la coordinadora del Consejo Escolar procure que las gestiones que se realizarán para implementar las estrategias sean divididas entre los distintos integrantes del Consejo, para evitar que recaiga sobre él o ella toda la responsabilidad de su implementación.<br><br>
-                    En este paso es importante que los equipos directivos, tomen un rol activo para la instalación de las estrategias de compromiso escolar, debido a su mayor incidencia en la toma de decisiones.
+                    En este paso es importante que los equipos directivos, tomen un rol activo para la instalación de las estrategias de Compromiso Escolar, debido a su mayor incidencia en la toma de decisiones.
                 </p>
             </div>
         </div>

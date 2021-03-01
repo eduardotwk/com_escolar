@@ -927,8 +927,8 @@
             <h4>Descripción</h4>
             <div style="height: 574px;">
                 <p class="acordion2">
-                    Al final del año escolar se sugiere hacer un análisis del proceso, esto es, reflexionar sobre los aprendizajes, las dificultades y los obstaculizadores, para luego completar la ficha de cierre. Toda esta información será de relevancia para realizar los ajustes a la implementación del SIESE en el año subsiguiente, una vez que se hayan aplicado nuevamente los instrumentos de compromiso escolar. <br /><br />
-                    Para dicho objetivo, esta plataforma entregará un reporte del nivel de compromiso escolar de esta nueva medición, pero también un reporte de seguimiento para evaluar los cambios entre un año y otro en los niveles de compromiso escolar y/o factores contextuales por cada curso. Así, se espera que el Consejo Escolar pueda tomar decisiones de manera informada para seguir fortaleciendo el compromiso escolar en sus estudiantes.
+                    Al final del año escolar se sugiere hacer un análisis del proceso, esto es, reflexionar sobre los aprendizajes, las dificultades y los obstaculizadores, para luego completar la ficha de cierre. Toda esta información será de relevancia para realizar los ajustes a la implementación del SIESE en el año subsiguiente, una vez que se hayan aplicado nuevamente los instrumentos de Compromiso Escolar. <br /><br />
+                    Para dicho objetivo, esta plataforma entregará un reporte del nivel de Compromiso Escolar de esta nueva medición, pero también un reporte de seguimiento para evaluar los cambios entre un año y otro en los niveles de Compromiso Escolar y/o factores contextuales por cada curso. Así, se espera que el Consejo Escolar pueda tomar decisiones de manera informada para seguir fortaleciendo el Compromiso Escolar en sus estudiantes.
                 </p>
             </div>
 
@@ -944,7 +944,7 @@
             <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
             <div style="height: 574px;">
                 <p class="acordion2">
-                    Algunos cambios en el compromiso escolar se pueden visualizar a corto plazo, mientras que otros a mediano y largo plazo, esto es parte del proceso, por lo que no hay que decepcionarse si no se ven cambios tan significativos en esta primera evaluación del SIESE. En la medida que la o las estrategias que acá se pusieron a prueba (a nivel de curso) se vean complementadas con cambios a nivel de escuela y estrategias de tipo personalizada, es probable que se perciban más cambios entre una aplicación y otra.
+                    Algunos cambios en el Compromiso Escolar se pueden visualizar a corto plazo, mientras que otros a mediano y largo plazo, esto es parte del proceso, por lo que no hay que decepcionarse si no se ven cambios tan significativos en esta primera evaluación del SIESE. En la medida que la o las estrategias que acá se pusieron a prueba (a nivel de curso) se vean complementadas con cambios a nivel de escuela y estrategias de tipo personalizada, es probable que se perciban más cambios entre una aplicación y otra.
                 </p>
             </div>
         </div>

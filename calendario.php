@@ -797,7 +797,7 @@
             <ul>
                 <li>Conformación del Consejo Escolar</li><br>
                 <li>Selección del coordinador(a) del Consejo Escolar</li><br>
-                <li>Capacitación del Consejo Escolar en compromiso escolar</li><br>
+                <li>Capacitación del Consejo Escolar en Compromiso Escolar</li><br>
             </ul>
         </div>
         <div class="mes">
@@ -810,8 +810,8 @@
             <p class="obj"><strong>Objetivos:</strong></p>
             <hr class="subt">
             <ul>
-                <li>Diseñar una estrategia para socializar el sentido y objetivo de la medición del compromiso escolar y de los factores contextuales</li><br>
-                <li>Medición del compromiso escolar</li><br>
+                <li>Diseñar una estrategia para socializar el sentido y objetivo de la medición del Compromiso Escolar y de los factores contextuales</li><br>
+                <li>Medición del Compromiso Escolar</li><br>
             </ul>
             <h1 class="cuadro" style="right: 62%;top:190px;">3° Reunión</h1>
             <img class="cuadro1" src="img/pasoscalendario/P2.png">

@@ -928,9 +928,9 @@
         <div id="accordion">
             <h4>Descripción</h4>
             <div style="height: 574px;">
-                <p class="acordion2">El primer paso se basa en la constitución participativa de un espacio de decisiones al interior de la escuela para llevar a cabo la implementación de las estrategias de promoción de compromiso escolar y factores contextuales. Este espacio lo denominaremos Consejo Escolar.<br /><br />
+                <p class="acordion2">El primer paso se basa en la constitución participativa de un espacio de decisiones al interior de la escuela para llevar a cabo la implementación de las estrategias de promoción de Compromiso Escolar y factores contextuales. Este espacio lo denominaremos Consejo Escolar.<br /><br />
                     El Consejo puede ser por curso, nivel educativo o escuela, de manera tal de poder tomar decisiones más precisas de acuerdo con la realidad de cada curso. Para ello se puede identificar las instancias de coordinación del apoyo a los y las estudiantes que ya existen en la escuela con la finalidad de potenciarlas y evitar duplicar las tareas, es decir, si existe un Consejo Escolar o un comité de convivencia escolar se sugiere reforzar dichas instancias.<br /><br />
-                    Es relevante que esté compuesto por representantes de toda la comunidad escolar que tengan el poder o la autorización para implementar decisiones dirigidas a fortalecer el compromiso escolar. Se sugiere que al menos participen representantes de: <br />
+                    Es relevante que esté compuesto por representantes de toda la comunidad escolar que tengan el poder o la autorización para implementar decisiones dirigidas a fortalecer el Compromiso Escolar. Se sugiere que al menos participen representantes de: <br />
 
                 <ul>
                     <li>Estudiantes</li>
@@ -941,7 +941,7 @@
                 </ul>
                 <p class="acordion2"> También se pueden involucrar a representantes de otros proyectos que trabajen en la escuela para promover trayectorias educativas positivas. <br /><br />
 
-                    La participación de estudiantes y apoderados(as) es fundamental para promover la importancia del compromiso escolar y el sentido del SIESE; el objetivo es que participen activamente durante el proceso de su implementación, desde el uso de esta plataforma web hasta la fase de evaluación y ajustes. <br /><br />
+                    La participación de estudiantes y apoderados(as) es fundamental para promover la importancia del Compromiso Escolar y el sentido del SIESE; el objetivo es que participen activamente durante el proceso de su implementación, desde el uso de esta plataforma web hasta la fase de evaluación y ajustes. <br /><br />
 
                     Se espera que el Consejo Escolar se reúna al menos una vez al mes para dar continuidad y seguimiento de los acuerdos implementados. Para ello es recomendable definir en la primera sesión un coordinador o una coordinadora del Consejo Escolar, que se encargará de convocar las reuniones, liderar el proceso de implementación de las seis fases del SIESE, y de registrarse en la plataforma para ingresar los datos en las fichas y bajar los reportes. De preferencia, el coordinador/a tiene que ser un/a profesor/a jefe, puesto que va a manejar información sensible de los y las estudiantes. </p>
 
@@ -956,7 +956,7 @@
                     <li>¿Qué otros actores que apoyan a las y los estudiantes dentro de la escuela se podrían sumar?</li><br />
                     <li>¿Quién será el coordinador/a responsable de convocar a las reuniones y completar las fichas?</li><br />
                     <li>¿Tiene el Consejo Escolar suficiente autoridad para implementar cambios? ¿Qué se requiere gestionar para que lo tenga?</li><br />
-                    <li>¿Con qué recursos o estrategias cuenta la escuela para promocionar el compromiso escolar? </li><br />
+                    <li>¿Con qué recursos o estrategias cuenta la escuela para promocionar el Compromiso Escolar? </li><br />
                 </ul>
             </div>
             <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
@@ -975,7 +975,7 @@
             <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
             <ul class=cuadro1>
                 <li> 1° Reunión del Consejo Escolar para seleccionar un coordinador(a) del Consejo Escolar y planificar las reuniones del año.</li>
-                <li>Capacitación del Consejo Escolar en compromiso escolar a través de la plataforma online.</li>
+                <li>Capacitación del Consejo Escolar en Compromiso Escolar a través de la plataforma online.</li>
             </ul>
         </div>
         <div class="cuadro2">
