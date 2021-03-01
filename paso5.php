@@ -943,10 +943,10 @@
             <hr class=cuadro2>
             </hr>
             <a href="#">
-                <image src="img/menu_flotante/4.-Fichas proceso.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
+                <img src="img/menu_flotante/4.-Fichas proceso.png" style="width:30px;height: 30px;position:absolute;top:95px;left:3%">
             </a>
             <a href="buscar.php">
-                <image src="img/menu_flotante/5.-Buscador de estrategias.png" style="width:30px;height: 30px;position:absolute;top:55px;left:5%">
+                <img src="img/menu_flotante/5.-Buscador de estrategias.png" style="width:30px;height: 30px;position:absolute;top:55px;left:3%">
             </a>
             <ul class="cuadro2">
                 <li>Buscador de estrategias</li><br>
