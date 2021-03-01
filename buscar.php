@@ -303,10 +303,10 @@
                     <button style="position: relative;top:-7px;" type="button" class="close" data-dismiss="modal">×</button>
                     <h4 class="modal-tittle" id="titMod"></h4>
                 </div>
-                <div class="modal-body" style="height: 530px;">
+                <div class="modal-body" style="height: 600px;">
                 </div>
 
-                <a onclick="descargar();"><img src="img/Fichas/Descargar.png" style="height: 40px;width: 40px;position:absolute;left:90%; top:auto;bottom: 10px;"></a>
+                <a href= "#" onclick="descargar();"><img src="img/Fichas/Descargar.png" style="height: 40px;width: 40px;position:absolute;left:90%; top:auto;bottom: 10px;"></a>
             </div>
         </div>
     </div>
