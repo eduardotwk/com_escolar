@@ -1,6 +1,0 @@
-{
-    "require": {
-        "smalot/pdfparser": "*",
-        "twbs/bootstrap": "5.0.0-beta1"
-    }
-}
