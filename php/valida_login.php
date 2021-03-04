@@ -35,8 +35,8 @@ if ($resultado["usuario"] == $usuario && $resultado["contrasena"] == $contrasena
     $_SESSION['privilegios'] = $privilegios;
 
     header('location: ../modulos.php');
-    die(0);
+    exit();
 } else {
     header('location: ../inicia_reportes.php');
-    die(0);
+    exit();
 }

@@ -7,8 +7,8 @@ setcookie("PHPSESSID", session_id(), 0, $params["path"], $params["domain"],
     true,  // this is the secure flag you need to set. Default is false.
     true  // this is the httpOnly flag you need to set
 );
-require_once "dist/conf/require_conf.php";
 
+require_once "dist/conf/require_conf.php";
 
 if (!isset($_SESSION['user'])) {
     header("location: login.php");

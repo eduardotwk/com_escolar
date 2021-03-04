@@ -26,22 +26,23 @@ function Conexion()
     try {
         if (in_array($_SERVER['REMOTE_ADDR'], $lista)) {
             $conn = new PDO(
-
-
                 "mysql:host=localhost; dbname=compromiso_escolar_corfo;charset=UTF8",
                 "carlos",//"carlos", //root
-                "root"//"secret"
+                "root",//"secret",
+                array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET sql_mode=""')
             );
             $conn->setAttribute(
                 PDO :: ATTR_ERRMODE,
                 PDO :: ERRMODE_EXCEPTION
             );
+
             return $conn;
         } else {
             $conn = new PDO(
                 "mysql:host=167.71.191.60; dbname=compromiso_escolar_corfo;charset=UTF8",
                 "root",
-                "92mbx6#p^wq@hac^"
+                "92mbx6#p^wq@hac^",
+                array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET sql_mode=""')
             );
             $conn->setAttribute(
                 PDO :: ATTR_ERRMODE,

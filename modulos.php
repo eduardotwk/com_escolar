@@ -67,7 +67,7 @@ if (isset($_SESSION['user'])) {
 
             <?php if ($tipo_usuario == 2) { ?>
                 <?php pais_establecimiento($usuario);
-                header("Location:reportes/colegio_index.php");
+                header("Location: reportes/colegio_index.php");
                 ?>
                 <div class="mt-4">
                     <div class="row">
@@ -114,7 +114,7 @@ if (isset($_SESSION['user'])) {
 
             <?php
             if ($tipo_usuario == 3) {
-                header("Location:reportes/sostenedor_index.php");
+                header("Location: reportes/sostenedor_index.php");
             }
             ?>
 
