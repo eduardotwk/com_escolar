@@ -1,16 +1,9 @@
 <?php 
  error_reporting(E_ERROR | E_PARSE);
- $params = session_get_cookie_params();
- setcookie("PHPSESSID", session_id(), 0, $params["path"], $params["domain"],
-     true,  // this is the secure flag you need to set. Default is false.
-     true  // this is the httpOnly flag you need to set
- );
 
  require 'conf/conexion_db.php';
  require 'conf/funciones.php';
  require 'conf/funciones_db.php';
-
- $_SESSION["token"] = md5(uniqid(mt_rand(), true));
 ?>
 <!DOCTYPE html>
 <html>

@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 error_reporting(E_ERROR | E_PARSE);
 
 include_once '../conf/funciones_db.php';
@@ -24,9 +22,10 @@ $token = $_POST["token"];
 
 $resultado = select_user($usuario, $contrasena, $tipo_usuario);
 
-$_SESSION['pais'] = $resultado["pais"];
-
 if ($resultado["usuario"] == $usuario && $resultado["contrasena"] == $contrasena && $resultado["tipo"] == $tipo_usuario) {
+    session_start();
+
+    $_SESSION['pais'] = $resultado["pais"];
     $_SESSION['user'] = $usuario;
     $_SESSION['tipo_usuario'] = $tipo_usuario;
     $_SESSION["tipo_nombre"] = $resultado["rol"];
