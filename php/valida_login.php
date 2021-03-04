@@ -23,29 +23,22 @@ $resultado = select_user($usuario ,$contrasena,$tipo_usuario);
 
 $_SESSION['pais'] = $resultado["pais"];
 
-if($arrResponse["success"] == 1 && $arrResponse["score"] > 0.5) 
-{
-    if( $resultado["usuario"] == $usuario && $resultado["contrasena"] == $contrasena && $resultado["tipo"] == $tipo_usuario){
-            
-        $_SESSION['user'] = $usuario; 
-        
-        $_SESSION['tipo_usuario']= $tipo_usuario;
+if( $resultado["usuario"] == $usuario && $resultado["contrasena"] == $contrasena && $resultado["tipo"] == $tipo_usuario){
 
-        $_SESSION["tipo_nombre"] = $resultado["rol"];
-        
-        $_SESSION["display_nombre"] = $resultado["display_nombre_rol"];
+    $_SESSION['user'] = $usuario;
 
-        $_SESSION["identificador_estable"] = $resultado["id_estable"];
+    $_SESSION['tipo_usuario']= $tipo_usuario;
 
-        $_SESSION['privilegios']= $privilegios;
+    $_SESSION["tipo_nombre"] = $resultado["rol"];
 
-        header('location: ../modulos.php');
-        die(0);
-    }
-    else {
-        header('location: ../inicia_reportes.php');
-        die(0);
-    }
+    $_SESSION["display_nombre"] = $resultado["display_nombre_rol"];
+
+    $_SESSION["identificador_estable"] = $resultado["id_estable"];
+
+    $_SESSION['privilegios']= $privilegios;
+
+    header('location: ../modulos.php');
+    die(0);
 }
 else {
     header('location: ../inicia_reportes.php');
