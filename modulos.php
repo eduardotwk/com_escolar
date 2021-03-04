@@ -240,7 +240,7 @@ Todos los datos ingresados a este módulo se van relacionando de manera de tener
 </html>
 <?php
 	} else {
-	    header("location:reportes/login");
+	    header("location:reportes/login.php");
 	}
 	ob_end_flush();
 ?>
