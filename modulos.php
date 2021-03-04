@@ -1,5 +1,5 @@
 <?php
-ob_start();
+
 session_start();
 
 require_once 'conf/conf_requiere.php';
@@ -233,5 +233,3 @@ setcookie("PHPSESSID", session_id(), 0, $params["path"], $params["domain"],
 </script>
 </body>
 </html>
-
-<?php ob_end_flush(); ?>
