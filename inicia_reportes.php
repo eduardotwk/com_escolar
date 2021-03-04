@@ -176,7 +176,7 @@
                     <div style="text-align: center; line-height: 7px;">
                         <hr style="background: #fc455c;">
                     </div>
-                    <form id="inicia_reporte" method="POST">
+                    <form id="inicia_reporte" method="POST" action="php/valida_login.php">
                         <br>
                         <div style="text-align: center; margin-bottom: 4px;">
                             <i class="fa fa-user" style="color: #fc455c;" aria-hidden="true"></i> &nbsp; Profesionales de la educación
@@ -208,7 +208,7 @@
         <?php include "assets/js/js.php"; ?>
         <script src="reportes/dist/js/funciones.js"></script>
         <script>
-            login_final();  
+            // login_final();
         </script>
         
         <style type="text/css">

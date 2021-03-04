@@ -7,10 +7,7 @@ include_once '../conf/conexion_db.php';
 $usuario =  $_POST["usuario"]; 
 $contrasena = $_POST["contrasena"]; 
 $tipo_usuario = $_POST["tipo_usuario"];
-
 $privilegios = $_POST["privilegios"];
-
- 
 $token = $_POST["token"];
 
 $ch = curl_init();
@@ -42,12 +39,15 @@ if($arrResponse["success"] == 1 && $arrResponse["score"] > 0.5)
 
         $_SESSION['privilegios']= $privilegios;
 
-        echo 1;
+        header('location: ../modulos.php');
+        die(0);
     }
     else {
-        echo 0;
+        header('location: ../inicia_reportes.php');
+        die(0);
     }
 }
 else {
-    echo -1;
+    header('location: ../inicia_reportes.php');
+    die(0);
 }
