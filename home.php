@@ -7,7 +7,7 @@
   <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
   <link rel="stylesheet" href="./css/base.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script>
     function torta(rueda, trozo) {
       var pie;
