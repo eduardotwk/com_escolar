@@ -56,7 +56,7 @@
                 window.location.replace(
                     url_base.protocol + "//" + 
                     url_base.host + "/" + 
-                    "index2.php"
+                    "home.php"
                 );
             });            
         });
