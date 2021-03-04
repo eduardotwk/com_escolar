@@ -51,7 +51,7 @@
                     window.location.replace(
                         url_base.protocol + "//" + 
                         url_base.host + "/" + 
-                        "c_e/home.php"
+                        "home.php"
                     );
                 });
 
