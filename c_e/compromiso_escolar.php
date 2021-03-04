@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Compromiso Escolar</title>
     <script src="https://kit.fontawesome.com/1652fc71a3.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,7 +70,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="https://www.compromisoescolar.com/inicia_encuesta.php">
+                        <a href="/inicia_encuesta.php">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
                                 Instrumentos<br />de medición
                     </th>
@@ -89,7 +90,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="https://www.compromisoescolar.com/inicia_reportes.php">
+                        <a href="/inicia_reportes.php">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
                                 Resultados de<br />medición
                     </th>
@@ -172,7 +173,7 @@
                         <th><a class="table2" href="calendario.php">Calendario de actividades</th>
                     </tr>
                     <tr>
-                        <th><a class="table2" href="https://www.compromisoescolar.com/inicia_encuesta.php">Instrumentos de medición</th>
+                        <th><a class="table2" href="/inicia_encuesta.php">Instrumentos de medición</th>
                     </tr>
                     <tr>
                         <th><a class="table2" href="#">Fichas SIESE</th>
@@ -183,7 +184,7 @@
                 </table>
                 <table class="table3">
                     <tr>
-                        <th><a href="https://www.compromisoescolar.com/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
+                        <th><a href="/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
                                 <image src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;">
                             </a>
                     </tr>
