@@ -194,6 +194,7 @@
                             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                         </div>
                         <input type="hidden" name="token" value="" id="token">
+                        <input type="hidden" name="privilegios" value="0" id="privilegios">
                         <button style="border-radius: 2px; background-color: #fc455c; font-family: ‘Source Sans Pro’, sans-serif; font-size: 12px; font-weight: 900; min-width:120px; height:30px; width: 100%; margin-top: 15px; border-radius: 5px; color: white; box-shadow: rgba(0, 0, 0, 0.22) 1px 1px 1px 1px; border: 1.5px solid #fc455c;" name="login-button" id="ingresar_rep" type="submit" class="icon-submit btn-limon-validar">
                             <span id="inicia_rep">
                                 Ingresar

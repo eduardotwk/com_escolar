@@ -1,4 +1,4 @@
-<?php 
+<?php
 require '../conf/conexion_db.php';
 require '../conf/funciones_db.php';
 

@@ -3,29 +3,31 @@
 session_start();
 error_reporting(E_ERROR | E_PARSE);
 try {
-    require 'assets/librerias/simplexlsx.class.php';   
+    require 'assets/librerias/simplexlsx.class.php';
 } catch (Exception $e) {
     require '../assets/librerias/simplexlsx.class.php';
 }
 //require 'assets/librerias/plantilla.php';
 
-    $params = session_get_cookie_params();
-    setcookie("PHPSESSID", session_id(), 0, $params["path"], $params["domain"],
-        true,  // this is the secure flag you need to set. Default is false.
-        true  // this is the httpOnly flag you need to set
-    );
-    
-function generarCodigo($longitud) {
+$params = session_get_cookie_params();
+setcookie("PHPSESSID", session_id(), 0, $params["path"], $params["domain"],
+    true,  // this is the secure flag you need to set. Default is false.
+    true  // this is the httpOnly flag you need to set
+);
+
+function generarCodigo($longitud)
+{
     $key = '';
     $pattern = '1234567890abcdefghijklmnopqrstuvwxyz';
     $max = strlen($pattern) - 1;
     for ($i = 0; $i < $longitud; $i++)
-        $key .= $pattern{mt_rand(0, $max) };
+        $key .= $pattern{mt_rand(0, $max)};
 
     return $key;
 }
 
-function rand_chars($c, $l, $u = FALSE) {
+function rand_chars($c, $l, $u = FALSE)
+{
     if (!$u)
         for ($s = '', $i = 0, $z = strlen($c) - 1; $i < $l; $x = rand(0, $z), $s .= $c{$x}, $i++)
             ;
@@ -35,12 +37,14 @@ function rand_chars($c, $l, $u = FALSE) {
     return $s;
 }
 
-function limpia_espacios($cadena) {
+function limpia_espacios($cadena)
+{
     $cadena = str_replace(' ', '', $cadena);
     return $cadena;
 }
 
-function cleanData(&$str) {
+function cleanData(&$str)
+{
     if ($str == 't')
         $str = 'TRUE';
     if ($str == 'f')
@@ -85,7 +89,8 @@ function select_token_pdf($establecimiento, $rbd, $curso) {
     ob_end_flush();
 }
 */
-function select_token_pdf_copia($id_establecimiento, $id_docente, $curso) {
+function select_token_pdf_copia($id_establecimiento, $id_docente, $curso)
+{
     $conexion = connectDB_demos();
 
     $sql = "SELECT a.ce_participantes_nombres AS nombres, a.ce_participantes_apellidos AS apellidos, a.ce_participanes_token AS token,
@@ -95,26 +100,26 @@ function select_token_pdf_copia($id_establecimiento, $id_docente, $curso) {
     INNER JOIN ce_curso c ON a.ce_curso_id_ce_curso = c.id_ce_curso
     WHERE a.ce_establecimiento_id_ce_establecimiento = '$id_establecimiento' AND a.ce_docente_id_ce_docente = '$id_docente' AND a.ce_curso_id_ce_curso = '$curso'";
     $query = $conexion->query($sql);
-    
+
     $query2 = $conexion->query($sql);
-    
+
     $conexion = NULL;
     ob_start();
 
     $consulta = $query2->fetch(PDO::FETCH_ASSOC);
-   
+
 
     try {
         require_once 'assets/librerias/vendor/autoload.php';
     } catch (Exception $e) {
         require_once '../assets/librerias/vendor/autoload.php';
     }
-$mpdf = new \Mpdf\Mpdf([
-    'mode'=>'utf-8'
-]);
+    $mpdf = new \Mpdf\Mpdf([
+        'mode' => 'utf-8'
+    ]);
 
 
-$mpdf->WriteHTML('<style>
+    $mpdf->WriteHTML('<style>
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #418BCC;
@@ -128,29 +133,30 @@ body{
 }
 </style>');
 
-$mpdf->WriteHTML('<body>');
-$mpdf->WriteHTML('<div><img src="assets/img/logo.png" width="100px"></div>');
-$mpdf->WriteHTML('<div class="pt-1"><strong>Establecimiento: '. $consulta["nom_estable"].' <br><br>Curso: '.$consulta["nom_curso"].'</strong></div>');
-$mpdf->WriteHTML('<div style="padding-top:3%"><table style="border-collapse: collapse; width: 800px; font-size: 18px;"><thead><tr><th>Nombres</th><th>Apellidos</th><th>Token</th></tr></thead>');
-$mpdf->WriteHTML('<tbody>');
+    $mpdf->WriteHTML('<body>');
+    $mpdf->WriteHTML('<div><img src="assets/img/logo.png" width="100px"></div>');
+    $mpdf->WriteHTML('<div class="pt-1"><strong>Establecimiento: ' . $consulta["nom_estable"] . ' <br><br>Curso: ' . $consulta["nom_curso"] . '</strong></div>');
+    $mpdf->WriteHTML('<div style="padding-top:3%"><table style="border-collapse: collapse; width: 800px; font-size: 18px;"><thead><tr><th>Nombres</th><th>Apellidos</th><th>Token</th></tr></thead>');
+    $mpdf->WriteHTML('<tbody>');
     while ($data = $query->fetch(PDO::FETCH_ASSOC)) {
         $mpdf->WriteHTML('<tr>');
-        $mpdf->WriteHTML('<td style="">'.$data['nombres'].'</td>');
-        $mpdf->WriteHTML('<td style="">'.$data['apellidos'].'</td>');
-        $mpdf->WriteHTML('<td style="">'.$data['token'].'</td>');
+        $mpdf->WriteHTML('<td style="">' . $data['nombres'] . '</td>');
+        $mpdf->WriteHTML('<td style="">' . $data['apellidos'] . '</td>');
+        $mpdf->WriteHTML('<td style="">' . $data['token'] . '</td>');
         $mpdf->WriteHTML('</tr>');
-    }  
-$mpdf->WriteHTML('</tbody>');
-$mpdf->WriteHTML('</table></div>');
-$mpdf->WriteHTML('</body>');
-$mpdf->Output('documentos/pdf/' . $consulta["nom_estable"] . '_' .$consulta["nom_curso"] . ".pdf",\Mpdf\Output\Destination::FILE);
+    }
+    $mpdf->WriteHTML('</tbody>');
+    $mpdf->WriteHTML('</table></div>');
+    $mpdf->WriteHTML('</body>');
+    $mpdf->Output('documentos/pdf/' . $consulta["nom_estable"] . '_' . $consulta["nom_curso"] . ".pdf", \Mpdf\Output\Destination::FILE);
 
     ob_end_flush();
-$ruta = "<a class= 'text-white' href='documentos/pdf/".$consulta["nom_estable"]."_".$consulta["nom_curso"].".pdf' target='_new'>Decargar PDF Curso: ".$consulta["nom_curso"]."_".$consulta["nom_estable"]." <i class='fa fa-download'></i></a>";
+    $ruta = "<a class= 'text-white' href='documentos/pdf/" . $consulta["nom_estable"] . "_" . $consulta["nom_curso"] . ".pdf' target='_new'>Decargar PDF Curso: " . $consulta["nom_curso"] . "_" . $consulta["nom_estable"] . " <i class='fa fa-download'></i></a>";
     return $ruta;
 }
 
-function select_token_pdf_admin($id_establecimiento, $id_docente, $curso) {
+function select_token_pdf_admin($id_establecimiento, $id_docente, $curso)
+{
     $conexion = connectDB_demos();
 
     $query = $conexion->query("SELECT a.ce_participantes_nombres AS nombres, a.ce_participantes_apellidos AS apellidos, a.ce_participanes_token AS token,
@@ -165,20 +171,18 @@ function select_token_pdf_admin($id_establecimiento, $id_docente, $curso) {
     $consulta = $query->fetch(PDO::FETCH_ASSOC);
 
 
-    
-
     try {
         require_once 'assets/librerias/vendor/autoload.php';
     } catch (Exception $e) {
         require_once '../assets/librerias/vendor/autoload.php';
     }
-    
-$mpdf = new \Mpdf\Mpdf([
-    'mode'=>'utf-8'
-]);
+
+    $mpdf = new \Mpdf\Mpdf([
+        'mode' => 'utf-8'
+    ]);
 
 
-$mpdf->WriteHTML('<style>
+    $mpdf->WriteHTML('<style>
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #418BCC;
@@ -192,32 +196,32 @@ body{
 }
 </style>');
 
-$mpdf->WriteHTML('<body>');
-$mpdf->WriteHTML('<div><img src="assets/img/logo.png" width="100px"></div>');
-$mpdf->WriteHTML('<div class="pt-1"><strong>Establecimiento: '. $consulta["nom_estable"].' <br><br>Curso: '.$consulta["nom_curso"].'</strong></div>');
-$mpdf->WriteHTML('<div style="padding-top:3%"><table style="border-collapse: collapse; width: 800px; font-size: 18px;"><thead><tr><th>Nombres</th><th>Apellidos</th><th>Token</th></tr></thead>');
-$mpdf->WriteHTML('<tbody>');
+    $mpdf->WriteHTML('<body>');
+    $mpdf->WriteHTML('<div><img src="assets/img/logo.png" width="100px"></div>');
+    $mpdf->WriteHTML('<div class="pt-1"><strong>Establecimiento: ' . $consulta["nom_estable"] . ' <br><br>Curso: ' . $consulta["nom_curso"] . '</strong></div>');
+    $mpdf->WriteHTML('<div style="padding-top:3%"><table style="border-collapse: collapse; width: 800px; font-size: 18px;"><thead><tr><th>Nombres</th><th>Apellidos</th><th>Token</th></tr></thead>');
+    $mpdf->WriteHTML('<tbody>');
     while ($data = $query->fetch(PDO::FETCH_ASSOC)) {
         $mpdf->WriteHTML('<tr>');
-        $mpdf->WriteHTML('<td style="">'.$data['nombres'].'</td>');
-        $mpdf->WriteHTML('<td style="">'.$data['apellidos'].'</td>');
-        $mpdf->WriteHTML('<td style="">'.$data['token'].'</td>');
+        $mpdf->WriteHTML('<td style="">' . $data['nombres'] . '</td>');
+        $mpdf->WriteHTML('<td style="">' . $data['apellidos'] . '</td>');
+        $mpdf->WriteHTML('<td style="">' . $data['token'] . '</td>');
         $mpdf->WriteHTML('</tr>');
-    }  
-$mpdf->WriteHTML('</tbody>');
-$mpdf->WriteHTML('</table></div>');
-$mpdf->WriteHTML('</body>');
-$mpdf->Output('documentos/pdf/' . $consulta["nom_estable"] . '_' .$consulta["nom_curso"] . ".pdf",\Mpdf\Output\Destination::FILE);
+    }
+    $mpdf->WriteHTML('</tbody>');
+    $mpdf->WriteHTML('</table></div>');
+    $mpdf->WriteHTML('</body>');
+    $mpdf->Output('documentos/pdf/' . $consulta["nom_estable"] . '_' . $consulta["nom_curso"] . ".pdf", \Mpdf\Output\Destination::FILE);
 
     ob_end_flush();
-$ruta = "<a class= 'text-white' href='../../documentos/pdf/".$consulta["nom_estable"]."_".$consulta["nom_curso"].".pdf' target='_new'>Decargar PDF Curso: ".$consulta["nom_curso"]."_".$consulta["nom_estable"]." <i class='fa fa-download'></i></a>";
+    $ruta = "<a class= 'text-white' href='../../documentos/pdf/" . $consulta["nom_estable"] . "_" . $consulta["nom_curso"] . ".pdf' target='_new'>Decargar PDF Curso: " . $consulta["nom_curso"] . "_" . $consulta["nom_estable"] . " <i class='fa fa-download'></i></a>";
     return $ruta;
 }
 
 
-
 //valida los campos antes de realizar la funcion;
-function validar_campos($row0, $row1, $row2, $row3, $row4, $row5, $row6, $row7, $row8, $row9, $row10, $row11, $row12, $row13) {
+function validar_campos($row0, $row1, $row2, $row3, $row4, $row5, $row6, $row7, $row8, $row9, $row10, $row11, $row12, $row13)
+{
     $cuenta = 0;
 
     if ($row0 == null) {
@@ -233,13 +237,13 @@ function validar_campos($row0, $row1, $row2, $row3, $row4, $row5, $row6, $row7, 
         echo 'El Run del estudiante no puede estar vacáa';
         exit;
     } elseif ($row4 == NULL) {
-        if ($row4 == 0){
+        if ($row4 == 0) {
             $$row4 = 0;
-        }else{
-             echo 'El Dígito verificador del Run del estudiante no puede estar vacío';
-        exit;
+        } else {
+            echo 'El Dígito verificador del Run del estudiante no puede estar vacío';
+            exit;
         }
-       
+
     } elseif ($cuenta == 1 && $row5 == NULL) {
         echo 'El campo Establecimiento no puede estar vacío';
         exit;
@@ -268,7 +272,7 @@ function validar_campos($row0, $row1, $row2, $row3, $row4, $row5, $row6, $row7, 
         echo 'El email del docente no puede quedar vacío';
         exit;
     }
-    
+
 }
 
 
