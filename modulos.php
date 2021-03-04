@@ -1,8 +1,8 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
 ob_start();
-require_once 'conf/conf_requiere.php';
 session_start();
+
+require_once 'conf/conf_requiere.php';
 
 if (isset($_SESSION['user'])) {
     $usuario = $_SESSION['user'];
