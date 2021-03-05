@@ -1826,15 +1826,16 @@ if (typeof (grecaptcha) != "undefined") {
 }
 
 function login_final() {
+    if (typeof (grecaptcha) != "undefined") {
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6', {action: 'submit'}).then(function (token) {
+                $('#token').val(token); // here i set value to hidden field
+            });
+        });
+    }
+
     $('#inicia_reporte').submit(function (e) {
         e.preventDefault();
-        if (typeof (grecaptcha) != "undefined") {
-            grecaptcha.ready(function () {
-                grecaptcha.execute('6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6', {action: 'submit'}).then(function (token) {
-                    $('#token').val(token); // here i set value to hidden field
-                });
-            });
-        }
         const user = document.getElementById("usuario").value;
         const pass = document.getElementById("contrasena").value;
         if (user == "") {

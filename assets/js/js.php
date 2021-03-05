@@ -19,7 +19,7 @@
 
 <script type="text/javascript" charset="utf8" src="assets/librerias/vendor/datatables/datatables/media/js/jquery.dataTables.js"></script>
 <script type="text/javascript" charset="utf8" src="assets/librerias/vendor/datatables/datatables/media/js/dataTables.bootstrap4.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <script type="text/javascript">
     valida_campos();//valida los campos que no esten vacios
