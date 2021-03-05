@@ -26,9 +26,9 @@ function Conexion()
     try {
         if (in_array($_SERVER['REMOTE_ADDR'], $lista)) {
             $conn = new PDO(
-                "mysql:host=localhost; dbname=compromiso_escolar_corfo;charset=UTF8",
-                "carlos",//"carlos", //root
-                "root",//"secret",
+                "mysql:host=167.71.191.60; dbname=compromiso_escolar_corfo;charset=UTF8",
+                "root",//"carlos", //root
+                "92mbx6#p^wq@hac^",//"secret",
                 array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET sql_mode=""')
             );
             $conn->setAttribute(
