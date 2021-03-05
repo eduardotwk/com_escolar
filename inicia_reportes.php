@@ -253,7 +253,7 @@ require 'conf/funciones_db.php';
                 let cadena = "usuario=" + $('#usuario').val() +
                     "&contrasena=" + $('#contrasena').val() +
                     "&tipo_usuario=" + $('#tipo_usuario').val() +
-                    "&privilegios=" + "1" +
+                    "&privilegios=" + "0" +
                     "&token=" + $("#token").val();
                 $.ajax({
                     type: "POST",
