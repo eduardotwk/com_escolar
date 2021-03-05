@@ -2,6 +2,9 @@ conf/conexion_db.php
 /conf/conexion_db.php
 /conf/conexion_db.php
 
+documentos/pdf/
+encuesta/diplomas/
+
 .idea/
 .vscode/
 vendor/

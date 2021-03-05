@@ -549,7 +549,6 @@ function niveles_compromiso_escolar_update()
 function registro_nuevo_curso($nom_curso, $id_estable, $id_docente, $id_nivel, $anio_curso, $id_tipo_encuesta)
 {
     try {
-
         $con = connectDB_demos();
 
         $queryValida = $con->query("SELECT * FROM ce_curso WHERE ce_curso_nombre = '$nom_curso' AND ce_anio_curso = $anio_curso");
