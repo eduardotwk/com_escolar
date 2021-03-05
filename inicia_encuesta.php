@@ -177,7 +177,7 @@
                         </td>
                         <td width="33%" align="center" valign="center" >
                             <p style="font-size: small; text-align: justify; font: condensed 70% sans-serif; color: #212529;"> 
-                                Estos Instrumentos de medición forman parte del Proyecto FONDEF ID14I10078-ID14I20078 Medición del compromiso del niño, niña y adolescente con sus estudios para la promoción de trayectorias educativas exitosas.
+                                Estos instrumentos de medición forman parte del Proyecto FONDEF ID14I10078-ID14I20078 Medición del compromiso del niño, niña y adolescente con sus estudios para la promoción de trayectorias educativas exitosas.
                             </p>
                         </td>
                     </tr>
