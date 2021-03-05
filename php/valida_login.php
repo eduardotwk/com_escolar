@@ -51,5 +51,5 @@ if ($result->success && $result->score > 0.5) {
         echo 0;
     }
 } else {
-    echo json_encode($result);
+    echo -1;
 }
