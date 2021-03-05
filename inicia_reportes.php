@@ -232,7 +232,7 @@ require 'conf/funciones_db.php';
         let url_base_2 = url_base.protocol + "//" + url_base.host;
         let dir = url_base_2 + "/php/valida_login.php";
 
-        $('#form_admin').submit(function (e) {
+        $('#inicia_reporte').submit(function (e) {
             e.preventDefault();
             grecaptcha.ready(function () {
                 grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function (token) {
@@ -263,38 +263,36 @@ require 'conf/funciones_db.php';
                     statusCode: {
                         404: function () {
                             alertify.alert("Alerta", "Pagina no Encontrada");
-                            document.getElementById("ingresar_admin").disabled = false;
+                            document.getElementById("ingresar_rep").disabled = false;
                             document.getElementById("spinner").innerHTML = '';
                             document.getElementById("inicia_rep").innerHTML = 'Ingresar';
 
                         },
                         502: function () {
                             alertify.alert("alerta", "Ha ocurrido un error al conectarse con el servidor");
-                            document.getElementById("ingresar_admin").disabled = false;
+                            document.getElementById("ingresar_rep").disabled = false;
                             document.getElementById("spinner").innerHTML = '';
                             document.getElementById("inicia_rep").innerHTML = 'Ingresar';
+
                         }
                     },
                     beforeSend: function () {
-                        document.getElementById("ingresar_admin").disabled = true;
+                        document.getElementById("ingresar_rep").disabled = true;
                         document.getElementById("inicia_rep").innerHTML = '';
-                        document.getElementById("spinner").innerHTML = '</i> <i class="fa fa-spinner fa-2x fa-spin  fa-fw">';
+                        document.getElementById("spinner").innerHTML = 'Cargando... <i class="fa fa-spinner fa-2x fa-spin  fa-fw">';
                     },
                     success: function (r) {
                         if (r == 1) {
-                            window.location.replace(
-                                url_base.protocol + "//" +
-                                url_base.host + "/" +
-                                "modulos.php"
-                            );
-                        } else if (r == 0) {
-                            document.getElementById("ingresar_admin").disabled = false;
+                            window.location.href = "../modulos.php";
+                        }
+                        if (r == 0) {
+                            document.getElementById("ingresar_rep").disabled = false;
                             document.getElementById("spinner").innerHTML = '';
                             document.getElementById("inicia_rep").innerHTML = 'Ingresar';
                             alertify.defaults.glossary.title = '<p class="text-center">Notificación<p>';
                             alertify.alert('Usuario Incorrecto');
                         } else if (r == -1) {
-                            document.getElementById("ingresar_admin").disabled = false;
+                            document.getElementById("ingresar_rep").disabled = false;
                             document.getElementById("spinner").innerHTML = '';
                             document.getElementById("inicia_rep").innerHTML = 'Ingresar';
                             alertify.defaults.glossary.title = '<p class="text-center">Notificación<p>';

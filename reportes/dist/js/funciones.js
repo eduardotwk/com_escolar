@@ -1839,17 +1839,15 @@ function login_final() {
             document.getElementById("contrasena").focus();
             return false;
         } else {
-            const data = {
-                usuario: $('#usuario').val(),
-                contrasena: $('#contrasena').val(),
-                tipo_usuario: $('#tipo_usuario').val(),
-                privilegios: 0,
-                token: $("#token").val()
-            }
+            let cadena = "usuario=" + $('#usuario').val() +
+                "&contrasena=" + $('#contrasena').val() +
+                "&tipo_usuario=" + $('#tipo_usuario').val() +
+                "&privilegios=" + "0" +
+                "&token=" + $("#token").val();
             $.ajax({
                 type: "POST",
                 url: "../php/valida_login.php",
-                data: JSON.stringify(data),
+                data: cadena,
                 cache: false,
                 statusCode: {
                     404: function () {
