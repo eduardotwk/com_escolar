@@ -49,7 +49,7 @@
     </header><!-- / #main-header -->
 
     <div class="container">
-        <h1>Compromiso <h1 class="color">escolar</h1>
+        <h1>Compromiso <h1 class="color">Escolar</h1>
         </h1>
         <hr>
         </hr>
