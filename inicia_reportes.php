@@ -6,7 +6,7 @@ require 'conf/funciones.php';
 require 'conf/funciones_db.php';
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -170,7 +170,8 @@ require 'conf/funciones_db.php';
                 </td>
                 <td width="33%" align="center" valign="center">
                     <p style="font-size: small; text-align: justify; font: condensed 70% sans-serif; color: #212529;">
-                        Estos instrumentos de medición forman parte del Proyecto FONDEF ID14I10078-ID14I20078 Medición del compromiso
+                        Estos instrumentos de medición forman parte del Proyecto FONDEF ID14I10078-ID14I20078 Medición
+                        del compromiso
                         del niño, niña y adolescente con sus estudios para la promoción de trayectorias educativas
                         exitosas.
                     </p>
@@ -210,7 +211,7 @@ require 'conf/funciones_db.php';
                            autocomplete="password" placeholder="contraseña" required/>
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
-                <input type="hidden" name="token" value="" id="token">
+                <input type="hidden" name="token" id="token">
                 <input type="hidden" name="privilegios" value="0" id="privilegios">
                 <button style="border-radius: 2px; background-color: #fc455c; font-family: ‘Source Sans Pro’, sans-serif; font-size: 12px; font-weight: 900; min-width:120px; height:30px; width: 100%; margin-top: 15px; border-radius: 5px; color: white; box-shadow: rgba(0, 0, 0, 0.22) 1px 1px 1px 1px; border: 1.5px solid #fc455c;"
                         name="login-button" id="ingresar_rep" type="submit" class="icon-submit btn-limon-validar">
@@ -225,9 +226,99 @@ require 'conf/funciones_db.php';
 </div>
 
 <?php include "assets/js/js.php"; ?>
-<script src="reportes/dist/js/funciones.js"></script>
 <script>
-    login_final();
+    function login_admin() {
+        let url_base = window.location;
+        let url_base_2 = url_base.protocol + "//" + url_base.host;
+        let dir = url_base_2 + "/php/valida_login.php";
+
+        $('#form_admin').submit(function (e) {
+            e.preventDefault();
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function (token) {
+                    $('#token').val(token); // here i set value to hidden field
+                });
+            });
+            const user = document.getElementById("usuario").value;
+            const pass = document.getElementById("contrasena").value;
+            if (user == "") {
+                alertify.notify("Debes ingresar el usuario");
+                document.getElementById("usuario").focus();
+                return false;
+            } else if (pass == "") {
+                alertify.notify("Debes ingresar la contraseña");
+                document.getElementById("contrasena").focus();
+                return false;
+            } else {
+                let cadena = "usuario=" + $('#usuario').val() +
+                    "&contrasena=" + $('#contrasena').val() +
+                    "&tipo_usuario=" + $('#tipo_usuario').val() +
+                    "&privilegios=" + "1" +
+                    "&token=" + $("#token").val();
+                $.ajax({
+                    type: "POST",
+                    url: dir,
+                    data: cadena,
+                    cache: false,
+                    statusCode: {
+                        404: function () {
+                            alertify.alert("Alerta", "Pagina no Encontrada");
+                            document.getElementById("ingresar_admin").disabled = false;
+                            document.getElementById("spinner").innerHTML = '';
+                            document.getElementById("inicia_rep").innerHTML = 'Ingresar';
+
+                        },
+                        502: function () {
+                            alertify.alert("alerta", "Ha ocurrido un error al conectarse con el servidor");
+                            document.getElementById("ingresar_admin").disabled = false;
+                            document.getElementById("spinner").innerHTML = '';
+                            document.getElementById("inicia_rep").innerHTML = 'Ingresar';
+                        }
+                    },
+                    beforeSend: function () {
+                        document.getElementById("ingresar_admin").disabled = true;
+                        document.getElementById("inicia_rep").innerHTML = '';
+                        document.getElementById("spinner").innerHTML = '</i> <i class="fa fa-spinner fa-2x fa-spin  fa-fw">';
+                    },
+                    success: function (r) {
+                        if (r == 1) {
+                            window.location.replace(
+                                url_base.protocol + "//" +
+                                url_base.host + "/" +
+                                "modulos.php"
+                            );
+                        } else if (r == 0) {
+                            document.getElementById("ingresar_admin").disabled = false;
+                            document.getElementById("spinner").innerHTML = '';
+                            document.getElementById("inicia_rep").innerHTML = 'Ingresar';
+                            alertify.defaults.glossary.title = '<p class="text-center">Notificación<p>';
+                            alertify.alert('Usuario Incorrecto');
+                        } else if (r == -1) {
+                            document.getElementById("ingresar_admin").disabled = false;
+                            document.getElementById("spinner").innerHTML = '';
+                            document.getElementById("inicia_rep").innerHTML = 'Ingresar';
+                            alertify.defaults.glossary.title = '<p class="text-center">Notificación<p>';
+                            alertify.alert('Error, captcha inválido');
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+    function Cerrar_modal() {
+        $('#id_ingre_cod').modal('toggle');
+    }
+
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function (token) {
+            $('#token').val(token); // here i set value to hidden field
+        });
+    });
+
+    $(document).ready(function () {
+        login_admin();
+    })
 </script>
 </body>
 </html>
