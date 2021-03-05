@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/estilo_inicio_encuesta.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="assets/js/jquery-1.10.2.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js?render=6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk"></script>
          
         <script type="text/javascript">
             var flag = false;

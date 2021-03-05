@@ -15,8 +15,16 @@ require 'conf/funciones_db.php';
     <link rel="stylesheet" type="text/css" href="assets/css/estilo_inicio_encuesta.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="assets/js/jquery-1.10.2.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk"></script>
+    <style type="text/css">
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            font-weight: 900;
+        }
 
+        body {
+            color: #212529;
+        }
+    </style>
 
     <script type="text/javascript">
         var flag = false;
@@ -219,20 +227,7 @@ require 'conf/funciones_db.php';
 <?php include "assets/js/js.php"; ?>
 <script src="reportes/dist/js/funciones.js"></script>
 <script>
-    // login_final();
-</script>
-
-<style type="text/css">
-    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-        font-weight: 900;
-    }
-
-    body {
-        color: #212529;
-    }
-</style>
-</body>
-<script>
     login_final();
 </script>
+</body>
 </html>

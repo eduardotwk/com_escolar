@@ -1819,7 +1819,7 @@ function subir_a_cabezera() {
 
 if (typeof (grecaptcha) != "undefined") {
     grecaptcha.ready(function () {
-        grecaptcha.execute('6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6', {action: 'submit'}).then(function (token) {
+        grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function (token) {
             $('#token').val(token); // here i set value to hidden field
         });
     });

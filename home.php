@@ -574,7 +574,7 @@ require 'conf/funciones_db.php';
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
-<script src="https://www.google.com/recaptcha/api.js?render=6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk"></script>
 
 <script>
     function login_admin() {
@@ -585,7 +585,7 @@ require 'conf/funciones_db.php';
         $('#form_admin').submit(function (e) {
             e.preventDefault();
             grecaptcha.ready(function () {
-                grecaptcha.execute('6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6', {action: 'submit'}).then(function (token) {
+                grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function (token) {
                     $('#token').val(token); // here i set value to hidden field
                 });
             });
@@ -661,7 +661,7 @@ require 'conf/funciones_db.php';
     }
 
     grecaptcha.ready(function () {
-        grecaptcha.execute('6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6', {action: 'submit'}).then(function (token) {
+        grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function (token) {
             $('#token').val(token); // here i set value to hidden field
         });
     });

@@ -24,7 +24,7 @@ $token = $_POST["token"];
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array('secret' => '6Le4kagZAAAAAMrvl2we09WAZFiCHtLNKr9aKMMk', 'response' => $token)));
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array('secret' => '6LfUWnMaAAAAAHFJYu__xIaJBV1CAHjD-p_-VIVO', 'response' => $token)));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 curl_close($ch);

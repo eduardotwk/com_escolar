@@ -12,7 +12,7 @@ $privilegios = $_POST["privilegios"];
 
 # Verify captcha
 $post_data = http_build_query([
-    'secret' => '6Le4kagZAAAAAMrvl2we09WAZFiCHtLNKr9aKMMk',
+    'secret' => '6LfUWnMaAAAAAHFJYu__xIaJBV1CAHjD-p_-VIVO',
     'response' => $_POST['token'],
     'remoteip' => $_SERVER['REMOTE_ADDR']
 ]);
