@@ -202,6 +202,13 @@ require 'conf/funciones_db.php';
         text-decoration: none;
     }
 
+    span {
+        color: #000000;
+        font-family: "Open Sans", sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+    }
+
     img.alineadoTextoImagenAbajo {
         vertical-align: text-bottom;
     }

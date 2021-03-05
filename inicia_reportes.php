@@ -17,6 +17,7 @@ require 'conf/funciones_db.php';
     <script src="assets/js/jquery-1.10.2.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6"></script>
 
+
     <script type="text/javascript">
         var flag = false;
         var flag2 = false;
