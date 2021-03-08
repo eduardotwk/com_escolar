@@ -986,7 +986,7 @@
             </hr>
             <ul class="cuadro2" style="position: absolute;top:20px;">
                 <li>
-                    <a href="/inicia_encuesta.php" target="_blank">
+                    <a  href="https://www.e-mineduc.cl/login/index.php" target="_blank">
                         <p class="cuadro2" style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">Capacitación</p>
                         <img src="img/menu_flotante/1.-Capacitacion.png" style="width:30px;height: 30px;position:absolute;top:13px;right:100%">
                     </a>
