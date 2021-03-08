@@ -446,7 +446,7 @@
 
         ul.cuadro2 {
             position: absolute;
-            top: 30px;
+            top: 40px;
             right: -3%;
             width: 80%;
             font-family: "Fira Sans Condensed", sans-serif;
@@ -978,15 +978,15 @@
             </hr>
             <ul class="cuadro2">
                 <li>
-                    <a href="/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
-                        <image src="img/menu_flotante/manualUsuario.png" style="width:30px;height: 30px;position:absolute;top:10px;right:95%">
-                            <p style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">Manual de Usuario de la Plataforma de Compromiso Escolar</p>
+                    <a href="/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank" style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">
+                        <image src="img/menu_flotante/manualUsuario.png" style="width:30px;height: 30px;position:absolute;top:-5px;right:95%">
+                           Manual de Usuario de la Plataforma de Compromiso Escolar
                     </a>
                 </li>
                 <li>
-                    <a href="/inicia_reportes.php" target="_blank" >
-                        <image src="img/menu_flotante/6.-Resultados.png" style="width:30px;height: 30px;position:absolute;top:55px;right:95%">
-                            <p style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">Resultados de la medición del Compromiso Escolar</p>
+                    <a href="/inicia_reportes.php" target="_blank" style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">
+                        <image src="img/menu_flotante/6.-Resultados.png" style="width:30px;height: 30px;position:absolute;top:28px;right:95%">
+                            Resultados de la medición del Compromiso Escolar
                     </a>
                 </li>
             </ul>

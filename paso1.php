@@ -486,7 +486,7 @@
 
         ul.cuadro2 {
             position: absolute;
-            top: 63px;
+            top: 50px;
             left: 21%;
             width: 80%;
             font-family: "Fira Sans Condensed", sans-serif;
@@ -851,6 +851,7 @@
             max-height: 42.11px;
             left: 88%;
         }
+        ul.cuadro2 li {paddind-bottom: 5ex;}
     </style>
     <header id="main-header">
         <img class="logo" src="img/logo home.png">
@@ -984,17 +985,17 @@
             <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
             <hr class=cuadro2>
             </hr>
-            <ul class="cuadro2" style="position: absolute;top:20px;">
+            <ul class="cuadro2" style="position: absolute;top:43px;">
                 <li>
-                    <a  href="https://www.e-mineduc.cl/login/index.php" target="_blank">
-                        <p class="cuadro2" style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">Capacitación</p>
-                        <img src="img/menu_flotante/1.-Capacitacion.png" style="width:30px;height: 30px;position:absolute;top:13px;right:100%">
+                    <a  href="https://www.e-mineduc.cl/login/index.php" target="_blank" style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">
+                       Capacitación
+                        <img src="img/menu_flotante/1.-Capacitacion.png" style="width:30px;height: 30px;position:absolute;top:-5px;right:100%">
                     </a>
                 </li>
                 <li>
-                    <a href="calendario.php" target="_blank">
-                        <p class="cuadro2" style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">Calendario de actividades</p>
-                        <image src="img/menu_flotante/2.-Calendario.png" style="width:30px;height: 30px;position:absolute;top:50px;right:100%">
+                    <a href="calendario.php" target="_blank" style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">
+                       Calendario de actividades
+                        <image src="img/menu_flotante/2.-Calendario.png" style="width:30px;height: 30px;position:absolute;top:28px;right:100%">
                     </a>
                 </li>
             </ul>
