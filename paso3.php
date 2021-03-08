@@ -446,8 +446,8 @@
 
         ul.cuadro2 {
             position: absolute;
-            top: 45px;
-            right: -6%;
+            top: 30px;
+            right: -3%;
             width: 80%;
             font-family: "Fira Sans Condensed", sans-serif;
             font-weight: lighter;
@@ -890,14 +890,14 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="calendario.php">
+                        <a href="calendario.php" target="_blank">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
                                 Calendario<br />de actividades
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <a href="/inicia_encuesta.php">
+                        <a href="/inicia_encuesta.php" target="_blank">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
                                 Instrumentos<br />de medición
                     </th>
@@ -910,14 +910,14 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="buscar.php">
+                        <a href="buscar.php" target="_blank">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
                                 Buscador de<br />estrategias
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <a href="/inicia_reportes.php">
+                        <a href="/inicia_reportes.php" target="_blank">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
                                 Resultados de<br />medición
                     </th>
@@ -976,15 +976,19 @@
             <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
             <hr class=cuadro2>
             </hr>
-            <a href="/inicia_reportes.php">
-                <image src="img/menu_flotante/6.-Resultados.png" style="width:30px;height: 30px;position:absolute;top:95px;left:5%">
-            </a>
-            <a href="/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
-                <image src="img/menu_flotante/manualUsuario.png" style="width:30px;height: 30px;position:absolute;top:55px;left:5%">
-            </a>
             <ul class="cuadro2">
-                <li>Manual de Usuario de la Plataforma de Compromiso Escolar</li>
-                <li>Resultados de la medición del Compromiso Escolar</li>
+                <li>
+                    <a href="/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
+                        <image src="img/menu_flotante/manualUsuario.png" style="width:30px;height: 30px;position:absolute;top:10px;right:95%">
+                            <p style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">Manual de Usuario de la Plataforma de Compromiso Escolar</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/inicia_reportes.php" target="_blank" >
+                        <image src="img/menu_flotante/6.-Resultados.png" style="width:30px;height: 30px;position:absolute;top:55px;right:95%">
+                            <p style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">Resultados de la medición del Compromiso Escolar</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -1011,16 +1015,16 @@
                         <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php" target="_blank">Capacitación</th>
                     </tr>
                     <tr>
-                        <th><a class="table2" href="calendario.php">Calendario de actividades</th>
+                        <th><a class="table2" href="calendario.php" target="_blank">Calendario de actividades</th>
                     </tr>
                     <tr>
-                        <th><a class="table2" href="/inicia_encuesta.php">Instrumentos de medición</th>
+                        <th><a class="table2" href="/inicia_encuesta.php" target="_blank">Instrumentos de medición</th>
                     </tr>
                     <tr>
                         <th><a class="table2" href="#">Fichas SIESE</th>
                     </tr>
                     <tr>
-                        <th><a class="table2" href="buscar.php">Buscador de estrategias</th>
+                        <th><a class="table2" href="buscar.php" target="_blank">Buscador de estrategias</th>
                     </tr>
                 </table>
                 <table class="table3">

@@ -202,14 +202,14 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="calendario.php">
+                        <a href="calendario.php" target="_blank">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
                                 Calendario<br />de actividades
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <a href="/inicia_encuesta.php">
+                        <a href="/inicia_encuesta.php" target="_blank">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
                                 Instrumentos<br />de medición
                     </th>
@@ -231,7 +231,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="/inicia_reportes.php">
+                        <a href="/inicia_reportes.php" target="_blank">
                             <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
                                 Resultados de<br />medición
                     </th>
@@ -263,16 +263,16 @@
                         <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php" target="_blank">Capacitación</th>
                     </tr>
                     <tr>
-                        <th><a class="table2" href="calendario.php">Calendario de actividades</th>
+                        <th><a class="table2" href="calendario.php" target="_blank">Calendario de actividades</th>
                     </tr>
                     <tr>
-                        <th><a class="table2" href="/inicia_encuesta.php">Instrumentos de medición</th>
+                        <th><a class="table2" href="/inicia_encuesta.php" target="_blank">Instrumentos de medición</th>
                     </tr>
                     <tr>
                         <th><a class="table2" href="#">Fichas SIESE</th>
                     </tr>
                     <tr>
-                        <th><a class="table2" href="buscar.php">Buscador de estrategias</th>
+                        <th><a class="table2" href="buscar.php" target="_blank">Buscador de estrategias</th>
                     </tr>
                 </table>
                 <table class="table3">

@@ -412,7 +412,7 @@ require 'conf/funciones_db.php';
             </tr>
             <tr class="mb-2">
                 <th>
-                    <a href="calendario.php" class="d-flex flex-column align-items-center">
+                    <a href="calendario.php" target="_blank" class="d-flex flex-column align-items-center">
                         <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png"
                              style="width: 40px;" style="height: 40px;">
                         <span class="text-center">Calendario<br/>de actividades</span>
@@ -421,7 +421,7 @@ require 'conf/funciones_db.php';
             </tr>
             <tr class="mb-2">
                 <th>
-                    <a href="/inicia_encuesta.php" class="d-flex flex-column align-items-center">
+                    <a href="/inicia_encuesta.php" target="_blank" class="d-flex flex-column align-items-center">
                         <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png"
                              style="width: 40px;" style="height: 40px;">
                         <span class="text-center">Instrumentos<br/>de medición</span>
@@ -437,7 +437,7 @@ require 'conf/funciones_db.php';
             </tr>
             <tr class="mb-2">
                 <th>
-                    <a href="buscar.php" class="d-flex flex-column align-items-center">
+                    <a href="buscar.php" target="_blank" class="d-flex flex-column align-items-center">
                         <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png"
                              style="width: 40px;" style="height: 40px;">
                         <span class="text-center"> Buscador de<br/>estrategias</span>
@@ -446,7 +446,7 @@ require 'conf/funciones_db.php';
             </tr>
             <tr class="mb-2">
                 <th>
-                    <a href="/inicia_reportes.php" class="d-flex flex-column align-items-center">
+                    <a href="/inicia_reportes.php" target="_blank" class="d-flex flex-column align-items-center">
                         <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png"
                              style="width: 40px;" style="height: 40px;">
                         <span class="text-center">Resultados de<br/>medición</span>
@@ -487,16 +487,16 @@ require 'conf/funciones_db.php';
                         </th>
                     </tr>
                     <tr>
-                        <th><a class="table2" href="calendario.php">Calendario de actividades</th>
+                        <th><a class="table2" href="calendario.php" target="_blank">Calendario de actividades</th>
                     </tr>
                     <tr>
-                        <th><a class="table2" href="/inicia_encuesta.php">Instrumentos de medición</th>
+                        <th><a class="table2" href="/inicia_encuesta.php" target="_blank">Instrumentos de medición</th>
                     </tr>
                     <tr>
                         <th><a class="table2" href="#">Fichas SIESE</th>
                     </tr>
                     <tr>
-                        <th><a class="table2" href="buscar.php">Buscador de estrategias</th>
+                        <th><a class="table2" href="buscar.php" target="_blank">Buscador de estrategias</th>
                     </tr>
                 </table>
                 <table class="table3">
