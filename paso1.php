@@ -10,65 +10,11 @@
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/base.css">
-    <script>
-        $(function() {
-            $("#accordion").accordion();
-        });
-
-        function torta(rueda, trozo) {
-            var pie;
-            pie = document.getElementById('trozo');
-            if (trozo == 'p1') {
-                pie.className = 'p1';
-                $("#p1").click(function() {
-                    window.location.href = "paso1.php";
-                    return false; //Just in case if it is a link prevent default behavior
-                });
-            } else if (trozo == 'p2') {
-                pie.className = 'p2';
-                $("#p2").click(function() {
-                    window.location.href = "paso2.php";
-                    return false; //Just in case if it is a link prevent default behavior
-                });
-            } else if (trozo == 'p3') {
-                pie.className = 'p3';
-                $("#p3").click(function() {
-                    window.location.href = "paso3.php";
-                    return false; //Just in case if it is a link prevent default behavior
-                });
-            } else if (trozo == 'p4') {
-                pie.className = 'p4';
-                $("#p4").click(function() {
-                    window.location.href = "paso4.php";
-                    return false; //Just in case if it is a link prevent default behavior
-                });
-            } else if (trozo == 'p5') {
-                pie.className = 'p5';
-                $("#p5").click(function() {
-                    window.location.href = "paso5.php";
-                    return false; //Just in case if it is a link prevent default behavior
-                });
-            } else if (trozo == 'p6') {
-                pie.className = 'p6';
-                $("#p6").click(function() {
-                    window.location.href = "paso6.php";
-                    return false; //Just in case if it is a link prevent default behavior
-                });
-            }
-        }
-
-        function limpiartorta(trozo) {
-            var pie = document.getElementById(trozo);
-
-            pie.classList.remove('p1', 'p2', 'p3', 'p4', 'p5', 'p6');
-        }
-    </script>
-</head>
-
-<body>
     <style>
-        #menu>li::after {
+        #menu > li::after {
             content: "";
             width: 1px;
             height: 20px;
@@ -329,18 +275,18 @@
 
         }
 
-        #menu li:hover>a {
+        #menu li:hover > a {
             border-bottom: 9px solid #07ACAA;
 
         }
 
-        *html #menu li a:hover {
+        * html #menu li a:hover {
             /* IE6 */
             color: black;
 
         }
 
-        #menu li:hover>ul {
+        #menu li:hover > ul {
             display: block;
         }
 
@@ -386,13 +332,13 @@
             background: #07ACAA;
         }
 
-        *html #menu ul a {
+        * html #menu ul a {
             /* IE6 */
             height: 10px;
             width: 150px;
         }
 
-        *:first-child+html #menu ul a {
+        *:first-child + html #menu ul a {
             /* IE7 */
             height: 10px;
             width: 150px;
@@ -447,7 +393,7 @@
         }
 
         /* IE6 */
-        *:first-child+html #menu {
+        *:first-child + html #menu {
             zoom: 1;
         }
 
@@ -851,217 +797,223 @@
             max-height: 42.11px;
             left: 88%;
         }
-        ul.cuadro2 li {paddind-bottom: 5ex;}
+
+        ul.cuadro2 li {
+            paddind-bottom: 5ex;
+        }
     </style>
-    <header id="main-header">
-        <img class="logo" src="img/logo home.png">
-        <img class="lapiz" src="img/Header/compromiso.png">
-        <img class="btnSalir" src="img/Btn-salir-inactivo.png">
+
+    <script>
+        function torta(rueda, trozo) {
+            var pie;
+            pie = document.getElementById('trozo');
+            if (trozo == 'p1') {
+                pie.className = 'p1';
+            } else if (trozo == 'p2') {
+                pie.className = 'p2';
+
+            } else if (trozo == 'p3') {
+                pie.className = 'p3';
+            } else if (trozo == 'p4') {
+                pie.className = 'p4';
+                $("#p4").click(function () {
+                    window.location.href = "paso4.php";
+                    return false; //Just in case if it is a link prevent default behavior
+                });
+            } else if (trozo == 'p5') {
+                pie.className = 'p5';
+                $("#p5").click(function () {
+                    window.location.href = "paso5.php";
+                    return false; //Just in case if it is a link prevent default behavior
+                });
+            } else if (trozo == 'p6') {
+                pie.className = 'p6';
+                $("#p6").click(function () {
+                    window.location.href = "paso6.php";
+                    return false; //Just in case if it is a link prevent default behavior
+                });
+            }
+        }
+    </script>
+</head>
+
+<body>
+<?php include "partials/main-header.php" ?>
+
+<div class="container">
+    <h1>Paso 1: <h1 class="color">Conformación del Consejo Escolar</h1>
+    </h1>
+    <hr>
+
+    <?php include "partials/menu-lateral.php" ?>
+
+    <div id="accordion">
+        <h4>Descripción</h4>
+        <div style="height: 574px;">
+            <p class="acordion2">El primer paso se basa en la constitución participativa de un espacio de decisiones al
+                interior de la escuela para llevar a cabo la implementación de las estrategias de promoción de
+                Compromiso Escolar y factores contextuales. Este espacio lo denominaremos Consejo Escolar.<br/><br/>
+                El Consejo puede ser por curso, nivel educativo o escuela, de manera tal de poder tomar decisiones más
+                precisas de acuerdo con la realidad de cada curso. Para ello se puede identificar las instancias de
+                coordinación del apoyo a los y las estudiantes que ya existen en la escuela con la finalidad de
+                potenciarlas y evitar duplicar las tareas, es decir, si existe un Consejo Escolar o un comité de
+                convivencia escolar se sugiere reforzar dichas instancias.<br/><br/>
+                Es relevante que esté compuesto por representantes de toda la comunidad escolar que tengan el poder o la
+                autorización para implementar decisiones dirigidas a fortalecer el Compromiso Escolar. Se sugiere que al
+                menos participen representantes de: <br/>
+
+            <ul>
+                <li>Estudiantes</li>
+                <li>Profesorado</li>
+                <li>Equipos psicosociales</li>
+                <li>Apoderados/as</li>
+                <li>Directivos/as</li>
+            </ul>
+            <p class="acordion2"> También se pueden involucrar a representantes de otros proyectos que trabajen en la
+                escuela para promover trayectorias educativas positivas. <br/><br/>
+
+                La participación de estudiantes y apoderados(as) es fundamental para promover la importancia del
+                Compromiso Escolar y el sentido del SIESE; el objetivo es que participen activamente durante el proceso
+                de su implementación, desde el uso de esta plataforma web hasta la fase de evaluación y ajustes.
+                <br/><br/>
+
+                Se espera que el Consejo Escolar se reúna al menos una vez al mes para dar continuidad y seguimiento de
+                los acuerdos implementados. Para ello es recomendable definir en la primera sesión un coordinador o una
+                coordinadora del Consejo Escolar, que se encargará de convocar las reuniones, liderar el proceso de
+                implementación de las seis fases del SIESE, y de registrarse en la plataforma para ingresar los datos en
+                las fichas y bajar los reportes. De preferencia, el coordinador/a tiene que ser un/a profesor/a jefe,
+                puesto que va a manejar información sensible de los y las estudiantes. </p>
 
 
-        <ul id="menu" style="font-weight: normal;">
-            <li>
-                <a href="#">Pasos</a>
-                <ul id="submenu" style="font-weight: normal;">
-                    <li><a href="paso1.php">Paso 1</a></li>
-                    <li><a href="paso2.php">Paso 2</a></li>
-                    <li><a href="paso3.php">Paso 3</a></li>
-                    <li><a href="paso4.php">Paso 4</a></li>
-                    <li><a href="paso5.php">Paso 5</a></li>
-                    <li><a href="paso6.php">Paso 6</a></li>
-                </ul>
-            </li>
-            <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
-            <li><a href="presentacion.php">Presentación</a></li>
-            <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
-        </ul>
-
-    </header><!-- / #main-header -->
-
-    <div class="container">
-        <h1>Paso 1: <h1 class="color">Conformación del Consejo Escolar</h1>
-        </h1>
-        <hr>
-        </hr>
-        <div id="table">
-            <table>
-                <tr>
-                    <th>
-                        <a href="https://www.e-mineduc.cl/login/index.php" target="_blank">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <a href="calendario.php" target="_blank">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
-                                Calendario<br />de actividades
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <a href="/inicia_encuesta.php" target="_blank">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
-                                Instrumentos<br />de medición
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/4.-Fichas proceso.png" style="width: 40px;" style="height: 40px;">
-                            Fichas<br />SIESE
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <a href="buscar.php" target="_blank">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
-                                Buscador de<br />estrategias
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <a href="/inicia_reportes.php" target="_blank">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
-                                Resultados de<br />medición
-                    </th>
-                </tr>
-            </table>
+            </p>
         </div>
-        <div id="accordion">
-            <h4>Descripción</h4>
-            <div style="height: 574px;">
-                <p class="acordion2">El primer paso se basa en la constitución participativa de un espacio de decisiones al interior de la escuela para llevar a cabo la implementación de las estrategias de promoción de Compromiso Escolar y factores contextuales. Este espacio lo denominaremos Consejo Escolar.<br /><br />
-                    El Consejo puede ser por curso, nivel educativo o escuela, de manera tal de poder tomar decisiones más precisas de acuerdo con la realidad de cada curso. Para ello se puede identificar las instancias de coordinación del apoyo a los y las estudiantes que ya existen en la escuela con la finalidad de potenciarlas y evitar duplicar las tareas, es decir, si existe un Consejo Escolar o un comité de convivencia escolar se sugiere reforzar dichas instancias.<br /><br />
-                    Es relevante que esté compuesto por representantes de toda la comunidad escolar que tengan el poder o la autorización para implementar decisiones dirigidas a fortalecer el Compromiso Escolar. Se sugiere que al menos participen representantes de: <br />
-
-                <ul>
-                    <li>Estudiantes</li>
-                    <li>Profesorado</li>
-                    <li>Equipos psicosociales</li>
-                    <li>Apoderados/as</li>
-                    <li>Directivos/as</li>
-                </ul>
-                <p class="acordion2"> También se pueden involucrar a representantes de otros proyectos que trabajen en la escuela para promover trayectorias educativas positivas. <br /><br />
-
-                    La participación de estudiantes y apoderados(as) es fundamental para promover la importancia del Compromiso Escolar y el sentido del SIESE; el objetivo es que participen activamente durante el proceso de su implementación, desde el uso de esta plataforma web hasta la fase de evaluación y ajustes. <br /><br />
-
-                    Se espera que el Consejo Escolar se reúna al menos una vez al mes para dar continuidad y seguimiento de los acuerdos implementados. Para ello es recomendable definir en la primera sesión un coordinador o una coordinadora del Consejo Escolar, que se encargará de convocar las reuniones, liderar el proceso de implementación de las seis fases del SIESE, y de registrarse en la plataforma para ingresar los datos en las fichas y bajar los reportes. De preferencia, el coordinador/a tiene que ser un/a profesor/a jefe, puesto que va a manejar información sensible de los y las estudiantes. </p>
-
-
-                </p>
-            </div>
-            <h4>Preguntas guías para el Consejo Escolar</h4>
-            <div style="height: 574px;">
-                <ul>
-                    <li>¿Quiénes van a formar parte del Consejo?</li> <br />
-                    <li>¿Cuenta el Consejo con la participación de estudiantes y apoderados?</li><br />
-                    <li>¿Qué otros actores que apoyan a las y los estudiantes dentro de la escuela se podrían sumar?</li><br />
-                    <li>¿Quién será el coordinador/a responsable de convocar a las reuniones y completar las fichas?</li><br />
-                    <li>¿Tiene el Consejo Escolar suficiente autoridad para implementar cambios? ¿Qué se requiere gestionar para que lo tenga?</li><br />
-                    <li>¿Con qué recursos o estrategias cuenta la escuela para promocionar el Compromiso Escolar? </li><br />
-                </ul>
-            </div>
-            <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
-            <div style="height: 574px;">
-                <ul>
-                    <li>Encontrar tiempo para reunirse entre las distintas tareas: Se les sugiere calendarizar las reuniones para todo el año de manera tal que todos y todas puedan tener reservado el espacio con antelación. También se recomienda organizar con antelación la agenda de la reunión subsiguiente. </li><br />
-                    <li>¿Cómo decidir quiénes serán miembros del Consejo Escolar?: Se sugiere inicialmente contar con los profesores y profesoras jefes de los niveles, un o una representante de las directivas de los(as) estudiantes y de los apoderados(as), un miembro del equipo psicosocial del establecimiento y un miembro de los equipos directivos.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="cuadro1">
-            <h3>Productos esperados</h3>
-            <hr class=cuadro1>
-            </hr>
-            <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
-            <ul class=cuadro1>
-                <li> 1° Reunión del Consejo Escolar para seleccionar un coordinador(a) del Consejo Escolar y planificar las reuniones del año.</li>
-                <li>Capacitación del Consejo Escolar en Compromiso Escolar a través de la plataforma online.</li>
+        <h4>Preguntas guías para el Consejo Escolar</h4>
+        <div style="height: 574px;">
+            <ul>
+                <li>¿Quiénes van a formar parte del Consejo?</li>
+                <br/>
+                <li>¿Cuenta el Consejo con la participación de estudiantes y apoderados?</li>
+                <br/>
+                <li>¿Qué otros actores que apoyan a las y los estudiantes dentro de la escuela se podrían sumar?</li>
+                <br/>
+                <li>¿Quién será el coordinador/a responsable de convocar a las reuniones y completar las fichas?</li>
+                <br/>
+                <li>¿Tiene el Consejo Escolar suficiente autoridad para implementar cambios? ¿Qué se requiere gestionar
+                    para que lo tenga?
+                </li>
+                <br/>
+                <li>¿Con qué recursos o estrategias cuenta la escuela para promocionar el Compromiso Escolar?</li>
+                <br/>
             </ul>
         </div>
-        <div class="cuadro2">
-            <h3>Recursos específicos</h3>
-            <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
-            <hr class=cuadro2>
-            </hr>
-            <ul class="cuadro2" style="position: absolute;top:43px;">
-                <li>
-                    <a  href="https://www.e-mineduc.cl/login/index.php" target="_blank" style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">
-                       Capacitación
-                        <img src="img/menu_flotante/1.-Capacitacion.png" style="width:30px;height: 30px;position:absolute;top:-5px;right:100%">
-                    </a>
+        <h4>Posibles dificultades y sugerencias para enfrentarlas</h4>
+        <div style="height: 574px;">
+            <ul>
+                <li>Encontrar tiempo para reunirse entre las distintas tareas: Se les sugiere calendarizar las reuniones
+                    para todo el año de manera tal que todos y todas puedan tener reservado el espacio con antelación.
+                    También se recomienda organizar con antelación la agenda de la reunión subsiguiente.
                 </li>
-                <li>
-                    <a href="calendario.php" target="_blank" style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">
-                       Calendario de actividades
-                        <image src="img/menu_flotante/2.-Calendario.png" style="width:30px;height: 30px;position:absolute;top:28px;right:100%">
-                    </a>
+                <br/>
+                <li>¿Cómo decidir quiénes serán miembros del Consejo Escolar?: Se sugiere inicialmente contar con los
+                    profesores y profesoras jefes de los niveles, un o una representante de las directivas de los(as)
+                    estudiantes y de los apoderados(as), un miembro del equipo psicosocial del establecimiento y un
+                    miembro de los equipos directivos.
                 </li>
             </ul>
-
-        </div>
-        <div class="chart-skills">
-            <div id="fondo"><img src="img/Pasos/Navegador-P1.png" style="width: 100px;height:100px;"></div>
-            <div id="trozo" class=""></div>
-            <div id="p1" onmouseover="torta('chica', 'p1');" onmouseout="limpiartorta('trozo');"></div>
-            <div id="p2" onmouseover="torta('chica', 'p2');" onmouseout="limpiartorta('trozo');"></div>
-            <div id="p3" onmouseover="torta('chica', 'p3');" onmouseout="limpiartorta('trozo');"></div>
-            <div id="p4" onmouseover="torta('chica', 'p4');" onmouseout="limpiartorta('trozo');"></div>
-            <div id="p5" onmouseover="torta('chica', 'p5');" onmouseout="limpiartorta('trozo');"></div>
-            <div id="p6" onmouseover="torta('chica', 'p6');" onmouseout="limpiartorta('trozo');"></div>
         </div>
     </div>
 
+    <div class="cuadro1">
+        <h3>Productos esperados</h3>
+        <hr class=cuadro1>
+        </hr>
+        <img class="cuadro1" src="img/Pasos/Icono-Productos-esperados.png">
+        <ul class=cuadro1>
+            <li> 1° Reunión del Consejo Escolar para seleccionar un coordinador(a) del Consejo Escolar y planificar las
+                reuniones del año.
+            </li>
+            <li>Capacitación del Consejo Escolar en Compromiso Escolar a través de la plataforma online.</li>
+        </ul>
+    </div>
+    <div class="cuadro2">
+        <h3>Recursos específicos</h3>
+        <img class="cuadro2" src="img/Pasos/icono-productos-especificos.png">
+        <hr class=cuadro2>
+        </hr>
+        <ul class="cuadro2" style="position: absolute;top:43px;">
+            <li>
+                <a href="https://www.e-mineduc.cl/login/index.php" target="_blank"
+                   style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">
+                    Capacitación
+                    <img src="img/menu_flotante/1.-Capacitacion.png"
+                         style="width:30px;height: 30px;position:absolute;top:-5px;right:100%">
+                </a>
+            </li>
+            <li>
+                <a href="calendario.php" target="_blank"
+                   style="font-family:Fira Sans Condensed, sans-serif ;font-size:14px;font-weight: lighter;color:white;">
+                    Calendario de actividades
+                    <image src="img/menu_flotante/2.-Calendario.png"
+                           style="width:30px;height: 30px;position:absolute;top:28px;right:100%">
+                </a>
+            </li>
+        </ul>
 
-    <footer id="main-footer">
-        <div class="row">
-            <div class="imagen" style="margin: 10px;">
-                <img src="img/Logos/png/Logo UValpo.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/Logo Ufro.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/U-autonoma.png" alt="" class="imh-responsive" style="width: 100px;" style="height: 100px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/fundacion-telefonica.png" alt="" class="imh-responsive" style="width: 140px;" style="height: 140px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/Logo Mineduc.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/fondef.png" alt="" class="imh-responsive" style="width: 180px;" style="height: 180px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
-                &nbsp; &nbsp;
-                <table class="table2">
-                    <tr>
+    </div>
+    <div class="chart-skills">
+        <div id="fondo"><img src="img/Pasos/Navegador-P1.png" style="width: 100px;height:100px;"></div>
+        <div id="trozo" class=""></div>
+        <div id="p1" onmouseover="torta('chica', 'p1');" onmouseout="limpiartorta('trozo');"></div>
+        <div id="p2" onmouseover="torta('chica', 'p2');" onmouseout="limpiartorta('trozo');"></div>
+        <div id="p3" onmouseover="torta('chica', 'p3');" onmouseout="limpiartorta('trozo');"></div>
+        <div id="p4" onmouseover="torta('chica', 'p4');" onmouseout="limpiartorta('trozo');"></div>
+        <div id="p5" onmouseover="torta('chica', 'p5');" onmouseout="limpiartorta('trozo');"></div>
+        <div id="p6" onmouseover="torta('chica', 'p6');" onmouseout="limpiartorta('trozo');"></div>
+    </div>
+</div>
 
-                        <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php" target="_blank">Capacitación</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="calendario.php" target="_blank">Calendario de actividades</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="/inicia_encuesta.php" target="_blank">Instrumentos de medición</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="#">Fichas SIESE</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="buscar.php" target="_blank">Buscador de estrategias</th>
-                    </tr>
-                </table>
-                <table class="table3">
-                    <tr>
-                        <th><a href="/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
-                                <image src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;">
-                            </a></th>
-                    </tr>
-                    <tr>
-                        <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </footer> <!-- / #main-footer -->
+
+<?php include "partials/main-footer.php" ?>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#p1").click(function () {
+            window.location.href = "paso1.php";
+            return false; //Just in case if it is a link prevent default behavior
+        });
+
+        $("#p2").click(function () {
+            window.location.href = "paso2.php";
+            return false; //Just in case if it is a link prevent default behavior
+        });
+
+        $("#p3").click(function () {
+            window.location.href = "paso3.php";
+            return false; //Just in case if it is a link prevent default behavior
+        });
+    });
+
+    $(function () {
+        $("#accordion").accordion();
+    });
+
+    function limpiartorta(trozo) {
+        var pie = document.getElementById(trozo);
+
+        pie.classList.remove('p1', 'p2', 'p3', 'p4', 'p5', 'p6');
+    }
+</script>
+<?php include "partials/login-form.php" ?>
 </body>
-
 </html>

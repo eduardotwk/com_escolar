@@ -8,18 +8,16 @@ require 'conf/funciones_db.php';
 
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Compromiso Escolar</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/base.css">
     <script>
         function torta(rueda, trozo) {
             var pie;
@@ -398,173 +396,12 @@ require 'conf/funciones_db.php';
         <div id="p5" onmouseover="torta('chica', 'p5');" onmouseout="limpiartorta('trozo');"></div>
         <div id="p6" onmouseover="torta('chica', 'p6');" onmouseout="limpiartorta('trozo');"></div>
     </div>
-    <div id="table">
-        <table>
-            <tr class="mb-2">
-                <th>
-                    <a href="https://www.e-mineduc.cl/login/index.php" target="_blank"
-                       class="d-flex flex-column align-items-center">
-                        <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png"
-                             style="width: 40px;" style="height: 40px;">
-                        <span class="text-center">Capacitación</span>
-                    </a>
-                </th>
-            </tr>
-            <tr class="mb-2">
-                <th>
-                    <a href="calendario.php" target="_blank" class="d-flex flex-column align-items-center">
-                        <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png"
-                             style="width: 40px;" style="height: 40px;">
-                        <span class="text-center">Calendario<br/>de actividades</span>
-                    </a>
-                </th>
-            </tr>
-            <tr class="mb-2">
-                <th>
-                    <a href="/inicia_encuesta.php" target="_blank" class="d-flex flex-column align-items-center">
-                        <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png"
-                             style="width: 40px;" style="height: 40px;">
-                        <span class="text-center">Instrumentos<br/>de medición</span>
-                    </a>
-                </th>
-            </tr>
-            <tr class="mb-2">
-                <th class="d-flex flex-column align-items-center">
-                    <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/4.-Fichas proceso.png"
-                         style="width: 40px;" style="height: 40px;">
-                    <div class="text-center">Fichas<br/>SIESE</div>
-                </th>
-            </tr>
-            <tr class="mb-2">
-                <th>
-                    <a href="buscar.php" target="_blank" class="d-flex flex-column align-items-center">
-                        <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png"
-                             style="width: 40px;" style="height: 40px;">
-                        <span class="text-center"> Buscador de<br/>estrategias</span>
-                    </a>
-                </th>
-            </tr>
-            <tr class="mb-2">
-                <th>
-                    <a href="/inicia_reportes.php" target="_blank" class="d-flex flex-column align-items-center">
-                        <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png"
-                             style="width: 40px;" style="height: 40px;">
-                        <span class="text-center">Resultados de<br/>medición</span>
-                    </a>
-                </th>
-            </tr>
-        </table>
-    </div>
-</div>
-<footer id="main-footer">
-    <div class="row">
-        <div class="col-12">
-            <div class="imagen" style="margin: 10px;">
-                <img src="img/Logos/png/Logo UValpo.png" alt="" class="imh-responsive" style="width: 80px;"
-                     style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/Logo Ufro.png" alt="" class="imh-responsive" style="width: 80px;"
-                     style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/U-autonoma.png" alt="" class="imh-responsive" style="width: 100px;"
-                     style="height: 100px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/fundacion-telefonica.png" alt="" class="imh-responsive" style="width: 140px;"
-                     style="height: 140px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/Logo Mineduc.png" alt="" class="imh-responsive" style="width: 80px;"
-                     style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/fondef.png" alt="" class="imh-responsive" style="width: 180px;"
-                     style="height: 180px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;"
-                     style="height: 150px;">
-                <table class="table2">
-                    <tr>
 
-                        <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php" target="_blank">Capacitación
-                        </th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="calendario.php" target="_blank">Calendario de actividades</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="/inicia_encuesta.php" target="_blank">Instrumentos de medición</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="#">Fichas SIESE</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="buscar.php" target="_blank">Buscador de estrategias</th>
-                    </tr>
-                </table>
-                <table class="table3">
-                    <tr>
-                        <th><a href="/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf"
-                               target="_blank">
-                                <img src="img/Botones/Manual_plataforma.png"
-                                     style="max-width: 140px; margin-top: 10px; float:right;">
-                            </a>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <div id="bt_admin" class="btn_cuadrado" data-toggle="modal" data-target="#id_ingre_cod"
-                                 style="cursor: pointer">
-                                <img src="img/Botones/Admin_usuarios.png"
-                                     style="max-width: 140px; margin-top: 10px; float:right;" data-toggle="modal"
-                                     data-target="#id_ingre_cod">
-                            </div>
-                        </th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</footer> <!-- / #main-footer -->
-<div id="id_ingre_cod" class="modal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Formulario de acceso</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="form_admin" method="POST">
-                    <br>
-                    <div style="text-align: center; margin-bottom: 4px;">
-                        <i class="fa fa-user" style="color: #fc455c;" aria-hidden="true"></i> &nbsp; Administración
-                    </div>
-                    <br>
-                    <div class="form-group has-feedback">
-                        <?php echo usuario_administrador(); ?>
-                    </div>
-                    <div class="form-group has-feedback">
-                        <input type="text" name="usuario" id="usuario" class="form-control" placeholder="usuario"
-                               required/>
-                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
-                    </div>
-                    <div class="form-group has-feedback">
-                        <input type="password" id="contrasena" name="contrasena" class="form-control"
-                               autocomplete="password" placeholder="contraseña" required/>
-                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                    </div>
-                    <input type="hidden" name="token" value="" id="token">
-                    <button style="border-radius: 2px; background-color: #fc455c; font-family: ‘Source Sans Pro’, sans-serif; font-size: 12px; font-weight: 900; min-width:120px; height:30px; width: 100%; margin-top: 15px; border-radius: 5px; color: white; box-shadow: rgba(0, 0, 0, 0.22) 1px 1px 1px 1px; border: 1.5px solid #fc455c;"
-                            name="login-button" id="ingresar_admin" type="submit" class="icon-submit btn-limon-validar">
-                            <span id="inicia_rep">
-                                Ingresar
-                            </span>
-                        <span id="spinner"></span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
+    <?php include "partials/menu-lateral.php" ?>
 </div>
+
+<?php include "partials/main-footer.php" ?>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
@@ -577,97 +414,11 @@ require 'conf/funciones_db.php';
 <script src="https://www.google.com/recaptcha/api.js?render=6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk"></script>
 
 <script>
-    function login_admin() {
-        let url_base = window.location;
-        let url_base_2 = url_base.protocol + "//" + url_base.host;
-        let dir = url_base_2 + "/php/valida_login.php";
-
-        $('#form_admin').submit(function (e) {
-            e.preventDefault();
-            grecaptcha.ready(function () {
-                grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function (token) {
-                    $('#token').val(token); // here i set value to hidden field
-                });
-            });
-            const user = document.getElementById("usuario").value;
-            const pass = document.getElementById("contrasena").value;
-            if (user == "") {
-                alertify.notify("Debes ingresar el usuario");
-                document.getElementById("usuario").focus();
-                return false;
-            } else if (pass == "") {
-                alertify.notify("Debes ingresar la contraseña");
-                document.getElementById("contrasena").focus();
-                return false;
-            } else {
-                let cadena = "usuario=" + $('#usuario').val() +
-                    "&contrasena=" + $('#contrasena').val() +
-                    "&tipo_usuario=" + $('#tipo_usuario').val() +
-                    "&privilegios=" + "1" +
-                    "&token=" + $("#token").val();
-                $.ajax({
-                    type: "POST",
-                    url: dir,
-                    data: cadena,
-                    cache: false,
-                    statusCode: {
-                        404: function () {
-                            alertify.alert("Alerta", "Pagina no Encontrada");
-                            document.getElementById("ingresar_admin").disabled = false;
-                            document.getElementById("spinner").innerHTML = '';
-                            document.getElementById("inicia_rep").innerHTML = 'Ingresar';
-
-                        },
-                        502: function () {
-                            alertify.alert("alerta", "Ha ocurrido un error al conectarse con el servidor");
-                            document.getElementById("ingresar_admin").disabled = false;
-                            document.getElementById("spinner").innerHTML = '';
-                            document.getElementById("inicia_rep").innerHTML = 'Ingresar';
-                        }
-                    },
-                    beforeSend: function () {
-                        document.getElementById("ingresar_admin").disabled = true;
-                        document.getElementById("inicia_rep").innerHTML = '';
-                        document.getElementById("spinner").innerHTML = '</i> <i class="fa fa-spinner fa-2x fa-spin  fa-fw">';
-                    },
-                    success: function (r) {
-                        if (r == 1) {
-                            window.location.replace(
-                                url_base.protocol + "//" +
-                                url_base.host + "/" +
-                                "modulos.php"
-                            );
-                        } else if (r == 0) {
-                            document.getElementById("ingresar_admin").disabled = false;
-                            document.getElementById("spinner").innerHTML = '';
-                            document.getElementById("inicia_rep").innerHTML = 'Ingresar';
-                            alertify.defaults.glossary.title = '<p class="text-center">Notificación<p>';
-                            alertify.alert('Usuario Incorrecto');
-                        } else if (r == -1) {
-                            document.getElementById("ingresar_admin").disabled = false;
-                            document.getElementById("spinner").innerHTML = '';
-                            document.getElementById("inicia_rep").innerHTML = 'Ingresar';
-                            alertify.defaults.glossary.title = '<p class="text-center">Notificación<p>';
-                            alertify.alert('Error, captcha inválido');
-                        }
-                    }
-                });
-            }
-        });
-    }
-
     function Cerrar_modal() {
         $('#id_ingre_cod').modal('toggle');
     }
 
-    grecaptcha.ready(function () {
-        grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function (token) {
-            $('#token').val(token); // here i set value to hidden field
-        });
-    });
-
     $(document).ready(function () {
-        login_admin();
         $("body").css('padding', '0');
 
         $("#t_encuesta").click(function () {
@@ -716,12 +467,6 @@ require 'conf/funciones_db.php';
     });
 </script>
 
-<script>
-    $(document).ready(() => {
-        $('#bt_admin').on('click', () => {
-            $('#id_ingre_cod').modal('toggle');
-        })
-    })
-</script>
+<?php include "partials/login-form.php" ?>
 </body>
 </html>
