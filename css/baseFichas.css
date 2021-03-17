@@ -570,7 +570,7 @@ table.ficha1 {
     height: 100%;
     position: relative;
     left: 0%;
-    top:-120px;
+    top:-56px;
 }
 
 td.ficha1 {
@@ -615,7 +615,7 @@ button.publicar {
     border-radius: 5px 5px 5px 5px;
     padding: 6px 17px;
     position: relative;
-    right: -3.3% !important;
+    left: 80% !important;
     color: #666666;
     top: -236px !important;
     bottom: auto;
@@ -642,9 +642,9 @@ button.publicar2 {
     border-radius: 5px 5px 5px 5px;
     padding: 6px 17px;
     position: relative;
-    left: 88% !important;
+    left: -4.7%;
     color: #666666;
-    top: -240px !important;
+    top: -192px !important;
     bottom: auto;
 }
 img.descarga {

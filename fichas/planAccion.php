@@ -41,7 +41,7 @@
 
 </header><!-- / #main-header -->
 
-<div class="container">
+<div class="container" style="height:951px">
     <h1>SIESE <h1 class="color">Fichas</h1>
     </h1>
     <hr>
@@ -97,10 +97,10 @@
             </tr>
         </table>
     </div>
-    <div class="planAccion"><a class="accion" href="#">Plan de Acción</a></div>
-    <div class="seguimiento"><a class="seguimiento" href="seguimiento.php">Seguimiento y monitoreo</a></div>
-    <div class="cierre"><a class="cierre" href="cierre.php">Ficha de cierre</a></div>
-    <div class="individual"><a class="individual" href="individual.php">Ficha Individual</a></div>
+    <div class="planAccion" style="top: -39.9px;height: 5%"><a class="accion" href="#">Plan de Acción</a></div>
+    <div class="seguimiento" style="height: 5%;top: -87.5px;"><a class="seguimiento" href="seguimiento.php">Seguimiento y monitoreo</a></div>
+    <div class="cierre" style="top: -135.2px;height: 5.1%"><a class="cierre" href="cierre.php">Ficha de cierre</a></div>
+    <div class="individual" style="top: -184px;height: 5.1%"><a class="individual" href="individual.php">Ficha Individual</a></div>
     <form action="planAccion.php" method="post" >
         <table class="ficha1">
             <tr class="ficha1">
