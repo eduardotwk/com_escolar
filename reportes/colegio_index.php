@@ -88,7 +88,7 @@ $cursos_stmt = $conn->prepare("SELECT ce_curso_nombre as nombre,
            JOIN ce_participantes ON ce_participantes_token_fk = ce_participanes_token
            JOIN ce_curso ON (ce_curso_id_ce_curso = id_ce_curso AND ce_anio_curso = ce_anio_contestada)
     WHERE ce_estado_encuesta = 1
-      AND ce_establecimiento_id_ce_establecimiento = :id AND ce_anio_curso = :anio   
+      AND ce_establecimiento_id_ce_establecimiento = :id AND ce_anio_curso = (select ce_anio_curso from ce_curso where ce_fk_establecimiento = :id order by ce_anio_curso DESC limit 1)   
     GROUP BY ce_curso.ce_curso_nombre");
 
 $cursos_stmt_longitudinal = $conn->prepare("SELECT ce_curso_nombre as nombre,
@@ -216,7 +216,7 @@ GROUP BY ce_curso.ce_curso_nombre ORDER BY ce_anio_curso ASC");
 
 try {
 
-    $cursos_stmt->execute(array('id' => $establecimiento_id, 'anio' => date('Y') ));
+    $cursos_stmt->execute(array('id' => $establecimiento_id));
     
     $cursos_stmt_longitudinal->execute(array('id' => $establecimiento_id));
 

@@ -1819,7 +1819,7 @@ function subir_a_cabezera() {
 
 if (typeof (grecaptcha) != "undefined") {
     grecaptcha.ready(function () {
-        grecaptcha.execute('6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6', {action: 'submit'}).then(function (token) {
+        grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function (token) {
             $('#token').val(token); // here i set value to hidden field
         });
     });
@@ -1828,13 +1828,6 @@ if (typeof (grecaptcha) != "undefined") {
 function login_final() {
     $('#inicia_reporte').submit(function (e) {
         e.preventDefault();
-        if (typeof (grecaptcha) != "undefined") {
-            grecaptcha.ready(function () {
-                grecaptcha.execute('6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6', {action: 'submit'}).then(function (token) {
-                    $('#token').val(token); // here i set value to hidden field
-                });
-            });
-        }
         const user = document.getElementById("usuario").value;
         const pass = document.getElementById("contrasena").value;
         if (user == "") {
@@ -1846,17 +1839,15 @@ function login_final() {
             document.getElementById("contrasena").focus();
             return false;
         } else {
-            const data = {
-                usuario: $('#usuario').val(),
-                contrasena: $('#contrasena').val(),
-                tipo_usuario: $('#tipo_usuario').val(),
-                privilegios: 0,
-                token: $("#token").val()
-            }
+            let cadena = "usuario=" + $('#usuario').val() +
+                "&contrasena=" + $('#contrasena').val() +
+                "&tipo_usuario=" + $('#tipo_usuario').val() +
+                "&privilegios=" + "0" +
+                "&token=" + $("#token").val();
             $.ajax({
                 type: "POST",
                 url: "../php/valida_login.php",
-                data: JSON.stringify(data),
+                data: cadena,
                 cache: false,
                 statusCode: {
                     404: function () {

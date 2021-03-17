@@ -706,7 +706,7 @@ hr {
     border-radius: 3px 3px 3px 3px;
     padding: 20px;
     border-color: #da9600;
-    height:800px;
+    height:900px;
 }
 
 .accordionMenu input[type=radio]:checked+label:after {

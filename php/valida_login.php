@@ -10,25 +10,30 @@ $tipo_usuario = $_POST["tipo_usuario"];
 
 $privilegios = $_POST["privilegios"];
 
+# Verify captcha
+$post_data = http_build_query([
+    'secret' => '6LfUWnMaAAAAAHFJYu__xIaJBV1CAHjD-p_-VIVO',
+    'response' => $_POST['token'],
+    'remoteip' => $_SERVER['REMOTE_ADDR']
+]);
 
-$token = $_POST["token"];
+$opts = [
+    'http' => [
+        'method' => 'POST',
+        'header' => 'Content-type: application/x-www-form-urlencoded',
+        'content' => $post_data
+    ]
+];
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array('secret' => '6Le4kagZAAAAAMrvl2we09WAZFiCHtLNKr9aKMMk', 'response' => $token)));
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($ch);
-curl_close($ch);
-$arrResponse = json_decode($response, true);
+$context = stream_context_create($opts);
+$response = file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, $context);
+$result = json_decode($response);
 
 $resultado = select_user($usuario, $contrasena, $tipo_usuario);
 
-$_SESSION['pais'] = $resultado["pais"];
-
-if ($arrResponse["success"] == 1 && $arrResponse["score"] > 0.5) {
+if ($result->success && $result->score > 0.5) {
     if ($resultado["usuario"] == $usuario && $resultado["contrasena"] == $contrasena && $resultado["tipo"] == $tipo_usuario) {
-
+        $_SESSION['pais'] = $resultado["pais"];
         $_SESSION['user'] = $usuario;
 
         $_SESSION['tipo_usuario'] = $tipo_usuario;

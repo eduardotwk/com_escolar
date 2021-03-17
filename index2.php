@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="assets/css/estilo_inicio.css">
         <script src="assets/js/jquery-1.10.2.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js?render=6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk"></script>
         <script type="text/javascript">
             var flag = false;
             var flag2 = false;
@@ -27,7 +27,7 @@
             }
 
             grecaptcha.ready(function() {
-                grecaptcha.execute('6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6', {action: 'submit'}).then(function(token) {
+                grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function(token) {
                     $('#token').val(token); // here i set value to hidden field
                 });
             });
@@ -38,7 +38,7 @@
                 $('#form_admin').submit(function(e) {
                     e.preventDefault();
                     grecaptcha.ready(function() {
-                        grecaptcha.execute('6Le4kagZAAAAAPrJvezXbADOrTQVxo69xZg1cyK6', {action: 'submit'}).then(function(token) {
+                        grecaptcha.execute('6LfUWnMaAAAAAEtxf2GKWntxz2CrQMWEohkfZHNk', {action: 'submit'}).then(function(token) {
                             $('#token').val(token); // here i set value to hidden field
                         });
                     });

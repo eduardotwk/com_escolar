@@ -7,9 +7,10 @@
 <link rel="stylesheet" type="text/css" href="assets/js/alertifyjs/css/alertify.css">
 <link rel="stylesheet" type="text/css" href="assets/js/datepicker/datepicker3.css">
 <link rel="shortcut icon" href="assets/img/favicon.png">
-<link rel="stylesheet" type="text/css" href="assets/librerias/vendor/datatables/datatables/media/css/jquery.dataTables.css">
-<link rel="stylesheet" type="text/css" href="assets/librerias/vendor/datatables/datatables/media/css/dataTables.bootstrap4.css">
-
-
+<link rel="stylesheet" type="text/css"
+      href="assets/librerias/vendor/datatables/datatables/media/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css"
+      href="assets/librerias/vendor/datatables/datatables/media/css/dataTables.bootstrap4.css">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
 
 

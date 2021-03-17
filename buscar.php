@@ -19,25 +19,25 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#test").CreateMultiCheckBox({
                 width: '370px',
                 height: '250px',
             });
-            $(document).on("click", ".MultiCheckBox", function() {
+            $(document).on("click", ".MultiCheckBox", function () {
                 var detail = $(this).next();
                 detail.show();
                 clearResp();
             });
 
-            $(document).on("click", ".MultiCheckBoxDetailHeader input", function(e) {
+            $(document).on("click", ".MultiCheckBoxDetailHeader input", function (e) {
                 e.stopPropagation();
                 var hc = $(this).prop("checked");
                 $(this).closest(".MultiCheckBoxDetail").find(".MultiCheckBoxDetailBody input").prop("checked", hc);
                 $(this).closest(".MultiCheckBoxDetail").next().UpdateSelect();
             });
 
-            $(document).on("click", ".MultiCheckBoxDetailHeader", function(e) {
+            $(document).on("click", ".MultiCheckBoxDetailHeader", function (e) {
                 var inp = $(this).find("input");
                 var chk = inp.prop("checked");
                 inp.prop("checked", !chk);
@@ -45,7 +45,7 @@
                 $(this).closest(".MultiCheckBoxDetail").next().UpdateSelect();
             });
 
-            $(document).on("click", ".MultiCheckBoxDetail .cont input", function(e) {
+            $(document).on("click", ".MultiCheckBoxDetail .cont input", function (e) {
                 e.stopPropagation();
                 $(this).closest(".MultiCheckBoxDetail").next().UpdateSelect();
 
@@ -53,7 +53,7 @@
                 $(".MultiCheckBoxDetailHeader input").prop("checked", val);
             });
 
-            $(document).on("click", ".MultiCheckBoxDetail .cont", function(e) {
+            $(document).on("click", ".MultiCheckBoxDetail .cont", function (e) {
                 var inp = $(this).find("input");
                 var chk = inp.prop("checked");
                 inp.prop("checked", !chk);
@@ -66,7 +66,7 @@
                 $(".MultiCheckBoxDetailHeader input").prop("checked", val);
             });
 
-            $(document).mouseup(function(e) {
+            $(document).mouseup(function (e) {
                 var container = $(".MultiCheckBoxDetail");
                 if (!container.is(e.target) && container.has(e.target).length === 0) {
                     container.hide();
@@ -81,7 +81,7 @@
         };
 
         jQuery.fn.extend({
-            CreateMultiCheckBox: function(options) {
+            CreateMultiCheckBox: function (options) {
 
                 var localOption = {};
                 localOption.width = (options != null && options.width != null && options.width != undefined) ? options.width : defaultMultiCheckBoxOption.width;
@@ -102,7 +102,7 @@
                 });
                 var multiCheckBoxDetailBody = detail.find(".MultiCheckBoxDetailBody");
 
-                this.find("option").each(function() {
+                this.find("option").each(function () {
                     var val = $(this).attr("value");
 
                     if (val == undefined)
@@ -113,10 +113,10 @@
 
                 multiCheckBoxDetailBody.css("max-height", (parseInt($(".MultiCheckBoxDetail").css("max-height")) - 28) + "px");
             },
-            UpdateSelect: function() {
+            UpdateSelect: function () {
                 var arr = [];
 
-                this.prev().find(".mulinput:checked").each(function() {
+                this.prev().find(".mulinput:checked").each(function () {
                     arr.push($(this).val());
                 });
 
@@ -133,197 +133,191 @@
 
 <body>
 
-    <header id="main-header">
-        <img class="logo" src="img/logo home.png">
-        <img class="lapiz" src="img/Header/compromiso.png">
-        <img class="btnSalir" src="img/Btn-salir-inactivo.png">
-        <ul id="menu">
-            <li>
-                <a href="#">Pasos</a>
-                <ul id="submenu">
-                    <li><a href="paso1.php">Paso 1</a></li>
-                    <li><a href="paso2.php">Paso 2</a></li>
-                    <li><a href="paso3.php">Paso 3</a></li>
-                    <li><a href="paso4.php">Paso 4</a></li>
-                    <li><a href="paso5.php">Paso 5</a></li>
-                    <li><a href="paso6.php">Paso 6</a></li>
-                </ul>
-            </li>
-            <li><a href="compromiso_escolar.php">Compromiso Escolar</a></li>
-            <li><a href="presentacion.php">Presentación</a></li>
-            <li><a href="home.php"><i class="fas fa-home">&nbsp;</i>Inicio</a></li>
-        </ul>
+<?php include "partials/main-header.php" ?>
 
-    </header><!-- / #main-header -->
-
-    <div class="container">
-        <h1>Buscador <h1 class="color">de estrategias</h1>
-        </h1>
-        <hr>
-        </hr>
-        <p class=texto>Seleccione uno o más criterios de la lista desplegable en la <br />
-            caja de búsqueda. Una vez seleccionados pinche en "Buscar". <br /><br />
-            Cuando aparezcan los resultados, seleccione la estrategia de <br />
-            su interés y pínchela para que se despliegue su descripción.</p>
+<div class="container">
+    <h1>Buscador <h1 class="color">de estrategias</h1>
+    </h1>
+    <hr>
+    </hr>
+    <p class=texto>Seleccione uno o más criterios de la lista desplegable en la <br/>
+        caja de búsqueda. Una vez seleccionados pinche en "Buscar". <br/><br/>
+        Cuando aparezcan los resultados, seleccione la estrategia de <br/>
+        su interés y pínchela para que se despliegue su descripción.</p>
 
 
-        <!-- Contenido -->
+    <!-- Contenido -->
 
-        <form action="buscar.php" method="post" id="buscar">
-            <div style="width: 254px;">
+    <form action="buscar.php" method="post" id="buscar">
+        <div style="width: 254px;">
 
-                <select id="test" onfocus="borra();">
-                    <option name="check_lista[]" value="co_co">Compromiso Cognitivo</option>
-                    <option name="check_lista[]" value="co_af">Compromiso Afectivo</option>
-                    <option name="check_lista[]" value="co_con">Compromiso Conductual</option>
-                    <option name="check_lista[]" value="fcf">Factor contextual- Familia</option>
-                    <option name="check_lista[]" value="fcpa">Factor Contextual - Pares</option>
-                    <option name="check_lista[]" value="fcpr">Factor Contextual - Profesorado</option>
-                </select>
+            <select id="test" onfocus="borra();">
+                <option name="check_lista[]" value="co_co">Compromiso Cognitivo</option>
+                <option name="check_lista[]" value="co_af">Compromiso Afectivo</option>
+                <option name="check_lista[]" value="co_con">Compromiso Conductual</option>
+                <option name="check_lista[]" value="fcf">Factor contextual- Familia</option>
+                <option name="check_lista[]" value="fcpa">Factor Contextual - Pares</option>
+                <option name="check_lista[]" value="fcpr">Factor Contextual - Profesorado</option>
+            </select>
 
-                <button type="submit" class="btn" name="enviar"><i class="fas fa-search"></i>&nbsp;Buscar...</button>
-                <label id="idFicha" style="display: none;"></label>
-                <!----- Including PHP Script ----->
-                <?php include 'databaseconnect.php'; ?>
-                <?php include 'procesa_check.php'; ?>
-            </div>
-        </form>
-        <!-- Fin Contenido -->
+            <button type="submit" class="btn" name="enviar"><i class="fas fa-search"></i>&nbsp;Buscar...</button>
+            <label id="idFicha" style="display: none;"></label>
+            <!----- Including PHP Script ----->
+            <?php include 'databaseconnect.php'; ?>
+            <?php include 'procesa_check.php'; ?>
+        </div>
+    </form>
+    <!-- Fin Contenido -->
 
-        <!-- Fin row -->
+    <!-- Fin row -->
 
-        <div id="table">
-            <table>
+    <div id="table">
+        <table>
+            <tr>
+                <th>
+                    <a href="https://www.e-mineduc.cl/login/index.php" target="_blank">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png"
+                               style="width: 40px;" style="height: 40px;">Capacitación
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="calendario.php" target="_blank">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png"
+                               style="width: 40px;" style="height: 40px;">
+                            Calendario<br/>de actividades
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="/inicia_encuesta.php" target="_blank">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png"
+                               style="width: 40px;" style="height: 40px;">
+                            Instrumentos<br/>de medición
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="#">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/4.-Fichas proceso.png"
+                               style="width: 40px;" style="height: 40px;">
+                            Fichas<br/>SIESE
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="#">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png"
+                               style="width: 40px;" style="height: 40px;">
+                            Buscador de<br/>estrategias
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="/inicia_reportes.php" target="_blank">
+                        <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png"
+                               style="width: 40px;" style="height: 40px;">
+                            Resultados de<br/>medición
+                </th>
+            </tr>
+        </table>
+    </div>
+
+
+</div>
+
+<footer id="main-footer">
+    <div class="row">
+        <div class="imagen" style="margin: 10px;">
+            <img src="img/Logos/png/Logo UValpo.png" alt="" class="imh-responsive" style="width: 80px;"
+                 style="height: 80px;">
+            &nbsp; &nbsp;
+            <img src="img/Logos/png/Logo Ufro.png" alt="" class="imh-responsive" style="width: 80px;"
+                 style="height: 80px;">
+            &nbsp; &nbsp;
+            <img src="img/Logos/png/U-autonoma.png" alt="" class="imh-responsive" style="width: 100px;"
+                 style="height: 100px;">
+            &nbsp; &nbsp;
+            <img src="img/Logos/png/fundacion-telefonica.png" alt="" class="imh-responsive" style="width: 140px;"
+                 style="height: 140px;">
+            &nbsp; &nbsp;
+            <img src="img/Logos/png/Logo Mineduc.png" alt="" class="imh-responsive" style="width: 80px;"
+                 style="height: 80px;">
+            &nbsp; &nbsp;
+            <img src="img/Logos/png/fondef.png" alt="" class="imh-responsive" style="width: 180px;"
+                 style="height: 180px;">
+            &nbsp; &nbsp;
+            <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;"
+                 style="height: 150px;">
+            <table class="table2">
                 <tr>
-                    <th>
-                        <a href="https://www.e-mineduc.cl/login/index.php" target="_blank">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/1.-Capacitacion.png" style="width: 40px;" style="height: 40px;">Capacitación
+                    <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php" target="_blank">Capacitación
                     </th>
                 </tr>
                 <tr>
-                    <th>
-                        <a href="calendario.php">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/2.-Calendario.png" style="width: 40px;" style="height: 40px;">
-                                Calendario<br />de actividades
-                    </th>
+                    <th><a class="table2" href="calendario.php" target="_blank">Calendario de actividades</th>
                 </tr>
                 <tr>
-                    <th>
-                        <a href="/inicia_encuesta.php">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/3.-Instrumentos.png" style="width: 40px;" style="height: 40px;">
-                                Instrumentos<br />de medición
-                    </th>
+                    <th><a class="table2" href="/inicia_encuesta.php" target="_blank">Instrumentos de medición</th>
                 </tr>
                 <tr>
-                    <th>
-                        <a href="#">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/4.-Fichas proceso.png" style="width: 40px;" style="height: 40px;">
-                                Fichas<br />SIESE
-                        </a>
-                    </th>
+                    <th><a class="table2" href="#">Fichas SIESE</th>
                 </tr>
                 <tr>
-                    <th>
-                        <a href="#">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/5.-Buscador de estrategias.png" style="width: 40px;" style="height: 40px;">
-                                Buscador de<br />estrategias
-                    </th>
+                    <th><a class="table2" href="buscar.php" target="_blank">Buscador de estrategias</th>
+                </tr>
+            </table>
+            <table class="table3">
+                <tr>
+                    <th><a href="/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
+                            <image src="img/Botones/Manual_plataforma.png"
+                                   style="max-width: 140px; margin-top: 10px; float:right;">
+                        </a></th>
                 </tr>
                 <tr>
-                    <th>
-                        <a href="/inicia_reportes.php">
-                            <image class="alineadoTextoImagenAbajo" src="img/menu_flotante/6.-Resultados.png" style="width: 40px;" style="height: 40px;">
-                                Resultados de<br />medición
-                    </th>
+                    <th><img src="img/Botones/Admin_usuarios.png"
+                             style="max-width: 140px; margin-top: 10px; float:right;"></th>
                 </tr>
             </table>
         </div>
-
-
     </div>
+</footer> <!-- / #main-footer -->
 
-    <footer id="main-footer">
-        <div class="row">
-            <div class="imagen" style="margin: 10px;">
-                <img src="img/Logos/png/Logo UValpo.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/Logo Ufro.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/U-autonoma.png" alt="" class="imh-responsive" style="width: 100px;" style="height: 100px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/fundacion-telefonica.png" alt="" class="imh-responsive" style="width: 140px;" style="height: 140px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/Logo Mineduc.png" alt="" class="imh-responsive" style="width: 80px;" style="height: 80px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/fondef.png" alt="" class="imh-responsive" style="width: 180px;" style="height: 180px;">
-                &nbsp; &nbsp;
-                <img src="img/Logos/png/LogoCorfo.png" alt="" class="imh-responsive" style="width: 150px;" style="height: 150px;">
-                <table class="table2">
-                    <tr>
-                        <th><a class="table2" href="https://www.e-mineduc.cl/login/index.php" target="_blank">Capacitación</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="calendario.php">Calendario de actividades</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="/inicia_encuesta.php">Instrumentos de medición</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="#">Fichas SIESE</th>
-                    </tr>
-                    <tr>
-                        <th><a class="table2" href="buscar.php">Buscador de estrategias</th>
-                    </tr>
-                </table>
-                <table class="table3">
-                    <tr>
-                        <th><a href="/documentos/Manual_de_Usuario_Plataforma_Compromiso_Escolar_2020.pdf" target="_blank">
-                                <image src="img/Botones/Manual_plataforma.png" style="max-width: 140px; margin-top: 10px; float:right;">
-                            </a></th>
-                    </tr>
-                    <tr>
-                        <th><img src="img/Botones/Admin_usuarios.png" style="max-width: 140px; margin-top: 10px; float:right;"></th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </footer> <!-- / #main-footer -->
-
-    <button id="btnModal" style="display: none;" type='button' class='btn btn-primary btn-lg' data-toggle='modal' data-target='#myModal'>Abrir modal</button>
-    <div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content" style="border-color:#da9600;
+<button id="btnModal" style="display: none;" type='button' class='btn btn-primary btn-lg' data-toggle='modal'
+        data-target='#myModal'>Abrir modal
+</button>
+<div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" style="border-color:#da9600;
 	                    border-width:1px;
 	                    border-style:solid;
 	                    background-color:#fffefd;
 	                    border-radius:3px 3px 3px 3px;
                         width: 675px;">
-                <div class="modal-header" style="background-color: #22a2b0;height:30px;">
-                    <button style="position: relative;top:-7px;" type="button" class="close" data-dismiss="modal">×</button>
-                    <h4 class="modal-tittle" id="titMod"></h4>
-                </div>
-                <div class="modal-body" style="height: 600px;">
-                </div>
-
-                <a href= "#" onclick="descargar();"><img src="img/Fichas/Descargar.png" style="height: 40px;width: 40px;position:absolute;left:90%; top:auto;bottom: 10px;"></a>
+            <div class="modal-header" style="background-color: #22a2b0;height:30px;">
+                <button style="position: relative;top:-7px;" type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-tittle" id="titMod"></h4>
             </div>
+            <div class="modal-body" style="height: 600px;">
+            </div>
+
+            <a href="#" onclick="descargar();"><img src="img/Fichas/Descargar.png"
+                                                    style="height: 40px;width: 40px;position:absolute;left:90%; top:auto;bottom: 10px;"></a>
         </div>
     </div>
+</div>
 
-</body>
 
 <script type="text/javascript">
     function descargar() {
-
         var idFicDescarga = document.getElementById("idFicha").innerHTML;
         window.location = "descarga.php?id_ficha=" + idFicDescarga;
     }
 
 
     function levantaMod(id) {
-
-
         var identificador = "fic" + id;
         var nombre = document.getElementById(identificador).innerHTML;
         document.getElementById("titMod").innerHTML = nombre;
@@ -332,15 +326,14 @@
 
     }
 
-    $('#btnModal').on('click', function() {
+    $('#btnModal').on('click', function () {
         var idFic = document.getElementById("idFicha").innerHTML;
-        $('.modal-body').load('cargaDetalle.php?id_ficha=' + idFic, function(response) {
+        $('.modal-body').load('cargaDetalle.php?id_ficha=' + idFic, function (response) {
             $('#myModal').modal({
                 show: true
             });
         });
     })
 </script>
-
-
+</body>
 </html>

@@ -38,7 +38,7 @@ if (!empty($_GET['id_ficha'])) {
 
 
         if ($cmsData["parrafo3"] != "") {
-            echo "<input type=radio name=trg1 id=acc2 checked=checked>";
+            echo "<input type=radio name=trg1 id=acc2 >";
             echo "<label  for=acc2>Segunda Recomendación</label>";
             echo "<div class=content>";
             echo " <div class=inner>";
@@ -49,7 +49,7 @@ if (!empty($_GET['id_ficha'])) {
 
 
         if ($cmsData["parrafo4"] != "") {
-            echo "<input type=radio name=trg1 id=acc3 checked=checked>";
+            echo "<input type=radio name=trg1 id=acc3 >";
             echo "<label for=acc3>Tercera Recomendación</label>";
             echo "<div class=content>";
             echo " <div class=inner>";
@@ -70,7 +70,7 @@ if (!empty($_GET['id_ficha'])) {
             echo "</div> ";
         }
         if ($cmsData["parrafo1"] != "") {
-            echo "<input type=radio name=trg1 id=acc5 checked=checked>";
+            echo "<input type=radio name=trg1 id=acc5 >";
             echo "<label for=acc5>Clasificación</label>";
             echo "<div class=content>";
             echo " <div class=inner>";

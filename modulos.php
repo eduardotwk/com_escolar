@@ -62,9 +62,9 @@ setcookie("PHPSESSID", session_id(), 0, $params["path"], $params["domain"],
     <?php if ($_SESSION['privilegios'] == 0) {
         if ($tipo_usuario == 1) {
             curso_docentes($usuario);
-
-            echo "<script>document.location.herf = 'reportes/select_profesor.php'</script>";
-
+            header('location: reportes/select_profesor.php');
+//            echo "<script>document.location.herf = 'reportes/select_profesor.php'</script>";
+            exit();
         }
         ?>
 
