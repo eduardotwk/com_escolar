@@ -47,7 +47,7 @@
     <hr>
     <h1 class="subt">Ficha del plan de acción</h1>
     <div id="table">
-        <table>
+        <table class="menu">
             <tr>
                 <th>
                     <a href="https://www.e-mineduc.cl/login/index.php" target="_blank">
@@ -104,27 +104,27 @@
     <form action="planAccion.php" method="post" >
         <table class="ficha1">
             <tr class="ficha1">
-                <td class="ficha1"><p> ¿Qué necesidades se observan en el curso en función<br>
+                <td class="ficha1"><p class="pregunta"> ¿Qué necesidades se observan en el curso en función<br>
                         de la información entregada por la plataforma?</p></td>
                 <td class="ficha1"><textarea name="p1"></textarea></td>
 
             </tr>
             <tr class="ficha1" style="background: rgba(218,150,0, 0.3);">
-                <td class="ficha1"><p> ¿Qué estrategias señaladas en la plataforma podemos<br>
+                <td class="ficha1"><p class="pregunta"> ¿Qué estrategias señaladas en la plataforma podemos<br>
                         de la información entregada por la plataforma?</p></td>
                 <td class="ficha1" ><textarea name="p2" "></textarea></td>
             </tr>
             <tr class="ficha1">
-                <td class="ficha1"><p> ¿Qué otras estrategias disponibles en nuestra escuela<br>
+                <td class="ficha1"><p class="pregunta"> ¿Qué otras estrategias disponibles en nuestra escuela<br>
                         podemos implementar / reforzar?</p></td>
                 <td class="ficha1"><textarea name="p3" ></textarea></td>
             </tr>
             <tr class="ficha1" style="background: rgba(218,150,0, 0.3);">
-                <td class="ficha1"><p> Pasos a seguir para su implementación</p></td>
+                <td class="ficha1"><p class="pregunta"> Pasos a seguir para su implementación</p></td>
                 <td class="ficha1"><textarea name="p4" ></textarea></td>
             </tr>
             <tr class="ficha1">
-                <td class="ficha1"><p>Responsables</p></td>
+                <td class="ficha1"><p class="pregunta">Responsables</p></td>
                 <td class="ficha1"><textarea name="p5"></textarea></td>
             </tr>
         </table>

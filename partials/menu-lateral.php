@@ -30,9 +30,11 @@
         </tr>
         <tr class="mb-2">
             <th class="d-flex flex-column align-items-center">
+                <a href="fichas/planAccion.php">
                 <img class="alineadoTextoImagenAbajo" src="img/menu_flotante/4.-Fichas proceso.png"
                      style="width: 40px;" style="height: 40px;">
                 <div class="text-center" style="font-size: 10px">Fichas<br/>SIESE</div>
+                </a>
             </th>
         </tr>
         <tr class="mb-2">

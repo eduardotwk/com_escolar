@@ -45,8 +45,9 @@
     <h1>SIESE <h1 class="color">Fichas</h1>
     </h1>
     <hr>
+    <h1 class="subt">Fichas de seguimiento y monitoreo</h1>
     <div id="table">
-        <table>
+        <table class="menu">
             <tr>
                 <th>
                     <a href="https://www.e-mineduc.cl/login/index.php" target="_blank">
@@ -93,7 +94,112 @@
     <div class="seguimiento"><a class="seguimiento" href="#">Seguimiento y monitoreo</a></div>
     <div class="cierre"><a class="cierre" href="cierre.php">Ficha de cierre</a></div>
     <div class="individual"><a class="individual" href="individual.php">Ficha Individual</a></div>
-
+    <p class="p1">Para cada reunión de seguimiento y monitoreo nombre las estrategias que se están ejecutando y señale que tan efectiva ha sido<br>
+        su implementación de acuerdo con las categorías de respuestas del cuadro de referencia.<br><br>
+        Para evaluar que tan efectiva ha sido su implementación considere: si la estrategia ha sido de fácil ejecución, si ha tenido buena<br>
+        recepción, y si los(as) participantes se encuentran motivados(as). Posteriormente, en caso de ser necesario añada los ajustes<br>
+        necesarios para una mejor implementación.</p>
+    <h1 class="subt2">Seleccionar el año</h1>
+    <div class="custom-select" style="width:125px;"">
+        <select>
+            <option value="0">Seleccione...</option>
+            <option value="1">2020</option>
+            <option value="2">2021</option>
+        </select>
+    </div>
+    <table class="ops">
+        <tr class="op">
+            <td class="op">1</td>
+            <td class="op">Muy en desacuerdo</td>
+        </tr>
+        <tr class="op">
+            <td class="op">2</td>
+            <td class="op">En desacuerdo</td>
+        </tr>
+        <tr class="op">
+            <td class="op">3</td>
+            <td class="op">Ni de acuerdo ni en desacuerdo</td>
+        </tr>
+        <tr class="op">
+            <td class="op">4</td>
+            <td class="op">De acuerdo</td>
+        </tr>
+        <tr class="op">
+            <td class="op">5</td>
+            <td class="op">Muy de acuerdo</td>
+        </tr>
+    </table>
+    <form>
+        <h1 class="subt3">Reunión consejo escolar</h1>
+        <p class="p2">A continuación debe nombrar todas las estrategias que se están implementando en el curso (por Ej. "Promoviendo una mentalidad <br>
+            de crecimiento") y evaluar que tan efectiva ha sido su implementación hasta la fecha.</p>
+        <table id="seguimiento">
+            <tr>
+                <th>N°</th>
+                <th>Estrategia Seleccionada</th>
+                <th>Evaluación</th>
+            </tr>
+            <tr>
+                <td class="col1">1.1</td>
+                <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
+                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"><option>Seleccione...</option></select></td>
+            </tr>
+            <tr>
+                <td class="col1">1.2</td>
+                <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
+                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"><option>Seleccione...</option></select></td>
+            </tr>
+            <tr>
+                <td class="col1">1.3</td>
+                <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
+                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"><option>Seleccione...</option></select></td>
+            </tr>
+            <tr>
+                <td class="col1">1.4</td>
+                <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
+                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"><option>Seleccione...</option></select></td>
+            </tr>
+        </table>
+        <p style="font-family: 'Fira Sans Condensed';font-size: 14px;position: relative;top:-80px;">Luego les pedimos responder las siguientes preguntas:</p>
+        <p style="font-family: 'Fira Sans Condensed';font-size: 14px;position: relative;top:-80px;">¿Qué cambios asociados a cada estrategia se observan en el aula?</p>
+        <input style="font-family: 'Fira Sans Condensed';font-size: 14px;position: relative;top:-80px; border: #f27611  1px solid;background-color: transparent;width: 83.6%;
+    ;height: 32px; ">
+        <p style="font-family: 'Fira Sans Condensed';font-size: 14px;position: relative;top:-80px;">A partir de la implementación de las estrategias, describa las opiniones que han recibido de:</p>
+        <table id="seguimiento2">
+            <tr>
+                <td class="col1">Profesorado:</td>
+                <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
+            </tr>
+            <tr>
+                <td class="col1">Estudiantes:</td>
+                <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
+            </tr>
+            <tr>
+                <td class="col1">Apoderados(as):</td>
+                <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
+            </tr>
+        </table>
+        <p style="font-family: 'Fira Sans Condensed';font-size: 14px;position: relative;top:-80px;">En el caso de aquellas intervenciones cuya evaluación es igual o menor a 3:<br>
+        ¿Es posible sustituir por otra estrategia o ajustar?</p>
+        <div class="check1">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" style="font-family: 'Fira Sans Condensed';font-size: 14px;">Si</label>
+        </div>
+        <div class="check2">
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" style="font-family: 'Fira Sans Condensed';font-size: 14px;">No</label>
+        </div>
+        <p style="font-family: 'Fira Sans Condensed';font-size: 14px;position: relative;top:-100px;left: 6%;">¿Cómo?</p>
+        <input style="font-family: 'Fira Sans Condensed';font-size: 14px;position: relative;top:-140px; border: #f27611  1px solid;background-color: transparent;width: 73.6%;
+    ;height: 32px;left:10%; ">
+        <p style="font-family: 'Fira Sans Condensed';font-size: 14px;position: relative;top:-130px;">Registrar acuerdos de ajustes o cambios, junto con los pasos a seguir:</p>
+        <input style="font-family: 'Fira Sans Condensed';font-size: 14px;position: relative;top:-130px; border: #f27611  1px solid;background-color: transparent;width: 83.6%;
+    ;height: 82px; ">
+        <button type="submit" class="guardar2" name="guardar" >&nbsp;Guardar...</button>
+        <button type="submit" class="publicar2" name="publicar" >Publicar...</button>
+    </form>
+<a href="#"><img class="descarga2" src="../img/Fichas/Descargar.png"></a>
+<a href="#"><img class="imprimir2" src="../img/Fichas/imprimir.png"></a>
 </div>
 
 <footer id="main-footer">
@@ -145,6 +251,85 @@
 </footer> <!-- / #main-footer -->
 
 </body>
-
+<script>
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        ll = selElmnt.length;
+        /*for each element, create a new DIV that will act as the selected item:*/
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        /*for each element, create a new DIV that will contain the option list:*/
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < ll; j++) {
+            /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(e) {
+                /*when an item is clicked, update the original select box,
+                and the selected item:*/
+                var y, i, k, s, h, sl, yl;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                sl = s.length;
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < sl; i++) {
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                        yl = y.length;
+                        for (k = 0; k < yl; k++) {
+                            y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "same-as-selected");
+                        break;
+                    }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function(e) {
+            /*when the select box is clicked, close any other select boxes,
+            and open/close the current select box:*/
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+        });
+    }
+    function closeAllSelect(elmnt) {
+        /*a function that will close all select boxes in the document,
+        except the current select box:*/
+        var x, y, i, xl, yl, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        xl = x.length;
+        yl = y.length;
+        for (i = 0; i < yl; i++) {
+            if (elmnt == y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < xl; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+    /*if the user clicks anywhere outside the select box,
+    then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+</script>
 </html>
 
