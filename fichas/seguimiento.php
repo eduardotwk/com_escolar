@@ -142,22 +142,51 @@
             <tr>
                 <td class="col1">1.1</td>
                 <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
-                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"><option>Seleccione...</option></select></td>
+                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;">
+                        <option>Seleccione...</option>
+                        <option>Muy en desacuerdo</option>
+                        <option>En desacuerdo</option>
+                        <option>Ni de acuerdo ni en desacuerdo</option>
+                        <option>De acuerdo</option>
+                        <option>Muy de acuerdo</option>
+                    </select></td>
             </tr>
             <tr>
                 <td class="col1">1.2</td>
                 <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
-                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"><option>Seleccione...</option></select></td>
+                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;">
+                        <option>Seleccione...</option>
+                        <option>Muy en desacuerdo</option>
+                        <option>En desacuerdo</option>
+                        <option>Ni de acuerdo ni en desacuerdo</option>
+                        <option>De acuerdo</option>
+                        <option>Muy de acuerdo</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td class="col1">1.3</td>
                 <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
-                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"><option>Seleccione...</option></select></td>
+                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;">
+                        <option>Seleccione...</option>
+                        <option>Muy en desacuerdo</option>
+                        <option>En desacuerdo</option>
+                        <option>Ni de acuerdo ni en desacuerdo</option>
+                        <option>De acuerdo</option>
+                        <option>Muy de acuerdo</option>
+                    </select></td>
             </tr>
             <tr>
                 <td class="col1">1.4</td>
                 <td><input style="background-color: transparent;border: transparent;font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"></td>
-                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;"><option>Seleccione...</option></select></td>
+                <td><select style="background-color: transparent;border: transparent; font-family: Fira Sans, sans-serif;color: black;font-size: 14px;">
+                        <option>Seleccione...</option>
+                        <option>Muy en desacuerdo</option>
+                        <option>En desacuerdo</option>
+                        <option>Ni de acuerdo ni en desacuerdo</option>
+                        <option>De acuerdo</option>
+                        <option>Muy de acuerdo</option>
+                    </select></td>
             </tr>
         </table>
         <p style="font-family: 'Fira Sans Condensed';font-size: 14px;position: relative;top:-80px;">Luego les pedimos responder las siguientes preguntas:</p>
