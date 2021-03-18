@@ -91,7 +91,7 @@
         </table>
     </div>
     <div class="planAccion"><a class="accion" href="planAccion.php">Plan de Acción</a></div>
-    <div class="seguimiento"><a class="seguimiento" href="#">Seguimiento y monitoreo</a></div>
+    <div class="seguimiento"><a class="seguimiento" href="seguimiento.php">Seguimiento y monitoreo</a></div>
     <div class="cierre"><a class="cierre" href="cierre.php">Ficha de cierre</a></div>
     <div class="individual"><a class="individual" href="individual.php">Ficha Individual</a></div>
     <p class="p1">Para cada reunión de seguimiento y monitoreo nombre las estrategias que se están ejecutando y señale que tan efectiva ha sido<br>

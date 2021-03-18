@@ -642,9 +642,35 @@ button.publicar2 {
     border-radius: 5px 5px 5px 5px;
     padding: 6px 17px;
     position: relative;
-    left: -4.7%;
+    left: 88%;
     color: #666666;
-    top: -192px !important;
+    top: -227px;
+    bottom: auto;
+}
+button.guardar3 {
+    border-color: #da9600;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    padding: 6px 17px;
+    position: relative;
+    right: -88.3% ;
+    color: #666666;
+    top: -275px;
+
+}
+button.publicar3 {
+    border-color: #da9600;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    padding: 6px 17px;
+    position: relative;
+    left: 80.1%;
+    color: #666666;
+    top: -226px;
     bottom: auto;
 }
 img.descarga {
@@ -675,6 +701,21 @@ img.imprimir2 {
     width: 40px;
     height: 40px;
     top: 1300px;
+    left: 87%
+}
+img.descarga4 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 870px;
+    left: 91%;
+}
+
+img.imprimir4 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 870px;
     left: 87%
 }
 h1.subt {
@@ -792,6 +833,18 @@ p.p2 {
     border: 1px solid #ddd;
     padding: 8px;
 }
+#cierre {
+    font-family:"Fira Sans Condensed", sans-serif;
+    border-collapse: collapse;
+    width: 84%;
+    position: relative;
+    top:-128px;
+}
+
+#cierre td, #cierre th {
+    border: 1px solid #f27611;
+    padding: 8px;
+}
 
 
 
@@ -801,6 +854,11 @@ p.p2 {
     text-align: left;
     background-color: #f27611;
     color: white;
+}
+#cierre td.col1{
+    background-color: #f27611;
+    color: white;
+    width: 10%;
 }
 #seguimiento2 td.col1{
     background-color: #f27611;
