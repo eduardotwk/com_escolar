@@ -128,8 +128,9 @@
                 <td class="ficha1"><textarea name="p5"></textarea></td>
             </tr>
         </table>
-        <button type="submit" class="guardar" name="guardar" >&nbsp;Guardar...</button>
-        <button type="submit" class="publicar" name="publicar" >Publicar...</button>
+        <button type="submit" class="guardar" name="guardar">Guardar...</button>
+        <button type="submit" class="publicar" name="publicar">Publicar...</button>
+
         <?php include 'conexion.php'; ?>
         <?php include 'guardaPlan.php'; ?>
     </form>
